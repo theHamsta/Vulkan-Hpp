@@ -1,10 +1,10 @@
-name: CI Ubuntu
+name: Update Vulkan-Headers PR
 
 on:
   schedule:
     - cron: '0 0 * * *'  # every day at midnight
   push:
-    branches: ["master"]
+    branches: ["*"]
 
 jobs:
   update-vulkan-headers:
