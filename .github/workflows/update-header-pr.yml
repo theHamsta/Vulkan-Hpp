@@ -1,4 +1,4 @@
-name: CI Ubuntu
+name: Update Vulkan-Headers PR
 
 on:
   schedule:
