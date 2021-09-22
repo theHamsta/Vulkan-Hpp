@@ -1,0 +1,1 @@
+/usr/bin/g++-9 -rdynamic CMakeFiles/VulkanHppGenerator.dir/VulkanHppGenerator.cpp.o CMakeFiles/VulkanHppGenerator.dir/tinyxml2/tinyxml2.cpp.o -o VulkanHppGenerator 

@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+0322994c7d0e9366f6a05c65ee6351d0 ../vulkan/vulkan.hpp
+b5dc6dc84cd7857a35a905b52b42fec4 CMakeFiles/build_vulkan_hpp

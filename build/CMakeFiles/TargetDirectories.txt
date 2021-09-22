@@ -1,0 +1,4 @@
+/home/runner/work/Vulkan-Hpp/Vulkan-Hpp/build/CMakeFiles/rebuild_cache.dir
+/home/runner/work/Vulkan-Hpp/Vulkan-Hpp/build/CMakeFiles/edit_cache.dir
+/home/runner/work/Vulkan-Hpp/Vulkan-Hpp/build/CMakeFiles/build_vulkan_hpp.dir
+/home/runner/work/Vulkan-Hpp/Vulkan-Hpp/build/CMakeFiles/VulkanHppGenerator.dir
