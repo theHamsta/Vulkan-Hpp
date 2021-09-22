@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 0 * * *'  # every day at midnight
   push:
-    branches: ["master"]
+    branches: ["*"]
 
 jobs:
   update-vulkan-headers:
@@ -45,13 +45,14 @@ jobs:
       run: |
         git config user.name "GitHub"
         git config user.email "noreply@github.com"
-        git commit -am "Update Vulkan-Headers to $VK_HEADER_GIT_TAG" || echo 'No commit necessary!'
+        git add Vulkan-Headers vulkan
+        git commit -m "Update Vulkan-Headers to $VK_HEADER_GIT_TAG" || echo 'No commit necessary!'
         git clean -xf
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: Update Vulkan-Headers
-        title: Update Vulkan-Headers
+        commit-message: Update Vulkan-Headers to ${VK_HEADER_GIT_TAG}
+        title: Update Vulkan-Headers to ${VK_HEADER_GIT_TAG}
         branch: update-vulkan-headers-pr
         base: ${{ github.head_ref }}
