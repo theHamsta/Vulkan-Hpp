@@ -58,6 +58,16 @@ jobs:
         git stash
         git clean -xf
 
+    - name: Fetch changelog
+      run: |
+        cd /tmp
+        curl https://raw.githubusercontent.com/KhronosGroup/Vulkan-Docs/main/ChangeLog.txt | csplit --suppress-matched - '/----/' '{1}'
+        echo 'VK_CHANGELOG<<EOF' >> $GITHUB_ENV
+        cat xx01 >> $GITHUB_ENV
+        echo 'EOF' >> $GITHUB_ENV
+        cat xx01
+       
+
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
@@ -67,3 +77,8 @@ jobs:
         base: ${{ github.head_ref }}
         body: |
           Please close and reopen this PR to trigger the CI!
+
+          The changelog mentions the following changes:
+          ```
+          ${{ env.VK_CHANGELOG }}
+          ```
