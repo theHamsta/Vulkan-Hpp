@@ -299,6 +299,8 @@ option( VULKAN_HPP_SAMPLES_BUILD_ONLY_DYNAMIC "Build only dynamic. Required in c
 option( VULKAN_HPP_TESTS_BUILD_WITH_LOCAL_VULKAN_HPP "Build with local Vulkan headers" ON )
 option( VULKAN_HPP_TESTS_BUILD_ONLY_DYNAMIC "Build only dynamic" OFF )
 
+option( VULKAN_HPP_ENABLE_EXPERIMENTAL_CPP20_MODULES "Provide a `VulkanHppModule` target to provide Vulkan-Hpp as C++20 module" OFF )
+
 # look for the file vk.xml, the ultimate source of truth for vulkan, to generate the headers from
 if( NOT DEFINED VulkanRegistry_DIR )
 	if( DEFINED VULKAN_HPP_VULKAN_HEADERS_SRC_DIR )
@@ -387,4 +389,23 @@ if( ${VULKAN_HPP_INSTALL} )
 		${VulkanHeaders_INCLUDE_DIR}/vulkan/vulkan_to_string.hpp
 	)
 	install( FILES ${VK_GENERATED_VULKAN_HEADERS} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/vulkan )
+endif()
+
+if (VULKAN_HPP_EXPERIMENTAL_CPP20_MODULES)
+	# See https://www.kitware.com/import-cmake-c20-modules/
+	cmake_minimum_required(VERSION 3.26)
+	set(CMAKE_EXPERIMENTAL_CXX_MODULE_CMAKE_API "2182bf5c-ef0d-489a-91da-49dbc3090d2a")
+	set(CMAKE_EXPERIMENTAL_CXX_MODULE_DYNDEP 1)
+
+	add_library(VulkanHppModule)
+	set_target_properties(VulkanHppModule PROPERTIES
+	    CXX_STANDARD 20
+	    CXX_EXTENSIONS OFF)
+
+	target_sources(VulkanHppModule
+	    PUBLIC
+	    FILE_SET cxx_modules TYPE CXX_MODULES FILES
+		vulkan.cppm
+		)
+	target_include_directories(VulkanHppModule PRIVATE ${VulkanHeaders_INCLUDE_DIR})
 endif()
