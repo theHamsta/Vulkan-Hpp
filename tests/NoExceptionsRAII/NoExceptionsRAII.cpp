@@ -18,6 +18,11 @@
 
 #define VULKAN_HPP_NO_EXCEPTIONS
 
+#if !__cpp_lib_expected
+#include "tl/expected.hpp"
+#define VULKAN_HPP_EXPECTED tl::expected
+#define VULKAN_HPP_UNEXPECTED tl::unexpected
+#endif
 #include <vulkan/vulkan_raii.hpp>
 
 static char const * AppName    = "NoExceptions";
