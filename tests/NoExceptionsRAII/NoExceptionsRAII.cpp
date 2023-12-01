@@ -18,6 +18,7 @@
 
 #define VULKAN_HPP_NO_EXCEPTIONS
 
+#include <memory>
 #if !__cpp_lib_expected
 #include "tl/expected.hpp"
 #define VULKAN_HPP_EXPECTED tl::expected
