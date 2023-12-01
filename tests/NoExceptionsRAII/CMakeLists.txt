@@ -24,7 +24,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(tl-expected)
 # alternative https://github.com/martinmoene/nonstd-lite
 
-vulkan_hpp__setup_test( NAME NoExceptionsRAII LIBRARIES utils tl::expected CXX_STANDARD 23)
+vulkan_hpp__setup_test( NAME NoExceptionsRAII LIBRARIES utils tl::expected)
 
 if( UNIX )
 	target_link_libraries( NoExceptionsRAII PRIVATE ${CMAKE_DL_LIBS} )
