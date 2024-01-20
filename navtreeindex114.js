@@ -1,6 +1,5 @@
 var NAVTREEINDEX114 =
 {
-"structvk_1_1InstanceCreateInfo.html#a7bfd577e66c81470a47cbbb438cf7ac1":[5,0,1,1853,12],
 "structvk_1_1InstanceCreateInfo.html#a961ffa4a85ee425065a8c420635f621c":[5,0,1,1853,22],
 "structvk_1_1InstanceCreateInfo.html#a97b97849e46b796faa61b296a5a83615":[5,0,1,1853,17],
 "structvk_1_1InstanceCreateInfo.html#aa342d9e5ba71ca018d59f0cb58cb6531":[5,0,1,1853,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX114 =
 "structvk_1_1MemoryAllocateInfo.html#ad41cfae90c734719fcf9b68bb16fa326":[5,0,1,1871,5],
 "structvk_1_1MemoryAllocateInfo.html#ae474dca0a90673b5b8ab4d9a19ba7011":[5,0,1,1871,13],
 "structvk_1_1MemoryBarrier.html":[5,0,1,1873],
-"structvk_1_1MemoryBarrier.html#a19a9acbd9e3943bd52a2f702b043065e":[5,0,1,1873,7]
+"structvk_1_1MemoryBarrier.html#a19a9acbd9e3943bd52a2f702b043065e":[5,0,1,1873,7],
+"structvk_1_1MemoryBarrier.html#a1a691d6d60fdefe5e67093c03bce1ec0":[5,0,1,1873,15]
 };

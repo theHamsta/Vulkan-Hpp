@@ -1,6 +1,5 @@
 var NAVTREEINDEX170 =
 {
-"structvk_1_1video_1_1H265LongTermRefPicsSps.html#af3327f0632a8bddac3e9ee2ba914bae6":[5,0,1,2,39,3],
 "structvk_1_1video_1_1H265PictureParameterSet.html":[5,0,1,2,42],
 "structvk_1_1video_1_1H265PictureParameterSet.html#a0379e9251dc3c8bb2559448f27042ad1":[5,0,1,2,42,14],
 "structvk_1_1video_1_1H265PictureParameterSet.html#a05f14236dbda983586c86fc8e4595deb":[5,0,1,2,42,37],
@@ -249,5 +248,6 @@ var NAVTREEINDEX170 =
 "structvk_1_1video_1_1H265SpsFlags.html#a896bba6d68f4977204c2683e93974cdb":[5,0,1,2,36,1],
 "structvk_1_1video_1_1H265SpsFlags.html#a92d7a7fd65ff4e8bb9b8ebbeaeb22473":[5,0,1,2,36,20],
 "structvk_1_1video_1_1H265SpsFlags.html#a953330b21001b30e34e29ec3d2d5f6bf":[5,0,1,2,36,23],
-"structvk_1_1video_1_1H265SpsFlags.html#a98141f42172d6ed81b2e6dda010baec9":[5,0,1,2,36,25]
+"structvk_1_1video_1_1H265SpsFlags.html#a98141f42172d6ed81b2e6dda010baec9":[5,0,1,2,36,25],
+"structvk_1_1video_1_1H265SpsFlags.html#aa85315a9fd31b6c4070497507797254e":[5,0,1,2,36,34]
 };

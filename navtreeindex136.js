@@ -1,6 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"structvk_1_1PhysicalDeviceShaderIntegerDotProductFeatures.html#a77f7f7780ed1b26f48836f1583317d08":[5,0,1,2408,14],
 "structvk_1_1PhysicalDeviceShaderIntegerDotProductFeatures.html#a873e5e2405d23dd9c1c3ef1501dc88e3":[5,0,1,2408,4],
 "structvk_1_1PhysicalDeviceShaderIntegerDotProductFeatures.html#a8ff2e9d67eed663cfab3677556f66c58":[5,0,1,2408,1],
 "structvk_1_1PhysicalDeviceShaderIntegerDotProductFeatures.html#ab2237251e46bc1ca88a1be27e3c9bb41":[5,0,1,2408,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX136 =
 "structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a12cf4db98c66eb011590b7130f42cd6f":[5,0,1,2436,12],
 "structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a23be96e0734f97aca8ca2037b4f381f3":[5,0,1,2436,2],
 "structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a27828a39b571506482ee14254f90116d":[5,0,1,2436,11],
-"structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a2821feaeb9990cb0a49343dd40c1474a":[5,0,1,2436,4]
+"structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a2821feaeb9990cb0a49343dd40c1474a":[5,0,1,2436,4],
+"structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a4d968b996fdda6682550b9985ef752c6":[5,0,1,2436,6]
 };

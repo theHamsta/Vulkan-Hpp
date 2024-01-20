@@ -1,6 +1,5 @@
 var NAVTREEINDEX90 =
 {
-"structvk_1_1CopyImageToImageInfoEXT.html#a0c7e300d63f23670a11760676034b4dd":[5,0,1,1470,16],
 "structvk_1_1CopyImageToImageInfoEXT.html#a12fc93aece27fc293012bd14e2407256":[5,0,1,1470,21],
 "structvk_1_1CopyImageToImageInfoEXT.html#a310a2532b2063030f1ebc12a3db0d9d5":[5,0,1,1470,3],
 "structvk_1_1CopyImageToImageInfoEXT.html#a3e920fb38bd445fadcdefc72166b9071":[5,0,1,1470,28],
@@ -249,5 +248,6 @@ var NAVTREEINDEX90 =
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentDescriptionStencilLayout_01_4.html#a61615269a8a88c31394ff18c66651b55":[5,0,1,1317,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReference2_01_4.html":[5,0,1,1320],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReference2_01_4.html#af8803b1a40d450f31d197f5cac268fc7":[5,0,1,1320,0],
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReferenceStencilLayout_01_4.html":[5,0,1,1322]
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReferenceStencilLayout_01_4.html":[5,0,1,1322],
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReferenceStencilLayout_01_4.html#a673fb4948b812e8f2599b58b6f145152":[5,0,1,1322,0]
 };

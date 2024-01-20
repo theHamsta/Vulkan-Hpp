@@ -1,6 +1,5 @@
 var NAVTREEINDEX160 =
 {
-"structvk_1_1TraceRaysIndirectCommand2KHR.html#ab411a894d7ae8f1e1874a2fc0f1ef25e":[5,0,1,2842,0],
 "structvk_1_1TraceRaysIndirectCommand2KHR.html#ab4739a9910222795d2480b24e3b0b9e1":[5,0,1,2842,26],
 "structvk_1_1TraceRaysIndirectCommand2KHR.html#ab5b851de2eebc6d8034a10c2117cd506":[5,0,1,2842,29],
 "structvk_1_1TraceRaysIndirectCommand2KHR.html#ac4d6d85a3e7e5caba2a88eebe4db5876":[5,0,1,2842,21],
@@ -249,5 +248,6 @@ var NAVTREEINDEX160 =
 "structvk_1_1VideoCapabilitiesKHR.html#ab715f491b0a7ab92655b98d0a51e7456":[5,0,1,2860,0],
 "structvk_1_1VideoCapabilitiesKHR.html#ab84ba0fc08b18e9d5a1ba3ca01e91153":[5,0,1,2860,20],
 "structvk_1_1VideoCapabilitiesKHR.html#ae66178f67aa698e23c1e9641e80f7731":[5,0,1,2860,4],
-"structvk_1_1VideoCapabilitiesKHR.html#aebbf4f3b12b9a86f13304b5335308c78":[5,0,1,2860,18]
+"structvk_1_1VideoCapabilitiesKHR.html#aebbf4f3b12b9a86f13304b5335308c78":[5,0,1,2860,18],
+"structvk_1_1VideoCapabilitiesKHR.html#af6708df9a7d09781ec372fa29c896105":[5,0,1,2860,1]
 };

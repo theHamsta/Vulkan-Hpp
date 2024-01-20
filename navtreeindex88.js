@@ -1,6 +1,5 @@
 var NAVTREEINDEX88 =
 {
-"structvk_1_1CommandBufferBeginInfo.html#adf9b4bd88dbfe8cc156537d28c5798b2":[5,0,1,1422,1],
 "structvk_1_1CommandBufferBeginInfo.html#ae613fd5eca70e84755033c2b4fd736c1":[5,0,1,1422,8],
 "structvk_1_1CommandBufferInheritanceConditionalRenderingInfoEXT.html":[5,0,1,1424],
 "structvk_1_1CommandBufferInheritanceConditionalRenderingInfoEXT.html#a06d735b8aeaf68c11a8934ff24ff0b0d":[5,0,1,1424,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX88 =
 "structvk_1_1ConformanceVersion.html#ae3c7b5b129c8bd0752e6a1789aa1ad08":[5,0,1,1447,7],
 "structvk_1_1ConformanceVersion.html#aec938f7d4e6c334e7bb496db19f9ab33":[5,0,1,1447,2],
 "structvk_1_1ConformanceVersion.html#aef3e63fd1c36812ee6d4c24ff1bfac89":[5,0,1,1447,0],
-"structvk_1_1ConformanceVersion.html#aefec8b956d12e0aa23e2a1c6a66c0552":[5,0,1,1447,10]
+"structvk_1_1ConformanceVersion.html#aefec8b956d12e0aa23e2a1c6a66c0552":[5,0,1,1447,10],
+"structvk_1_1CooperativeMatrixPropertiesKHR.html":[5,0,1,1448]
 };

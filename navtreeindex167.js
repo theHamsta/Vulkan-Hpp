@@ -1,6 +1,5 @@
 var NAVTREEINDEX167 =
 {
-"structvk_1_1WriteDescriptorSetAccelerationStructureNV.html#a07d710289d0589bce163fa6ac1ae8db3":[5,0,1,2990,1],
 "structvk_1_1WriteDescriptorSetAccelerationStructureNV.html#a0c22487b94cce02de0f9fa2d120000e1":[5,0,1,2990,8],
 "structvk_1_1WriteDescriptorSetAccelerationStructureNV.html#a12d5137ffb218ca6f617f5835e7f0eee":[5,0,1,2990,17],
 "structvk_1_1WriteDescriptorSetAccelerationStructureNV.html#a191be4a72ec4373dda78e5dbdf50683a":[5,0,1,2990,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX167 =
 "structvk_1_1video_1_1EncodeH264PictureInfo.html":[5,0,1,2,21],
 "structvk_1_1video_1_1EncodeH264PictureInfo.html#a0b1570d00df7a0f7258d6d8d4da1ec03":[5,0,1,2,21,13],
 "structvk_1_1video_1_1EncodeH264PictureInfo.html#a58b1e49249fb73633122bc66cb97a972":[5,0,1,2,21,6],
-"structvk_1_1video_1_1EncodeH264PictureInfo.html#a5cb1c9c4ed43c2aca461734b8b417fbd":[5,0,1,2,21,5]
+"structvk_1_1video_1_1EncodeH264PictureInfo.html#a5cb1c9c4ed43c2aca461734b8b417fbd":[5,0,1,2,21,5],
+"structvk_1_1video_1_1EncodeH264PictureInfo.html#a5d2b9c51432b09dd7ed87021ce33f9a5":[5,0,1,2,21,1]
 };

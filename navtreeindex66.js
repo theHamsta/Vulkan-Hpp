@@ -1,6 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structVkPhysicalDevice16BitStorageFeatures.html#a2228da86d8cd385fdccffead3a462769":[5,0,444,1],
 "structVkPhysicalDevice16BitStorageFeatures.html#a6ab5168c4a4a845ef5ef5c3f0f1375fa":[5,0,444,0],
 "structVkPhysicalDevice16BitStorageFeatures.html#a7da84d151b7e051408b4b2661014f34e":[5,0,444,2],
 "structVkPhysicalDevice16BitStorageFeatures.html#ade555d3f9b8e1be08b351b92d5667426":[5,0,444,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX66 =
 "structVkPhysicalDeviceDescriptorBufferPropertiesEXT.html#a7f962a93fa22211ac53ccb20dd125b97":[5,0,489,13],
 "structVkPhysicalDeviceDescriptorBufferPropertiesEXT.html#a81427890910dbd46004c32837664a279":[5,0,489,22],
 "structVkPhysicalDeviceDescriptorBufferPropertiesEXT.html#a829178a6583063dcba9887a1fe8ae4c3":[5,0,489,25],
-"structVkPhysicalDeviceDescriptorBufferPropertiesEXT.html#a8567805c72f1e0dd46f63a99c539dd62":[5,0,489,20]
+"structVkPhysicalDeviceDescriptorBufferPropertiesEXT.html#a8567805c72f1e0dd46f63a99c539dd62":[5,0,489,20],
+"structVkPhysicalDeviceDescriptorBufferPropertiesEXT.html#a88bcc47c457b95b0d7201913758497b0":[5,0,489,0]
 };

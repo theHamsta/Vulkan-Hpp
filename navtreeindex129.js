@@ -1,6 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"structvk_1_1PhysicalDeviceMaintenance5PropertiesKHR.html#a9b1fcaa787a3fa8bc3b1853238c10f25":[5,0,1,2213,2],
 "structvk_1_1PhysicalDeviceMaintenance5PropertiesKHR.html#ac0449d6303b9736afb68a6be23517ea3":[5,0,1,2213,0],
 "structvk_1_1PhysicalDeviceMaintenance5PropertiesKHR.html#ac32cb194f02305f2017e2c8900926db3":[5,0,1,2213,3],
 "structvk_1_1PhysicalDeviceMaintenance5PropertiesKHR.html#ac61a2dc9ebc7c219a8587aa1b7a5c4a5":[5,0,1,2213,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX129 =
 "structvk_1_1PhysicalDeviceMultiDrawFeaturesEXT.html#a9e8bcbd27a4fe80279024149a5dcc10b":[5,0,1,2238,5],
 "structvk_1_1PhysicalDeviceMultiDrawFeaturesEXT.html#aa217a066a1f38d3c94b418f70ba0d4a8":[5,0,1,2238,0],
 "structvk_1_1PhysicalDeviceMultiDrawFeaturesEXT.html#aa4b08dd2a2a6b06aed1a6893880ed920":[5,0,1,2238,14],
-"structvk_1_1PhysicalDeviceMultiDrawFeaturesEXT.html#aa6badb11f213f976d19b84758721440c":[5,0,1,2238,7]
+"structvk_1_1PhysicalDeviceMultiDrawFeaturesEXT.html#aa6badb11f213f976d19b84758721440c":[5,0,1,2238,7],
+"structvk_1_1PhysicalDeviceMultiDrawFeaturesEXT.html#aca415af39fc7c9c98d02fd9882acee26":[5,0,1,2238,12]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX77 =
 {
-"structVkSemaphoreWaitInfo.html#a501d2a1192186d313ef17aabb1d0901f":[5,0,853,4],
 "structVkSemaphoreWaitInfo.html#a599e2d7b2be75cf1af4b11a7d1811f0d":[5,0,853,0],
 "structVkSetDescriptorBufferOffsetsInfoEXT.html":[5,0,854],
 "structVkSetDescriptorBufferOffsetsInfoEXT.html#a2af2b5a1a105f329b971804e7bebd6c0":[5,0,854,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX77 =
 "structVkSurfaceCapabilities2EXT.html#a51cca5bb0e970f08680a2b4247326e29":[5,0,895,11],
 "structVkSurfaceCapabilities2EXT.html#a544e7f288b5fb7f02863a0af9da686dd":[5,0,895,12],
 "structVkSurfaceCapabilities2EXT.html#a900fc4e19190484603dd29eca845cf90":[5,0,895,1],
-"structVkSurfaceCapabilities2EXT.html#a9bd20be07b0ddf7fe387b90bafcd9f57":[5,0,895,0]
+"structVkSurfaceCapabilities2EXT.html#a9bd20be07b0ddf7fe387b90bafcd9f57":[5,0,895,0],
+"structVkSurfaceCapabilities2EXT.html#abe0671b262cc732ae3930e91023fff9d":[5,0,895,3]
 };

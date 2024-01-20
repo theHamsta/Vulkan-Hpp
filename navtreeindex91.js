@@ -1,6 +1,5 @@
 var NAVTREEINDEX91 =
 {
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReferenceStencilLayout_01_4.html#a673fb4948b812e8f2599b58b6f145152":[5,0,1,1322,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentSampleCountInfoAMD_01_4.html":[5,0,1,1324],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentSampleCountInfoAMD_01_4.html#ac7833f1bb37b0f5d1b244a14913c58d4":[5,0,1,1324,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eBindAccelerationStructureMemoryInfoNV_01_4.html":[5,0,1,1333],
@@ -249,5 +248,6 @@ var NAVTREEINDEX91 =
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDirectDriverLoadingListLUNARG_01_4.html#adbea22b50ffa790404a508e323162655":[5,0,1,1638,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayEventInfoEXT_01_4.html":[5,0,1,1643],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayEventInfoEXT_01_4.html#a1e72a61f31c2e6fc37daaae642f9687a":[5,0,1,1643,0],
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayModeCreateInfoKHR_01_4.html":[5,0,1,1646]
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayModeCreateInfoKHR_01_4.html":[5,0,1,1646],
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayModeCreateInfoKHR_01_4.html#a57ef3c807334304e6855f3a2b3c7c975":[5,0,1,1646,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"structStdVideoH265ShortTermRefPicSetFlags.html#aa762130ab6cea95fc73e3c1fbcde2f05":[5,0,63,0],
 "structStdVideoH265SpsFlags.html":[5,0,64],
 "structStdVideoH265SpsFlags.html#a0d7dd51acb424846884a771e9f3e165c":[5,0,64,8],
 "structStdVideoH265SpsFlags.html#a137871cc12fee02ec3d5a99a7b734e05":[5,0,64,24],
@@ -249,5 +248,6 @@ var NAVTREEINDEX57 =
 "structVkAccelerationStructureVersionInfoKHR.html#af7f4f6de8c91e2f76a324b0f344763c5":[5,0,96,2],
 "structVkAcquireNextImageInfoKHR.html":[5,0,97],
 "structVkAcquireNextImageInfoKHR.html#a10728f679b2a9072ff7778d76d2dfaf2":[5,0,97,4],
-"structVkAcquireNextImageInfoKHR.html#a14f076d0cac56955ec546bbaac7f0115":[5,0,97,1]
+"structVkAcquireNextImageInfoKHR.html#a14f076d0cac56955ec546bbaac7f0115":[5,0,97,1],
+"structVkAcquireNextImageInfoKHR.html#a205297bdff3ddc2c94d7501a0e2265cb":[5,0,97,6]
 };

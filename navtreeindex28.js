@@ -1,6 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"classvk_1_1raii_1_1Fence.html#a23d8a7f537dcea839a8f78c57eac39bc":[5,0,1,0,33,7],
 "classvk_1_1raii_1_1Fence.html#a2a96f9a6d6135d8e69858755803d5c95":[5,0,1,0,33,20],
 "classvk_1_1raii_1_1Fence.html#a2dc0f7de0694f28550b9bb4561218619":[5,0,1,0,33,4],
 "classvk_1_1raii_1_1Fence.html#a3ab6df02f90ee537b46d2945a1298fbb":[5,0,1,0,33,15],
@@ -249,5 +248,6 @@ var NAVTREEINDEX28 =
 "classvk_1_1raii_1_1MicromapEXT.html#a55f8e0004946f62443a607d5e8b8d775":[5,0,1,0,38,12],
 "classvk_1_1raii_1_1MicromapEXT.html#a771df9348db502ae0ded1adc88803c1c":[5,0,1,0,38,9],
 "classvk_1_1raii_1_1MicromapEXT.html#a78cba73158bd579649b31585cc609eba":[5,0,1,0,38,2],
-"classvk_1_1raii_1_1MicromapEXT.html#a8b1a506b13a2617552eb74b2515a9e88":[5,0,1,0,38,17]
+"classvk_1_1raii_1_1MicromapEXT.html#a8b1a506b13a2617552eb74b2515a9e88":[5,0,1,0,38,17],
+"classvk_1_1raii_1_1MicromapEXT.html#aaae4540db2187e8ba76ede7afa2aa527":[5,0,1,0,38,8]
 };

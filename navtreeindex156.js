@@ -1,6 +1,5 @@
 var NAVTREEINDEX156 =
 {
-"structvk_1_1StructExtends_3_01PipelineCreateFlags2CreateInfoKHR_00_01ComputePipelineCreateInfo_01_4.html":[5,0,1,752],
 "structvk_1_1StructExtends_3_01PipelineCreateFlags2CreateInfoKHR_00_01GraphicsPipelineCreateInfo_01_4.html":[5,0,1,753],
 "structvk_1_1StructExtends_3_01PipelineCreateFlags2CreateInfoKHR_00_01RayTracingPipelineCreateInfoKHR_01_4.html":[5,0,1,755],
 "structvk_1_1StructExtends_3_01PipelineCreateFlags2CreateInfoKHR_00_01RayTracingPipelineCreateInfoNV_01_4.html":[5,0,1,754],
@@ -249,5 +248,6 @@ var NAVTREEINDEX156 =
 "structvk_1_1SubmitInfo2.html#aec31b0ee7ab9bcd7104c769928159953":[5,0,1,2782,5],
 "structvk_1_1SubpassBeginInfo.html":[5,0,1,2784],
 "structvk_1_1SubpassBeginInfo.html#a176dad0cfbef4c71863af06cf3a7dd51":[5,0,1,2784,6],
-"structvk_1_1SubpassBeginInfo.html#a1fa873915215fb5e4eb0506d1d876d35":[5,0,1,2784,9]
+"structvk_1_1SubpassBeginInfo.html#a1fa873915215fb5e4eb0506d1d876d35":[5,0,1,2784,9],
+"structvk_1_1SubpassBeginInfo.html#a25c984f42f21d5f26db5acf72776b4da":[5,0,1,2784,7]
 };

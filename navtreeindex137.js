@@ -1,6 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a4d968b996fdda6682550b9985ef752c6":[5,0,1,2436,6],
 "structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a5ad6b7c24caa88a7c0970ed76653287c":[5,0,1,2436,5],
 "structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a6fca3171f437b353c0953d0c743a910e":[5,0,1,2436,14],
 "structvk_1_1PhysicalDeviceShadingRateImageFeaturesNV.html#a71128563abe23f26fd66df87bbbf158c":[5,0,1,2436,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX137 =
 "structvk_1_1PhysicalDeviceTexelBufferAlignmentProperties.html#af5cd8c5b5fb0c286661d30f46f2f8949":[5,0,1,2462,13],
 "structvk_1_1PhysicalDeviceTexelBufferAlignmentProperties.html#afac9392c555294cf8b7291dee5453853":[5,0,1,2462,2],
 "structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html":[5,0,1,2464],
-"structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a1a0959a0a9160e9ff6031f5d1a1ff8b9":[5,0,1,2464,1]
+"structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a1a0959a0a9160e9ff6031f5d1a1ff8b9":[5,0,1,2464,1],
+"structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a3636563fbb0a2ccd4988473d952cc8e0":[5,0,1,2464,2]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX56 =
 {
-"structStdVideoH264SequenceParameterSetVui.html":[5,0,47],
 "structStdVideoH264SequenceParameterSetVui.html#a11bec916913567ee78d70e831e03a75e":[5,0,47,8],
 "structStdVideoH264SequenceParameterSetVui.html#a2a411e758917352102e748dc9c1d9b97":[5,0,47,12],
 "structStdVideoH264SequenceParameterSetVui.html#a37a2913a438bce2e9b4c822fbc968cd1":[5,0,47,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX56 =
 "structStdVideoH265ShortTermRefPicSet.html#aae32a5f5b79491faa4f5835e3846279d":[5,0,62,5],
 "structStdVideoH265ShortTermRefPicSet.html#ad8cf19f20b29d57b11c75c07faed0cb8":[5,0,62,7],
 "structStdVideoH265ShortTermRefPicSetFlags.html":[5,0,63],
-"structStdVideoH265ShortTermRefPicSetFlags.html#a80dbc5ff0cd3c3e4a7e881f23a998a51":[5,0,63,1]
+"structStdVideoH265ShortTermRefPicSetFlags.html#a80dbc5ff0cd3c3e4a7e881f23a998a51":[5,0,63,1],
+"structStdVideoH265ShortTermRefPicSetFlags.html#aa762130ab6cea95fc73e3c1fbcde2f05":[5,0,63,0]
 };

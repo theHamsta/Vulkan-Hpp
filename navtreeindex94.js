@@ -1,6 +1,5 @@
 var NAVTREEINDEX94 =
 {
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImagelessFramebufferFeatures_01_4.html#aea2a55ac160a70a1311710a95ad2ff77":[5,0,1,2183,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceIndexTypeUint8FeaturesEXT_01_4.html":[5,0,1,2185],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceIndexTypeUint8FeaturesEXT_01_4.html#a75d477424f53fc70fedd4344225a0dbb":[5,0,1,2185,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceInheritedViewportScissorFeaturesNV_01_4.html":[5,0,1,2187],
@@ -249,5 +248,6 @@ var NAVTREEINDEX94 =
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderTileImageFeaturesEXT_01_4.html#a5937bc6746eb380fead7a716e20d1fc6":[5,0,1,2433,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderTileImagePropertiesEXT_01_4.html":[5,0,1,2435],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderTileImagePropertiesEXT_01_4.html#a765c1d08f8b526e5a957feb2a32e971f":[5,0,1,2435,0],
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShadingRateImageFeaturesNV_01_4.html":[5,0,1,2437]
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShadingRateImageFeaturesNV_01_4.html":[5,0,1,2437],
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShadingRateImageFeaturesNV_01_4.html#aaa52a8efecdbf4a14201e387206c363e":[5,0,1,2437,0]
 };

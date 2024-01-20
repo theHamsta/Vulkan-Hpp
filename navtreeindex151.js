@@ -1,6 +1,5 @@
 var NAVTREEINDEX151 =
 {
-"structvk_1_1SamplerReductionModeCreateInfo.html#ac7af1d60fc73e50d7eeb8f070a38be6d":[5,0,1,2736,0],
 "structvk_1_1SamplerReductionModeCreateInfo.html#ae806c66d959aa0755872368f83696bdd":[5,0,1,2736,9],
 "structvk_1_1SamplerReductionModeCreateInfo.html#af118d13f8014700037def856325a0a3b":[5,0,1,2736,1],
 "structvk_1_1SamplerReductionModeCreateInfo.html#af37af5a6448df6e56d43da7ba8a4f99e":[5,0,1,2736,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX151 =
 "structvk_1_1SetLatencyMarkerInfoNV.html#adfc72f46bcd4b3bdca400fc75fc3815d":[5,0,1,2758,14],
 "structvk_1_1SetLatencyMarkerInfoNV.html#af5f2744dbd7b8230fa0a0e2c8f540794":[5,0,1,2758,7],
 "structvk_1_1SetStateFlagsIndirectCommandNV.html":[5,0,1,2760],
-"structvk_1_1SetStateFlagsIndirectCommandNV.html#a245792b550a241bf8de3be4f83f95393":[5,0,1,2760,7]
+"structvk_1_1SetStateFlagsIndirectCommandNV.html#a245792b550a241bf8de3be4f83f95393":[5,0,1,2760,7],
+"structvk_1_1SetStateFlagsIndirectCommandNV.html#a2529fea1d57b49c5d86fb213b95958b4":[5,0,1,2760,1]
 };

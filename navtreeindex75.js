@@ -1,6 +1,5 @@
 var NAVTREEINDEX75 =
 {
-"structVkPipelineVertexInputStateCreateInfo.html#af8773d411306f4647a4eb36d7cd38fd4":[5,0,771,1],
 "structVkPipelineViewportCoarseSampleOrderStateCreateInfoNV.html":[5,0,772],
 "structVkPipelineViewportCoarseSampleOrderStateCreateInfoNV.html#a2b1526361b0938e8f11a22486ada6f3a":[5,0,772,2],
 "structVkPipelineViewportCoarseSampleOrderStateCreateInfoNV.html#a32890e8a8b8d79cfba69309bed6541bb":[5,0,772,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX75 =
 "structVkRenderPassCreateInfo.html#aaaeb29d660783240725db5a867f7a09c":[5,0,819,3],
 "structVkRenderPassCreateInfo.html#af3c6a7803191a8b5df42f785e318dc05":[5,0,819,2],
 "structVkRenderPassCreateInfo.html#af92fef215d0f8eb9a6dd67003283632c":[5,0,819,1],
-"structVkRenderPassCreateInfo2.html":[5,0,820]
+"structVkRenderPassCreateInfo2.html":[5,0,820],
+"structVkRenderPassCreateInfo2.html#a04300d17815293eb4e2c9ce4073357c0":[5,0,820,10]
 };

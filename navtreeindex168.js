@@ -1,6 +1,5 @@
 var NAVTREEINDEX168 =
 {
-"structvk_1_1video_1_1EncodeH264PictureInfo.html#a5d2b9c51432b09dd7ed87021ce33f9a5":[5,0,1,2,21,1],
 "structvk_1_1video_1_1EncodeH264PictureInfo.html#a6dbf6fb80879b6c715e7d8d84ff0eac1":[5,0,1,2,21,0],
 "structvk_1_1video_1_1EncodeH264PictureInfo.html#a6ee3a89b6117c3003fd348f13256a0cf":[5,0,1,2,21,12],
 "structvk_1_1video_1_1EncodeH264PictureInfo.html#a714a552c2d7a431a7f25e406a999f249":[5,0,1,2,21,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX168 =
 "structvk_1_1video_1_1EncodeH265SliceSegmentHeader.html#aa1f9ccc1f5f57f79c731b5aefe9cbb36":[5,0,1,2,50,7],
 "structvk_1_1video_1_1EncodeH265SliceSegmentHeader.html#ab91ac2b421feceb686d97a5c67677542":[5,0,1,2,50,18],
 "structvk_1_1video_1_1EncodeH265SliceSegmentHeader.html#aba7e05c70ada7263e9f56775085ad78f":[5,0,1,2,50,11],
-"structvk_1_1video_1_1EncodeH265SliceSegmentHeader.html#adf9f49abf5835190e798358172d041d7":[5,0,1,2,50,6]
+"structvk_1_1video_1_1EncodeH265SliceSegmentHeader.html#adf9f49abf5835190e798358172d041d7":[5,0,1,2,50,6],
+"structvk_1_1video_1_1EncodeH265SliceSegmentHeader.html#aec1433966eb8f05d4f462e90e0d3a317":[5,0,1,2,50,4]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX132 =
 {
-"structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a898116510729314c231e5a887abfa0c6":[5,0,1,2296,39],
 "structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a8bc3cad598e58edb921bc44e62f207c7":[5,0,1,2296,21],
 "structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a8d8f215f12aa10f3f2ec9aa1c0cbc9d8":[5,0,1,2296,29],
 "structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a96a52de5c0418cc09744001c214d3aa3":[5,0,1,2296,20],
@@ -249,5 +248,6 @@ var NAVTREEINDEX132 =
 "structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a5f1ab8ac083a20c92649b16548849dd3":[5,0,1,2326,4],
 "structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a8ecb14492d9a8b1b607b2cae1f5fe5da":[5,0,1,2326,5],
 "structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a90e5b31552aa4ff6b637382300efd415":[5,0,1,2326,1],
-"structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a93c850336d2946b012930e639163192d":[5,0,1,2326,13]
+"structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a93c850336d2946b012930e639163192d":[5,0,1,2326,13],
+"structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a940194c938a85be1aa604eb68ed8d5ec":[5,0,1,2326,14]
 };

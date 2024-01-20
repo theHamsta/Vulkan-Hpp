@@ -1,6 +1,5 @@
 var NAVTREEINDEX84 =
 {
-"structvk_1_1AttachmentReference.html#a0c98692165bc69b110df64511dd71ab4":[5,0,1,1318,4],
 "structvk_1_1AttachmentReference.html#a103826e600c9ac1f0b64e1ae9f01b585":[5,0,1,1318,10],
 "structvk_1_1AttachmentReference.html#a2ee0f647b9920078318e5cd59e795f07":[5,0,1,1318,9],
 "structvk_1_1AttachmentReference.html#a3a95e067eaaa086aa0da48040a2b5cfa":[5,0,1,1318,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX84 =
 "structvk_1_1BindImageMemoryDeviceGroupInfo.html#aabdd073b4f5f46f056bd73d86f91ea80":[5,0,1,1344,14],
 "structvk_1_1BindImageMemoryDeviceGroupInfo.html#ab0a981a96e326583dc8fd8d14230a03b":[5,0,1,1344,15],
 "structvk_1_1BindImageMemoryDeviceGroupInfo.html#acbf92b43bd2060f037a651401418adce":[5,0,1,1344,4],
-"structvk_1_1BindImageMemoryDeviceGroupInfo.html#acc673ce4e7ab7a373298a6f2f1dddee8":[5,0,1,1344,13]
+"structvk_1_1BindImageMemoryDeviceGroupInfo.html#acc673ce4e7ab7a373298a6f2f1dddee8":[5,0,1,1344,13],
+"structvk_1_1BindImageMemoryDeviceGroupInfo.html#acf7b8d4c819ff56089f35e4476b32d5a":[5,0,1,1344,17]
 };

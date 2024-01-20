@@ -1,6 +1,5 @@
 var NAVTREEINDEX232 =
 {
-"vulkan__static__assertions_8hpp.html#adcc5c15c9ebacb38618b2a1b7afaa5b3":[6,0,2,10,922],
 "vulkan__static__assertions_8hpp.html#adcc708097db4740e6db63f67a1ef4d88":[6,0,2,10,2754],
 "vulkan__static__assertions_8hpp.html#adcd93f1ad49438ced6573a059705ef7f":[6,0,2,10,1532],
 "vulkan__static__assertions_8hpp.html#adceca105c097978fd99177e979146a06":[6,0,2,10,2163],
@@ -249,5 +248,6 @@ var NAVTREEINDEX232 =
 "vulkan__static__assertions_8hpp.html#af288fd49316080c89071cb24dd9ea72d":[6,0,2,10,1639],
 "vulkan__static__assertions_8hpp.html#af2973d20800ddf7355eee07ba11dc489":[6,0,2,10,1758],
 "vulkan__static__assertions_8hpp.html#af2affd3eb451e157cf7895191a6d950f":[6,0,2,10,79],
-"vulkan__static__assertions_8hpp.html#af2b43bd83a276e78ee217f5e753c2ed7":[6,0,2,10,1325]
+"vulkan__static__assertions_8hpp.html#af2b43bd83a276e78ee217f5e753c2ed7":[6,0,2,10,1325],
+"vulkan__static__assertions_8hpp.html#af2b6330a5ad2e6d3fa3373cbfa3f091a":[6,0,2,10,133]
 };

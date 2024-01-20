@@ -1,6 +1,5 @@
 var NAVTREEINDEX140 =
 {
-"structvk_1_1PhysicalDeviceVulkan12Properties.html#af1fb17f5cc41031638caaf05637c22c3":[5,0,1,2504,62],
 "structvk_1_1PhysicalDeviceVulkan12Properties.html#af314f672bc11cd0f20062647897390e5":[5,0,1,2504,53],
 "structvk_1_1PhysicalDeviceVulkan12Properties.html#af32bcebe4f1f127d80cdda231f104a89":[5,0,1,2504,23],
 "structvk_1_1PhysicalDeviceVulkan12Properties.html#af4d2d333154ef61c4735c8b8c34befb5":[5,0,1,2504,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX140 =
 "structvk_1_1PipelineCacheHeaderVersionOne.html#a987944e7e840cbfef1fdfd30490b4674":[5,0,1,2524,7],
 "structvk_1_1PipelineCacheHeaderVersionOne.html#a9a606bae6ddbf20bcf87a8f4342bd9b5":[5,0,1,2524,18],
 "structvk_1_1PipelineCacheHeaderVersionOne.html#ab8fb73b1be95d0e6eab5cb049bf1e8b7":[5,0,1,2524,4],
-"structvk_1_1PipelineCacheHeaderVersionOne.html#abe0a1bb85e8682057c600e11529e3c88":[5,0,1,2524,9]
+"structvk_1_1PipelineCacheHeaderVersionOne.html#abe0a1bb85e8682057c600e11529e3c88":[5,0,1,2524,9],
+"structvk_1_1PipelineCacheHeaderVersionOne.html#ac4f39d49c03e2c20d13fe59b8ddb0082":[5,0,1,2524,8]
 };

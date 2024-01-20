@@ -1,6 +1,5 @@
 var NAVTREEINDEX147 =
 {
-"structvk_1_1QueueFamilyProperties2.html#a16b81da380d4e5e69e05add916fbd1da":[5,0,1,2652,6],
 "structvk_1_1QueueFamilyProperties2.html#a3568b5d9011963fea67c702aecc4fda6":[5,0,1,2652,0],
 "structvk_1_1QueueFamilyProperties2.html#a71adea523597f742933e24b92ee4d471":[5,0,1,2652,2],
 "structvk_1_1QueueFamilyProperties2.html#a75f6cec76c6d800c84d1af66b6387b5b":[5,0,1,2652,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX147 =
 "structvk_1_1ReleaseSwapchainImagesInfoEXT.html#a971847f42c50a2a66fc7a73c9f829a49":[5,0,1,2669,16],
 "structvk_1_1ReleaseSwapchainImagesInfoEXT.html#aa55caa41dc979aeab48e393063474889":[5,0,1,2669,10],
 "structvk_1_1ReleaseSwapchainImagesInfoEXT.html#aac370fe9bf840af2e9be374a879c67cc":[5,0,1,2669,3],
-"structvk_1_1ReleaseSwapchainImagesInfoEXT.html#aba13637ea43ba04a7c91f380770cfdcd":[5,0,1,2669,19]
+"structvk_1_1ReleaseSwapchainImagesInfoEXT.html#aba13637ea43ba04a7c91f380770cfdcd":[5,0,1,2669,19],
+"structvk_1_1ReleaseSwapchainImagesInfoEXT.html#abd4568a35d38e029c0ebf4c27201bba7":[5,0,1,2669,11]
 };

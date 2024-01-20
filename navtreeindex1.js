@@ -29,8 +29,7 @@ var NAVTREEINDEX1 =
 "Samples_SurfaceFormats.html":[2,48],
 "Samples_Template.html":[2,49],
 "Samples_TexelBuffer.html":[2,50],
-"Samples_VideoDecodeSingleImage.html":[2,51],
-"Samples_utils.html":[2,52],
+"Samples_utils.html":[2,51],
 "SecondaryCommandBuffer_8cpp.html":[6,0,1,44,0],
 "SecondaryCommandBuffer_8cpp.html#a2c3f6775325c30275d11c6abee2db6a0":[6,0,1,44,0,0],
 "SecondaryCommandBuffer_8cpp_source.html":[6,0,1,44,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classvk_1_1CommandBuffer.html#a06d5aca1e595e21656f0d622904f13cd":[5,0,1,1146,515],
 "classvk_1_1CommandBuffer.html#a07462c2e310d8ad9306a0618ffb2bc7f":[5,0,1,1146,642],
 "classvk_1_1CommandBuffer.html#a07954abc345f6f80a7af3fbb9d72075e":[5,0,1,1146,645],
-"classvk_1_1CommandBuffer.html#a07f7d63a8a6348a7517ad63d4c64fb12":[5,0,1,1146,750]
+"classvk_1_1CommandBuffer.html#a07f7d63a8a6348a7517ad63d4c64fb12":[5,0,1,1146,750],
+"classvk_1_1CommandBuffer.html#a0861633263ebb6e4400e57a6d47da970":[5,0,1,1146,763]
 };

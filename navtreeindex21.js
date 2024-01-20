@@ -1,6 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"classvk_1_1StridedArrayProxy.html#a1f06d6bd1f6d2cce7118fc5097a03ef9":[5,0,1,7,0],
 "classvk_1_1StridedArrayProxy.html#a39d1fd7e2d2a1859e55e4b4d118e98c5":[5,0,1,7,3],
 "classvk_1_1StridedArrayProxy.html#a8d8bbaa89c5bf9d014abf407b02106f5":[5,0,1,7,1],
 "classvk_1_1StridedArrayProxy.html#a9ab8deebb7b4d79a6971be492c602502":[5,0,1,7,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX21 =
 "classvk_1_1raii_1_1AccelerationStructureKHR.html#ab6dc015cfa5aca32e18a27273fff3f35":[5,0,1,0,9,2],
 "classvk_1_1raii_1_1AccelerationStructureKHR.html#abac68ee286fac1dcd037de7673bf08e5":[5,0,1,0,9,7],
 "classvk_1_1raii_1_1AccelerationStructureKHR.html#acc79eb5976dc881b6337c87eb3c88d79":[5,0,1,0,9,14],
-"classvk_1_1raii_1_1AccelerationStructureKHR.html#af3bf69d672fa4f457aeb0f1114e81a85":[5,0,1,0,9,8]
+"classvk_1_1raii_1_1AccelerationStructureKHR.html#af3bf69d672fa4f457aeb0f1114e81a85":[5,0,1,0,9,8],
+"classvk_1_1raii_1_1AccelerationStructureKHR.html#af76124ac9046e38cdf3df14e6f63854d":[5,0,1,0,9,15]
 };

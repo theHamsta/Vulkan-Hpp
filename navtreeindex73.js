@@ -1,6 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"structVkPhysicalDeviceVulkan11Properties.html#a9847cdc93da6b3a57ea177818c262be1":[5,0,713,2],
 "structVkPhysicalDeviceVulkan11Properties.html#a9c6cf4fe79487fec2bcf9f3ab3c5057f":[5,0,713,10],
 "structVkPhysicalDeviceVulkan11Properties.html#a9f0875c03f19b3170dfad4c0f1077710":[5,0,713,7],
 "structVkPhysicalDeviceVulkan11Properties.html#aa94a932ac0694a35c2ac0dc9ed4927e9":[5,0,713,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX73 =
 "structVkPipelineColorWriteCreateInfoEXT.html":[5,0,729],
 "structVkPipelineColorWriteCreateInfoEXT.html#a50211d5ca5ebe26e9c21d62da0d43fa5":[5,0,729,1],
 "structVkPipelineColorWriteCreateInfoEXT.html#a782d1398d3fd501d272c081e9ad14d49":[5,0,729,3],
-"structVkPipelineColorWriteCreateInfoEXT.html#a9f1f13a2e57fda3c916e3421d9c098aa":[5,0,729,0]
+"structVkPipelineColorWriteCreateInfoEXT.html#a9f1f13a2e57fda3c916e3421d9c098aa":[5,0,729,0],
+"structVkPipelineColorWriteCreateInfoEXT.html#afe88d228ed8b304a7a180606d11912eb":[5,0,729,2]
 };

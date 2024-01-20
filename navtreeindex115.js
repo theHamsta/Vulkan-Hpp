@@ -1,6 +1,5 @@
 var NAVTREEINDEX115 =
 {
-"structvk_1_1MemoryBarrier.html#a1a691d6d60fdefe5e67093c03bce1ec0":[5,0,1,1873,15],
 "structvk_1_1MemoryBarrier.html#a1bfc514fa8e540579339ab36903b8f8a":[5,0,1,1873,3],
 "structvk_1_1MemoryBarrier.html#a48de339a73657e4dd082b62187e08cf4":[5,0,1,1873,11],
 "structvk_1_1MemoryBarrier.html#a514e27511361caba792df9b79de4e566":[5,0,1,1873,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX115 =
 "structvk_1_1MemoryToImageCopyEXT.html#aab74c0a9524a0ca8bbee2f6477187715":[5,0,1,1480,11],
 "structvk_1_1MemoryToImageCopyEXT.html#ac8dddcd08224e4e69e7079136e8e97e3":[5,0,1,1480,6],
 "structvk_1_1MemoryToImageCopyEXT.html#acb0e561bc6c1896849280d641e760340":[5,0,1,1480,18],
-"structvk_1_1MemoryToImageCopyEXT.html#acde15243d8b5e1fec1e6886f825af677":[5,0,1,1480,19]
+"structvk_1_1MemoryToImageCopyEXT.html#acde15243d8b5e1fec1e6886f825af677":[5,0,1,1480,19],
+"structvk_1_1MemoryToImageCopyEXT.html#ace6a4820e05d109c89608397839640b8":[5,0,1,1480,4]
 };

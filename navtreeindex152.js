@@ -1,6 +1,5 @@
 var NAVTREEINDEX152 =
 {
-"structvk_1_1SetStateFlagsIndirectCommandNV.html#a2529fea1d57b49c5d86fb213b95958b4":[5,0,1,2760,1],
 "structvk_1_1SetStateFlagsIndirectCommandNV.html#a38fe9b36f20652a67158aaaf5a775b26":[5,0,1,2760,3],
 "structvk_1_1SetStateFlagsIndirectCommandNV.html#a49dd4cc1c28b94e7ca4a83260f1704a5":[5,0,1,2760,5],
 "structvk_1_1SetStateFlagsIndirectCommandNV.html#a7576a738e8281bbb8f09d27b6d8ddf96":[5,0,1,2760,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX152 =
 "structvk_1_1SparseImageMemoryBindInfo.html#a445bd90f8dbd4f250b8d6549a159e124":[5,0,1,1364,11],
 "structvk_1_1SparseImageMemoryBindInfo.html#a47ab1de13f5c792288d0cd22fde068cc":[5,0,1,1364,3],
 "structvk_1_1SparseImageMemoryBindInfo.html#a52123a1728e75c239356d7213a3cc2c2":[5,0,1,1364,16],
-"structvk_1_1SparseImageMemoryBindInfo.html#a5c3d6a41d9937637804c29f2f9108641":[5,0,1,1364,17]
+"structvk_1_1SparseImageMemoryBindInfo.html#a5c3d6a41d9937637804c29f2f9108641":[5,0,1,1364,17],
+"structvk_1_1SparseImageMemoryBindInfo.html#a623925ecb4acf34e9225e6e33e4bbfc1":[5,0,1,1364,7]
 };

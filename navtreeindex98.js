@@ -1,6 +1,5 @@
 var NAVTREEINDEX98 =
 {
-"structvk_1_1CuLaunchInfoNVX.html#a4517d73140cc89cca39beb0536ec846a":[5,0,1,1492,27],
 "structvk_1_1CuLaunchInfoNVX.html#a4754114633475e7bfedc6026831a4b59":[5,0,1,1492,17],
 "structvk_1_1CuLaunchInfoNVX.html#a5b070dc1dde5f882d7b1e4cce252829c":[5,0,1,1492,25],
 "structvk_1_1CuLaunchInfoNVX.html#a5cf28e3fa7b33bab410bb6662bcb624d":[5,0,1,1492,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX98 =
 "structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a57b3e7d2cd9c53d3a4778a64a1a075e5":[5,0,1,1514,20],
 "structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a6d689555050dab86be04f01d9fd0958e":[5,0,1,1514,21],
 "structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a729a8256b957d22205d70d2abfa96ec3":[5,0,1,1514,8],
-"structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a7e4c3380f590ea879f10b4b578abc5f4":[5,0,1,1514,26]
+"structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a7e4c3380f590ea879f10b4b578abc5f4":[5,0,1,1514,26],
+"structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a7e8faad89d588b82b48fd73bb0dbf3f2":[5,0,1,1514,24]
 };

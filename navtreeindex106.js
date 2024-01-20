@@ -1,6 +1,5 @@
 var NAVTREEINDEX106 =
 {
-"structvk_1_1ExportFenceCreateInfo.html#a7b8b98e3c3963df08ab159da51b52b3f":[5,0,1,1687,4],
 "structvk_1_1ExportFenceCreateInfo.html#a7e41900eb0935bc32118b9a03997cf2b":[5,0,1,1687,14],
 "structvk_1_1ExportFenceCreateInfo.html#a8853b300cda5f48e959111f5da3f7ebe":[5,0,1,1687,0],
 "structvk_1_1ExportFenceCreateInfo.html#ab5d498143ced8ccdbe8a1754ddc3e721":[5,0,1,1687,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX106 =
 "structvk_1_1ExternalSemaphoreProperties.html#a5e38b3369424f360f56a414926e4b31d":[5,0,1,1713,2],
 "structvk_1_1ExternalSemaphoreProperties.html#a757ba7a52d938fe90b90c95db113d592":[5,0,1,1713,10],
 "structvk_1_1ExternalSemaphoreProperties.html#a965f31c74cf065e40e1faf0cc05d8af8":[5,0,1,1713,12],
-"structvk_1_1ExternalSemaphoreProperties.html#abc6f838b2028af2df0e8c02e6fd70cb9":[5,0,1,1713,1]
+"structvk_1_1ExternalSemaphoreProperties.html#abc6f838b2028af2df0e8c02e6fd70cb9":[5,0,1,1713,1],
+"structvk_1_1ExternalSemaphoreProperties.html#ac7a0120686214d306d1ba82b8a46f12c":[5,0,1,1713,9]
 };

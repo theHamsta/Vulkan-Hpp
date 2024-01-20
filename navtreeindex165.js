@@ -1,6 +1,5 @@
 var NAVTREEINDEX165 =
 {
-"structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#af0f1cf517392f7b5f069a7f3766be1c3":[5,0,1,2954,20],
 "structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#af13a034a0fa0bf129f97f8fa1a7d03a5":[5,0,1,2954,18],
 "structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#af34a406d1ddfdb4a1a4b635881c6703a":[5,0,1,2954,19],
 "structvk_1_1VideoEncodeInfoKHR.html":[5,0,1,2956],
@@ -249,5 +248,6 @@ var NAVTREEINDEX165 =
 "structvk_1_1VideoProfileInfoKHR.html#a02ac9dd6316faae77af1d070924e5968":[5,0,1,2490,16],
 "structvk_1_1VideoProfileInfoKHR.html#a110487c97a5eb56b6b7ed597d3ea5ece":[5,0,1,2490,4],
 "structvk_1_1VideoProfileInfoKHR.html#a24fd1853578c81884aa4d850e2146c7b":[5,0,1,2490,11],
-"structvk_1_1VideoProfileInfoKHR.html#a3c2b5fec1584adf9a05bc1994aa2be33":[5,0,1,2490,10]
+"structvk_1_1VideoProfileInfoKHR.html#a3c2b5fec1584adf9a05bc1994aa2be33":[5,0,1,2490,10],
+"structvk_1_1VideoProfileInfoKHR.html#a3efbdb6a3d3620eb63a9bf5008e24194":[5,0,1,2490,9]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"structvk_1_1DeviceFaultAddressInfoEXT.html#a6c811181552177740f0e0bde8043c7ae":[5,0,1,1589,14],
 "structvk_1_1DeviceFaultAddressInfoEXT.html#a79505fafb144bde8795d20f75eb19989":[5,0,1,1589,1],
 "structvk_1_1DeviceFaultAddressInfoEXT.html#a7d5d952f6a1427db85d54d4570c208b7":[5,0,1,1589,0],
 "structvk_1_1DeviceFaultAddressInfoEXT.html#a88809a83c5adddf7c68b2b63efb74ec3":[5,0,1,1589,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX102 =
 "structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a060adff6b97b0442f7962ae2757d65cf":[5,0,1,1610,11],
 "structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a0ea55117e774c01a2fb4ed1200bf2f6e":[5,0,1,1610,5],
 "structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a280474e7a0ef9b28bca7249ba52201c2":[5,0,1,1610,7],
-"structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a2d3299d4992d20d53888fdd049040f87":[5,0,1,1610,1]
+"structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a2d3299d4992d20d53888fdd049040f87":[5,0,1,1610,1],
+"structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a4607faa6c7cd1eb531f422967eace2c3":[5,0,1,1610,10]
 };

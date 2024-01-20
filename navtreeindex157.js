@@ -1,6 +1,5 @@
 var NAVTREEINDEX157 =
 {
-"structvk_1_1SubpassBeginInfo.html#a25c984f42f21d5f26db5acf72776b4da":[5,0,1,2784,7],
 "structvk_1_1SubpassBeginInfo.html#a2f0d77a6403d1723fd7aba82b054381b":[5,0,1,2784,12],
 "structvk_1_1SubpassBeginInfo.html#a3049e6178f5a7da7a18a2650c824872f":[5,0,1,2784,8],
 "structvk_1_1SubpassBeginInfo.html#a39a1393f44914e8f6785c8ce7a642b0d":[5,0,1,2784,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX157 =
 "structvk_1_1SubresourceHostMemcpySizeEXT.html#a36bdbef174b91602efb6f103126b2f0e":[5,0,1,2796,8],
 "structvk_1_1SubresourceHostMemcpySizeEXT.html#a6c69f8b339268772bd87169d858a3118":[5,0,1,2796,4],
 "structvk_1_1SubresourceHostMemcpySizeEXT.html#a6db592286d88285bd822ebff16e3c58c":[5,0,1,2796,3],
-"structvk_1_1SubresourceHostMemcpySizeEXT.html#a702508de5c5a2452e0bd5b62a62c6c60":[5,0,1,2796,7]
+"structvk_1_1SubresourceHostMemcpySizeEXT.html#a702508de5c5a2452e0bd5b62a62c6c60":[5,0,1,2796,7],
+"structvk_1_1SubresourceHostMemcpySizeEXT.html#a93bc739a7e6f1f813fbfe42aeee827dc":[5,0,1,2796,1]
 };

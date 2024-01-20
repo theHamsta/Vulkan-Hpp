@@ -1,6 +1,5 @@
 var NAVTREEINDEX155 =
 {
-"structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance5FeaturesKHR_00_01DeviceCreateInfo_01_4.html":[5,0,1,750],
 "structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance5FeaturesKHR_00_01PhysicalDeviceFeatures2_01_4.html":[5,0,1,749],
 "structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance5PropertiesKHR_00_01PhysicalDeviceProperties2_01_4.html":[5,0,1,751],
 "structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance6FeaturesKHR_00_01DeviceCreateInfo_01_4.html":[5,0,1,828],
@@ -249,5 +248,6 @@ var NAVTREEINDEX155 =
 "structvk_1_1StructExtends_3_01PipelineCompilerControlCreateInfoAMD_00_01GraphicsPipelineCreateInfo_01_4.html":[5,0,1,395],
 "structvk_1_1StructExtends_3_01PipelineCoverageModulationStateCreateInfoNV_00_01PipelineMultisampleStateCreateInfo_01_4.html":[5,0,1,365],
 "structvk_1_1StructExtends_3_01PipelineCoverageReductionStateCreateInfoNV_00_01PipelineMultisampleStateCreateInfo_01_4.html":[5,0,1,462],
-"structvk_1_1StructExtends_3_01PipelineCoverageToColorStateCreateInfoNV_00_01PipelineMultisampleStateCreateInfo_01_4.html":[5,0,1,355]
+"structvk_1_1StructExtends_3_01PipelineCoverageToColorStateCreateInfoNV_00_01PipelineMultisampleStateCreateInfo_01_4.html":[5,0,1,355],
+"structvk_1_1StructExtends_3_01PipelineCreateFlags2CreateInfoKHR_00_01ComputePipelineCreateInfo_01_4.html":[5,0,1,752]
 };

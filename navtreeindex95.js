@@ -1,6 +1,5 @@
 var NAVTREEINDEX95 =
 {
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShadingRateImageFeaturesNV_01_4.html#aaa52a8efecdbf4a14201e387206c363e":[5,0,1,2437,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShadingRateImagePropertiesNV_01_4.html":[5,0,1,2439],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShadingRateImagePropertiesNV_01_4.html#a389aa11158de841c1314d9af6815c922":[5,0,1,2439,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSparseImageFormatInfo2_01_4.html":[5,0,1,2441],
@@ -249,5 +248,6 @@ var NAVTREEINDEX95 =
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreateInfo_01_4.html#a4f7e44d36b56afb412c5f9038732ccb7":[5,0,1,2678,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationControlEXT_01_4.html":[5,0,1,2686],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationControlEXT_01_4.html#a20ec42cd5dbc79a6abb44edaa24a6138":[5,0,1,2686,0],
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationFeedbackCreateInfoEXT_01_4.html":[5,0,1,2689]
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationFeedbackCreateInfoEXT_01_4.html":[5,0,1,2689],
+"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationFeedbackCreateInfoEXT_01_4.html#a6f65e623bc5ad19493d5c5be909c129a":[5,0,1,2689,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX61 =
 {
-"structVkDescriptorPoolSize.html#a063411be91f66eed099f2cb8b82e7525":[5,0,220,0],
 "structVkDescriptorPoolSize.html#a89f39d0964b81836b215b60f214f0a42":[5,0,220,1],
 "structVkDescriptorSetAllocateInfo.html":[5,0,221],
 "structVkDescriptorSetAllocateInfo.html#a08d32682bc040616c0dc885cb751af48":[5,0,221,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX61 =
 "structVkDispatchIndirectCommand.html#ab859bf7583ae21562af6d2a1e07a4312":[5,0,265,1],
 "structVkDisplayEventInfoEXT.html":[5,0,266],
 "structVkDisplayEventInfoEXT.html#a1d6fc04b39537848a33f7c543748dcc9":[5,0,266,2],
-"structVkDisplayEventInfoEXT.html#a647c5db548dddd5a8d3b7a859d7dfd9d":[5,0,266,0]
+"structVkDisplayEventInfoEXT.html#a647c5db548dddd5a8d3b7a859d7dfd9d":[5,0,266,0],
+"structVkDisplayEventInfoEXT.html#ad3aa4fc4c572c5118274cfc213697e7e":[5,0,266,1]
 };

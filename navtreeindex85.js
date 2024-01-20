@@ -1,6 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"structvk_1_1BindImageMemoryDeviceGroupInfo.html#acf7b8d4c819ff56089f35e4476b32d5a":[5,0,1,1344,17],
 "structvk_1_1BindImageMemoryDeviceGroupInfo.html#ae30d76727b8fcf39870a80062f9c2b35":[5,0,1,1344,3],
 "structvk_1_1BindImageMemoryDeviceGroupInfo.html#ae5764f9e28c1a4dcb788c3dbdb298e5b":[5,0,1,1344,0],
 "structvk_1_1BindImageMemoryDeviceGroupInfo.html#af0dce347e5f954e14be381044b22d028":[5,0,1,1344,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX85 =
 "structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a1e32cd5da1a1fbf3335a5f78378629ce":[5,0,1,1377,3],
 "structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a3b65b1aca1f5c58f4aac29778b610853":[5,0,1,1377,8],
 "structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a3ffda75e2c83f6f981bfc4d5be9e2419":[5,0,1,1377,10],
-"structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a54f1b3200f9fc792c7c7323868b59ac2":[5,0,1,1377,7]
+"structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a54f1b3200f9fc792c7c7323868b59ac2":[5,0,1,1377,7],
+"structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a569713c0543a789e879a0d617957becf":[5,0,1,1377,4]
 };

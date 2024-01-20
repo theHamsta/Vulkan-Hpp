@@ -1,6 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"structVkCopyImageToImageInfoEXT.html#aa18100027bc47ed66a70dcd6805112ec":[5,0,180,4],
 "structVkCopyImageToImageInfoEXT.html#aa1cb2c6e1d8b5a00c55c55638930d845":[5,0,180,8],
 "structVkCopyImageToImageInfoEXT.html#accdabe0160f8481a57364ba5e1a3015a":[5,0,180,0],
 "structVkCopyImageToImageInfoEXT.html#ae0d6b48297d351c007f6d744b24c99aa":[5,0,180,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX60 =
 "structVkDescriptorPoolInlineUniformBlockCreateInfo.html#aaba7e038b1c82717f1f635d22e12957d":[5,0,219,0],
 "structVkDescriptorPoolInlineUniformBlockCreateInfo.html#ae25f73f9e9665ef227c9ec38cc97e02e":[5,0,219,1],
 "structVkDescriptorPoolInlineUniformBlockCreateInfo.html#aee02b61bf3ccce46b560dc34be151a5f":[5,0,219,2],
-"structVkDescriptorPoolSize.html":[5,0,220]
+"structVkDescriptorPoolSize.html":[5,0,220],
+"structVkDescriptorPoolSize.html#a063411be91f66eed099f2cb8b82e7525":[5,0,220,0]
 };

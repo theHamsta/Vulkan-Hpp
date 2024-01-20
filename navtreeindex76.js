@@ -1,6 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"structVkRenderPassCreateInfo2.html#a04300d17815293eb4e2c9ce4073357c0":[5,0,820,10],
 "structVkRenderPassCreateInfo2.html#a1403b8971a701132d0bdadb02a8f197c":[5,0,820,6],
 "structVkRenderPassCreateInfo2.html#a36f6de07f66b42429cd81161d0a5e354":[5,0,820,1],
 "structVkRenderPassCreateInfo2.html#a69d324da2da649808865f40e01f95959":[5,0,820,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX76 =
 "structVkSemaphoreWaitInfo.html#a0468bf55ffb9a079c0904c3f8a35ac7a":[5,0,853,2],
 "structVkSemaphoreWaitInfo.html#a0b88dd840faf48e833fa1f086bc17be9":[5,0,853,5],
 "structVkSemaphoreWaitInfo.html#a2714c11951abcdbd3bb23979a52631a2":[5,0,853,3],
-"structVkSemaphoreWaitInfo.html#a47d6f7084b084f09cebbf21d2a747e13":[5,0,853,1]
+"structVkSemaphoreWaitInfo.html#a47d6f7084b084f09cebbf21d2a747e13":[5,0,853,1],
+"structVkSemaphoreWaitInfo.html#a501d2a1192186d313ef17aabb1d0901f":[5,0,853,4]
 };

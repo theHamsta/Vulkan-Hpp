@@ -1,6 +1,5 @@
 var NAVTREEINDEX86 =
 {
-"structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a569713c0543a789e879a0d617957becf":[5,0,1,1377,4],
 "structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a6df56d47871c92ae419f409aa74094db":[5,0,1,1377,13],
 "structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a769a084e8726fdda3c498fefceb00246":[5,0,1,1377,9],
 "structvk_1_1BufferCaptureDescriptorDataInfoEXT.html#a92a9cadcb8828cfd9ee4b40e1dce1aa2":[5,0,1,1377,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX86 =
 "structvk_1_1BufferOpaqueCaptureAddressCreateInfo.html#ae6404eb8afd2e062619d69c97f8118d7":[5,0,1,1397,6],
 "structvk_1_1BufferOpaqueCaptureAddressCreateInfo.html#aec5f39848de0842c7e78be9f13950865":[5,0,1,1397,13],
 "structvk_1_1BufferOpaqueCaptureAddressCreateInfo.html#aedc2acdf68d5d6f1f975f3f30ccdd1a3":[5,0,1,1397,2],
-"structvk_1_1BufferUsageFlags2CreateInfoKHR.html":[5,0,1,1399]
+"structvk_1_1BufferUsageFlags2CreateInfoKHR.html":[5,0,1,1399],
+"structvk_1_1BufferUsageFlags2CreateInfoKHR.html#a0a8daf9b0381b5afa230a496137dc589":[5,0,1,1399,7]
 };

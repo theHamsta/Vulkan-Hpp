@@ -1,6 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a98b9948b90892aec6ac063351e5778fc":[5,0,1,2268,12],
 "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#aaeeaf9fd5a2e2f6ab549fcca3d133564":[5,0,1,2268,5],
 "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#ac8dc934deed687adaf3ff6508ccdf57f":[5,0,1,2268,1],
 "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#ac91044c179a7dc91e9aee564fcecf46a":[5,0,1,2268,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX131 =
 "structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a7fe7161990a0e31a388fb2ad1402a0ff":[5,0,1,2296,38],
 "structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a80504cf77e3f7ceba872595f731372e7":[5,0,1,2296,13],
 "structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a8166f2f624e66c73ead2b0e177d4b1b1":[5,0,1,2296,19],
-"structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a870458b7bfff4cf1b505c77b8e54ded6":[5,0,1,2296,25]
+"structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a870458b7bfff4cf1b505c77b8e54ded6":[5,0,1,2296,25],
+"structvk_1_1PhysicalDevicePortabilitySubsetFeaturesKHR.html#a898116510729314c231e5a887abfa0c6":[5,0,1,2296,39]
 };

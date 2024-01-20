@@ -1,6 +1,5 @@
 var NAVTREEINDEX80 =
 {
-"structVkVideoEncodeH265RateControlLayerInfoKHR.html#af22c85c04582e731844ee72bca03a9a2":[5,0,973,7],
 "structVkVideoEncodeH265SessionCreateInfoKHR.html":[5,0,974],
 "structVkVideoEncodeH265SessionCreateInfoKHR.html#a02c2cff58ed0e8f0024ee27b0c759f1e":[5,0,974,0],
 "structVkVideoEncodeH265SessionCreateInfoKHR.html#a433db22d84872ec9812ce534e181cece":[5,0,974,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX80 =
 "structstd_1_1hash_3_01vk_1_1Fence_01_4.html":[5,0,0,9],
 "structstd_1_1hash_3_01vk_1_1Fence_01_4.html#aac5968b209e60ae8b1e573a8ad39add9":[5,0,0,9,0],
 "structstd_1_1hash_3_01vk_1_1Flags_3_01BitType_01_4_01_4.html":[5,0,0,3],
-"structstd_1_1hash_3_01vk_1_1Flags_3_01BitType_01_4_01_4.html#a3e7fcd650227b8b97422d5e8987cc702":[5,0,0,3,0]
+"structstd_1_1hash_3_01vk_1_1Flags_3_01BitType_01_4_01_4.html#a3e7fcd650227b8b97422d5e8987cc702":[5,0,0,3,0],
+"structstd_1_1hash_3_01vk_1_1Framebuffer_01_4.html":[5,0,0,25]
 };

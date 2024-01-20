@@ -1,6 +1,5 @@
 var NAVTREEINDEX181 =
 {
-"vulkan__core_8h.html#a33a9fa5381f51d60ef46dc3e4f597736":[6,0,3,0,1,1,3419],
 "vulkan__core_8h.html#a33aac3ca7b151bcd92e7262064146c6a":[6,0,3,0,1,1,2155],
 "vulkan__core_8h.html#a33abebbdbdaf78829e23fbb0339a93d5":[6,0,3,0,1,1,2479],
 "vulkan__core_8h.html#a33ad4aa40afea85538334ad26600f880":[6,0,3,0,1,1,4832],
@@ -249,5 +248,6 @@ var NAVTREEINDEX181 =
 "vulkan__core_8h.html#a40478f882610f65daf837b557b30c41c":[6,0,3,0,1,1,3654],
 "vulkan__core_8h.html#a405e000199fc5646f3035b59e75322db":[6,0,3,0,1,1,2923],
 "vulkan__core_8h.html#a406f03112ce7c8164b79b2002500156d":[6,0,3,0,1,1,3737],
-"vulkan__core_8h.html#a407295195e7a22d416dd1353848b5808":[6,0,3,0,1,1,2014]
+"vulkan__core_8h.html#a407295195e7a22d416dd1353848b5808":[6,0,3,0,1,1,2014],
+"vulkan__core_8h.html#a40763acf60cc86ce8a242f5d5a30b7d3":[6,0,3,0,1,1,3108]
 };

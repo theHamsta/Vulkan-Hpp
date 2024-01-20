@@ -1,6 +1,5 @@
 var NAVTREEINDEX119 =
 {
-"structvk_1_1PhysicalDeviceAddressBindingReportFeaturesEXT.html#a57a5f65d078cbbbe0d16ffd6541df4d3":[5,0,1,1966,1],
 "structvk_1_1PhysicalDeviceAddressBindingReportFeaturesEXT.html#a5eda362d77023606843055a75ba29084":[5,0,1,1966,2],
 "structvk_1_1PhysicalDeviceAddressBindingReportFeaturesEXT.html#a62d63c5189a4e7ba4053f48c7b20088b":[5,0,1,1966,14],
 "structvk_1_1PhysicalDeviceAddressBindingReportFeaturesEXT.html#a64be012291ecf09cde21b5fb9e8b8c31":[5,0,1,1966,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX119 =
 "structvk_1_1PhysicalDeviceComputeShaderDerivativesFeaturesNV.html#a645be547b3f636641da555e892a305ca":[5,0,1,1994,15],
 "structvk_1_1PhysicalDeviceComputeShaderDerivativesFeaturesNV.html#a6e49b6188f72315c1ca5f86af93b484a":[5,0,1,1994,3],
 "structvk_1_1PhysicalDeviceComputeShaderDerivativesFeaturesNV.html#a8d4f07b73f3ac6e872a1ecdf790cb838":[5,0,1,1994,1],
-"structvk_1_1PhysicalDeviceComputeShaderDerivativesFeaturesNV.html#a9509fe45e11f70f49c11051b9ee0e330":[5,0,1,1994,0]
+"structvk_1_1PhysicalDeviceComputeShaderDerivativesFeaturesNV.html#a9509fe45e11f70f49c11051b9ee0e330":[5,0,1,1994,0],
+"structvk_1_1PhysicalDeviceComputeShaderDerivativesFeaturesNV.html#aa7ea447c9f18b4f7dbd29257c7aa8bf4":[5,0,1,1994,7]
 };

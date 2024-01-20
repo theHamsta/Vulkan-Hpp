@@ -1,6 +1,5 @@
 var NAVTREEINDEX104 =
 {
-"structvk_1_1DispatchGraphInfoAMDX.html#a574c683b68f6f87d588bad44db4a9a05":[5,0,1,1640,8],
 "structvk_1_1DispatchGraphInfoAMDX.html#a5b99ab625012445781af1215e0b4ee08":[5,0,1,1640,0],
 "structvk_1_1DispatchGraphInfoAMDX.html#a716e0b04cd712c904b310147d1da827b":[5,0,1,1640,9],
 "structvk_1_1DispatchGraphInfoAMDX.html#a79f0916da3fd0a3444d77ba40a120ebc":[5,0,1,1640,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX104 =
 "structvk_1_1DisplayProperties2KHR.html#ae819c375af415f4200a30fcf308bf169":[5,0,1,1665,4],
 "structvk_1_1DisplayProperties2KHR.html#aeaa55163963c886b49a24a67ad733995":[5,0,1,1665,11],
 "structvk_1_1DisplayProperties2KHR.html#aeaa77bac9ac9e95a484a743fc251a60f":[5,0,1,1665,5],
-"structvk_1_1DisplayPropertiesKHR.html":[5,0,1,1664]
+"structvk_1_1DisplayPropertiesKHR.html":[5,0,1,1664],
+"structvk_1_1DisplayPropertiesKHR.html#a04f11e633802ee1475833bd334961bae":[5,0,1,1664,6]
 };

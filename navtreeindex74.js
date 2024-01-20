@@ -1,6 +1,5 @@
 var NAVTREEINDEX74 =
 {
-"structVkPipelineColorWriteCreateInfoEXT.html#afe88d228ed8b304a7a180606d11912eb":[5,0,729,2],
 "structVkPipelineCompilerControlCreateInfoAMD.html":[5,0,730],
 "structVkPipelineCompilerControlCreateInfoAMD.html#a168120b15a60df5098ebcc9bc522af95":[5,0,730,0],
 "structVkPipelineCompilerControlCreateInfoAMD.html#a259aeba2a2bb659ddc6b154a903af08b":[5,0,730,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX74 =
 "structVkPipelineVertexInputStateCreateInfo.html#a449a01967fdbb82d2944a580ce317bdd":[5,0,771,5],
 "structVkPipelineVertexInputStateCreateInfo.html#a7a446052d30218e6addb7a3345cec4cb":[5,0,771,0],
 "structVkPipelineVertexInputStateCreateInfo.html#a7ad5b11e976544407d4bc28b19a048ac":[5,0,771,4],
-"structVkPipelineVertexInputStateCreateInfo.html#ac039202ac79832ec6e20426c41c6977f":[5,0,771,6]
+"structVkPipelineVertexInputStateCreateInfo.html#ac039202ac79832ec6e20426c41c6977f":[5,0,771,6],
+"structVkPipelineVertexInputStateCreateInfo.html#af8773d411306f4647a4eb36d7cd38fd4":[5,0,771,1]
 };

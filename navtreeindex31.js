@@ -1,6 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"classvk_1_1raii_1_1SwapchainKHRs.html#a033b6a4a0d228dcbc92b833a8e2c89b9":[5,0,1,0,57,4],
 "classvk_1_1raii_1_1SwapchainKHRs.html#a2bfbbd0eadde5a4f20552bb105d99a7f":[5,0,1,0,57,3],
 "classvk_1_1raii_1_1SwapchainKHRs.html#ad3f15c3427beb56637ea159319f2124f":[5,0,1,0,57,2],
 "classvk_1_1raii_1_1SwapchainKHRs.html#ae126980c2f3eea8e2a18ae710dfe54e3":[5,0,1,0,57,0],
@@ -185,8 +184,8 @@ var NAVTREEINDEX31 =
 "functions_d.html":[5,3,0,3],
 "functions_e.html":[5,3,0,4],
 "functions_enum.html":[5,3,4],
-"functions_eval.html":[5,3,5,0],
 "functions_eval.html":[5,3,5],
+"functions_eval.html":[5,3,5,0],
 "functions_f.html":[5,3,0,5],
 "functions_func.html":[5,3,1],
 "functions_func.html":[5,3,1,0],
@@ -227,8 +226,8 @@ var NAVTREEINDEX31 =
 "functions_r.html":[5,3,0,17],
 "functions_s.html":[5,3,0,18],
 "functions_t.html":[5,3,0,19],
-"functions_type.html":[5,3,3],
 "functions_type.html":[5,3,3,0],
+"functions_type.html":[5,3,3],
 "functions_type_d.html":[5,3,3,1],
 "functions_type_e.html":[5,3,3,2],
 "functions_type_m.html":[5,3,3,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX31 =
 "functions_vars_k.html":[5,3,2,9],
 "functions_vars_l.html":[5,3,2,10],
 "functions_vars_m.html":[5,3,2,11],
-"functions_vars_n.html":[5,3,2,12]
+"functions_vars_n.html":[5,3,2,12],
+"functions_vars_o.html":[5,3,2,13]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a3636563fbb0a2ccd4988473d952cc8e0":[5,0,1,2464,2],
 "structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a461a110d2dca382bb10d287608b458e9":[5,0,1,2464,4],
 "structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a49b5a434f674fec58f9241cb5a8db48d":[5,0,1,2464,10],
 "structvk_1_1PhysicalDeviceTextureCompressionASTCHDRFeatures.html#a4d03cc86b5bb660d9fd61170af481a67":[5,0,1,2464,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX138 =
 "structvk_1_1PhysicalDeviceVideoFormatInfoKHR.html#ac191056661aab24c710d2e1528167917":[5,0,1,2494,3],
 "structvk_1_1PhysicalDeviceVideoFormatInfoKHR.html#ac7efbf8894d741ae447ff9925bbfc197":[5,0,1,2494,11],
 "structvk_1_1PhysicalDeviceVideoFormatInfoKHR.html#ad8c2d13f219b6662acd3885d2677e19d":[5,0,1,2494,8],
-"structvk_1_1PhysicalDeviceVideoFormatInfoKHR.html#aee28e447d0ba791132c9eff7cf5e509f":[5,0,1,2494,13]
+"structvk_1_1PhysicalDeviceVideoFormatInfoKHR.html#aee28e447d0ba791132c9eff7cf5e509f":[5,0,1,2494,13],
+"structvk_1_1PhysicalDeviceVideoMaintenance1FeaturesKHR.html":[5,0,1,2496]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX103 =
 {
-"structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a4607faa6c7cd1eb531f422967eace2c3":[5,0,1,1610,10],
 "structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a4c9d31edc7d30957dc5dc19d0044d516":[5,0,1,1610,12],
 "structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a6eaa0dc39ab8b42abb167988df00e53c":[5,0,1,1610,0],
 "structvk_1_1DeviceGroupSwapchainCreateInfoKHR.html#a74bf1813353f512a561f73857f3520f2":[5,0,1,1610,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX103 =
 "structvk_1_1DispatchGraphInfoAMDX.html":[5,0,1,1640],
 "structvk_1_1DispatchGraphInfoAMDX.html#a278016d38b82993dcc9fc78b0f521f90":[5,0,1,1640,11],
 "structvk_1_1DispatchGraphInfoAMDX.html#a40fbd42a4f9a3eb7e596baa481195425":[5,0,1,1640,14],
-"structvk_1_1DispatchGraphInfoAMDX.html#a45aec8e70537d1cf59aab2d9323e0251":[5,0,1,1640,1]
+"structvk_1_1DispatchGraphInfoAMDX.html#a45aec8e70537d1cf59aab2d9323e0251":[5,0,1,1640,1],
+"structvk_1_1DispatchGraphInfoAMDX.html#a574c683b68f6f87d588bad44db4a9a05":[5,0,1,1640,8]
 };

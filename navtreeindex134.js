@@ -1,6 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#ad910fe28949440cda729d0e9f571f1d9":[5,0,1,2354,0],
 "structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#ade6768741e5552e0bcf59bb26c3baad8":[5,0,1,2354,2],
 "structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#af5e010bfa05c7c4fd5232a0997b6b8c9":[5,0,1,2354,6],
 "structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#af692e0abb4efa2efdd6babce5d874958":[5,0,1,2354,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX134 =
 "structvk_1_1PhysicalDeviceShaderClockFeaturesKHR.html":[5,0,1,2380],
 "structvk_1_1PhysicalDeviceShaderClockFeaturesKHR.html#a02e103676001510c0fe3851e68a32451":[5,0,1,2380,15],
 "structvk_1_1PhysicalDeviceShaderClockFeaturesKHR.html#a0dd453aea1fed6b6b53c4d5708182290":[5,0,1,2380,1],
-"structvk_1_1PhysicalDeviceShaderClockFeaturesKHR.html#a11b1194e62d2c11d163297a3d8631ac2":[5,0,1,2380,12]
+"structvk_1_1PhysicalDeviceShaderClockFeaturesKHR.html#a11b1194e62d2c11d163297a3d8631ac2":[5,0,1,2380,12],
+"structvk_1_1PhysicalDeviceShaderClockFeaturesKHR.html#a1765507b02fa012e71f48b5c0d388b37":[5,0,1,2380,4]
 };

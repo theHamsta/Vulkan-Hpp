@@ -1,6 +1,5 @@
 var NAVTREEINDEX113 =
 {
-"structvk_1_1ImageViewSlicedCreateInfoEXT.html#a084caa0db3fd2d247510643419c6246d":[5,0,1,1834,7],
 "structvk_1_1ImageViewSlicedCreateInfoEXT.html#a0e42ed216879e50c2d7f851877cf21f2":[5,0,1,1834,5],
 "structvk_1_1ImageViewSlicedCreateInfoEXT.html#a1cfe0eba585641027a1a376f720ae381":[5,0,1,1834,6],
 "structvk_1_1ImageViewSlicedCreateInfoEXT.html#a25667df2b0f006b3078c9d6dac666107":[5,0,1,1834,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX113 =
 "structvk_1_1InstanceCreateInfo.html#a65492c5c98a26cf6bb17140807ffb068":[5,0,1,1853,23],
 "structvk_1_1InstanceCreateInfo.html#a6b7c65580fb7a74bba8e75d0cdcdab3a":[5,0,1,1853,7],
 "structvk_1_1InstanceCreateInfo.html#a71f14338d7d51e9500f272a01b0541ae":[5,0,1,1853,20],
-"structvk_1_1InstanceCreateInfo.html#a770515594fc96b1c593687d5e46d23f0":[5,0,1,1853,11]
+"structvk_1_1InstanceCreateInfo.html#a770515594fc96b1c593687d5e46d23f0":[5,0,1,1853,11],
+"structvk_1_1InstanceCreateInfo.html#a7bfd577e66c81470a47cbbb438cf7ac1":[5,0,1,1853,12]
 };

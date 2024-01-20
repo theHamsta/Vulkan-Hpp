@@ -1,6 +1,5 @@
 var NAVTREEINDEX153 =
 {
-"structvk_1_1SparseImageMemoryBindInfo.html#a623925ecb4acf34e9225e6e33e4bbfc1":[5,0,1,1364,7],
 "structvk_1_1SparseImageMemoryBindInfo.html#a6afedd6cc8c326a446776d72de23e991":[5,0,1,1364,13],
 "structvk_1_1SparseImageMemoryBindInfo.html#a70af37e3f50b60c37c3ab6833cd5fc44":[5,0,1,1364,12],
 "structvk_1_1SparseImageMemoryBindInfo.html#a7f95ea68e9d2e2007d54881233c53856":[5,0,1,1364,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX153 =
 "structvk_1_1StructExtends_3_01HostImageCopyDevicePerformanceQueryEXT_00_01ImageFormatProperties2_01_4.html":[5,0,1,487],
 "structvk_1_1StructExtends_3_01ImageCompressionControlEXT_00_01ImageCreateInfo_01_4.html":[5,0,1,592],
 "structvk_1_1StructExtends_3_01ImageCompressionControlEXT_00_01PhysicalDeviceImageFormatInfo2_01_4.html":[5,0,1,594],
-"structvk_1_1StructExtends_3_01ImageCompressionControlEXT_00_01SwapchainCreateInfoKHR_01_4.html":[5,0,1,593]
+"structvk_1_1StructExtends_3_01ImageCompressionControlEXT_00_01SwapchainCreateInfoKHR_01_4.html":[5,0,1,593],
+"structvk_1_1StructExtends_3_01ImageCompressionPropertiesEXT_00_01ImageFormatProperties2_01_4.html":[5,0,1,595]
 };

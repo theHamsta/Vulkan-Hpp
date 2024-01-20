@@ -1,6 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"structvk_1_1PhysicalDeviceExternalImageFormatInfo.html#af59aa5c5d29195369c21ad07bcbe704e":[5,0,1,2096,2],
 "structvk_1_1PhysicalDeviceExternalImageFormatInfo.html#af78bc42f16501b92974f00328040f0b6":[5,0,1,2096,12],
 "structvk_1_1PhysicalDeviceExternalMemoryHostPropertiesEXT.html":[5,0,1,2098],
 "structvk_1_1PhysicalDeviceExternalMemoryHostPropertiesEXT.html#a102b32ddbd2809f98ad68d08e841b4e4":[5,0,1,2098,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX124 =
 "structvk_1_1PhysicalDeviceFragmentDensityMap2FeaturesEXT.html#af49fa6a2514efaab851c8d5acbddad57":[5,0,1,2110,9],
 "structvk_1_1PhysicalDeviceFragmentDensityMap2FeaturesEXT.html#af959e323acc90abc7b61d4e25d7602ef":[5,0,1,2110,13],
 "structvk_1_1PhysicalDeviceFragmentDensityMap2FeaturesEXT.html#afc403948733cfe90b5b888bd96332a0b":[5,0,1,2110,4],
-"structvk_1_1PhysicalDeviceFragmentDensityMap2PropertiesEXT.html":[5,0,1,2112]
+"structvk_1_1PhysicalDeviceFragmentDensityMap2PropertiesEXT.html":[5,0,1,2112],
+"structvk_1_1PhysicalDeviceFragmentDensityMap2PropertiesEXT.html#a10697574d207a337b3b21eb0fc7bc4df":[5,0,1,2112,13]
 };

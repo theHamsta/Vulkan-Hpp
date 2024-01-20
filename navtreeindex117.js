@@ -1,6 +1,5 @@
 var NAVTREEINDEX117 =
 {
-"structvk_1_1MultiviewPerViewAttributesInfoNVX.html#af5eae5c32c1f8c8616da560b3c8720af":[5,0,1,1915,9],
 "structvk_1_1MultiviewPerViewAttributesInfoNVX.html#afed526b8b65e638fc701a5d739a89141":[5,0,1,1915,7],
 "structvk_1_1MultiviewPerViewRenderAreasRenderPassBeginInfoQCOM.html":[5,0,1,1917],
 "structvk_1_1MultiviewPerViewRenderAreasRenderPassBeginInfoQCOM.html#a0f3c563db2491a3313655cd81e3ec647":[5,0,1,1917,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX117 =
 "structvk_1_1PerformanceConfigurationAcquireInfoINTEL.html#a16596da83016abf9c71da1f0d6590e0e":[5,0,1,1937,12],
 "structvk_1_1PerformanceConfigurationAcquireInfoINTEL.html#a1e307062aff5cd11f265987802c17d89":[5,0,1,1937,7],
 "structvk_1_1PerformanceConfigurationAcquireInfoINTEL.html#a5e3fd627cb144a8e1d70a28e3c5e646c":[5,0,1,1937,2],
-"structvk_1_1PerformanceConfigurationAcquireInfoINTEL.html#a69eb851a226c0ceaca8c90666a1f9d55":[5,0,1,1937,10]
+"structvk_1_1PerformanceConfigurationAcquireInfoINTEL.html#a69eb851a226c0ceaca8c90666a1f9d55":[5,0,1,1937,10],
+"structvk_1_1PerformanceConfigurationAcquireInfoINTEL.html#a705ce854cf13858b5d619fad4236cc19":[5,0,1,1937,0]
 };

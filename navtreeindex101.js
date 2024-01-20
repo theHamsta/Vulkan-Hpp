@@ -1,6 +1,5 @@
 var NAVTREEINDEX101 =
 {
-"structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a06c842f14f4b2b7fc7def7d1d70c61cf":[5,0,1,1563,12],
 "structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a072dea258473e27cd48af49c568ef1bf":[5,0,1,1563,0],
 "structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a2efce97c8c3f89c11f05b09307bc86c6":[5,0,1,1563,8],
 "structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a559761ac9cc8587ea23957b699b56bc3":[5,0,1,1563,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX101 =
 "structvk_1_1DeviceFaultAddressInfoEXT.html#a404db54be6d532329b4ba32fe8e4dbbc":[5,0,1,1589,7],
 "structvk_1_1DeviceFaultAddressInfoEXT.html#a4d85fc6f3e4f0bb2077a6a18164401da":[5,0,1,1589,12],
 "structvk_1_1DeviceFaultAddressInfoEXT.html#a5e99cb82a3b96f613f23574e9945b6e6":[5,0,1,1589,9],
-"structvk_1_1DeviceFaultAddressInfoEXT.html#a694cc6dd7655ed1bb9c9fd8644f0d8b6":[5,0,1,1589,8]
+"structvk_1_1DeviceFaultAddressInfoEXT.html#a694cc6dd7655ed1bb9c9fd8644f0d8b6":[5,0,1,1589,8],
+"structvk_1_1DeviceFaultAddressInfoEXT.html#a6c811181552177740f0e0bde8043c7ae":[5,0,1,1589,14]
 };

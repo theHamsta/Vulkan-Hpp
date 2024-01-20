@@ -51,6 +51,5 @@ var Samples =
     [ "SurfaceFormats", "Samples_SurfaceFormats.html", null ],
     [ "Template", "Samples_Template.html", null ],
     [ "TexelBuffer", "Samples_TexelBuffer.html", null ],
-    [ "VideoDecodeSingleImage", "Samples_VideoDecodeSingleImage.html", null ],
     [ "utils", "Samples_utils.html", null ]
 ];

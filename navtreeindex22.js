@@ -1,6 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"classvk_1_1raii_1_1AccelerationStructureKHR.html#af76124ac9046e38cdf3df14e6f63854d":[5,0,1,0,9,15],
 "classvk_1_1raii_1_1AccelerationStructureNV.html":[5,0,1,0,10],
 "classvk_1_1raii_1_1AccelerationStructureNV.html#a0294331efe98056897f4ca99fd8b7c3a":[5,0,1,0,10,9],
 "classvk_1_1raii_1_1AccelerationStructureNV.html#a18ad4d7b8484887814ee6d2ae0fbc2fc":[5,0,1,0,10,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX22 =
 "classvk_1_1raii_1_1CommandBuffer.html#ab3652b4e0ca48ffd1fa43d760fb456dd":[5,0,1,0,14,112],
 "classvk_1_1raii_1_1CommandBuffer.html#ab3b1dee844875f3781e5b8ac170d1cf2":[5,0,1,0,14,245],
 "classvk_1_1raii_1_1CommandBuffer.html#ab3b2740b230c332fb6ca3c98bbef76fd":[5,0,1,0,14,10],
-"classvk_1_1raii_1_1CommandBuffer.html#ab3fb5d89e29e97cdbe045c283e27a2e1":[5,0,1,0,14,169]
+"classvk_1_1raii_1_1CommandBuffer.html#ab3fb5d89e29e97cdbe045c283e27a2e1":[5,0,1,0,14,169],
+"classvk_1_1raii_1_1CommandBuffer.html#ab56ecff333d9382c2a15e903358bff82":[5,0,1,0,14,217]
 };

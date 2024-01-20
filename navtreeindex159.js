@@ -1,6 +1,5 @@
 var NAVTREEINDEX159 =
 {
-"structvk_1_1SwapchainCreateInfoKHR.html#a7015566baac45b299960baab5f620344":[5,0,1,2820,35],
 "structvk_1_1SwapchainCreateInfoKHR.html#a70901a22be022f3b8738b03190761e1c":[5,0,1,2820,25],
 "structvk_1_1SwapchainCreateInfoKHR.html#a71b967bce1723192988d08e2c29534eb":[5,0,1,2820,9],
 "structvk_1_1SwapchainCreateInfoKHR.html#a7218b169879f52d2987adaee67074e91":[5,0,1,2820,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX159 =
 "structvk_1_1TraceRaysIndirectCommand2KHR.html#aa26e9a4c5306ef66264b8728608bb18e":[5,0,1,2842,24],
 "structvk_1_1TraceRaysIndirectCommand2KHR.html#aa5ccefb75d0449b7f797ad939b19ccbf":[5,0,1,2842,16],
 "structvk_1_1TraceRaysIndirectCommand2KHR.html#aaad3b2e4a42d9d7fd97aeb637a4cb5b2":[5,0,1,2842,12],
-"structvk_1_1TraceRaysIndirectCommand2KHR.html#aab35bc6163fa04b150e5ac2d13b5e1f6":[5,0,1,2842,35]
+"structvk_1_1TraceRaysIndirectCommand2KHR.html#aab35bc6163fa04b150e5ac2d13b5e1f6":[5,0,1,2842,35],
+"structvk_1_1TraceRaysIndirectCommand2KHR.html#ab411a894d7ae8f1e1874a2fc0f1ef25e":[5,0,1,2842,0]
 };

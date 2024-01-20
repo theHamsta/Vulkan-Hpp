@@ -1,6 +1,5 @@
 var NAVTREEINDEX201 =
 {
-"vulkan__core_8h.html#af9232a5eedbb1cfe3c04cb373295e998":[6,0,3,0,1,1,1553],
 "vulkan__core_8h.html#af92ebdc6bf897425ba71a61391507388":[6,0,3,0,1,1,4497],
 "vulkan__core_8h.html#af92ebdc6bf897425ba71a61391507388a1dc4d9915f88b993e7c7ba7fda860be8":[6,0,3,0,1,1,4497,2],
 "vulkan__core_8h.html#af92ebdc6bf897425ba71a61391507388a29739f9ba3b76797caa00a8feefef1c8":[6,0,3,0,1,1,4497,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX201 =
 "vulkan__core_8h.html#aff9f2b99398eb80a2b5a146bc5534ce8a1a2a4d266938f43868a6ee5a471e1abe":[6,0,3,0,1,1,4471,341],
 "vulkan__core_8h.html#aff9f2b99398eb80a2b5a146bc5534ce8a1a368a46943345bf11a6f3fb2a7ec6e8":[6,0,3,0,1,1,4471,243],
 "vulkan__core_8h.html#aff9f2b99398eb80a2b5a146bc5534ce8a1a73fe5c69790065d48cfa950bcedaf4":[6,0,3,0,1,1,4471,597],
-"vulkan__core_8h.html#aff9f2b99398eb80a2b5a146bc5534ce8a1a9ec7ab40a9a756c280cfc0f9d663bf":[6,0,3,0,1,1,4471,237]
+"vulkan__core_8h.html#aff9f2b99398eb80a2b5a146bc5534ce8a1a9ec7ab40a9a756c280cfc0f9d663bf":[6,0,3,0,1,1,4471,237],
+"vulkan__core_8h.html#aff9f2b99398eb80a2b5a146bc5534ce8a1b05472d6af242f62750cee55ca3a652":[6,0,3,0,1,1,4471,447]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX148 =
 {
-"structvk_1_1ReleaseSwapchainImagesInfoEXT.html#abd4568a35d38e029c0ebf4c27201bba7":[5,0,1,2669,11],
 "structvk_1_1ReleaseSwapchainImagesInfoEXT.html#ac71a7db580927511c5ca8e6d17814188":[5,0,1,2669,2],
 "structvk_1_1RenderPassAttachmentBeginInfo.html":[5,0,1,2671],
 "structvk_1_1RenderPassAttachmentBeginInfo.html#a0afdc96b98ce3d51555689495bb9b4ab":[5,0,1,2671,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX148 =
 "structvk_1_1RenderPassSampleLocationsBeginInfoEXT.html#aaded3bf4cb04a696a67d9284f6c5e8c5":[5,0,1,2697,0],
 "structvk_1_1RenderPassSampleLocationsBeginInfoEXT.html#ab946feecb9f6aa5f8967eea19dd2796f":[5,0,1,2697,1],
 "structvk_1_1RenderPassSampleLocationsBeginInfoEXT.html#abb59c01a58f0e5f28ce85f138d7a27bd":[5,0,1,2697,18],
-"structvk_1_1RenderPassSampleLocationsBeginInfoEXT.html#ad2bfc4d3b83b940a272ab19f1b7906c4":[5,0,1,2697,19]
+"structvk_1_1RenderPassSampleLocationsBeginInfoEXT.html#ad2bfc4d3b83b940a272ab19f1b7906c4":[5,0,1,2697,19],
+"structvk_1_1RenderPassSampleLocationsBeginInfoEXT.html#ae1d9c53b076023ed750659019988009b":[5,0,1,2697,17]
 };

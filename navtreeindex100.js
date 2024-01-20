@@ -1,6 +1,5 @@
 var NAVTREEINDEX100 =
 {
-"structvk_1_1DescriptorAddressInfoEXT.html#ad04172d1436466b8382201aae6572ee1":[5,0,1,1538,12],
 "structvk_1_1DescriptorAddressInfoEXT.html#ad3b5eeffb29de6d4366909a203c93c0b":[5,0,1,1538,16],
 "structvk_1_1DescriptorAddressInfoEXT.html#ae2c72f72fe10b7d7bc16f4a0195dd5c9":[5,0,1,1538,4],
 "structvk_1_1DescriptorAddressInfoEXT.html#afee9e1ca35e5cafae0cc824e1194a6cf":[5,0,1,1538,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX100 =
 "structvk_1_1DescriptorSetLayoutCreateInfo.html#aedabe6f37783f2d3b414143ecf070b40":[5,0,1,1561,19],
 "structvk_1_1DescriptorSetLayoutCreateInfo.html#afcc32e50c18f3d3bc00c122e324bdba5":[5,0,1,1561,1],
 "structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html":[5,0,1,1563],
-"structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a0637f02caa3fa3becae9dd69f5db8b55":[5,0,1,1563,14]
+"structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a0637f02caa3fa3becae9dd69f5db8b55":[5,0,1,1563,14],
+"structvk_1_1DescriptorSetLayoutHostMappingInfoVALVE.html#a06c842f14f4b2b7fc7def7d1d70c61cf":[5,0,1,1563,12]
 };

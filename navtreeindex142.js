@@ -1,6 +1,5 @@
 var NAVTREEINDEX142 =
 {
-"structvk_1_1PipelineDepthStencilStateCreateInfo.html#a9a4baacee26aaf3dc5677290c9b65623":[5,0,1,1762,32],
 "structvk_1_1PipelineDepthStencilStateCreateInfo.html#a9ba776410a922acb64e84bbc7e37b7bb":[5,0,1,1762,7],
 "structvk_1_1PipelineDepthStencilStateCreateInfo.html#a9f2dc7978e18d4583f023e286cd00c14":[5,0,1,1762,9],
 "structvk_1_1PipelineDepthStencilStateCreateInfo.html#aa0f62311d9bdd61b1c7dd08b012c20cb":[5,0,1,1762,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX142 =
 "structvk_1_1PipelineLayoutCreateInfo.html#ae5a287e5486b67684368857bea1ade11":[5,0,1,2562,7],
 "structvk_1_1PipelineLayoutCreateInfo.html#af0b166b1c36522e377ff944f8cf429b1":[5,0,1,2562,17],
 "structvk_1_1PipelineLayoutCreateInfo.html#af592c43df70372b673fede9d66531f65":[5,0,1,2562,2],
-"structvk_1_1PipelineLayoutCreateInfo.html#afd4e6a132acd6537980a54991e4a56f0":[5,0,1,2562,18]
+"structvk_1_1PipelineLayoutCreateInfo.html#afd4e6a132acd6537980a54991e4a56f0":[5,0,1,2562,18],
+"structvk_1_1PipelineLibraryCreateInfoKHR.html":[5,0,1,1681]
 };

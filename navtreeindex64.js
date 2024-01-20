@@ -1,6 +1,5 @@
 var NAVTREEINDEX64 =
 {
-"structVkImageMemoryBarrier2.html#afd15f557b0982da242fc4fb25e86731a":[5,0,350,6],
 "structVkImageMemoryRequirementsInfo2.html":[5,0,351],
 "structVkImageMemoryRequirementsInfo2.html#a18f39cd9bb0e6f03e6276435dad7e298":[5,0,351,0],
 "structVkImageMemoryRequirementsInfo2.html#a61a02f24af3b7ab413ae27094c692906":[5,0,351,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX64 =
 "structVkMemoryAllocateInfo.html#a75e3b738318f8247395f02ea9d6a22ad":[5,0,392,0],
 "structVkMemoryAllocateInfo.html#a93a9b6ee1e272c5a7aad3d7a96d2d0da":[5,0,392,2],
 "structVkMemoryBarrier.html":[5,0,393],
-"structVkMemoryBarrier.html#a009343c923f7ddfb6d7ec5481efd3b71":[5,0,393,3]
+"structVkMemoryBarrier.html#a009343c923f7ddfb6d7ec5481efd3b71":[5,0,393,3],
+"structVkMemoryBarrier.html#a364f90c26c18f5626f7777a419b8fb08":[5,0,393,1]
 };

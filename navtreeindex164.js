@@ -1,6 +1,5 @@
 var NAVTREEINDEX164 =
 {
-"structvk_1_1VideoEncodeH265NaluSliceSegmentInfoKHR.html#a4f5a419364aea7b2accfa384124c316a":[5,0,1,2933,2],
 "structvk_1_1VideoEncodeH265NaluSliceSegmentInfoKHR.html#a5ecb852bf2b1e33fc139ccb7ae4372f9":[5,0,1,2933,10],
 "structvk_1_1VideoEncodeH265NaluSliceSegmentInfoKHR.html#a60d6b3b59aa9db1daf6505beb8753da7":[5,0,1,2933,7],
 "structvk_1_1VideoEncodeH265NaluSliceSegmentInfoKHR.html#a63f5e9d9913c5ee1bb09db28673ac076":[5,0,1,2933,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX164 =
 "structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#ac7b6895a5daaaadf294292b18c29591a":[5,0,1,2954,17],
 "structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#ac96527ecd13b99adba49f6126fce29a2":[5,0,1,2954,2],
 "structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#acd14a8ec0350d84b2d101541644586a2":[5,0,1,2954,22],
-"structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#ae9365854903cf34f0d08e2a5a2412411":[5,0,1,2954,11]
+"structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#ae9365854903cf34f0d08e2a5a2412411":[5,0,1,2954,11],
+"structvk_1_1VideoEncodeH265SessionParametersGetInfoKHR.html#af0f1cf517392f7b5f069a7f3766be1c3":[5,0,1,2954,20]
 };

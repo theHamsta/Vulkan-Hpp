@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"classvk_1_1PhysicalDevice.html#aeb225decf2e8aa92efdfb967d2246c34":[5,0,1,1241,188],
 "classvk_1_1PhysicalDevice.html#aeb3387e08f76b6982329b1f499703830":[5,0,1,1241,263],
 "classvk_1_1PhysicalDevice.html#aecb1ac54a1db5fb42befd2bdb57bbbe7":[5,0,1,1241,33],
 "classvk_1_1PhysicalDevice.html#aee5743e501a5837fd14cb576cbe00b31":[5,0,1,1241,74],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "classvk_1_1ShaderModule.html#ab9734d014b04b44f66cbded7852dde7a":[5,0,1,1218,4],
 "classvk_1_1ShaderModule.html#abc5805ec37c7cb041b7944e515094b79":[5,0,1,1218,1],
 "classvk_1_1ShaderModule.html#afcd8765902de3f65eac1a17f1d57fac4":[5,0,1,1218,3],
-"classvk_1_1StridedArrayProxy.html":[5,0,1,7]
+"classvk_1_1StridedArrayProxy.html":[5,0,1,7],
+"classvk_1_1StridedArrayProxy.html#a1f06d6bd1f6d2cce7118fc5097a03ef9":[5,0,1,7,0]
 };

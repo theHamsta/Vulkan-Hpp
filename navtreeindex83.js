@@ -1,6 +1,5 @@
 var NAVTREEINDEX83 =
 {
-"structvk_1_1AccelerationStructureTrianglesDisplacementMicromapNV.html#aa56326b25c94d11e56ccc4edc2dadc5e":[5,0,1,1297,1],
 "structvk_1_1AccelerationStructureTrianglesDisplacementMicromapNV.html#aa84b33e911751543692e5a6155092358":[5,0,1,1297,23],
 "structvk_1_1AccelerationStructureTrianglesDisplacementMicromapNV.html#aae473aae59898e7891f956df6f73f831":[5,0,1,1297,33],
 "structvk_1_1AccelerationStructureTrianglesDisplacementMicromapNV.html#ab07dec36e6230d5475e0801416d3c57d":[5,0,1,1297,28],
@@ -249,5 +248,6 @@ var NAVTREEINDEX83 =
 "structvk_1_1AttachmentDescriptionStencilLayout.html#abb22573c92b37b2b479fba1283874272":[5,0,1,1316,5],
 "structvk_1_1AttachmentDescriptionStencilLayout.html#acb767c716fd18d1eb57f9b29f384797c":[5,0,1,1316,1],
 "structvk_1_1AttachmentDescriptionStencilLayout.html#adb98dbd9ae84d426541a976ee2470433":[5,0,1,1316,10],
-"structvk_1_1AttachmentReference.html":[5,0,1,1318]
+"structvk_1_1AttachmentReference.html":[5,0,1,1318],
+"structvk_1_1AttachmentReference.html#a0c98692165bc69b110df64511dd71ab4":[5,0,1,1318,4]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a7e8faad89d588b82b48fd73bb0dbf3f2":[5,0,1,1514,24],
 "structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a808f0ab21f873f2b697ba57b989bb620":[5,0,1,1514,27],
 "structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a90581524820251b189fcc623f17cdc85":[5,0,1,1514,7],
 "structvk_1_1DebugUtilsMessengerCallbackDataEXT.html#a9b1c61f2c5661210847899d38090d638":[5,0,1,1514,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX99 =
 "structvk_1_1DescriptorAddressInfoEXT.html#ab2170555b83dc341d4136af52e720f65":[5,0,1,1538,5],
 "structvk_1_1DescriptorAddressInfoEXT.html#ab2f6c84ba0c2cb2ca4a487cd5122d0e1":[5,0,1,1538,9],
 "structvk_1_1DescriptorAddressInfoEXT.html#abc2c858643e49de7344ccb32b8bbad91":[5,0,1,1538,14],
-"structvk_1_1DescriptorAddressInfoEXT.html#acc15944cfbeea5d19b2b8d3b61c47178":[5,0,1,1538,6]
+"structvk_1_1DescriptorAddressInfoEXT.html#acc15944cfbeea5d19b2b8d3b61c47178":[5,0,1,1538,6],
+"structvk_1_1DescriptorAddressInfoEXT.html#ad04172d1436466b8382201aae6572ee1":[5,0,1,1538,12]
 };

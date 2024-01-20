@@ -1,6 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"classvk_1_1raii_1_1CommandBuffer.html#ab56ecff333d9382c2a15e903358bff82":[5,0,1,0,14,217],
 "classvk_1_1raii_1_1CommandBuffer.html#ab6945214797bbcbb2ecabe31a7dcca11":[5,0,1,0,14,88],
 "classvk_1_1raii_1_1CommandBuffer.html#ab7276d78b00cd7c8caf2d243d7bd49bd":[5,0,1,0,14,148],
 "classvk_1_1raii_1_1CommandBuffer.html#ab73d57e9f64bad7687dcfe705a897a42":[5,0,1,0,14,102],
@@ -249,5 +248,6 @@ var NAVTREEINDEX23 =
 "classvk_1_1raii_1_1DebugUtilsMessengerEXT.html#aa6bff537fa021fa33952b8da550014b1":[5,0,1,0,21,16],
 "classvk_1_1raii_1_1DebugUtilsMessengerEXT.html#ac919138fc72c8329754c3ed72eb8ae2b":[5,0,1,0,21,9],
 "classvk_1_1raii_1_1DebugUtilsMessengerEXT.html#acbeac8bb3d72f7384f88aa2c6d5c5eff":[5,0,1,0,21,7],
-"classvk_1_1raii_1_1DebugUtilsMessengerEXT.html#ad0112cda21f066a0b7822e1b3d205357":[5,0,1,0,21,6]
+"classvk_1_1raii_1_1DebugUtilsMessengerEXT.html#ad0112cda21f066a0b7822e1b3d205357":[5,0,1,0,21,6],
+"classvk_1_1raii_1_1DebugUtilsMessengerEXT.html#aec82634e0d46f929b6c8dd54dd83cb92":[5,0,1,0,21,12]
 };

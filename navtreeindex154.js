@@ -1,6 +1,5 @@
 var NAVTREEINDEX154 =
 {
-"structvk_1_1StructExtends_3_01ImageCompressionPropertiesEXT_00_01ImageFormatProperties2_01_4.html":[5,0,1,595],
 "structvk_1_1StructExtends_3_01ImageCompressionPropertiesEXT_00_01SubresourceLayout2KHR_01_4.html":[5,0,1,597],
 "structvk_1_1StructExtends_3_01ImageCompressionPropertiesEXT_00_01SurfaceFormat2KHR_01_4.html":[5,0,1,596],
 "structvk_1_1StructExtends_3_01ImageDrmFormatModifierExplicitCreateInfoEXT_00_01ImageCreateInfo_01_4.html":[5,0,1,372],
@@ -249,5 +248,6 @@ var NAVTREEINDEX154 =
 "structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance3Properties_00_01PhysicalDeviceProperties2_01_4.html":[5,0,1,120],
 "structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance4Features_00_01DeviceCreateInfo_01_4.html":[5,0,1,227],
 "structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance4Features_00_01PhysicalDeviceFeatures2_01_4.html":[5,0,1,226],
-"structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance4Properties_00_01PhysicalDeviceProperties2_01_4.html":[5,0,1,228]
+"structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance4Properties_00_01PhysicalDeviceProperties2_01_4.html":[5,0,1,228],
+"structvk_1_1StructExtends_3_01PhysicalDeviceMaintenance5FeaturesKHR_00_01DeviceCreateInfo_01_4.html":[5,0,1,750]
 };

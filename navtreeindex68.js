@@ -1,6 +1,5 @@
 var NAVTREEINDEX68 =
 {
-"structVkPhysicalDeviceFeatures.html#a7d9c3c421fd2d007655c91efbad866f7":[5,0,518,29],
 "structVkPhysicalDeviceFeatures.html#a8014312e8721552d6c5b2a66c3ca595b":[5,0,518,42],
 "structVkPhysicalDeviceFeatures.html#a85d72e44076f51cecda354fcddf9c9ce":[5,0,518,36],
 "structVkPhysicalDeviceFeatures.html#a895a95d199c62053e976f1b7d805f77e":[5,0,518,19],
@@ -249,5 +248,6 @@ var NAVTREEINDEX68 =
 "structVkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT.html#afbb2d8702fe48b0ec4c8491fbe37af42":[5,0,555,0],
 "structVkPhysicalDeviceImageViewImageFormatInfoEXT.html":[5,0,556],
 "structVkPhysicalDeviceImageViewImageFormatInfoEXT.html#a6e1fa9bf8516414491d31601c73930c9":[5,0,556,2],
-"structVkPhysicalDeviceImageViewImageFormatInfoEXT.html#abde1b151ccadbeffce4dad455dc8bf4d":[5,0,556,0]
+"structVkPhysicalDeviceImageViewImageFormatInfoEXT.html#abde1b151ccadbeffce4dad455dc8bf4d":[5,0,556,0],
+"structVkPhysicalDeviceImageViewImageFormatInfoEXT.html#ac2f8712bf47c0137abe8bfd12e2ed185":[5,0,556,1]
 };

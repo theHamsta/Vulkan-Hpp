@@ -1,6 +1,5 @@
 var NAVTREEINDEX87 =
 {
-"structvk_1_1BufferUsageFlags2CreateInfoKHR.html#a0a8daf9b0381b5afa230a496137dc589":[5,0,1,1399,7],
 "structvk_1_1BufferUsageFlags2CreateInfoKHR.html#a13aa430af170001bf41811658d217c9f":[5,0,1,1399,2],
 "structvk_1_1BufferUsageFlags2CreateInfoKHR.html#a14f017a3ac689d5668bdbe1bac54a5ea":[5,0,1,1399,9],
 "structvk_1_1BufferUsageFlags2CreateInfoKHR.html#a4e26d78e368473419e8e0d68a310c9e9":[5,0,1,1399,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX87 =
 "structvk_1_1CommandBufferBeginInfo.html#a7c44236d90c81c2f10805c69eaccc024":[5,0,1,1422,2],
 "structvk_1_1CommandBufferBeginInfo.html#a7f4c7e46e725bdf2538b2fa91df70d6e":[5,0,1,1422,10],
 "structvk_1_1CommandBufferBeginInfo.html#a81d4e546324f95109a65c024952b9958":[5,0,1,1422,12],
-"structvk_1_1CommandBufferBeginInfo.html#ac0bdb153d4fa1f7823a62a136a4d61d1":[5,0,1,1422,16]
+"structvk_1_1CommandBufferBeginInfo.html#ac0bdb153d4fa1f7823a62a136a4d61d1":[5,0,1,1422,16],
+"structvk_1_1CommandBufferBeginInfo.html#adf9b4bd88dbfe8cc156537d28c5798b2":[5,0,1,1422,1]
 };

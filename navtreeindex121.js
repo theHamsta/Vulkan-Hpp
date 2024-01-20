@@ -1,6 +1,5 @@
 var NAVTREEINDEX121 =
 {
-"structvk_1_1PhysicalDeviceCustomBorderColorFeaturesEXT.html#af0c027aeb57bf690da2a6cd86027f074":[5,0,1,2024,14],
 "structvk_1_1PhysicalDeviceCustomBorderColorPropertiesEXT.html":[5,0,1,2026],
 "structvk_1_1PhysicalDeviceCustomBorderColorPropertiesEXT.html#a16ae875d8367dde10ed2343264747712":[5,0,1,2026,5],
 "structvk_1_1PhysicalDeviceCustomBorderColorPropertiesEXT.html#a16b2a73e4e21cda05476d2b351cbe5b8":[5,0,1,2026,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX121 =
 "structvk_1_1PhysicalDeviceDescriptorIndexingFeatures.html#acebf60c996d4c1ef96a7c8cec3356c88":[5,0,1,2046,15],
 "structvk_1_1PhysicalDeviceDescriptorIndexingFeatures.html#ad69b632ba434bb4645ffbb11bf6b0fbf":[5,0,1,2046,21],
 "structvk_1_1PhysicalDeviceDescriptorIndexingFeatures.html#add1055399a18b7c7dcda8ec533f0a362":[5,0,1,2046,52],
-"structvk_1_1PhysicalDeviceDescriptorIndexingFeatures.html#ae3cf068bfd6d8aa3b3b4c5d5b1b7933c":[5,0,1,2046,13]
+"structvk_1_1PhysicalDeviceDescriptorIndexingFeatures.html#ae3cf068bfd6d8aa3b3b4c5d5b1b7933c":[5,0,1,2046,13],
+"structvk_1_1PhysicalDeviceDescriptorIndexingFeatures.html#ae6a15fae69330833ca45f3df43eabaa1":[5,0,1,2046,1]
 };

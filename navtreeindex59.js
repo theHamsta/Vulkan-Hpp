@@ -1,6 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"structVkBufferMemoryBarrier2.html#a17fab6446841e79312815c82cf85eab6":[5,0,139,9],
 "structVkBufferMemoryBarrier2.html#a23b997e73c8a636945fe3a81361494f5":[5,0,139,4],
 "structVkBufferMemoryBarrier2.html#a3205fe7ea61cb1579e2d50b4015f016f":[5,0,139,3],
 "structVkBufferMemoryBarrier2.html#a4c1a515720737113bc0955df59e843f0":[5,0,139,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX59 =
 "structVkCopyImageToImageInfoEXT.html#a3aabefc8f48f9d952b7bb375957ae7d4":[5,0,180,5],
 "structVkCopyImageToImageInfoEXT.html#a56bcb1d2be4f77d980837d05ddb5215c":[5,0,180,6],
 "structVkCopyImageToImageInfoEXT.html#a67ec0ae84609ba97d0a1e9798e5240b3":[5,0,180,7],
-"structVkCopyImageToImageInfoEXT.html#a9a471ae7a5f5050e116294ebbd54ff6e":[5,0,180,2]
+"structVkCopyImageToImageInfoEXT.html#a9a471ae7a5f5050e116294ebbd54ff6e":[5,0,180,2],
+"structVkCopyImageToImageInfoEXT.html#aa18100027bc47ed66a70dcd6805112ec":[5,0,180,4]
 };

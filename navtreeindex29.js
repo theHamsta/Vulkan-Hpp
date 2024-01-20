@@ -1,6 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"classvk_1_1raii_1_1MicromapEXT.html#aaae4540db2187e8ba76ede7afa2aa527":[5,0,1,0,38,8],
 "classvk_1_1raii_1_1MicromapEXT.html#aae1a66871ad3f385ab7f6a57648a5a72":[5,0,1,0,38,5],
 "classvk_1_1raii_1_1MicromapEXT.html#ab957c46322e8eae0a410a508d945f694":[5,0,1,0,38,15],
 "classvk_1_1raii_1_1MicromapEXT.html#ac5115f2abbec8b2635c088021d692f34":[5,0,1,0,38,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX29 =
 "classvk_1_1raii_1_1PrivateDataSlot.html#a322b26d6cd15ecf1705c0c7745592016":[5,0,1,0,45,9],
 "classvk_1_1raii_1_1PrivateDataSlot.html#a3f4be0c38f76f3810751961100101641":[5,0,1,0,45,3],
 "classvk_1_1raii_1_1PrivateDataSlot.html#a4c8760d127e97175e0e9e38dbeac276e":[5,0,1,0,45,8],
-"classvk_1_1raii_1_1PrivateDataSlot.html#a56f5dbe4619ddaf4d052478621ec8af9":[5,0,1,0,45,11]
+"classvk_1_1raii_1_1PrivateDataSlot.html#a56f5dbe4619ddaf4d052478621ec8af9":[5,0,1,0,45,11],
+"classvk_1_1raii_1_1PrivateDataSlot.html#a66d3aa39aaf59783b35a8b910dedb56b":[5,0,1,0,45,4]
 };

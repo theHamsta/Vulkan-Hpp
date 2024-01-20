@@ -1,6 +1,5 @@
 var NAVTREEINDEX97 =
 {
-"structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265SessionParametersFeedbackInfoKHR_01_4.html#a6dd2b5a97d157acb36af0b6bc72fc9bd":[5,0,1,2953,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265SessionParametersGetInfoKHR_01_4.html":[5,0,1,2955],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265SessionParametersGetInfoKHR_01_4.html#a951a2f8026d4bb577b098e2daa815f31":[5,0,1,2955,0],
 "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeInfoKHR_01_4.html":[5,0,1,2957],
@@ -249,5 +248,6 @@ var NAVTREEINDEX97 =
 "structvk_1_1CuLaunchInfoNVX.html#a26ac0a168186e8eca5749f7285fa34a9":[5,0,1,1492,36],
 "structvk_1_1CuLaunchInfoNVX.html#a2f4ce02e3aa2525457211a7cfd2cd0fb":[5,0,1,1492,39],
 "structvk_1_1CuLaunchInfoNVX.html#a32583d80d0080e0f078b7e212572d2b5":[5,0,1,1492,5],
-"structvk_1_1CuLaunchInfoNVX.html#a3afe4951497bec64e7f33bc456257baa":[5,0,1,1492,37]
+"structvk_1_1CuLaunchInfoNVX.html#a3afe4951497bec64e7f33bc456257baa":[5,0,1,1492,37],
+"structvk_1_1CuLaunchInfoNVX.html#a4517d73140cc89cca39beb0536ec846a":[5,0,1,1492,27]
 };

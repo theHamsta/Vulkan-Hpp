@@ -1,6 +1,5 @@
 var NAVTREEINDEX71 =
 {
-"structVkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT.html#a0d3c343a9441377f3f0b7fff190222de":[5,0,628,0],
 "structVkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT.html#a55ca537a1b401ebc4025138578f794c0":[5,0,628,4],
 "structVkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT.html#a89cb45ae9a364a4043bae0cffc455cd7":[5,0,628,1],
 "structVkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT.html#af5a046e1911ee41fc09ec5b26f2e0d07":[5,0,628,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX71 =
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a78f19e2cebe24ed0c88928c87ceee3e3":[5,0,668,16],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a7aed857c9b55e6778c824b9347539989":[5,0,668,7],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a7bf1be188c447a6813edeeaa3df22ad5":[5,0,668,17],
-"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a7c06fe98f2b3ccf4e5a0f3239b56a5ac":[5,0,668,19]
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a7c06fe98f2b3ccf4e5a0f3239b56a5ac":[5,0,668,19],
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a7da7bbec705e6c50bb140516370e50c3":[5,0,668,3]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX133 =
 {
-"structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a940194c938a85be1aa604eb68ed8d5ec":[5,0,1,2326,14],
 "structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#a95c9c37302aa2b60e23c5aa5c5c97e4c":[5,0,1,2326,2],
 "structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#aa6165ffc6bf1ff3005c9c7761168ef59":[5,0,1,2326,10],
 "structvk_1_1PhysicalDeviceRGBA10X6FormatsFeaturesEXT.html#ab3353fc1be8d54a62ef68e22d420d8a6":[5,0,1,2326,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX133 =
 "structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#a947b967e017598ade92582748c20f6f8":[5,0,1,2354,11],
 "structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#aac194214d1a911edfa7a8fce82abc00c":[5,0,1,2354,10],
 "structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#abb9fd051918ad8ac31ef5cab8ca76c85":[5,0,1,2354,7],
-"structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#ad25300cc478fbdc0b49698f4aa606856":[5,0,1,2354,13]
+"structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#ad25300cc478fbdc0b49698f4aa606856":[5,0,1,2354,13],
+"structvk_1_1PhysicalDeviceRepresentativeFragmentTestFeaturesNV.html#ad910fe28949440cda729d0e9f571f1d9":[5,0,1,2354,0]
 };

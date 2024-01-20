@@ -1,6 +1,5 @@
 var NAVTREEINDEX166 =
 {
-"structvk_1_1VideoProfileInfoKHR.html#a3efbdb6a3d3620eb63a9bf5008e24194":[5,0,1,2490,9],
 "structvk_1_1VideoProfileInfoKHR.html#a4c9ec01bd38c0c21719c3e1ad3dffc95":[5,0,1,2490,15],
 "structvk_1_1VideoProfileInfoKHR.html#a6638a4d950fa65550b6f843e48ed5dce":[5,0,1,2490,1],
 "structvk_1_1VideoProfileInfoKHR.html#a687ed5012d43bebf590133a926d87c67":[5,0,1,2490,19],
@@ -249,5 +248,6 @@ var NAVTREEINDEX166 =
 "structvk_1_1WriteDescriptorSetAccelerationStructureKHR.html#ae13aeb5740df3a90b4281447c6e7e447":[5,0,1,2988,16],
 "structvk_1_1WriteDescriptorSetAccelerationStructureKHR.html#ae926dfa009d13da26300f59fa45c0512":[5,0,1,2988,6],
 "structvk_1_1WriteDescriptorSetAccelerationStructureKHR.html#afee145aaed1bc28b360dba035cae2fae":[5,0,1,2988,9],
-"structvk_1_1WriteDescriptorSetAccelerationStructureNV.html":[5,0,1,2990]
+"structvk_1_1WriteDescriptorSetAccelerationStructureNV.html":[5,0,1,2990],
+"structvk_1_1WriteDescriptorSetAccelerationStructureNV.html#a07d710289d0589bce163fa6ac1ae8db3":[5,0,1,2990,1]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX78 =
 {
-"structVkSurfaceCapabilities2EXT.html#abe0671b262cc732ae3930e91023fff9d":[5,0,895,3],
 "structVkSurfaceCapabilities2EXT.html#ac545546f78de655202a06b0952077208":[5,0,895,5],
 "structVkSurfaceCapabilities2EXT.html#acb77e7499bcd8f930d4ee90664c1c05b":[5,0,895,9],
 "structVkSurfaceCapabilities2EXT.html#ad4f7fbf34bdea62f7f991754a85afb0d":[5,0,895,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX78 =
 "structVkVideoDecodeH264SessionParametersCreateInfoKHR.html#a5b380b5d6107dcf54fda3504732989fc":[5,0,937,4],
 "structVkVideoDecodeH264SessionParametersCreateInfoKHR.html#a7fa771248ab820089af5dc97ba6ac7d9":[5,0,937,1],
 "structVkVideoDecodeH264SessionParametersCreateInfoKHR.html#a8508575af6153b467cc6049ccb50218f":[5,0,937,0],
-"structVkVideoDecodeH264SessionParametersCreateInfoKHR.html#a99af829c4dc22a12fdf563aeafcf199f":[5,0,937,2]
+"structVkVideoDecodeH264SessionParametersCreateInfoKHR.html#a99af829c4dc22a12fdf563aeafcf199f":[5,0,937,2],
+"structVkVideoDecodeH264SessionParametersCreateInfoKHR.html#aeecfdcbdb4237bcdea58dfca7627b71e":[5,0,937,3]
 };
