@@ -1,0 +1,26 @@
+var structvk_1_1VideoEncodeH264PictureInfoKHR =
+[
+    [ "NativeType", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a76057297c09849d7ab073ef70f76f363", null ],
+    [ "VideoEncodeH264PictureInfoKHR", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#ae85a20f3e28653f558b1d0d4cb0aa6d4", null ],
+    [ "VideoEncodeH264PictureInfoKHR", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a04f5b304f04b3b2175488691ebc8c43c", null ],
+    [ "VideoEncodeH264PictureInfoKHR", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a3aa1504ce5c0bc39366acce56992a3a0", null ],
+    [ "VideoEncodeH264PictureInfoKHR", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#aca9f82fb10b623a2c0683c0b766f2f4e", null ],
+    [ "operator VkVideoEncodeH264PictureInfoKHR &", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a68e054a3978af8ffe82bc34109165688", null ],
+    [ "operator VkVideoEncodeH264PictureInfoKHR const &", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a2ccd73e4572ca9e19cdfb476f8495a63", null ],
+    [ "operator!=", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a36f20a30a66c156f2efe984e255e5365", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#afbbb40410fc33da2e319d772c2c76522", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a57533dab332459f7c40092a12d6b2f1e", null ],
+    [ "operator==", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a65355a1c9fcb71fff532f81ea50c9594", null ],
+    [ "setGeneratePrefixNalu", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a1e04da31cb4ee5fc74c7563bc656210e", null ],
+    [ "setNaluSliceEntries", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#ae34bdf8c71d103879e3816911a526790", null ],
+    [ "setNaluSliceEntryCount", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a2d522b04dd75f21ae347eafbbce31b30", null ],
+    [ "setPNaluSliceEntries", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a938173dd29fec95edebcd089dcbe2fee", null ],
+    [ "setPNext", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a152c51056fe3c0aaecb2a3131fb660f0", null ],
+    [ "setPStdPictureInfo", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a7ffd3b8efaaada9f1668a15a19b04aea", null ],
+    [ "generatePrefixNalu", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a0cae77857f3f0fb7a94d0a198ed84752", null ],
+    [ "naluSliceEntryCount", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a63c2fed8304790c09289a439b5cb150d", null ],
+    [ "pNaluSliceEntries", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#aeb9523b30873e06263d63c49a3ac3670", null ],
+    [ "pNext", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#af67df93c409e10941029a9de499e1c72", null ],
+    [ "pStdPictureInfo", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a1771fccba3a459f98c08fc43a6960f27", null ],
+    [ "sType", "structvk_1_1VideoEncodeH264PictureInfoKHR.html#a29517a79f98312133bb30e98fd151c9e", null ]
+];

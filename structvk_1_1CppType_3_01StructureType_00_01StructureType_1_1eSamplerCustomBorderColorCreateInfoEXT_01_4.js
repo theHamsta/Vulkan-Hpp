@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerCustomBorderColorCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerCustomBorderColorCreateInfoEXT_01_4.html#a02bc843b98c1b7554fa91af419993964", null ]
+];

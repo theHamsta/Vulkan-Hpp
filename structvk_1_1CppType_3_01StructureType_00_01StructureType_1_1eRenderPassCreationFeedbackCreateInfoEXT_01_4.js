@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationFeedbackCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassCreationFeedbackCreateInfoEXT_01_4.html#a6f65e623bc5ad19493d5c5be909c129a", null ]
+];

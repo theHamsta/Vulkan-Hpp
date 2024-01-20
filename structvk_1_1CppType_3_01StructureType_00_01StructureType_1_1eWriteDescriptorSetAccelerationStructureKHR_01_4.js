@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eWriteDescriptorSetAccelerationStructureKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eWriteDescriptorSetAccelerationStructureKHR_01_4.html#aa5bbcc4bb4e7618e29f80784a11a81f9", null ]
+];

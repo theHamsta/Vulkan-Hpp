@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePerformanceStreamMarkerInfoINTEL_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePerformanceStreamMarkerInfoINTEL_01_4.html#a12c9e40e796e956523da68f5fd64a45a", null ]
+];

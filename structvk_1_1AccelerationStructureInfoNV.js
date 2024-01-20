@@ -1,0 +1,28 @@
+var structvk_1_1AccelerationStructureInfoNV =
+[
+    [ "NativeType", "structvk_1_1AccelerationStructureInfoNV.html#a46a1212c66e30a3e7c90e6bedfa7920c", null ],
+    [ "AccelerationStructureInfoNV", "structvk_1_1AccelerationStructureInfoNV.html#a1678a4e8b7428b76e7c34ada78962380", null ],
+    [ "AccelerationStructureInfoNV", "structvk_1_1AccelerationStructureInfoNV.html#ad6b187cbf25c90a47d7c79e8637d5e03", null ],
+    [ "AccelerationStructureInfoNV", "structvk_1_1AccelerationStructureInfoNV.html#a0ce51870042959f477b8c75ccc2454ef", null ],
+    [ "AccelerationStructureInfoNV", "structvk_1_1AccelerationStructureInfoNV.html#ad325777de8d95087c5925313300b40f1", null ],
+    [ "operator VkAccelerationStructureInfoNV &", "structvk_1_1AccelerationStructureInfoNV.html#ace1b489ebf0e4f8e9af0870737797b15", null ],
+    [ "operator VkAccelerationStructureInfoNV const &", "structvk_1_1AccelerationStructureInfoNV.html#ad6e90e9c54bd4ea1cc2f6e01894cfb9c", null ],
+    [ "operator!=", "structvk_1_1AccelerationStructureInfoNV.html#aef7b209ba53e97b4192f89135f610508", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureInfoNV.html#a8d3ff99079f34586fd3847005be6e361", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureInfoNV.html#a5c336c1decfa36c604d46ae4e133176e", null ],
+    [ "operator==", "structvk_1_1AccelerationStructureInfoNV.html#a7e7bffcc28654488192fe2ffc91a3c34", null ],
+    [ "setFlags", "structvk_1_1AccelerationStructureInfoNV.html#a34131c7d6259bcf63a2e33ce696c7cbc", null ],
+    [ "setGeometries", "structvk_1_1AccelerationStructureInfoNV.html#acdb5e8b0b2534dcd6d1d7270e9a7a282", null ],
+    [ "setGeometryCount", "structvk_1_1AccelerationStructureInfoNV.html#a1d83ddd34e6bf8ed27e0eb59ea615fb7", null ],
+    [ "setInstanceCount", "structvk_1_1AccelerationStructureInfoNV.html#aa5189e71d59362000b3f120aad28a804", null ],
+    [ "setPGeometries", "structvk_1_1AccelerationStructureInfoNV.html#a704a59daf22c44e968df7a13dcec8473", null ],
+    [ "setPNext", "structvk_1_1AccelerationStructureInfoNV.html#af4ab356ef906c4d5b4d0ac31a770c45a", null ],
+    [ "setType", "structvk_1_1AccelerationStructureInfoNV.html#a7368a4b1afe905b2d3c123515be00945", null ],
+    [ "flags", "structvk_1_1AccelerationStructureInfoNV.html#a96e9dfe2ff5679d29c7811fcbf61e31b", null ],
+    [ "geometryCount", "structvk_1_1AccelerationStructureInfoNV.html#a0558888b73241238c60abb8de85bbc81", null ],
+    [ "instanceCount", "structvk_1_1AccelerationStructureInfoNV.html#aa2a254d3a4cb0a17a41c9ce255b1adf4", null ],
+    [ "pGeometries", "structvk_1_1AccelerationStructureInfoNV.html#a04706167976b2a4be111e0c100447d7c", null ],
+    [ "pNext", "structvk_1_1AccelerationStructureInfoNV.html#a00fa7214912975832669f1da73dda5be", null ],
+    [ "sType", "structvk_1_1AccelerationStructureInfoNV.html#a2f1056cea3f0f48d385952e484789234", null ],
+    [ "type", "structvk_1_1AccelerationStructureInfoNV.html#ac0a1177d78fab791915ab0f8a63cc705", null ]
+];

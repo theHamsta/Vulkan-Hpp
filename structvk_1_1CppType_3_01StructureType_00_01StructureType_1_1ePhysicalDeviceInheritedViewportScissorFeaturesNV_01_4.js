@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceInheritedViewportScissorFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceInheritedViewportScissorFeaturesNV_01_4.html#a18c615045aa9c50097ce3e693081e7e8", null ]
+];

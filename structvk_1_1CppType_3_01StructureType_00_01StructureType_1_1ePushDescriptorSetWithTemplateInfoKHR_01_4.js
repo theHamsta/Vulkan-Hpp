@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePushDescriptorSetWithTemplateInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePushDescriptorSetWithTemplateInfoKHR_01_4.html#aec4add48dcbe2eaccf7763344e1bf8b8", null ]
+];

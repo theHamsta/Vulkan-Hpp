@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceHostImageCopyPropertiesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceHostImageCopyPropertiesEXT_01_4.html#ad5575b1b49c9783d289673263ec1f2bc", null ]
+];

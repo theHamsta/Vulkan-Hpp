@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eComputePipelineIndirectBufferInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eComputePipelineIndirectBufferInfoNV_01_4.html#a8b8af91ef36b9845578a0e9821d7b205", null ]
+];

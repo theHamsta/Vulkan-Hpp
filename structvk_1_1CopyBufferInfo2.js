@@ -1,0 +1,26 @@
+var structvk_1_1CopyBufferInfo2 =
+[
+    [ "NativeType", "structvk_1_1CopyBufferInfo2.html#a532dffeed380c868d99493ceeb0ee4e6", null ],
+    [ "CopyBufferInfo2", "structvk_1_1CopyBufferInfo2.html#afee3905737db107507437cf72217b864", null ],
+    [ "CopyBufferInfo2", "structvk_1_1CopyBufferInfo2.html#aac040ea778122ff78a0bffb88c767670", null ],
+    [ "CopyBufferInfo2", "structvk_1_1CopyBufferInfo2.html#a9322980da39ddd9695e5ac8d96bcc38d", null ],
+    [ "CopyBufferInfo2", "structvk_1_1CopyBufferInfo2.html#a0d5b235ef05215a23890273b38714ef5", null ],
+    [ "operator VkCopyBufferInfo2 &", "structvk_1_1CopyBufferInfo2.html#a850240fb339afdf3937beb6c1366695f", null ],
+    [ "operator VkCopyBufferInfo2 const &", "structvk_1_1CopyBufferInfo2.html#a86788a71ddd8910ff43359ac8026fac7", null ],
+    [ "operator!=", "structvk_1_1CopyBufferInfo2.html#a852a175e65e48a0601bb385527b6431f", null ],
+    [ "operator=", "structvk_1_1CopyBufferInfo2.html#aabcb4e6ed785249b2e080e4a39a2ebe9", null ],
+    [ "operator=", "structvk_1_1CopyBufferInfo2.html#a47d8c90d180710cc5578135dac3721c3", null ],
+    [ "operator==", "structvk_1_1CopyBufferInfo2.html#ae234de961bbf8b70bbdcfc14d6e7f7ad", null ],
+    [ "setDstBuffer", "structvk_1_1CopyBufferInfo2.html#a3bcf0b5eaa403b226c4a14086ecedc85", null ],
+    [ "setPNext", "structvk_1_1CopyBufferInfo2.html#af1a5764fa98f2382318b6f4547bd3f05", null ],
+    [ "setPRegions", "structvk_1_1CopyBufferInfo2.html#a80dabef5d3bf04703e56dbf0504190eb", null ],
+    [ "setRegionCount", "structvk_1_1CopyBufferInfo2.html#af6edd79af931f0c4b66f48b3a0033f3d", null ],
+    [ "setRegions", "structvk_1_1CopyBufferInfo2.html#a0418f0badc8ec1f92e04980a3dcf2bff", null ],
+    [ "setSrcBuffer", "structvk_1_1CopyBufferInfo2.html#ab078c6414bef2f927e373fa0707c1172", null ],
+    [ "dstBuffer", "structvk_1_1CopyBufferInfo2.html#ab9c427dbe5ed86805b6f4b81681c31a1", null ],
+    [ "pNext", "structvk_1_1CopyBufferInfo2.html#a7b1957a0e6a0e2a0e83f8063c3aaecac", null ],
+    [ "pRegions", "structvk_1_1CopyBufferInfo2.html#ab6e0715e1afdcc2947454a69e0d98ef2", null ],
+    [ "regionCount", "structvk_1_1CopyBufferInfo2.html#a6e25ac89a067c691f92938c63093b0c7", null ],
+    [ "srcBuffer", "structvk_1_1CopyBufferInfo2.html#a446b5f0b0d4ba7d79f9e6a3f38df3545", null ],
+    [ "sType", "structvk_1_1CopyBufferInfo2.html#a02d76249dfa6e5959d2f6352a2df8224", null ]
+];

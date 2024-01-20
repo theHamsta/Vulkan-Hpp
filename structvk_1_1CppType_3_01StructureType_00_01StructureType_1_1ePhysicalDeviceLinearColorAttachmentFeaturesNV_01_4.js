@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceLinearColorAttachmentFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceLinearColorAttachmentFeaturesNV_01_4.html#a3bb0884cf09d3b953b653b8a0a11430a", null ]
+];

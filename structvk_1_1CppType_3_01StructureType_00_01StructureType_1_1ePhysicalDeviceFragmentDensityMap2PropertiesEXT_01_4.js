@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceFragmentDensityMap2PropertiesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceFragmentDensityMap2PropertiesEXT_01_4.html#a6482fbf673e13ad41df236c0cb7f1895", null ]
+];

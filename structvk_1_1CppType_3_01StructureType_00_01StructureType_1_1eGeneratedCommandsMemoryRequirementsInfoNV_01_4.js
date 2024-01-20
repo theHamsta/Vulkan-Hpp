@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eGeneratedCommandsMemoryRequirementsInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eGeneratedCommandsMemoryRequirementsInfoNV_01_4.html#a73167d907ed32be86a272d14e49d05ab", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM_01_4.html#a53d7bad29d1e46f9a4aa111976db2616", null ]
+];

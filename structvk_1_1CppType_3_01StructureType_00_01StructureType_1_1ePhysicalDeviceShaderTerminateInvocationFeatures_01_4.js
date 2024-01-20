@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderTerminateInvocationFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderTerminateInvocationFeatures_01_4.html#a1da79442a02d2ba53fd34edeb4c1f05f", null ]
+];

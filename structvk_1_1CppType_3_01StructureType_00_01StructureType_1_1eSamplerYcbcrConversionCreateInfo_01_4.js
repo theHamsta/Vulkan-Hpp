@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerYcbcrConversionCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerYcbcrConversionCreateInfo_01_4.html#a24c3d3e1c3c3f57b9562e4e4c5255c06", null ]
+];

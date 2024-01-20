@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineColorWriteCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineColorWriteCreateInfoEXT_01_4.html#a8badda1f2833dbdbb6f89fb365ac70bf", null ]
+];

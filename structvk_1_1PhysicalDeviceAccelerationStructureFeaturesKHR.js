@@ -1,0 +1,26 @@
+var structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a4b9b5dfb450eb5fd3ae8e54af5ed6d2b", null ],
+    [ "PhysicalDeviceAccelerationStructureFeaturesKHR", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#ab692acaf8476d3118eab4b8fd3d87f82", null ],
+    [ "PhysicalDeviceAccelerationStructureFeaturesKHR", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#ae2fd47b4949f785617e650cd6169a05e", null ],
+    [ "PhysicalDeviceAccelerationStructureFeaturesKHR", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a52b7be781007122d16bf8d0e1074d935", null ],
+    [ "operator VkPhysicalDeviceAccelerationStructureFeaturesKHR &", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a61abf131f5ced8d73f3a64307c5baa35", null ],
+    [ "operator VkPhysicalDeviceAccelerationStructureFeaturesKHR const &", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a25da03ee7541850e2312c9ea648fa01c", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a78b8587442ff4c8597c397965dc48027", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a5095dfb8f4b227df184e8434c2435c3c", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#aa501cd3884b125ee9737897c7a7be7ba", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a36578e5d9ed0bda2f7e1772448e2b0e0", null ],
+    [ "setAccelerationStructure", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#afb29c2306541d9ea7f369c994643a645", null ],
+    [ "setAccelerationStructureCaptureReplay", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a8a01bc7e5b89f446e8c57f1e154a34ca", null ],
+    [ "setAccelerationStructureHostCommands", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a981af125c4888b41df061c5c5d29b7a6", null ],
+    [ "setAccelerationStructureIndirectBuild", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#ad7459756e9ab38846be16ef05b203b9e", null ],
+    [ "setDescriptorBindingAccelerationStructureUpdateAfterBind", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a02f8ee331ad3e2950761caac717d9cb1", null ],
+    [ "setPNext", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a02ae60b532a99e749e913c1b05b47a5d", null ],
+    [ "accelerationStructure", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#ac179d85b91918c3b5f74902ddae0a8e6", null ],
+    [ "accelerationStructureCaptureReplay", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a244976ea7165efc70f22bd3c3aa4109e", null ],
+    [ "accelerationStructureHostCommands", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#aa2de1315d2bd9839b6f92587554f7735", null ],
+    [ "accelerationStructureIndirectBuild", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a5af10aa1be4514b08c7be48e46319568", null ],
+    [ "descriptorBindingAccelerationStructureUpdateAfterBind", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a3aa9d739bb212dad3e8b8cf048458cb5", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#afd3cad32cff218b09dda587e8755bc61", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceAccelerationStructureFeaturesKHR.html#a3786f4f3b9093d915dc8cb2811c646ea", null ]
+];

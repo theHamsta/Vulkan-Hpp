@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCopyMemoryIndirectPropertiesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCopyMemoryIndirectPropertiesNV_01_4.html#ad6a494b8a15e351e5b27680a39897634", null ]
+];

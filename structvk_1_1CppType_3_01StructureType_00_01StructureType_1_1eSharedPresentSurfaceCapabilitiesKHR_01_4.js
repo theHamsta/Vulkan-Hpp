@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSharedPresentSurfaceCapabilitiesKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSharedPresentSurfaceCapabilitiesKHR_01_4.html#a870fb2161caee4ae9744e8f46b7e3c86", null ]
+];

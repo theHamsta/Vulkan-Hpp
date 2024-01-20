@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceFragmentShadingRatePropertiesKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceFragmentShadingRatePropertiesKHR_01_4.html#a36a9f5c77cb19a96304da22da0fb79f1", null ]
+];

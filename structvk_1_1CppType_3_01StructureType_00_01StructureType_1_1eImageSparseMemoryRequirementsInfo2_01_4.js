@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageSparseMemoryRequirementsInfo2_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageSparseMemoryRequirementsInfo2_01_4.html#a199ea01fc2595d5cc7d9c2e0203fcf95", null ]
+];

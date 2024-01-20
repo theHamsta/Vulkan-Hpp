@@ -1,0 +1,26 @@
+var structvk_1_1SurfaceCapabilities2EXT =
+[
+    [ "NativeType", "structvk_1_1SurfaceCapabilities2EXT.html#a879b587289dd8a29069aec5be5d0d907", null ],
+    [ "SurfaceCapabilities2EXT", "structvk_1_1SurfaceCapabilities2EXT.html#a78a44a5c13031b8bc8ae3c41f43746e5", null ],
+    [ "SurfaceCapabilities2EXT", "structvk_1_1SurfaceCapabilities2EXT.html#a51087dd0e3fd13f52f20b65481fb9c1b", null ],
+    [ "SurfaceCapabilities2EXT", "structvk_1_1SurfaceCapabilities2EXT.html#a66f50c88514c149e44c31f739b30250d", null ],
+    [ "operator VkSurfaceCapabilities2EXT &", "structvk_1_1SurfaceCapabilities2EXT.html#a2c702ade429576038023743f7b0a9c93", null ],
+    [ "operator VkSurfaceCapabilities2EXT const &", "structvk_1_1SurfaceCapabilities2EXT.html#ad984b8a7a3a36aeb733aa8697201f5d7", null ],
+    [ "operator!=", "structvk_1_1SurfaceCapabilities2EXT.html#a1967ca813d61903bc1ae2c95852412a1", null ],
+    [ "operator=", "structvk_1_1SurfaceCapabilities2EXT.html#a146dcecb70961451f00f0440bfe3ed8e", null ],
+    [ "operator=", "structvk_1_1SurfaceCapabilities2EXT.html#a52a2894c65011d32230f1c2ffaa15028", null ],
+    [ "operator==", "structvk_1_1SurfaceCapabilities2EXT.html#ac6a56bb77418477bcf55b6e14bd1e960", null ],
+    [ "currentExtent", "structvk_1_1SurfaceCapabilities2EXT.html#a25bedcf88eb235d733efa8927452f4e2", null ],
+    [ "currentTransform", "structvk_1_1SurfaceCapabilities2EXT.html#ae17f76dd761686f4f4e35acdc8327903", null ],
+    [ "maxImageArrayLayers", "structvk_1_1SurfaceCapabilities2EXT.html#a6029a0d24117fd8caec526402f2653ff", null ],
+    [ "maxImageCount", "structvk_1_1SurfaceCapabilities2EXT.html#a35a26d456fb4be1af6b2b61c7198cbc1", null ],
+    [ "maxImageExtent", "structvk_1_1SurfaceCapabilities2EXT.html#abc4b4d8204b238a511619c82356afafd", null ],
+    [ "minImageCount", "structvk_1_1SurfaceCapabilities2EXT.html#af9522152ce0d3e3e9237233240e2481a", null ],
+    [ "minImageExtent", "structvk_1_1SurfaceCapabilities2EXT.html#afe39962e2ed2a6abe7075d631cf9eafe", null ],
+    [ "pNext", "structvk_1_1SurfaceCapabilities2EXT.html#a5a476580bbf48bd0205890b6dbfa9ac4", null ],
+    [ "sType", "structvk_1_1SurfaceCapabilities2EXT.html#a1f79a83b7a252b0deb64ad3d60ea17e8", null ],
+    [ "supportedCompositeAlpha", "structvk_1_1SurfaceCapabilities2EXT.html#a40d80a37dcf3a4491989d8eb6d2f711d", null ],
+    [ "supportedSurfaceCounters", "structvk_1_1SurfaceCapabilities2EXT.html#a8a246c00634d88f199f4832eaf3c7b31", null ],
+    [ "supportedTransforms", "structvk_1_1SurfaceCapabilities2EXT.html#a37e698a09bdd474020b87bb751714f56", null ],
+    [ "supportedUsageFlags", "structvk_1_1SurfaceCapabilities2EXT.html#a2562d176ace8176d92f41a924ed07f20", null ]
+];

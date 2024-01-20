@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eFilterCubicImageViewImageFormatPropertiesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eFilterCubicImageViewImageFormatPropertiesEXT_01_4.html#a0a2cd5b39d755c73858c96bac7139146", null ]
+];

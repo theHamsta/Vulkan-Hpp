@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDrmFormatModifierPropertiesList2EXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDrmFormatModifierPropertiesList2EXT_01_4.html#a15360bf5190826ca099151b215ffc0eb", null ]
+];

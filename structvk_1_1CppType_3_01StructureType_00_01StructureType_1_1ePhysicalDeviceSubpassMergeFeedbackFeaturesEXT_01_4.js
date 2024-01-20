@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSubpassMergeFeedbackFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSubpassMergeFeedbackFeaturesEXT_01_4.html#a5aa9bc2c92edd10f23103a50bb3caa0c", null ]
+];

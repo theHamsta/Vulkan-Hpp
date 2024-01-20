@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSubpassShadingPropertiesHUAWEI_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSubpassShadingPropertiesHUAWEI_01_4.html#a68d1b6bd9781d4f081ac1d4a90437e60", null ]
+];

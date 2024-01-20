@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01vk_1_1ObjectType_00_01vk_1_1ObjectType_1_1ePerformanceConfigurationINTEL_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01vk_1_1ObjectType_00_01vk_1_1ObjectType_1_1ePerformanceConfigurationINTEL_01_4.html#af249942bc2e3933be0202624fea70d9b", null ]
+];

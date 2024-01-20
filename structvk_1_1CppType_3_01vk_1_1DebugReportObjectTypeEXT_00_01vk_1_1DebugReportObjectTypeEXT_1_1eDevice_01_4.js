@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01vk_1_1DebugReportObjectTypeEXT_00_01vk_1_1DebugReportObjectTypeEXT_1_1eDevice_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01vk_1_1DebugReportObjectTypeEXT_00_01vk_1_1DebugReportObjectTypeEXT_1_1eDevice_01_4.html#ac88a0eb97ac4c534a595ae9b8f64f7d7", null ]
+];

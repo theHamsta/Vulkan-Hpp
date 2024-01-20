@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayNativeHdrSurfaceCapabilitiesAMD_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDisplayNativeHdrSurfaceCapabilitiesAMD_01_4.html#a94403c5a74c0473ac8a049b10015c51f", null ]
+];

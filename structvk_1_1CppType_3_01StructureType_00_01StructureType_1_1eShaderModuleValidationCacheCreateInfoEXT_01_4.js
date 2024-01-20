@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eShaderModuleValidationCacheCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eShaderModuleValidationCacheCreateInfoEXT_01_4.html#a6beb3a8e553feab515630e2405e6a38c", null ]
+];

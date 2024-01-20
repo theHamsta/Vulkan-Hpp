@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDescriptorUpdateTemplateCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDescriptorUpdateTemplateCreateInfo_01_4.html#afd87aada831679233b2b9d9166cd8324", null ]
+];

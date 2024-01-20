@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceTimelineSemaphoreFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceTimelineSemaphoreFeatures_01_4.html#ad7ece7e1ce7dc077fa6e40897360aede", null ]
+];

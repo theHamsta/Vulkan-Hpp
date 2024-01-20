@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderSubgroupExtendedTypesFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderSubgroupExtendedTypesFeatures_01_4.html#afcda87edf12091d13f98c3f306aa34ae", null ]
+];

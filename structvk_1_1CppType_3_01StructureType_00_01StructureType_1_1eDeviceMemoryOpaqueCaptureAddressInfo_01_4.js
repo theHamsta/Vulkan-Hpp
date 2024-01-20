@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceMemoryOpaqueCaptureAddressInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceMemoryOpaqueCaptureAddressInfo_01_4.html#aa8d4b2377e796ca6c74b887c7923f800", null ]
+];

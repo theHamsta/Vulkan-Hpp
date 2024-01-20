@@ -1,0 +1,27 @@
+var structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV =
+[
+    [ "NativeType", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#af0dae80abbaf57168713df3c3e69a4f8", null ],
+    [ "GraphicsPipelineShaderGroupsCreateInfoNV", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a11b9d6e90ec49f8f6870150b6e2392fa", null ],
+    [ "GraphicsPipelineShaderGroupsCreateInfoNV", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a3f9bebd07baf314c43137c0b8bd4c413", null ],
+    [ "GraphicsPipelineShaderGroupsCreateInfoNV", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a6f6f5ddb37b586e68c2e15dee1a52e13", null ],
+    [ "GraphicsPipelineShaderGroupsCreateInfoNV", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#adc0a85dc41423771da7fc88f0c382893", null ],
+    [ "operator VkGraphicsPipelineShaderGroupsCreateInfoNV &", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#ac6b490f2343adb64cd6c7878d0bdfe18", null ],
+    [ "operator VkGraphicsPipelineShaderGroupsCreateInfoNV const &", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#aefd278f54da66fb722d2b79d1fb36590", null ],
+    [ "operator!=", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#ae75d9050c89a3e601408b5f5d73b47c0", null ],
+    [ "operator=", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#af7a5521a43ea8b3cc65b80bf3cef41a4", null ],
+    [ "operator=", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a6668297448b675d09800d7700be4b5dd", null ],
+    [ "operator==", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#aed8ff7c710225a7b41b3498211572c77", null ],
+    [ "setGroupCount", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a3e71fc0d0e146493d904cfab7aff5c24", null ],
+    [ "setGroups", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a48debf0c424f83d983e64dd95663d27e", null ],
+    [ "setPGroups", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#abb1b7d891c64a863911004718e05ef8c", null ],
+    [ "setPipelineCount", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#abba57161403d71f81e83eb811ae1250e", null ],
+    [ "setPipelines", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a686b1346e8bb99a31ae56cf02ab868d8", null ],
+    [ "setPNext", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#aacc3d6c879d430bcc7764d0edea1c422", null ],
+    [ "setPPipelines", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a40af0d57a51e14749a4069a9e73a0c33", null ],
+    [ "groupCount", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a5ce1106b18537a905fbb5febd0884b46", null ],
+    [ "pGroups", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#ab81333442a6636ab360bd466e79444b4", null ],
+    [ "pipelineCount", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#ad1f67ee7071201511824c20b577adc5d", null ],
+    [ "pNext", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#a92d2191eb391c5ee77434158de64ae26", null ],
+    [ "pPipelines", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#accbf40799f72a8fc9accb861daf25b8f", null ],
+    [ "sType", "structvk_1_1GraphicsPipelineShaderGroupsCreateInfoNV.html#ae08ae168ebd04f3f8c01a382bb91aa42", null ]
+];

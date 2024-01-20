@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExtendedSparseAddressSpacePropertiesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExtendedSparseAddressSpacePropertiesNV_01_4.html#af54cb1e3dd01369e38c47f076c630f60", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH264SessionCreateInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH264SessionCreateInfoKHR_01_4.html#a5f6f2f823ded31adf202cc54c56e3bf0", null ]
+];

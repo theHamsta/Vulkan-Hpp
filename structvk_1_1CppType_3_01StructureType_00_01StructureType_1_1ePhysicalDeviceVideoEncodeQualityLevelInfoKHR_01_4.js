@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceVideoEncodeQualityLevelInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceVideoEncodeQualityLevelInfoKHR_01_4.html#afad8f533a6f57ef65bd8fdcf4563c71e", null ]
+];

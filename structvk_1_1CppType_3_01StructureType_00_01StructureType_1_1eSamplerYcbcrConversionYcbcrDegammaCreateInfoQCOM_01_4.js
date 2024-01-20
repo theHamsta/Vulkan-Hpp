@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM_01_4.html#a900909d85cf8e5ea88aaae3b9b68e15d", null ]
+];

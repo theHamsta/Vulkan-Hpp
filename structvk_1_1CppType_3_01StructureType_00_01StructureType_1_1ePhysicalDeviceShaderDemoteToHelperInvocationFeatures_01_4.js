@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderDemoteToHelperInvocationFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderDemoteToHelperInvocationFeatures_01_4.html#a405bf65621949007a434b63964786834", null ]
+];

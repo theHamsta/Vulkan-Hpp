@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eCommandBufferInheritanceConditionalRenderingInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eCommandBufferInheritanceConditionalRenderingInfoEXT_01_4.html#a5a4961182b66e908b35ce42b84739a67", null ]
+];

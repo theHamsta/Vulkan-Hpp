@@ -1,0 +1,28 @@
+var structvk_1_1VideoBeginCodingInfoKHR =
+[
+    [ "NativeType", "structvk_1_1VideoBeginCodingInfoKHR.html#a116b77114fcf385ec0f15173652fc00d", null ],
+    [ "VideoBeginCodingInfoKHR", "structvk_1_1VideoBeginCodingInfoKHR.html#a96f7408e41a474db91d815090b88a95b", null ],
+    [ "VideoBeginCodingInfoKHR", "structvk_1_1VideoBeginCodingInfoKHR.html#a65f3e37cf788c066f878019057d1e089", null ],
+    [ "VideoBeginCodingInfoKHR", "structvk_1_1VideoBeginCodingInfoKHR.html#ab9def13b090fb2aa04fe1dca5225334a", null ],
+    [ "VideoBeginCodingInfoKHR", "structvk_1_1VideoBeginCodingInfoKHR.html#a1a07d150fac804c46faeab68152f07e2", null ],
+    [ "operator VkVideoBeginCodingInfoKHR &", "structvk_1_1VideoBeginCodingInfoKHR.html#af55979f7d061fa326de07743b6453ef6", null ],
+    [ "operator VkVideoBeginCodingInfoKHR const &", "structvk_1_1VideoBeginCodingInfoKHR.html#a853d47a333c6b638572608fcdd88cd8f", null ],
+    [ "operator!=", "structvk_1_1VideoBeginCodingInfoKHR.html#a789481d5624e03d99911674e21f9f4fa", null ],
+    [ "operator=", "structvk_1_1VideoBeginCodingInfoKHR.html#ae43131c6a2b904d6fdb3787e6c071287", null ],
+    [ "operator=", "structvk_1_1VideoBeginCodingInfoKHR.html#a6e69cf4dd77fcecf11953ca682e332a2", null ],
+    [ "operator==", "structvk_1_1VideoBeginCodingInfoKHR.html#a611e38ef106517d324b545f956841851", null ],
+    [ "setFlags", "structvk_1_1VideoBeginCodingInfoKHR.html#ae354c85866e7fe6520324a5c9c9ce840", null ],
+    [ "setPNext", "structvk_1_1VideoBeginCodingInfoKHR.html#a36b304ecc92b35d146cd8209d15218af", null ],
+    [ "setPReferenceSlots", "structvk_1_1VideoBeginCodingInfoKHR.html#a7abde6899e36344d996409297a5a9814", null ],
+    [ "setReferenceSlotCount", "structvk_1_1VideoBeginCodingInfoKHR.html#a581dc45de2b25425505031e9ba87acf9", null ],
+    [ "setReferenceSlots", "structvk_1_1VideoBeginCodingInfoKHR.html#af9edeca3d8724226976a35cbbd71c50b", null ],
+    [ "setVideoSession", "structvk_1_1VideoBeginCodingInfoKHR.html#a4ffc044dfcdbf563a287d71e5f26903f", null ],
+    [ "setVideoSessionParameters", "structvk_1_1VideoBeginCodingInfoKHR.html#aa604d66f3986032e7e930144e2d7ca48", null ],
+    [ "flags", "structvk_1_1VideoBeginCodingInfoKHR.html#ab2b88792ba280ec78eaefeb596259c59", null ],
+    [ "pNext", "structvk_1_1VideoBeginCodingInfoKHR.html#aebdeb0b2d448e6c66eed9e44ac29d60b", null ],
+    [ "pReferenceSlots", "structvk_1_1VideoBeginCodingInfoKHR.html#ade954fef838d5fb46b7ec79937d89da5", null ],
+    [ "referenceSlotCount", "structvk_1_1VideoBeginCodingInfoKHR.html#ae84344312fba70cf30ff02d707b67cc7", null ],
+    [ "sType", "structvk_1_1VideoBeginCodingInfoKHR.html#a42ba2cc6163efd49c40a4d965352118e", null ],
+    [ "videoSession", "structvk_1_1VideoBeginCodingInfoKHR.html#adf2c86952e1b1e835091b76f4823c4f3", null ],
+    [ "videoSessionParameters", "structvk_1_1VideoBeginCodingInfoKHR.html#a4e01970c642c305d2c513bf878a975ca", null ]
+];

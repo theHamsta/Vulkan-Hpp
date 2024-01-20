@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceAddressBindingCallbackDataEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceAddressBindingCallbackDataEXT_01_4.html#a855cafc0f9f77f5dc2584568af5bbffc", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineIndirectDeviceAddressInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineIndirectDeviceAddressInfoNV_01_4.html#afaf8448b09387fa02a9684fd3b5c9284", null ]
+];

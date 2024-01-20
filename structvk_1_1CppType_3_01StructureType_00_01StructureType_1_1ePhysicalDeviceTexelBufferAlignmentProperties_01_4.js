@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceTexelBufferAlignmentProperties_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceTexelBufferAlignmentProperties_01_4.html#aa98dccffe0f54617ccea08fb0670e6cc", null ]
+];

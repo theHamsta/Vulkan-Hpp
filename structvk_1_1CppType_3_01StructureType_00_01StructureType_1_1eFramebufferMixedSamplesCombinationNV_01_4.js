@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eFramebufferMixedSamplesCombinationNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eFramebufferMixedSamplesCombinationNV_01_4.html#a37375313c14df8da72b4a1e79e3c5def", null ]
+];

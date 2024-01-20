@@ -1,0 +1,25 @@
+var structvk_1_1DescriptorUpdateTemplateEntry =
+[
+    [ "NativeType", "structvk_1_1DescriptorUpdateTemplateEntry.html#add790e4a8ae8d2654b795f0519ebf770", null ],
+    [ "DescriptorUpdateTemplateEntry", "structvk_1_1DescriptorUpdateTemplateEntry.html#ab6a246b6073e91c8cc2d582a475d34cd", null ],
+    [ "DescriptorUpdateTemplateEntry", "structvk_1_1DescriptorUpdateTemplateEntry.html#ad7a1ab9fa41c6b0deb748632ab87e8f9", null ],
+    [ "DescriptorUpdateTemplateEntry", "structvk_1_1DescriptorUpdateTemplateEntry.html#aa1135a2047eef23ab40097ca5cc8e01f", null ],
+    [ "operator VkDescriptorUpdateTemplateEntry &", "structvk_1_1DescriptorUpdateTemplateEntry.html#ad9b5f6da32bea8c6e15ce1cbb28cdd0f", null ],
+    [ "operator VkDescriptorUpdateTemplateEntry const &", "structvk_1_1DescriptorUpdateTemplateEntry.html#ad652bf367a6998a171713bd037eaa20d", null ],
+    [ "operator!=", "structvk_1_1DescriptorUpdateTemplateEntry.html#a0e20c57f5076b3e319b1ee8a8590d98a", null ],
+    [ "operator=", "structvk_1_1DescriptorUpdateTemplateEntry.html#acb6fa49e60bf5368fbfcb82b38191832", null ],
+    [ "operator=", "structvk_1_1DescriptorUpdateTemplateEntry.html#a9a90687edfaf7b4b4d32aedd2ec4e8bb", null ],
+    [ "operator==", "structvk_1_1DescriptorUpdateTemplateEntry.html#a1b5cfb05507f95d90b30f9308538ca20", null ],
+    [ "setDescriptorCount", "structvk_1_1DescriptorUpdateTemplateEntry.html#a7ddb911c65ae568844e7d26ce746b4f0", null ],
+    [ "setDescriptorType", "structvk_1_1DescriptorUpdateTemplateEntry.html#a058d4c64ddf50fde46f0abaa6cfb9273", null ],
+    [ "setDstArrayElement", "structvk_1_1DescriptorUpdateTemplateEntry.html#a7cc170759ecfa3d7b1a39b819b4878c1", null ],
+    [ "setDstBinding", "structvk_1_1DescriptorUpdateTemplateEntry.html#ae4dbfcc92ccb74a195d37278b7a83c70", null ],
+    [ "setOffset", "structvk_1_1DescriptorUpdateTemplateEntry.html#ab0c500aee5cd4bb2a75ce750d720a0e0", null ],
+    [ "setStride", "structvk_1_1DescriptorUpdateTemplateEntry.html#a03b8fa5601b448122339b66b76d7f637", null ],
+    [ "descriptorCount", "structvk_1_1DescriptorUpdateTemplateEntry.html#adc44fde66e8f5eca18b11670e19e84f5", null ],
+    [ "descriptorType", "structvk_1_1DescriptorUpdateTemplateEntry.html#a082ac1cacf3d7f88775847ee773f4ab8", null ],
+    [ "dstArrayElement", "structvk_1_1DescriptorUpdateTemplateEntry.html#a2d73abf3dcee21662227b0c5fac8e486", null ],
+    [ "dstBinding", "structvk_1_1DescriptorUpdateTemplateEntry.html#a593987ca5c31d1b1d9e04de0c6ddbe7e", null ],
+    [ "offset", "structvk_1_1DescriptorUpdateTemplateEntry.html#a6395cb0232aa7e4c136eb154e6612de2", null ],
+    [ "stride", "structvk_1_1DescriptorUpdateTemplateEntry.html#a00d2752e6cd519e8c4fa7cfdd183592d", null ]
+];

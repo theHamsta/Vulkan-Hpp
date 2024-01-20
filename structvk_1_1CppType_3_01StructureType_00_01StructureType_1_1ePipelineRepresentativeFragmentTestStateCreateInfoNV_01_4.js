@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineRepresentativeFragmentTestStateCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineRepresentativeFragmentTestStateCreateInfoNV_01_4.html#aac827af1eba39dc2666732844ca0c396", null ]
+];

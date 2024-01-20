@@ -1,0 +1,28 @@
+var structvk_1_1BufferImageCopy2 =
+[
+    [ "NativeType", "structvk_1_1BufferImageCopy2.html#a6ddf0073744a5c58b503d8f23431481c", null ],
+    [ "BufferImageCopy2", "structvk_1_1BufferImageCopy2.html#abbb48467eb1ef88f392bfdaa1bca35ac", null ],
+    [ "BufferImageCopy2", "structvk_1_1BufferImageCopy2.html#a93b295b5ad779946de3ca7b19b25e2c4", null ],
+    [ "BufferImageCopy2", "structvk_1_1BufferImageCopy2.html#a36cfeda51abf62a29ad6af39719d2717", null ],
+    [ "operator VkBufferImageCopy2 &", "structvk_1_1BufferImageCopy2.html#a69949a8bfcf261d97e8e273ca4c9cbe6", null ],
+    [ "operator VkBufferImageCopy2 const &", "structvk_1_1BufferImageCopy2.html#a08e4b855bed3609a86b1406e575a54cf", null ],
+    [ "operator!=", "structvk_1_1BufferImageCopy2.html#aa6e569753a8ca01a3bd353d25bfcb882", null ],
+    [ "operator=", "structvk_1_1BufferImageCopy2.html#ad7109a22381750b0ccdf82489caa0983", null ],
+    [ "operator=", "structvk_1_1BufferImageCopy2.html#a384ee5ae6eda7d6c451154acbb24acf2", null ],
+    [ "operator==", "structvk_1_1BufferImageCopy2.html#a41e3c862aceef770ea1215cb81db1b29", null ],
+    [ "setBufferImageHeight", "structvk_1_1BufferImageCopy2.html#a5b1fcd092b82cd52fc5e6e016d5eabee", null ],
+    [ "setBufferOffset", "structvk_1_1BufferImageCopy2.html#aa6dae22f5573d0b18e18ed6ec3437ccd", null ],
+    [ "setBufferRowLength", "structvk_1_1BufferImageCopy2.html#a0c96be78fca5eedfbffd7443648460de", null ],
+    [ "setImageExtent", "structvk_1_1BufferImageCopy2.html#a927c427066a850ca2c5ac8fab241841c", null ],
+    [ "setImageOffset", "structvk_1_1BufferImageCopy2.html#a4aec834e4a60e061634f1fe8c26dceab", null ],
+    [ "setImageSubresource", "structvk_1_1BufferImageCopy2.html#a61c2c9aca71e33b8e6a66f0350d55037", null ],
+    [ "setPNext", "structvk_1_1BufferImageCopy2.html#a20895592c5d779cb8184619d3c52babc", null ],
+    [ "bufferImageHeight", "structvk_1_1BufferImageCopy2.html#ac3845c1e0d0e56b31b53a1b263625133", null ],
+    [ "bufferOffset", "structvk_1_1BufferImageCopy2.html#add065d9afc48bf170b3ef817e2630634", null ],
+    [ "bufferRowLength", "structvk_1_1BufferImageCopy2.html#a3072df7b91a68accea25c86e3a52e9f0", null ],
+    [ "imageExtent", "structvk_1_1BufferImageCopy2.html#a20bd40d3d68a88d4b3524ae1a5b28184", null ],
+    [ "imageOffset", "structvk_1_1BufferImageCopy2.html#aa7a8710f2e6bb4759816e4b85c7afc92", null ],
+    [ "imageSubresource", "structvk_1_1BufferImageCopy2.html#a0512c5b3539851ab78a70b8a95a2c001", null ],
+    [ "pNext", "structvk_1_1BufferImageCopy2.html#aba16349e94938f53c9245f4b42ba3a68", null ],
+    [ "sType", "structvk_1_1BufferImageCopy2.html#a707911396f6a6e7055ce650811bfc41c", null ]
+];

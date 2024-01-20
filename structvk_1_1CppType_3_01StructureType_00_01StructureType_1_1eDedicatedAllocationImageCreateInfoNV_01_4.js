@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDedicatedAllocationImageCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDedicatedAllocationImageCreateInfoNV_01_4.html#a32e55feeddc12614126a6d62e27d1ece", null ]
+];

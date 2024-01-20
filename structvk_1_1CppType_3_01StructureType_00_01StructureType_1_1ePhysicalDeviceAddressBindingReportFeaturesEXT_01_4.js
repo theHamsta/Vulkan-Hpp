@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceAddressBindingReportFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceAddressBindingReportFeaturesEXT_01_4.html#abe190ad79d4b71fbd7758a0a47114314", null ]
+];

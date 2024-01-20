@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceRenderPassStripedFeaturesARM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceRenderPassStripedFeaturesARM_01_4.html#a55f2085361373d326b1d6e99df3f4fac", null ]
+];

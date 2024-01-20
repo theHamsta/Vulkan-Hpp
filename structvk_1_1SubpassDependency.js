@@ -1,0 +1,27 @@
+var structvk_1_1SubpassDependency =
+[
+    [ "NativeType", "structvk_1_1SubpassDependency.html#ab3a0872c515e5b64613237e179d590bd", null ],
+    [ "SubpassDependency", "structvk_1_1SubpassDependency.html#a60a7e4ee7101cecd6c224b29a1d38eeb", null ],
+    [ "SubpassDependency", "structvk_1_1SubpassDependency.html#a4c94f12edda225a5310b3b54e5c1be1b", null ],
+    [ "SubpassDependency", "structvk_1_1SubpassDependency.html#ad5dc7f1ff6dcd9c475bfc3557a50520a", null ],
+    [ "operator VkSubpassDependency &", "structvk_1_1SubpassDependency.html#ae4941f918dc9f8606635aa79978a0236", null ],
+    [ "operator VkSubpassDependency const &", "structvk_1_1SubpassDependency.html#a7fc48319576c1b4bfeb05f2ea1b27e2c", null ],
+    [ "operator!=", "structvk_1_1SubpassDependency.html#aaeeac89f7f497dc950d17fa9593c7a89", null ],
+    [ "operator=", "structvk_1_1SubpassDependency.html#ae58a47a95a667fd8ffc5f7703b55fb2b", null ],
+    [ "operator=", "structvk_1_1SubpassDependency.html#afe534a23de3122e2bac53f72e020f922", null ],
+    [ "operator==", "structvk_1_1SubpassDependency.html#ad167c0c93390a2cd9c917ebb52026022", null ],
+    [ "setDependencyFlags", "structvk_1_1SubpassDependency.html#acb1c00e06e68127d53d3a79bfa15979f", null ],
+    [ "setDstAccessMask", "structvk_1_1SubpassDependency.html#aa1a5db068dea478e6bb826a018bd790b", null ],
+    [ "setDstStageMask", "structvk_1_1SubpassDependency.html#aa082dd3b1e25362e59bf9f21c225fce4", null ],
+    [ "setDstSubpass", "structvk_1_1SubpassDependency.html#a169334f2759f6327c839f4008aef7c4b", null ],
+    [ "setSrcAccessMask", "structvk_1_1SubpassDependency.html#aa29d0859fcc91f24a2a402162ac5bdcf", null ],
+    [ "setSrcStageMask", "structvk_1_1SubpassDependency.html#a89a1f157b040c1fb7727361600857e9c", null ],
+    [ "setSrcSubpass", "structvk_1_1SubpassDependency.html#a9097f0be6e5dd4618a3a63d329d82f94", null ],
+    [ "dependencyFlags", "structvk_1_1SubpassDependency.html#a58c1e855bfb3efe78829af278b41eec1", null ],
+    [ "dstAccessMask", "structvk_1_1SubpassDependency.html#a0d9c991498dd0660a46c40bbfd6cdb15", null ],
+    [ "dstStageMask", "structvk_1_1SubpassDependency.html#a45360dbcf3163c7780d6123e59fee4cb", null ],
+    [ "dstSubpass", "structvk_1_1SubpassDependency.html#a9f7ba37c2c66a84ede738109a7a8c5b3", null ],
+    [ "srcAccessMask", "structvk_1_1SubpassDependency.html#ab8364aa92f5bb80b6af79bed8ea1581b", null ],
+    [ "srcStageMask", "structvk_1_1SubpassDependency.html#a32041d0419ae1478dc0a8c6c8e4435e1", null ],
+    [ "srcSubpass", "structvk_1_1SubpassDependency.html#adc6d459de833868172b29f1714a1ed88", null ]
+];

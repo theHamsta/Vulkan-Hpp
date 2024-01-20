@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExternalBufferInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExternalBufferInfo_01_4.html#a2728d8e7de4efc7e3bd9f25795ead9a9", null ]
+];

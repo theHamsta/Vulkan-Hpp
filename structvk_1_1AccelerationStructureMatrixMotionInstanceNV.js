@@ -1,0 +1,27 @@
+var structvk_1_1AccelerationStructureMatrixMotionInstanceNV =
+[
+    [ "NativeType", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a225444fe1e8e03406c532d4c049489da", null ],
+    [ "AccelerationStructureMatrixMotionInstanceNV", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#aa223dde7f2fd15a6d1b856a36b506913", null ],
+    [ "AccelerationStructureMatrixMotionInstanceNV", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a896a15d01af7f5a941384d5ac41f4084", null ],
+    [ "AccelerationStructureMatrixMotionInstanceNV", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a86641de5fa6f6407d218b8d038f305ec", null ],
+    [ "operator VkAccelerationStructureMatrixMotionInstanceNV &", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#adbd092180a39076bed8a6c945bb1eb14", null ],
+    [ "operator VkAccelerationStructureMatrixMotionInstanceNV const &", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a5042e992faafc93496cf7657a2346a1e", null ],
+    [ "operator!=", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#af6d35d63a22cc95c9b7da3acbfaa5436", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#ab846f631ecf98cfff7fe7cf001311173", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a8b373a70b9025e009cfbb20ead0f29b1", null ],
+    [ "operator==", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#ab53a2b4d0e3809c3302a42e54f83f997", null ],
+    [ "setAccelerationStructureReference", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a9962667d87f3365a662eaf81dd91cb0d", null ],
+    [ "setFlags", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a11c7ff91c89131e70dbe61ca27c1597c", null ],
+    [ "setInstanceCustomIndex", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a7c3fd9a5c416370ba89c6f3d1d730543", null ],
+    [ "setInstanceShaderBindingTableRecordOffset", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a3b681d19fb7218da604dbbdf3dcf2669", null ],
+    [ "setMask", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a2c72ecf2785af180f6771599ca357342", null ],
+    [ "setTransformT0", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#aca23ff20d5e743e8b4411888181c96ec", null ],
+    [ "setTransformT1", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a80dcf8ebde0074e02335c4b8f1a25b6d", null ],
+    [ "accelerationStructureReference", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#aadf3a8b85bf9d819d41d3578844bd351", null ],
+    [ "flags", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#aea04645570fd625df59b44a75bb84747", null ],
+    [ "instanceCustomIndex", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#aed87df12210c6c76d74d863aa08c9acf", null ],
+    [ "instanceShaderBindingTableRecordOffset", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a582386c022f0dee1cb8489c547990895", null ],
+    [ "mask", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a861b0dd6950063d8bd2f91e2ac0b227d", null ],
+    [ "transformT0", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#a10e015d954bdd36eab9d6783b2d9b1f7", null ],
+    [ "transformT1", "structvk_1_1AccelerationStructureMatrixMotionInstanceNV.html#ae84fded0ff5e56696b99264c0cfee0f2", null ]
+];

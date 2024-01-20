@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eMutableDescriptorTypeCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eMutableDescriptorTypeCreateInfoEXT_01_4.html#aebfacd302ef5e999dfc69d2642f337ac", null ]
+];

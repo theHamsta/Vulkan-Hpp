@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageViewSampleWeightCreateInfoQCOM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageViewSampleWeightCreateInfoQCOM_01_4.html#a4d1b46c7c92509901794c0c51fad584a", null ]
+];

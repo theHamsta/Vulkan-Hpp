@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT_01_4.html#a50bfca92976875a160394775d57a51f5", null ]
+];

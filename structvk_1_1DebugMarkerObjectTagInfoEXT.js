@@ -1,0 +1,28 @@
+var structvk_1_1DebugMarkerObjectTagInfoEXT =
+[
+    [ "NativeType", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a604a944ac9447b6f89f3d7e67a8cf0b5", null ],
+    [ "DebugMarkerObjectTagInfoEXT", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a2cbe17cae2b17feb06caeb410fdb57b3", null ],
+    [ "DebugMarkerObjectTagInfoEXT", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a63f67c4b1f1146e60bec4698496f66c1", null ],
+    [ "DebugMarkerObjectTagInfoEXT", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a7bca5b467b20b7ea1ee6c03456acf68e", null ],
+    [ "DebugMarkerObjectTagInfoEXT", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#aa39cb22c6200d21d21634603d235d585", null ],
+    [ "operator VkDebugMarkerObjectTagInfoEXT &", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a33575b51b10ce3da1f27b05ec45f5d60", null ],
+    [ "operator VkDebugMarkerObjectTagInfoEXT const &", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a9d3079414558bde3d76c7363d55e2fdc", null ],
+    [ "operator!=", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#af007f4da0fc181246d62eb908b9bcf98", null ],
+    [ "operator=", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a3a15e268aea3d6c077f1c2e197e9ccd8", null ],
+    [ "operator=", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a4772216f06df37d77dfa873ef0b6ebc0", null ],
+    [ "operator==", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#aa4369a4854fade22bbc2054a99a6a382", null ],
+    [ "setObject", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a014ea594314ba25e40da37632084db5f", null ],
+    [ "setObjectType", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a0c509aa1f03940f8bc7dfc829f1dbfea", null ],
+    [ "setPNext", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a9cc0920c517c0574a4ed9ed540e75355", null ],
+    [ "setPTag", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a274c40ad96b1e1816671579671c978e0", null ],
+    [ "setTag", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a4a731db5d9174a2d450a0f448d9ca4e2", null ],
+    [ "setTagName", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a68efa7cc8572d7d7ed6a7de67bdc5cf3", null ],
+    [ "setTagSize", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#acca721c8abf81308363443854bce1614", null ],
+    [ "object", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#aa8c0fe854c7c540edee3a698c513beb6", null ],
+    [ "objectType", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#adb3c4ba1a36457c3d003876597c0a1c1", null ],
+    [ "pNext", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a8a3a1f8fb4595be2e741ebe6cbd3d09b", null ],
+    [ "pTag", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a901d2f594fa11e789db21e15d3bc9726", null ],
+    [ "sType", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#a22ff94eb4a04245844d98f73e8a997ef", null ],
+    [ "tagName", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#acd139fd9bf75e7b6939ffacfa0cf8330", null ],
+    [ "tagSize", "structvk_1_1DebugMarkerObjectTagInfoEXT.html#ae392db0b2bdc870b93d552f5c39732a3", null ]
+];

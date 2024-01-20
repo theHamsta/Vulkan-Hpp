@@ -1,0 +1,26 @@
+var structvk_1_1SurfacePresentScalingCapabilitiesEXT =
+[
+    [ "NativeType", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a338eafe138aecfc32e9de938d39c03ec", null ],
+    [ "SurfacePresentScalingCapabilitiesEXT", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#abf6b9ad0798344e8bcd33a15fe68039d", null ],
+    [ "SurfacePresentScalingCapabilitiesEXT", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#af3cdf1081fa4b622da5d5b772e53013c", null ],
+    [ "SurfacePresentScalingCapabilitiesEXT", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a1f4d2f2df97d5a8c3ff7859e765f6a0c", null ],
+    [ "operator VkSurfacePresentScalingCapabilitiesEXT &", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#ae4fce3560e6fed1f1dc1d85d57366a17", null ],
+    [ "operator VkSurfacePresentScalingCapabilitiesEXT const &", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a218bf28888d3efbc8ec1fc0f1654145c", null ],
+    [ "operator!=", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#ac01e48906b19dd18821dfb93fd9c2908", null ],
+    [ "operator=", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#af6f00a3e248e1b907e908156ded22254", null ],
+    [ "operator=", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a76ecffda523e9630077c2b32fd2eb393", null ],
+    [ "operator==", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a581b7b6fc5fd6462f697f0d99493706d", null ],
+    [ "setMaxScaledImageExtent", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#aa47b7d4d71ab6ffc22edb2af470a90bf", null ],
+    [ "setMinScaledImageExtent", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a8dd15e213c0f14f1f0734142d4fd5d98", null ],
+    [ "setPNext", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a31541783e45910480a544535cb0d0719", null ],
+    [ "setSupportedPresentGravityX", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a56dc97620d0c3536d5102285426afd3d", null ],
+    [ "setSupportedPresentGravityY", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a8cea4b36ae7a54f182a108516f4739c4", null ],
+    [ "setSupportedPresentScaling", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a364be44f44fd221c727e9bd1cbb72474", null ],
+    [ "maxScaledImageExtent", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#afebb2b0e1322a6b283d1c492b13ee977", null ],
+    [ "minScaledImageExtent", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a93cdd3ea302308227ac4e47ec283a758", null ],
+    [ "pNext", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a2897b536cef75f3c08ea7ef15389b39e", null ],
+    [ "sType", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a1a2fedfbcf40a6376f8147b9a874cf39", null ],
+    [ "supportedPresentGravityX", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#ab8418e425b101d552e535d171dfb0060", null ],
+    [ "supportedPresentGravityY", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a1f5187ca7887367f4049c4a0380cace6", null ],
+    [ "supportedPresentScaling", "structvk_1_1SurfacePresentScalingCapabilitiesEXT.html#a015418b6f81983ff1cae8362579dd0a3", null ]
+];

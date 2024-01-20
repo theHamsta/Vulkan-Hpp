@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExtendedDynamicState2FeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExtendedDynamicState2FeaturesEXT_01_4.html#a53ef03980cf2cbfbb676af01ac502611", null ]
+];

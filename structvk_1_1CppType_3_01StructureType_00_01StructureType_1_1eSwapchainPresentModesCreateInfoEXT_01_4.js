@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSwapchainPresentModesCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSwapchainPresentModesCreateInfoEXT_01_4.html#a97954b638dd6e78368828ae2b7083f5b", null ]
+];

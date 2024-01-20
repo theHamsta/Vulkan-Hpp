@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCooperativeMatrixFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCooperativeMatrixFeaturesNV_01_4.html#a75ed9a1792ba0e2eceff1edcbc7f5a6a", null ]
+];

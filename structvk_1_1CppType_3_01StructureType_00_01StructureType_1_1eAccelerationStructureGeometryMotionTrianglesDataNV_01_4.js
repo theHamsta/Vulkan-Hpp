@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAccelerationStructureGeometryMotionTrianglesDataNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAccelerationStructureGeometryMotionTrianglesDataNV_01_4.html#a0387be89fb0495e5c6e1433673605c99", null ]
+];

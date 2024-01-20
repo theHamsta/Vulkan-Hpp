@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSeparateDepthStencilLayoutsFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceSeparateDepthStencilLayoutsFeatures_01_4.html#aae38603bd17618d23e4e5950f8c776f1", null ]
+];

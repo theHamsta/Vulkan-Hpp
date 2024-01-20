@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceNestedCommandBufferFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceNestedCommandBufferFeaturesEXT_01_4.html#a22e220998502f8b9ef55610205634042", null ]
+];

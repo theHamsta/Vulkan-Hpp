@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eQueryPoolPerformanceCreateInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eQueryPoolPerformanceCreateInfoKHR_01_4.html#ab35e6eae0436862605bd4e45d56e88cf", null ]
+];

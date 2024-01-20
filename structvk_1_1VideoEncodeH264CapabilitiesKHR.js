@@ -1,0 +1,28 @@
+var structvk_1_1VideoEncodeH264CapabilitiesKHR =
+[
+    [ "NativeType", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#ac48fb075995cee6d6940cbb4bce44077", null ],
+    [ "VideoEncodeH264CapabilitiesKHR", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#ad73a1e2829ed24bdbf32682688a1d2cc", null ],
+    [ "VideoEncodeH264CapabilitiesKHR", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#ab6fb346638443331aa6c2115974016d7", null ],
+    [ "VideoEncodeH264CapabilitiesKHR", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aefbf7ab374417758ba95f4316a027222", null ],
+    [ "operator VkVideoEncodeH264CapabilitiesKHR &", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aadf4a7ec11eacdc94d5973add9f09068", null ],
+    [ "operator VkVideoEncodeH264CapabilitiesKHR const &", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a4d2a72fd076c5cef449135dd1ac21c06", null ],
+    [ "operator!=", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a7684175942487beb628a0e8dea45ad29", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a3dc310d369807c660ccf0e50c5790197", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a6791709ed71d5cd9983f945b7f405f75", null ],
+    [ "operator==", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#ad74ac7e8e7606e0f25e468e2e5c522d8", null ],
+    [ "expectDyadicTemporalLayerPattern", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#abecad142540aa17dca3e1e6014b1a669", null ],
+    [ "flags", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aa109219c89066eb7413ee1de5c28b5ee", null ],
+    [ "maxBPictureL0ReferenceCount", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a4233be7010486169bdceb479f1224878", null ],
+    [ "maxL1ReferenceCount", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a82ffb0265565fef34f7e3f48c2031a9d", null ],
+    [ "maxLevelIdc", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aa05e444fcf7350f1ea52854a68a41703", null ],
+    [ "maxPPictureL0ReferenceCount", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#ac3b8e5db0395f0ac9385133c32c9df5b", null ],
+    [ "maxQp", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a7e7f318a8612c7ac877c8a830da42f6a", null ],
+    [ "maxSliceCount", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aafe5c332d44321b401232c2ee520c879", null ],
+    [ "maxTemporalLayerCount", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a5197a79192bed99a687ea8f2ddf2ab7c", null ],
+    [ "minQp", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a340fbd6b22463ac848d476d92d997161", null ],
+    [ "pNext", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aa51e8e148250871bb4720363593cfb5e", null ],
+    [ "prefersGopRemainingFrames", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a5a04f3a9b085fa254556d89ebf173709", null ],
+    [ "requiresGopRemainingFrames", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#ad66723492da0d9f6d2b54fdb00a41469", null ],
+    [ "stdSyntaxFlags", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#aa318a1fa0c0f510d20cd413b0c96ae41", null ],
+    [ "sType", "structvk_1_1VideoEncodeH264CapabilitiesKHR.html#a9f6a50e4851d6c25c3364033fa21cc75", null ]
+];

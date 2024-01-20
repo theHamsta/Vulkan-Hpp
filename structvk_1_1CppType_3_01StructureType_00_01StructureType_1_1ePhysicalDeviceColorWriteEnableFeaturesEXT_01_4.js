@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceColorWriteEnableFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceColorWriteEnableFeaturesEXT_01_4.html#a569ffd940d416c780396a563b08d4e71", null ]
+];

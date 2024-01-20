@@ -1,0 +1,28 @@
+var structvk_1_1PipelineCoverageModulationStateCreateInfoNV =
+[
+    [ "NativeType", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#ad91e11e1219d306f68b57933ec273500", null ],
+    [ "PipelineCoverageModulationStateCreateInfoNV", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a173c9f262c638a86957895d90e69041b", null ],
+    [ "PipelineCoverageModulationStateCreateInfoNV", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#ac4b76788cb78824817d57e513bef57a3", null ],
+    [ "PipelineCoverageModulationStateCreateInfoNV", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#ac62ecc98bd54ea44b13e01bce58ba915", null ],
+    [ "PipelineCoverageModulationStateCreateInfoNV", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a5b90817bbafe227418937b03333ef3fd", null ],
+    [ "operator VkPipelineCoverageModulationStateCreateInfoNV &", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a6cad2d4140c27aa3e2556c78934363e2", null ],
+    [ "operator VkPipelineCoverageModulationStateCreateInfoNV const &", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a70e8d2accd0a5a5991d8018af9ac9c62", null ],
+    [ "operator!=", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a13669cd224757b6ae0fd7b23ada32da9", null ],
+    [ "operator=", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a144db640309a241fb1e0949c7a705072", null ],
+    [ "operator=", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a21f5fd894d3f35f8cd3f039aa5df8fb6", null ],
+    [ "operator==", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#aa0f64cf20fdffc56d4600e3d24d0bdea", null ],
+    [ "setCoverageModulationMode", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a6128c0a5bcdba83c0653c4168fecdd2d", null ],
+    [ "setCoverageModulationTable", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#aa4eb06b2b5df64a013c1c88264674673", null ],
+    [ "setCoverageModulationTableCount", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#af2d67956a5518c9131fcdbc329becf59", null ],
+    [ "setCoverageModulationTableEnable", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a22e431ff9ebe1851fabcf7169ff28597", null ],
+    [ "setFlags", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a20f2f450e542efd0338372e5100fbf36", null ],
+    [ "setPCoverageModulationTable", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#abeb161713f903f2675170c4ca8b18d6b", null ],
+    [ "setPNext", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a819e31b32815e3b24a687b663479d103", null ],
+    [ "coverageModulationMode", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#aebcd76f199e83cd2d12b477bb70b10ea", null ],
+    [ "coverageModulationTableCount", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#aba1a823dd781d328efbf018d407ebce7", null ],
+    [ "coverageModulationTableEnable", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a96affd2d5fe4c476e234ffbcc118989f", null ],
+    [ "flags", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a1bd03b8b3969e34cbea712ce104eb8c3", null ],
+    [ "pCoverageModulationTable", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#aca3f34338863ae765432fac5ba8a32e7", null ],
+    [ "pNext", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a2b1cbb1b7dcc03944d730621bc34df3c", null ],
+    [ "sType", "structvk_1_1PipelineCoverageModulationStateCreateInfoNV.html#a87b474ffbf066c9585f0348661c0a60d", null ]
+];

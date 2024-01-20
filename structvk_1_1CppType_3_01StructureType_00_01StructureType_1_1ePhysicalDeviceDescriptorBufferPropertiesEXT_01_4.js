@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDescriptorBufferPropertiesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDescriptorBufferPropertiesEXT_01_4.html#a96557140f8315c7a2418c797e2f9f90a", null ]
+];

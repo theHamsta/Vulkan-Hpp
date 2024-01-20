@@ -1,0 +1,28 @@
+var structvk_1_1DebugUtilsObjectTagInfoEXT =
+[
+    [ "NativeType", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#aebcdd1b552519724e65f1fafea2d18c7", null ],
+    [ "DebugUtilsObjectTagInfoEXT", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a7310ee5329902e543a0998deb98f9e88", null ],
+    [ "DebugUtilsObjectTagInfoEXT", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a227688bd4eb74ee2a8d053052d0da0ed", null ],
+    [ "DebugUtilsObjectTagInfoEXT", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a0ca07c520daf54ef938ed97f2a7adb8f", null ],
+    [ "DebugUtilsObjectTagInfoEXT", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a7c8d6122f5f359b1d0938d93a2718ff9", null ],
+    [ "operator VkDebugUtilsObjectTagInfoEXT &", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a17d3cccb9099a36036ad36bb8ec70271", null ],
+    [ "operator VkDebugUtilsObjectTagInfoEXT const &", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a4925348d1611d96ca13aa200120eb5ad", null ],
+    [ "operator!=", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a4fcd7a8ebb7c03fdc5f4cffecfa4a021", null ],
+    [ "operator=", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#ac1edfef314a215919bb221fa5c3b99d3", null ],
+    [ "operator=", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a48c97d8ab6566d11f2d73dcac74cf7dd", null ],
+    [ "operator==", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a758d9b03379cef53777bd0db793a259d", null ],
+    [ "setObjectHandle", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#aa271280fca6dcc4da43318032b1149d3", null ],
+    [ "setObjectType", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a52c0d7ddfbeeacd6e79a4730a6a902e1", null ],
+    [ "setPNext", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#aea1db6505a07f45140f4559d3f09b034", null ],
+    [ "setPTag", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a6cdb52cb88f2e2ab37b1c83f653b3898", null ],
+    [ "setTag", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#ac1aaa18fb54cfd79dd75353aaea3fc8f", null ],
+    [ "setTagName", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#ac21dd2be5fc78bcdf8b57c74f65d6d91", null ],
+    [ "setTagSize", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a95754e887e264d3bf87fc612b2b5e3a0", null ],
+    [ "objectHandle", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#aea9c6e843d914921ca5a0d712b1c6a79", null ],
+    [ "objectType", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#af6323cc5fdaa9f89ead01f3b98d4ba29", null ],
+    [ "pNext", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a013ad73ca5fb746abebf2b19d35f22ad", null ],
+    [ "pTag", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a139b3c85d2d02f97fb8090274f329533", null ],
+    [ "sType", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a8331f80cdb662a8d6618db585e19d75e", null ],
+    [ "tagName", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a3ae90ae00c6ede95ff28d36948dd7673", null ],
+    [ "tagSize", "structvk_1_1DebugUtilsObjectTagInfoEXT.html#a593fa20d952b3b8399e18b6144a1d1cb", null ]
+];

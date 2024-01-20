@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDebugUtilsMessengerCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDebugUtilsMessengerCreateInfoEXT_01_4.html#a2b29cea8cd529e754e7fd0612b5c2323", null ]
+];

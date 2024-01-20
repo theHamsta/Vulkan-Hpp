@@ -1,0 +1,25 @@
+var structvk_1_1AccelerationStructureInstanceKHR =
+[
+    [ "NativeType", "structvk_1_1AccelerationStructureInstanceKHR.html#ac9557b3d8d01e57900a5ca58d5379d88", null ],
+    [ "AccelerationStructureInstanceKHR", "structvk_1_1AccelerationStructureInstanceKHR.html#a535d0675ee0f986c34269bff74ef6e13", null ],
+    [ "AccelerationStructureInstanceKHR", "structvk_1_1AccelerationStructureInstanceKHR.html#a6b313f370ea289052dacc154100c73f5", null ],
+    [ "AccelerationStructureInstanceKHR", "structvk_1_1AccelerationStructureInstanceKHR.html#a4fafb394cc87824badfd95747eedd99c", null ],
+    [ "operator VkAccelerationStructureInstanceKHR &", "structvk_1_1AccelerationStructureInstanceKHR.html#a1a9204d96eb7bf88efd2def7d2caa00f", null ],
+    [ "operator VkAccelerationStructureInstanceKHR const &", "structvk_1_1AccelerationStructureInstanceKHR.html#ac5cde854d0136142d0fbb29056cd2cb1", null ],
+    [ "operator!=", "structvk_1_1AccelerationStructureInstanceKHR.html#a3d3d71a5f0e99e6a87af153d2f0d2678", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureInstanceKHR.html#a5c3ee38b1e17c8acf6b6a5b4d7e3011e", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureInstanceKHR.html#aa60ab7b164652e770ca6a30d3484fcea", null ],
+    [ "operator==", "structvk_1_1AccelerationStructureInstanceKHR.html#a51084f229820ecd9d60e0729e49a636b", null ],
+    [ "setAccelerationStructureReference", "structvk_1_1AccelerationStructureInstanceKHR.html#a4fdde62f858fd3a7a68485aac380334d", null ],
+    [ "setFlags", "structvk_1_1AccelerationStructureInstanceKHR.html#a0fbbc62dd5742197aa009ef054994b75", null ],
+    [ "setInstanceCustomIndex", "structvk_1_1AccelerationStructureInstanceKHR.html#a2089f2ca8a50dcef0f508a625f435fb1", null ],
+    [ "setInstanceShaderBindingTableRecordOffset", "structvk_1_1AccelerationStructureInstanceKHR.html#a3158d2ec0e118ddc7f7b1ac5752198fb", null ],
+    [ "setMask", "structvk_1_1AccelerationStructureInstanceKHR.html#aadd81d8f9e6c3d32301e0908cabd8c7e", null ],
+    [ "setTransform", "structvk_1_1AccelerationStructureInstanceKHR.html#a4061d6bf8c241ddc501355b98d895f2b", null ],
+    [ "accelerationStructureReference", "structvk_1_1AccelerationStructureInstanceKHR.html#ab7873c707c81785dc82dd84ea7c3f8ad", null ],
+    [ "flags", "structvk_1_1AccelerationStructureInstanceKHR.html#a739e92d13d294cf7be07fdc47bc07376", null ],
+    [ "instanceCustomIndex", "structvk_1_1AccelerationStructureInstanceKHR.html#a2cd167c1c0b400d97613e55bb677bcf3", null ],
+    [ "instanceShaderBindingTableRecordOffset", "structvk_1_1AccelerationStructureInstanceKHR.html#a5abd790e843e5f95e31d025b49addff6", null ],
+    [ "mask", "structvk_1_1AccelerationStructureInstanceKHR.html#af8f28363036591060de24c56aa6011ba", null ],
+    [ "transform", "structvk_1_1AccelerationStructureInstanceKHR.html#a1872105582bc5533918fe14adabdb6b2", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineCoverageModulationStateCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineCoverageModulationStateCreateInfoNV_01_4.html#aac6ee261c5b4a81d771a5b2a1059d0fa", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eTextureLodGatherFormatPropertiesAMD_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eTextureLodGatherFormatPropertiesAMD_01_4.html#a7c78b3a127f3b4d2f6f5019ac985a870", null ]
+];

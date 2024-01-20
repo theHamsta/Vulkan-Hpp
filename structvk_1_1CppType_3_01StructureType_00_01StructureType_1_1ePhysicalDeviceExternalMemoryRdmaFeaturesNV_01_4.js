@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExternalMemoryRdmaFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceExternalMemoryRdmaFeaturesNV_01_4.html#af426a1e9ab54fbbc9c3212fb1bc589e5", null ]
+];

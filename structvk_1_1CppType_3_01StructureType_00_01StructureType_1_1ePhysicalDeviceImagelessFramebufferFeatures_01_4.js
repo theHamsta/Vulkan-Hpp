@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImagelessFramebufferFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImagelessFramebufferFeatures_01_4.html#aea2a55ac160a70a1311710a95ad2ff77", null ]
+];

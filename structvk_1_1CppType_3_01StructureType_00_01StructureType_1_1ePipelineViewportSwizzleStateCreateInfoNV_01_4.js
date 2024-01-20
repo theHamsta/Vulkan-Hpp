@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportSwizzleStateCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportSwizzleStateCreateInfoNV_01_4.html#a4074a29a941e7aa88b054fced4e56ce9", null ]
+];

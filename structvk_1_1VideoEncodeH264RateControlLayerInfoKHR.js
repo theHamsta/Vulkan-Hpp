@@ -1,0 +1,28 @@
+var structvk_1_1VideoEncodeH264RateControlLayerInfoKHR =
+[
+    [ "NativeType", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a597e5fd5792c4a913db028882a18f99f", null ],
+    [ "VideoEncodeH264RateControlLayerInfoKHR", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a22c23bbb7ca5f666e02c2c4810ec1e51", null ],
+    [ "VideoEncodeH264RateControlLayerInfoKHR", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a2d1e75c8094397a710b5ef82b204d052", null ],
+    [ "VideoEncodeH264RateControlLayerInfoKHR", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a9d20eeca67bcd7d74929d629af4fa9f8", null ],
+    [ "operator VkVideoEncodeH264RateControlLayerInfoKHR &", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a0cf5b6fabf8d5cf0f1859fa84a1f6b92", null ],
+    [ "operator VkVideoEncodeH264RateControlLayerInfoKHR const &", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a47200514e8af0561b6007c6e29370b47", null ],
+    [ "operator!=", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#acafb1cab594cf6d4e753fb5ae4fe4e72", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a4d90007e59d5bc0da92a283afb2422bf", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#abf68a741bb0e7e4ae4a843b398a9d519", null ],
+    [ "operator==", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a562f562602a9ea34ac48e37f584a6ca5", null ],
+    [ "setMaxFrameSize", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#ad81597371c823ec056de0346fe4df53c", null ],
+    [ "setMaxQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a5685706234a73b654aacfdf7246ef7a8", null ],
+    [ "setMinQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a7c0413e86fb8a3f784719de60b458845", null ],
+    [ "setPNext", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a858d614ea86094e0255c2fc3d0b20707", null ],
+    [ "setUseMaxFrameSize", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#aa1d4fb10521f38c4f2cb4400b5e99904", null ],
+    [ "setUseMaxQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a828217ddee7209e250fc72c501a33b7f", null ],
+    [ "setUseMinQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a8f59ea2948f285f64f90b1b10c5d9496", null ],
+    [ "maxFrameSize", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a9042801d9fbba658a2450c0f2b58ba77", null ],
+    [ "maxQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a347931b36d4e5fd644fbd666271b1214", null ],
+    [ "minQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a46b97f5e58a679a64acc69797893abfd", null ],
+    [ "pNext", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#ae90899ccc17bfc6e4d51f1738c20b6cd", null ],
+    [ "sType", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a84cb4774b60bfa6aa6352340d20d20e0", null ],
+    [ "useMaxFrameSize", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a4f086a0c2741848518bd8aa8feb3e358", null ],
+    [ "useMaxQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#a3149182fb69960b6c1b742a2897eb232", null ],
+    [ "useMinQp", "structvk_1_1VideoEncodeH264RateControlLayerInfoKHR.html#ac245277cbcf7ecb90c6641ab2b19c4c4", null ]
+];

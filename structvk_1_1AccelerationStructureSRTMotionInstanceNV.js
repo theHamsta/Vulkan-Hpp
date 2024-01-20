@@ -1,0 +1,27 @@
+var structvk_1_1AccelerationStructureSRTMotionInstanceNV =
+[
+    [ "NativeType", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#afd85084b14b25670c3ef47796b68c927", null ],
+    [ "AccelerationStructureSRTMotionInstanceNV", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a379b9dda1d3de32b215b60879790f93d", null ],
+    [ "AccelerationStructureSRTMotionInstanceNV", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a3564251a5fb20d1cbe2d21920eeda90c", null ],
+    [ "AccelerationStructureSRTMotionInstanceNV", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a9b2485cfd7d317da4193fe74c547fddb", null ],
+    [ "operator VkAccelerationStructureSRTMotionInstanceNV &", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#adcd6b48373664e5a4261eb00942191d1", null ],
+    [ "operator VkAccelerationStructureSRTMotionInstanceNV const &", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a363ee99be2067ea8ad6a4bad49022525", null ],
+    [ "operator!=", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a27467abc6c2b432bc8b877cacb05a294", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#ae5e133296ba4748d3a47d346ff1747a6", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#ac22df6a9ae2777d85a1f1e2439eb3ac1", null ],
+    [ "operator==", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a69151fba9e4dc9a29747f4bb1dbb3cdb", null ],
+    [ "setAccelerationStructureReference", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#ab2cffea6773c8e8472737c1ba628cdf3", null ],
+    [ "setFlags", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a438d3a98d3eae9f30499b5b54856e257", null ],
+    [ "setInstanceCustomIndex", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a47074e902122412f46da9785ea4a59f0", null ],
+    [ "setInstanceShaderBindingTableRecordOffset", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a752ccacc3329697642187e2e135e67c0", null ],
+    [ "setMask", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a82cec5a8759effd2a9a9781d50465b61", null ],
+    [ "setTransformT0", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a8e4b1f4a336e9248bb51a68a6ac6b1db", null ],
+    [ "setTransformT1", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a8ebc9488e25700b858d174caf1c1bbcd", null ],
+    [ "accelerationStructureReference", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#ac6705fc43df5864829c5ffc958652aee", null ],
+    [ "flags", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a70298f7edb07f80f26d0a02c7865b1c7", null ],
+    [ "instanceCustomIndex", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a836bf182a1af2df2a76f0af620684660", null ],
+    [ "instanceShaderBindingTableRecordOffset", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a23bd7e320fd1fe7105411125eba174e6", null ],
+    [ "mask", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a22cd06e069fdb078f74b764539c8616b", null ],
+    [ "transformT0", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a81326521b3c93304b982637575dc9058", null ],
+    [ "transformT1", "structvk_1_1AccelerationStructureSRTMotionInstanceNV.html#a926ce7c5d47abc718f03abc892440bf9", null ]
+];

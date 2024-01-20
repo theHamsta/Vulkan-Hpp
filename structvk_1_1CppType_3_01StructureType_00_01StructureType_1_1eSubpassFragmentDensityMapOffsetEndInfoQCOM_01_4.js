@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSubpassFragmentDensityMapOffsetEndInfoQCOM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSubpassFragmentDensityMapOffsetEndInfoQCOM_01_4.html#a244b7e5cadffbbb93a20b510aa6aa5db", null ]
+];

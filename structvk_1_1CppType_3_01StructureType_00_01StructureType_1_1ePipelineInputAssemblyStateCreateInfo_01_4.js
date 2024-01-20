@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineInputAssemblyStateCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineInputAssemblyStateCreateInfo_01_4.html#a1a889b9181eaf1218a07e53ab9e6e776", null ]
+];

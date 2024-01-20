@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePrimitiveTopologyListRestartFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePrimitiveTopologyListRestartFeaturesEXT_01_4.html#a2b38fe7cc35e7ab5f6cc5bc23f756d98", null ]
+];

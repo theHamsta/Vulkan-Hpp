@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerBorderColorComponentMappingCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSamplerBorderColorComponentMappingCreateInfoEXT_01_4.html#a6b2a8511ffdf98d14a61093a7ba31e40", null ]
+];

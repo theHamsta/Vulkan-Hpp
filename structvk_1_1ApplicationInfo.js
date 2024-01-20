@@ -1,0 +1,26 @@
+var structvk_1_1ApplicationInfo =
+[
+    [ "NativeType", "structvk_1_1ApplicationInfo.html#a44ca2f8470e90838c33b3ed20cb9f4c7", null ],
+    [ "ApplicationInfo", "structvk_1_1ApplicationInfo.html#a2d24025b2e5b91f7b261caf391bbe35c", null ],
+    [ "ApplicationInfo", "structvk_1_1ApplicationInfo.html#ac525e0c189aac8472c7e7a11b0d7c552", null ],
+    [ "ApplicationInfo", "structvk_1_1ApplicationInfo.html#a8cf416ac1cecd919a9faf167d0559350", null ],
+    [ "operator VkApplicationInfo &", "structvk_1_1ApplicationInfo.html#a5818b000ec865415da8442f1c7a4253c", null ],
+    [ "operator VkApplicationInfo const &", "structvk_1_1ApplicationInfo.html#a936fb0d5c39b2b2be1f895044747a112", null ],
+    [ "operator!=", "structvk_1_1ApplicationInfo.html#aa09c44652ab8c45575fc34928ff4ce19", null ],
+    [ "operator=", "structvk_1_1ApplicationInfo.html#a428253d484cde99de494dc069c751750", null ],
+    [ "operator=", "structvk_1_1ApplicationInfo.html#ae272e9d7e78bb3f5f0784925d1db6d46", null ],
+    [ "operator==", "structvk_1_1ApplicationInfo.html#a03507e069842bb6cb55735cee050cc90", null ],
+    [ "setApiVersion", "structvk_1_1ApplicationInfo.html#ad4da0a4f40e4a6af2eee581ae93e096a", null ],
+    [ "setApplicationVersion", "structvk_1_1ApplicationInfo.html#a3ec318d749ffe47ae480582ccc985c08", null ],
+    [ "setEngineVersion", "structvk_1_1ApplicationInfo.html#a20dd4400d708c4426dd7c76bb408a7a6", null ],
+    [ "setPApplicationName", "structvk_1_1ApplicationInfo.html#a008f91ac03e2c22b86f571e206f63f92", null ],
+    [ "setPEngineName", "structvk_1_1ApplicationInfo.html#a47f0ddaac637de89359948655203b6f0", null ],
+    [ "setPNext", "structvk_1_1ApplicationInfo.html#a019542742e99e469101ae803c7f48319", null ],
+    [ "apiVersion", "structvk_1_1ApplicationInfo.html#a36dde003d45e159cc14b2b517c9effb8", null ],
+    [ "applicationVersion", "structvk_1_1ApplicationInfo.html#ad702b40148f5e0390c7419efb759af3a", null ],
+    [ "engineVersion", "structvk_1_1ApplicationInfo.html#a2c7f973b69a85a4fd37c8402fea4400c", null ],
+    [ "pApplicationName", "structvk_1_1ApplicationInfo.html#a9fc0a68d6f428003a6887ff405e57a98", null ],
+    [ "pEngineName", "structvk_1_1ApplicationInfo.html#a20047a48a81f54a379009e04a73f467d", null ],
+    [ "pNext", "structvk_1_1ApplicationInfo.html#a5a708044cb5abbfeeddc9764ded99558", null ],
+    [ "sType", "structvk_1_1ApplicationInfo.html#ae0d35545ed4a004856c722df50679305", null ]
+];

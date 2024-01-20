@@ -1,0 +1,27 @@
+var structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR =
+[
+    [ "NativeType", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#ab4f61464b747c07e1a1ea2237aeef7a3", null ],
+    [ "VideoDecodeH264SessionParametersAddInfoKHR", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#ad321d645e80d205607a0fee941e3b830", null ],
+    [ "VideoDecodeH264SessionParametersAddInfoKHR", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a5ab4fc38bb263aa0b4e955b221d4c698", null ],
+    [ "VideoDecodeH264SessionParametersAddInfoKHR", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#aa89939cde765e7eac128d5b910a03b3c", null ],
+    [ "VideoDecodeH264SessionParametersAddInfoKHR", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a56ca286e92b5f7d3c2b0f3f3337a4c0a", null ],
+    [ "operator VkVideoDecodeH264SessionParametersAddInfoKHR &", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#aca1848d96d2b48a6ddd61607a01ada05", null ],
+    [ "operator VkVideoDecodeH264SessionParametersAddInfoKHR const &", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a0f8a04cff948de9cd45ea52ff43ba78f", null ],
+    [ "operator!=", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#aebb8cf8bdeee240c433e4509dae743ac", null ],
+    [ "operator=", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a3f99e30e6f1b539487acc31f54e234b3", null ],
+    [ "operator=", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a83b05365f6e290714df16acc90852321", null ],
+    [ "operator==", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a88961f7e744c5ebb40702c697965a20a", null ],
+    [ "setPNext", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#aa27909096045f9c53d838a4f3c05ba7d", null ],
+    [ "setPStdPPSs", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a1da8ba48181eb492d4c980ed425ef3cc", null ],
+    [ "setPStdSPSs", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a1faf26929f0bcb1cf2f4193085a6d6be", null ],
+    [ "setStdPPSCount", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a29d281fddaf7551ccaa301011bc0b121", null ],
+    [ "setStdPPSs", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a1fde721284c983f066a4256c8634b257", null ],
+    [ "setStdSPSCount", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#adea68bd528ff900cce322665fb94c444", null ],
+    [ "setStdSPSs", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#ac5304bba2146dc76a405d7d1859c7551", null ],
+    [ "pNext", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#ad4a075a6a3da79b3ae0205851f99d839", null ],
+    [ "pStdPPSs", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#af608befaa9436cbde156983725d6fea5", null ],
+    [ "pStdSPSs", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a7d86067a4c0cb314d9ec145c82df7c70", null ],
+    [ "stdPPSCount", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#af7c2d2abd3e1869635037637dbfe9de3", null ],
+    [ "stdSPSCount", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#a488ea39da15de6920d45e141a4fc2794", null ],
+    [ "sType", "structvk_1_1VideoDecodeH264SessionParametersAddInfoKHR.html#ac0354e3c9e4c12d31c20c82e352fa5ce", null ]
+];

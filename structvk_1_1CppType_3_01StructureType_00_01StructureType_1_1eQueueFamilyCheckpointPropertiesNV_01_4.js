@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eQueueFamilyCheckpointPropertiesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eQueueFamilyCheckpointPropertiesNV_01_4.html#a820b7aa946f0594c2b23399280d69aa2", null ]
+];

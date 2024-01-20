@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265QualityLevelPropertiesKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265QualityLevelPropertiesKHR_01_4.html#a127d0b5e9477aaa16d1039c967d4f042", null ]
+];

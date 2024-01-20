@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassTransformBeginInfoQCOM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassTransformBeginInfoQCOM_01_4.html#a45511071cfe15e978ecc3ed86485547e", null ]
+];

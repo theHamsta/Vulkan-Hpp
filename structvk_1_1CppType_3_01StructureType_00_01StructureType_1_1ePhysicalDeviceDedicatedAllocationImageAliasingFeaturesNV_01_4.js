@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV_01_4.html#a38bf5a135518648d83ef75c72622d152", null ]
+];

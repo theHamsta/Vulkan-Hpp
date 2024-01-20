@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineVertexInputStateCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineVertexInputStateCreateInfo_01_4.html#ace9ea196e088ea8f00d8f6dbafb93ec3", null ]
+];

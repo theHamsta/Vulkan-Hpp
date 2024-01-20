@@ -1,0 +1,25 @@
+var structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a5f693cd19d92346b9124fba6fb61c57c", null ],
+    [ "PhysicalDeviceTransformFeedbackPropertiesEXT", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#acae7d1b6b2980f442c9118cde8c8f359", null ],
+    [ "PhysicalDeviceTransformFeedbackPropertiesEXT", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a9b1ca16a334b0d49d7beaa6bab9ce752", null ],
+    [ "PhysicalDeviceTransformFeedbackPropertiesEXT", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#ae1d0515c6c1295527e409c4567186e76", null ],
+    [ "operator VkPhysicalDeviceTransformFeedbackPropertiesEXT &", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#ac8745568ec1acb0c6c5a9faac6aadfd2", null ],
+    [ "operator VkPhysicalDeviceTransformFeedbackPropertiesEXT const &", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a8e950ed223f34a1a3b7807b3e6c2dffc", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a95995e93679e2a7b6e7b46e9af8736ce", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a2523f7d33646226908155d464f178eab", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a1bb9bb27f563551f069821240ce2b125", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a36bf4c512e8a24edc5c5354de7cfe874", null ],
+    [ "maxTransformFeedbackBufferDataSize", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a7f8c27126a9681ae6e4964c54ea685eb", null ],
+    [ "maxTransformFeedbackBufferDataStride", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#ac53be5664c30e1cc450357c9953b2636", null ],
+    [ "maxTransformFeedbackBuffers", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#ac98f5523e39123964321da126dbb0f61", null ],
+    [ "maxTransformFeedbackBufferSize", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#abdaa64e3cb9ed5e39d3af8cdcca5f475", null ],
+    [ "maxTransformFeedbackStreamDataSize", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#aab46656ad07ccaa7267e4ee5b038394d", null ],
+    [ "maxTransformFeedbackStreams", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a6eeca0da249df0bdac8a3934e882dec3", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#ad33dedaf821987ddba28ec7c435e37ab", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a19daf114c8e74d887dde9f0cce207caf", null ],
+    [ "transformFeedbackDraw", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a0a9e57a4387c56bd80e0a3f4a27b2149", null ],
+    [ "transformFeedbackQueries", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#a4092cab7ab44688c742eca0f3138e4ff", null ],
+    [ "transformFeedbackRasterizationStreamSelect", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#aac6832ceb452e79c75a650d1aad7e08e", null ],
+    [ "transformFeedbackStreamsLinesTriangles", "structvk_1_1PhysicalDeviceTransformFeedbackPropertiesEXT.html#aafe3d33c3f9aa32cf5e8d620bc709ccb", null ]
+];

@@ -1,0 +1,26 @@
+var structvk_1_1PhysicalDeviceSparseImageFormatInfo2 =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#ae82280d87620d689122f32c09c36d9e8", null ],
+    [ "PhysicalDeviceSparseImageFormatInfo2", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a18a91811dcf451920cb3fe60c8e43f31", null ],
+    [ "PhysicalDeviceSparseImageFormatInfo2", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#aec8c7bd513487ad2717365002dcc8218", null ],
+    [ "PhysicalDeviceSparseImageFormatInfo2", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a9ab54935b247069f4d0bc07cdb32cba5", null ],
+    [ "operator VkPhysicalDeviceSparseImageFormatInfo2 &", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#ab84ea7218402a735fd872b7117ebafda", null ],
+    [ "operator VkPhysicalDeviceSparseImageFormatInfo2 const &", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#ae3c21fd78096005741b05b8e94334182", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a4cbca0c6e47d1806ca56a4a42936df15", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#ae274ff5343928f4bc7faa28a1e3ee2fe", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a49839f9bc6aea404f35a6fb77ac7458d", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a23754b2a4fb3ef98e7ee55acc9fadf76", null ],
+    [ "setFormat", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#aae9389770d7111ef338919ebc2ebde18", null ],
+    [ "setPNext", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a2ffaace854a727a80dbad216c788c781", null ],
+    [ "setSamples", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a3433c4d4ff0c34378b338536fef8d10e", null ],
+    [ "setTiling", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#ae559bdd1190aa8a025b4937e1db2fa07", null ],
+    [ "setType", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a05d022560e2d52139b9a7a7a50d36ec6", null ],
+    [ "setUsage", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a55023a96da311c60eb9d962b7e0023c3", null ],
+    [ "format", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#afd15693b6ca3a25a227a60a695ac4519", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#ac9db5eb9a7947907d2028dc66ae4ff16", null ],
+    [ "samples", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a24478ebaf410958716b55a2abee5af2e", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#aa86a46ffdf1b123fbe19ebad4fe1cea5", null ],
+    [ "tiling", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a150f2793ff31714cf909695d575c92a7", null ],
+    [ "type", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a2dee55dc8c633552fb8124f29178434f", null ],
+    [ "usage", "structvk_1_1PhysicalDeviceSparseImageFormatInfo2.html#a455bc0e2945c0fe1260f1447a8f804b9", null ]
+];

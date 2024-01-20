@@ -1,0 +1,28 @@
+var structvk_1_1PhysicalDeviceMeshShaderPropertiesNV =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a377effdc46c84cbec4e62214ecb79702", null ],
+    [ "PhysicalDeviceMeshShaderPropertiesNV", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a6409c79f5f38bf76d3d74813a2b0ef0c", null ],
+    [ "PhysicalDeviceMeshShaderPropertiesNV", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a7803c5048c20519678c0ce8b21cf87fa", null ],
+    [ "PhysicalDeviceMeshShaderPropertiesNV", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a6a22eaaccc9dbe2644cd7b0cb1811b6c", null ],
+    [ "operator VkPhysicalDeviceMeshShaderPropertiesNV &", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#aeeb09723ddf723d9d511af8aaf93b930", null ],
+    [ "operator VkPhysicalDeviceMeshShaderPropertiesNV const &", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#acd15273e9c56f64dd0b7cd292f348b37", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a13d377cc81e9972a97e29849f5be73b3", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a00335522dcb1569429848fbd66bddb7f", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a568df6e1fd3a573b14adc13d19bcbc33", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a4608189d7d69fc20a36b8550938d7a5c", null ],
+    [ "maxDrawMeshTasksCount", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#acfcd2b72b07cbd3ca90cd803a3eaa6e4", null ],
+    [ "maxMeshMultiviewViewCount", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a9c3a2ed127f1299841d8f3515952a886", null ],
+    [ "maxMeshOutputPrimitives", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#ae070746ad5eedb160c90816254f1a027", null ],
+    [ "maxMeshOutputVertices", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#ad10fc777b0d403382313519090e5e8e0", null ],
+    [ "maxMeshTotalMemorySize", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#ad6cb080a7a742aebb80576e09c93eafe", null ],
+    [ "maxMeshWorkGroupInvocations", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a0fc929566bd5d561300a3666ca525633", null ],
+    [ "maxMeshWorkGroupSize", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a6b9e4dabf1d1cf6ece54f0c87125a72f", null ],
+    [ "maxTaskOutputCount", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#adee20dd49c75f1e31fc6125b215c39ea", null ],
+    [ "maxTaskTotalMemorySize", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a00410af1ceac8bbbbf9fc7f0745dae5f", null ],
+    [ "maxTaskWorkGroupInvocations", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a06ea5f6478d43176c062f0028b1c2329", null ],
+    [ "maxTaskWorkGroupSize", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a491638dc5902bec12e95e3cf0563b474", null ],
+    [ "meshOutputPerPrimitiveGranularity", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a77b45721f60b22c7bcf62a2f339e67e8", null ],
+    [ "meshOutputPerVertexGranularity", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#af11228f02cf0dd0b2b41a38deeb026b9", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a987d5627a4e97369e81c9961107d7514", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceMeshShaderPropertiesNV.html#a0548852c6a8427b6dfa9ba4c514dad22", null ]
+];

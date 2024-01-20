@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRayTracingShaderGroupCreateInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRayTracingShaderGroupCreateInfoKHR_01_4.html#a58ebe95100541920cfda0eab2bd1cdb0", null ]
+];

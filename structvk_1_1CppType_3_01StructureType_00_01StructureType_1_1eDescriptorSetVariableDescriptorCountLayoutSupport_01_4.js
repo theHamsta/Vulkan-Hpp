@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDescriptorSetVariableDescriptorCountLayoutSupport_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDescriptorSetVariableDescriptorCountLayoutSupport_01_4.html#acb7585e7e5fd04fe9fd23c00c2f57484", null ]
+];

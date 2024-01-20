@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineCreateFlags2CreateInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineCreateFlags2CreateInfoKHR_01_4.html#a8ed72d39e00e7dfe2f4b1c96f5c64981", null ]
+];

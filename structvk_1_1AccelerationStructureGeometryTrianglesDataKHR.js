@@ -1,0 +1,28 @@
+var structvk_1_1AccelerationStructureGeometryTrianglesDataKHR =
+[
+    [ "NativeType", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a2622351541aa2060e1c2cd806b198356", null ],
+    [ "AccelerationStructureGeometryTrianglesDataKHR", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a736ce567d4eb37502ea82dede6f7b2da", null ],
+    [ "AccelerationStructureGeometryTrianglesDataKHR", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#af926a8afc781a0836b71ff7a8578ace6", null ],
+    [ "AccelerationStructureGeometryTrianglesDataKHR", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#ab542a25f1e5f02e746689188394d3be9", null ],
+    [ "operator VkAccelerationStructureGeometryTrianglesDataKHR &", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a2801caea9391aad918f0648bce36e974", null ],
+    [ "operator VkAccelerationStructureGeometryTrianglesDataKHR const &", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a479735e278c5a660adcc5d0c6a73fa40", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a631e97a68e5b0a115d6e89135930240e", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#ae4fd542efa6184db57b16e2943c39fbd", null ],
+    [ "setIndexData", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a8bfbb410fdd48ddc2639afac920f9b9e", null ],
+    [ "setIndexType", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a604a56b375bf6c0153fb1f561bb92456", null ],
+    [ "setMaxVertex", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a694170bc4a4d4177b1e563f08ae7d531", null ],
+    [ "setPNext", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a83f8e3f6e6c1096c4abe746ae0a11107", null ],
+    [ "setTransformData", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#ac15c4eff556f9ea501496f4204f89815", null ],
+    [ "setVertexData", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a3785407c8dd23110ce6bee32119c1620", null ],
+    [ "setVertexFormat", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a3aba01b8e467f4d13ce8d1bf3f1147f7", null ],
+    [ "setVertexStride", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a3bce2f2e7ce406b419947823a6a73600", null ],
+    [ "indexData", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#aae5ab397ba8d58dbbbd879383dbccc66", null ],
+    [ "indexType", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#afca4ae84fc332369d2b7be988ab6b356", null ],
+    [ "maxVertex", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#aea694a2a28a1f869977c61f42790ea4c", null ],
+    [ "pNext", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#ac9b9054d152bda71685951311c3ef9cc", null ],
+    [ "sType", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a94e6e99b15f75a6b12f80743f6f72ac7", null ],
+    [ "transformData", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a874588d72301fd927fb68a25c431eed2", null ],
+    [ "vertexData", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#af648d69e6e67031cda3234182d644b7f", null ],
+    [ "vertexFormat", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a8df41b8c4c475684374d3ea9e173a079", null ],
+    [ "vertexStride", "structvk_1_1AccelerationStructureGeometryTrianglesDataKHR.html#a9fa0cb5b7a46c2be9620691bae3c957d", null ]
+];

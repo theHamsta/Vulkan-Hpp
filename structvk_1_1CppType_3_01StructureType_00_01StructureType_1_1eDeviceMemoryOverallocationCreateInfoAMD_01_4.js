@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceMemoryOverallocationCreateInfoAMD_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceMemoryOverallocationCreateInfoAMD_01_4.html#a67bc9d65b73d279515762fa04315a1a8", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineDiscardRectangleStateCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineDiscardRectangleStateCreateInfoEXT_01_4.html#ab87885bacfd345416f480aa364512e42", null ]
+];

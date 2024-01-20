@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassFragmentDensityMapCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassFragmentDensityMapCreateInfoEXT_01_4.html#affcd7b3bd5a325d12295ab25fbaa7913", null ]
+];

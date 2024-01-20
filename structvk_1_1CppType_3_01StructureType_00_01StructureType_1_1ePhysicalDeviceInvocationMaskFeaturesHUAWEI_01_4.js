@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceInvocationMaskFeaturesHUAWEI_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceInvocationMaskFeaturesHUAWEI_01_4.html#abeb885dab11f5b473811ccf0c5b7f0c8", null ]
+];

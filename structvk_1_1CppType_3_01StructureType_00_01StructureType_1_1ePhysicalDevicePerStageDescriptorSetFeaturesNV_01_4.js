@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePerStageDescriptorSetFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePerStageDescriptorSetFeaturesNV_01_4.html#a6a1adeb767bb45080df3e505a50b481e", null ]
+];

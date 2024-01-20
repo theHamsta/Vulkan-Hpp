@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoDecodeH265SessionParametersAddInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoDecodeH265SessionParametersAddInfoKHR_01_4.html#a4e8eb0f832d7af85b077d41b98031d50", null ]
+];

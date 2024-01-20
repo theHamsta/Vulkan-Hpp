@@ -1,0 +1,27 @@
+var structvk_1_1ValidationFeaturesEXT =
+[
+    [ "NativeType", "structvk_1_1ValidationFeaturesEXT.html#a6a81a05bd4516615bd49f7cce3f96807", null ],
+    [ "ValidationFeaturesEXT", "structvk_1_1ValidationFeaturesEXT.html#aa8de3ef1b2b9a366e36f4ee615e8a310", null ],
+    [ "ValidationFeaturesEXT", "structvk_1_1ValidationFeaturesEXT.html#a0a0d9d15185ab5a688ab1347c41333f9", null ],
+    [ "ValidationFeaturesEXT", "structvk_1_1ValidationFeaturesEXT.html#acb79bb07dcde60fc698e0215bd2a2b70", null ],
+    [ "ValidationFeaturesEXT", "structvk_1_1ValidationFeaturesEXT.html#ac5d539dcb0734e924208e4d83fe8a239", null ],
+    [ "operator VkValidationFeaturesEXT &", "structvk_1_1ValidationFeaturesEXT.html#a7fa7193717209156de5aad81360ddd11", null ],
+    [ "operator VkValidationFeaturesEXT const &", "structvk_1_1ValidationFeaturesEXT.html#ace6c412b9e82554b853c028ee34fbe48", null ],
+    [ "operator!=", "structvk_1_1ValidationFeaturesEXT.html#accd3ece32da2d950143dbefe425500f9", null ],
+    [ "operator=", "structvk_1_1ValidationFeaturesEXT.html#a84240df57d222e8ae1844f258cf29aa9", null ],
+    [ "operator=", "structvk_1_1ValidationFeaturesEXT.html#ae498c636caf589859eb908fce27079ef", null ],
+    [ "operator==", "structvk_1_1ValidationFeaturesEXT.html#a815d6bcb83a33e033a3ebdab0eecd845", null ],
+    [ "setDisabledValidationFeatureCount", "structvk_1_1ValidationFeaturesEXT.html#a7e80de372922ca6aac92c484e586e27e", null ],
+    [ "setDisabledValidationFeatures", "structvk_1_1ValidationFeaturesEXT.html#a57c98743f2cd635ecfdf524f2020d8ed", null ],
+    [ "setEnabledValidationFeatureCount", "structvk_1_1ValidationFeaturesEXT.html#a957dda7b670388295694acf2b3f424c0", null ],
+    [ "setEnabledValidationFeatures", "structvk_1_1ValidationFeaturesEXT.html#a0db52b880b074f7db50f2799bd023487", null ],
+    [ "setPDisabledValidationFeatures", "structvk_1_1ValidationFeaturesEXT.html#ad3c4aad2f5159e52fe2dac26786855bd", null ],
+    [ "setPEnabledValidationFeatures", "structvk_1_1ValidationFeaturesEXT.html#a789bf59c19280067eda932be36a63340", null ],
+    [ "setPNext", "structvk_1_1ValidationFeaturesEXT.html#a49aa87add6064965d9227e51ae9d1c9e", null ],
+    [ "disabledValidationFeatureCount", "structvk_1_1ValidationFeaturesEXT.html#ab7908fe1eaf127fd265f6082a150ffff", null ],
+    [ "enabledValidationFeatureCount", "structvk_1_1ValidationFeaturesEXT.html#a5771242fe07cc3fc0c1e022f27c13f4f", null ],
+    [ "pDisabledValidationFeatures", "structvk_1_1ValidationFeaturesEXT.html#a1b2f55eb77eb865846bdaf54858cd097", null ],
+    [ "pEnabledValidationFeatures", "structvk_1_1ValidationFeaturesEXT.html#a1346c91661a7c8217bef684149692555", null ],
+    [ "pNext", "structvk_1_1ValidationFeaturesEXT.html#a544243f4599bad172f3acf9344b51ad0", null ],
+    [ "sType", "structvk_1_1ValidationFeaturesEXT.html#a0848c80e0ef3585443277f4c9da65441", null ]
+];

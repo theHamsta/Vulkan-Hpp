@@ -1,0 +1,27 @@
+var structvk_1_1SemaphoreWaitInfo =
+[
+    [ "NativeType", "structvk_1_1SemaphoreWaitInfo.html#a5c985a0f48ea0341cd3ebb8c3ac2df16", null ],
+    [ "SemaphoreWaitInfo", "structvk_1_1SemaphoreWaitInfo.html#a10bf0712d233437eab80e70b1763a2ca", null ],
+    [ "SemaphoreWaitInfo", "structvk_1_1SemaphoreWaitInfo.html#a2fcab4f9301e59b2176f810be2555c66", null ],
+    [ "SemaphoreWaitInfo", "structvk_1_1SemaphoreWaitInfo.html#aa54967bd40ab8b646ce24aad04c396bb", null ],
+    [ "SemaphoreWaitInfo", "structvk_1_1SemaphoreWaitInfo.html#a71f0c13ffd8892075aab9a70d224d77d", null ],
+    [ "operator VkSemaphoreWaitInfo &", "structvk_1_1SemaphoreWaitInfo.html#a765aa8179cdc20daaf13a9efea178df4", null ],
+    [ "operator VkSemaphoreWaitInfo const &", "structvk_1_1SemaphoreWaitInfo.html#a1c7c5ce7aba943d34108c67c6e097c00", null ],
+    [ "operator!=", "structvk_1_1SemaphoreWaitInfo.html#a697096516dd2e25b0db10c785f99ee3f", null ],
+    [ "operator=", "structvk_1_1SemaphoreWaitInfo.html#a0aa10c4f99b69b9b7c1a13b56d1f32bf", null ],
+    [ "operator=", "structvk_1_1SemaphoreWaitInfo.html#a66a8255424156d0d1339c42d5bcab05a", null ],
+    [ "operator==", "structvk_1_1SemaphoreWaitInfo.html#a7abe86f32c315d9bd5349da43dda774f", null ],
+    [ "setFlags", "structvk_1_1SemaphoreWaitInfo.html#abec1b89a00f57b65ff8f82c5537768f8", null ],
+    [ "setPNext", "structvk_1_1SemaphoreWaitInfo.html#ace2235de020243c09ce13e3faf2262dd", null ],
+    [ "setPSemaphores", "structvk_1_1SemaphoreWaitInfo.html#a0b41a01730eca94b3810d5683aafd46e", null ],
+    [ "setPValues", "structvk_1_1SemaphoreWaitInfo.html#a64990282f04c709d5b27fa477b6ef953", null ],
+    [ "setSemaphoreCount", "structvk_1_1SemaphoreWaitInfo.html#a4efa43848e0d6de1dda5573b60d00ff1", null ],
+    [ "setSemaphores", "structvk_1_1SemaphoreWaitInfo.html#a9547a1666f72bce87101eae078d356bb", null ],
+    [ "setValues", "structvk_1_1SemaphoreWaitInfo.html#a8a98a83faf900d126bd9189b3ada5555", null ],
+    [ "flags", "structvk_1_1SemaphoreWaitInfo.html#a6015b4cfbdbff9ff09ff49f80904fd8d", null ],
+    [ "pNext", "structvk_1_1SemaphoreWaitInfo.html#a7b64f261214f4a4fcc4c9225c31569d8", null ],
+    [ "pSemaphores", "structvk_1_1SemaphoreWaitInfo.html#a3f739dcb9846e240718181aaa3142ae2", null ],
+    [ "pValues", "structvk_1_1SemaphoreWaitInfo.html#adefd4d0784989339db949b1da671159e", null ],
+    [ "semaphoreCount", "structvk_1_1SemaphoreWaitInfo.html#ac4045ea97b5fd1f9e73f1a1fd99ebfc1", null ],
+    [ "sType", "structvk_1_1SemaphoreWaitInfo.html#ad27bd193a54ee94d818080424df306d1", null ]
+];

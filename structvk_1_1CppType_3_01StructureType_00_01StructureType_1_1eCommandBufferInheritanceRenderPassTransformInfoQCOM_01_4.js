@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eCommandBufferInheritanceRenderPassTransformInfoQCOM_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eCommandBufferInheritanceRenderPassTransformInfoQCOM_01_4.html#a3c816b6ff34812b0d9325bdf1d28b31a", null ]
+];

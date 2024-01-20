@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineRasterizationDepthClipStateCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineRasterizationDepthClipStateCreateInfoEXT_01_4.html#a4bc1a491a057798a0f0237ac407d749b", null ]
+];

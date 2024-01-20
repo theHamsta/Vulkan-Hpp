@@ -1,0 +1,28 @@
+var structvk_1_1AccelerationStructureCreateInfoKHR =
+[
+    [ "NativeType", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a9419c5e6f692868a1e974c4e871366ff", null ],
+    [ "AccelerationStructureCreateInfoKHR", "structvk_1_1AccelerationStructureCreateInfoKHR.html#afd2a2b07e7db4468c3b9e53dd76d5838", null ],
+    [ "AccelerationStructureCreateInfoKHR", "structvk_1_1AccelerationStructureCreateInfoKHR.html#affa94633488d09536e79c42bb0c18518", null ],
+    [ "AccelerationStructureCreateInfoKHR", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a783232fceb42557dea1b303e1e92608a", null ],
+    [ "operator VkAccelerationStructureCreateInfoKHR &", "structvk_1_1AccelerationStructureCreateInfoKHR.html#ab378ed98388caeabae21d209b7236319", null ],
+    [ "operator VkAccelerationStructureCreateInfoKHR const &", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a9d52560536121c205c45d2798dffd90e", null ],
+    [ "operator!=", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a80266554d0431711cc7e29784eaee431", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureCreateInfoKHR.html#ae6db4d526128f6862603005bd7150e73", null ],
+    [ "operator=", "structvk_1_1AccelerationStructureCreateInfoKHR.html#add7e1d59dd9231bc2aa1bc11b1eca757", null ],
+    [ "operator==", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a483065ec03ff0ef44144aaf73de72ce5", null ],
+    [ "setBuffer", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a4250327fae0eac2281b013bd674636c4", null ],
+    [ "setCreateFlags", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a8ee48e3146adeb2978ac6578177b1533", null ],
+    [ "setDeviceAddress", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a5f575f95297bfd60d59be2f880e798f0", null ],
+    [ "setOffset", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a1e438896ddfe5342528028dcf417bc6c", null ],
+    [ "setPNext", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a89d2bb0e4914e418cfbbaad3dfa6eda5", null ],
+    [ "setSize", "structvk_1_1AccelerationStructureCreateInfoKHR.html#acb4da3f8a0b6c1e8c3802a90747c3c44", null ],
+    [ "setType", "structvk_1_1AccelerationStructureCreateInfoKHR.html#afe482361c316d9bc21ba32736ac38e86", null ],
+    [ "buffer", "structvk_1_1AccelerationStructureCreateInfoKHR.html#ad42e0ad7fc9e2874d74a0e5847aa80bb", null ],
+    [ "createFlags", "structvk_1_1AccelerationStructureCreateInfoKHR.html#ae22a012a459d538d1e4db1b46bd9b380", null ],
+    [ "deviceAddress", "structvk_1_1AccelerationStructureCreateInfoKHR.html#af015015b91babe0d8a499237c61e11c6", null ],
+    [ "offset", "structvk_1_1AccelerationStructureCreateInfoKHR.html#ae726f97f8c7a90778136905237c3300a", null ],
+    [ "pNext", "structvk_1_1AccelerationStructureCreateInfoKHR.html#ae4ce4d21ab2e0b3b7206d4ae315e8947", null ],
+    [ "size", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a79ba580a0359456fb04d320b9e35a0d4", null ],
+    [ "sType", "structvk_1_1AccelerationStructureCreateInfoKHR.html#a71d99b5b64bee26be71328c8d393fc22", null ],
+    [ "type", "structvk_1_1AccelerationStructureCreateInfoKHR.html#aa5888d9891a81d4553323734a5455251", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eCopyMemoryToAccelerationStructureInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eCopyMemoryToAccelerationStructureInfoKHR_01_4.html#a4161b31a0d0d9f982f4ecdf1ef593047", null ]
+];

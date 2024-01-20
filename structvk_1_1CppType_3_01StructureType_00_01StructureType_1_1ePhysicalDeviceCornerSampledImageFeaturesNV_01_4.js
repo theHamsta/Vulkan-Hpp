@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCornerSampledImageFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCornerSampledImageFeaturesNV_01_4.html#a6576acabb70b1450ee9102fa44538605", null ]
+];

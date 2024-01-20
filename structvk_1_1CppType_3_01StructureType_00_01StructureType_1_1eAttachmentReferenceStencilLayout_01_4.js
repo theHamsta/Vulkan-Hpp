@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReferenceStencilLayout_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAttachmentReferenceStencilLayout_01_4.html#a673fb4948b812e8f2599b58b6f145152", null ]
+];

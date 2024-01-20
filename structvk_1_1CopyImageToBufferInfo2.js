@@ -1,0 +1,28 @@
+var structvk_1_1CopyImageToBufferInfo2 =
+[
+    [ "NativeType", "structvk_1_1CopyImageToBufferInfo2.html#a81600a7a1e4957b71e836929addc2807", null ],
+    [ "CopyImageToBufferInfo2", "structvk_1_1CopyImageToBufferInfo2.html#a9a21c51fb520dde81d5889c07e5c787f", null ],
+    [ "CopyImageToBufferInfo2", "structvk_1_1CopyImageToBufferInfo2.html#afbbbe415a657bf08771b24c8699b6a79", null ],
+    [ "CopyImageToBufferInfo2", "structvk_1_1CopyImageToBufferInfo2.html#a401b4d45716bfafd6ae83ffce3671fe1", null ],
+    [ "CopyImageToBufferInfo2", "structvk_1_1CopyImageToBufferInfo2.html#a8075811b67ce1d9de0bc528b9a0037db", null ],
+    [ "operator VkCopyImageToBufferInfo2 &", "structvk_1_1CopyImageToBufferInfo2.html#acf14583580566de6a27375c21c264371", null ],
+    [ "operator VkCopyImageToBufferInfo2 const &", "structvk_1_1CopyImageToBufferInfo2.html#ad7d6a214c812e578a2793936208484dd", null ],
+    [ "operator!=", "structvk_1_1CopyImageToBufferInfo2.html#aa8c462a219e6ea323d81182887ac954f", null ],
+    [ "operator=", "structvk_1_1CopyImageToBufferInfo2.html#a03fd2196924cb88979b1861222220dcd", null ],
+    [ "operator=", "structvk_1_1CopyImageToBufferInfo2.html#ab941aa19213e1028e6abbc96d5c6d82d", null ],
+    [ "operator==", "structvk_1_1CopyImageToBufferInfo2.html#a5a9d81fc6a7364dd2320f2d4b2dd30e6", null ],
+    [ "setDstBuffer", "structvk_1_1CopyImageToBufferInfo2.html#add7e5eb39fc620bae0b3f0b13b4dd097", null ],
+    [ "setPNext", "structvk_1_1CopyImageToBufferInfo2.html#a103e567359594a37d8479ce00bfa3b8b", null ],
+    [ "setPRegions", "structvk_1_1CopyImageToBufferInfo2.html#a1ddc98f28c14ef8df890e587507867e1", null ],
+    [ "setRegionCount", "structvk_1_1CopyImageToBufferInfo2.html#ab1f9dae6821a0d75d1d5fd8228557793", null ],
+    [ "setRegions", "structvk_1_1CopyImageToBufferInfo2.html#ad3f57b5f8c140c14cdcff4c1cc3b31db", null ],
+    [ "setSrcImage", "structvk_1_1CopyImageToBufferInfo2.html#a8f41ea866e5f1d7cd3a36a15ac1472ed", null ],
+    [ "setSrcImageLayout", "structvk_1_1CopyImageToBufferInfo2.html#a175ce1561c5d061c26b5d65d06a82e3a", null ],
+    [ "dstBuffer", "structvk_1_1CopyImageToBufferInfo2.html#aec3ae295896247b4d82643010237b965", null ],
+    [ "pNext", "structvk_1_1CopyImageToBufferInfo2.html#a1ae8d6b9d163d87a18f8b4af6ed7ba54", null ],
+    [ "pRegions", "structvk_1_1CopyImageToBufferInfo2.html#a646970d5c03b8ea44aaf97eb3fc95b78", null ],
+    [ "regionCount", "structvk_1_1CopyImageToBufferInfo2.html#ab88ddfe0fa64ce0caf3a9cc7832e11f1", null ],
+    [ "srcImage", "structvk_1_1CopyImageToBufferInfo2.html#a93b4aa314e3e56d0ee8c53468778a355", null ],
+    [ "srcImageLayout", "structvk_1_1CopyImageToBufferInfo2.html#a4c7bc1afdd33dcec518b9d63fd9b4b00", null ],
+    [ "sType", "structvk_1_1CopyImageToBufferInfo2.html#a4ed4802566572eebd4751e30f8bf1aed", null ]
+];

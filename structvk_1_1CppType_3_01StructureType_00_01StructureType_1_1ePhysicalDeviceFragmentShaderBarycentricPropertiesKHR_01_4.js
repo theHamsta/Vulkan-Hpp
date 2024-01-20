@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceFragmentShaderBarycentricPropertiesKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceFragmentShaderBarycentricPropertiesKHR_01_4.html#a164e281f49a3c72129f5bed70fbf433d", null ]
+];

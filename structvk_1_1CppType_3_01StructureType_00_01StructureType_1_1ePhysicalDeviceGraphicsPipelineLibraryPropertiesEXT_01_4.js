@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceGraphicsPipelineLibraryPropertiesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceGraphicsPipelineLibraryPropertiesEXT_01_4.html#a9298c1a5f32f94782446336c25a6c672", null ]
+];

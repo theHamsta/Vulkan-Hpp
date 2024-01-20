@@ -1,0 +1,26 @@
+var structvk_1_1PhysicalDeviceImageFormatInfo2 =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ae1b613e7a1403c797c267e18d054a863", null ],
+    [ "PhysicalDeviceImageFormatInfo2", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a894a6383276198d3ceb784291470ca6d", null ],
+    [ "PhysicalDeviceImageFormatInfo2", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a4360b61dcf29f1f6213abf8b4311d847", null ],
+    [ "PhysicalDeviceImageFormatInfo2", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a5c1366d601b59c317a1c3f971216a511", null ],
+    [ "operator VkPhysicalDeviceImageFormatInfo2 &", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ab366c8624744007fad8a501b5bf97572", null ],
+    [ "operator VkPhysicalDeviceImageFormatInfo2 const &", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ae0b2fdd047f1e665927e2c9d0e2526fa", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a9b9c6aa673e8c8ba2f4465299e1d2bfd", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a1ef4f2bd408459f60145ad64e8f0078f", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a46ebe176010b98f456fffc0a3b455966", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ab013313ab2b6e2cf06a95f7ddedd4d6a", null ],
+    [ "setFlags", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a18a96866371c922daf394e2a8ba6add8", null ],
+    [ "setFormat", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a3499ef94af871b914e784394eab4dea0", null ],
+    [ "setPNext", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#abd3b06f56bc5ca0f0982886947c995cb", null ],
+    [ "setTiling", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a08051bc4b5fccdf0d7ff9ebe61f632f0", null ],
+    [ "setType", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a940a79d6939a540ed9ccf93bd88a8182", null ],
+    [ "setUsage", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ab8ec00633787e6d123e6684d2e7d0af4", null ],
+    [ "flags", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ac27441f61d8ce66fe439739ac60a541e", null ],
+    [ "format", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#adbe50784dd27f02354f66e45f9d30dca", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#aa421ab2d5465cffa8a7e5d6618ebe473", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a70e833aaf332f7c5bdeb0b4658eff9e9", null ],
+    [ "tiling", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#a441255439d77a43541ac271e98e906eb", null ],
+    [ "type", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#ae28b1283e9a99a4f354c4e08868d0156", null ],
+    [ "usage", "structvk_1_1PhysicalDeviceImageFormatInfo2.html#add2ee58e76c11a90b517bbea0981e624", null ]
+];

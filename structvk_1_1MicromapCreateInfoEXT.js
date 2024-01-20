@@ -1,0 +1,28 @@
+var structvk_1_1MicromapCreateInfoEXT =
+[
+    [ "NativeType", "structvk_1_1MicromapCreateInfoEXT.html#a3c39ef142000efecfdcf52fd6cbd6a14", null ],
+    [ "MicromapCreateInfoEXT", "structvk_1_1MicromapCreateInfoEXT.html#a3f1c5dd8dac9a083750cd8edbd69ccfc", null ],
+    [ "MicromapCreateInfoEXT", "structvk_1_1MicromapCreateInfoEXT.html#ab8f9e7e79ef3f66d7fd0426667ed38e3", null ],
+    [ "MicromapCreateInfoEXT", "structvk_1_1MicromapCreateInfoEXT.html#aa54b94351ca7956b1e17c4fcad14b717", null ],
+    [ "operator VkMicromapCreateInfoEXT &", "structvk_1_1MicromapCreateInfoEXT.html#a085f4c4b3fe51820144ec52931c8904f", null ],
+    [ "operator VkMicromapCreateInfoEXT const &", "structvk_1_1MicromapCreateInfoEXT.html#af58717c8e5f09ef3c31cd29fbb818136", null ],
+    [ "operator!=", "structvk_1_1MicromapCreateInfoEXT.html#a096b8936a44aefd5be09afc75acd7c35", null ],
+    [ "operator=", "structvk_1_1MicromapCreateInfoEXT.html#a0f83499fe6630c143aa0089b5e30905d", null ],
+    [ "operator=", "structvk_1_1MicromapCreateInfoEXT.html#a71f2b6d8286912605a96f1e8d4fedab5", null ],
+    [ "operator==", "structvk_1_1MicromapCreateInfoEXT.html#ae21152ddeb43c12b51f25a9f7e1d07d1", null ],
+    [ "setBuffer", "structvk_1_1MicromapCreateInfoEXT.html#ae5488c99e669400a2558c1208d1fe3a6", null ],
+    [ "setCreateFlags", "structvk_1_1MicromapCreateInfoEXT.html#a50c16f83d8240486e3108e39eb069e5d", null ],
+    [ "setDeviceAddress", "structvk_1_1MicromapCreateInfoEXT.html#a063a66a4adb76e02240785e9af11bc17", null ],
+    [ "setOffset", "structvk_1_1MicromapCreateInfoEXT.html#ae0c3540ae014d3043d2c22abfc747edb", null ],
+    [ "setPNext", "structvk_1_1MicromapCreateInfoEXT.html#a4d74a0759887b595fd7176f06bc9a743", null ],
+    [ "setSize", "structvk_1_1MicromapCreateInfoEXT.html#aa33fdf968dfb3ac2194bc193ccb53b29", null ],
+    [ "setType", "structvk_1_1MicromapCreateInfoEXT.html#afb3e2fd7a5b5b2e0008ef298a5333e7d", null ],
+    [ "buffer", "structvk_1_1MicromapCreateInfoEXT.html#a1275e2c8a53f1fa44c48fbdf55cfd409", null ],
+    [ "createFlags", "structvk_1_1MicromapCreateInfoEXT.html#adb1901b5dae8837370bbfc6e6e4115d5", null ],
+    [ "deviceAddress", "structvk_1_1MicromapCreateInfoEXT.html#affc18a64a52ae2a7dc2daa09f24bee8e", null ],
+    [ "offset", "structvk_1_1MicromapCreateInfoEXT.html#a02a92f733cb3108823b2b9e7e30249e5", null ],
+    [ "pNext", "structvk_1_1MicromapCreateInfoEXT.html#a8ed931dd5c939327c6eb0400385bbce3", null ],
+    [ "size", "structvk_1_1MicromapCreateInfoEXT.html#a6ad6dab2d3d6f76509ebfd70df77edaa", null ],
+    [ "sType", "structvk_1_1MicromapCreateInfoEXT.html#a8f9c578ac952abda2221eb947441e765", null ],
+    [ "type", "structvk_1_1MicromapCreateInfoEXT.html#ab628875e669bb0fa0dc6040403b639e8", null ]
+];

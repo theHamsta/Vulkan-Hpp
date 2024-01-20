@@ -1,0 +1,26 @@
+var structvk_1_1DeviceQueueCreateInfo =
+[
+    [ "NativeType", "structvk_1_1DeviceQueueCreateInfo.html#a3a2a54950e0f5f5a62b123296052ed56", null ],
+    [ "DeviceQueueCreateInfo", "structvk_1_1DeviceQueueCreateInfo.html#a7745fc6fa7901d2ae080b46dce91b744", null ],
+    [ "DeviceQueueCreateInfo", "structvk_1_1DeviceQueueCreateInfo.html#a6fdb263f49c361cb4e02b5c095e50380", null ],
+    [ "DeviceQueueCreateInfo", "structvk_1_1DeviceQueueCreateInfo.html#a5be1bf9878c09a3f45fb288978d2481b", null ],
+    [ "DeviceQueueCreateInfo", "structvk_1_1DeviceQueueCreateInfo.html#a2844c132364e8c43a7d38c0f4807423f", null ],
+    [ "operator VkDeviceQueueCreateInfo &", "structvk_1_1DeviceQueueCreateInfo.html#aab22d03bbc98a81066e15f831e471edd", null ],
+    [ "operator VkDeviceQueueCreateInfo const &", "structvk_1_1DeviceQueueCreateInfo.html#a88da06b4742c623da326fd0c72d2e4d4", null ],
+    [ "operator!=", "structvk_1_1DeviceQueueCreateInfo.html#a0ac4ca80b1b9cf826bc4627cf616201c", null ],
+    [ "operator=", "structvk_1_1DeviceQueueCreateInfo.html#aa498d5d9c12ad43c3ef704b11f137bc2", null ],
+    [ "operator=", "structvk_1_1DeviceQueueCreateInfo.html#a9c64c2c0dfef1629db8dd53d175193c9", null ],
+    [ "operator==", "structvk_1_1DeviceQueueCreateInfo.html#a08b49342309c56592f7a69c0c7e647d5", null ],
+    [ "setFlags", "structvk_1_1DeviceQueueCreateInfo.html#ab165e25e4f711c60e5836b224c13779f", null ],
+    [ "setPNext", "structvk_1_1DeviceQueueCreateInfo.html#a5512aee6d6c581f07fd24c35674f8925", null ],
+    [ "setPQueuePriorities", "structvk_1_1DeviceQueueCreateInfo.html#a30f014659faa1984b5573b443156ba61", null ],
+    [ "setQueueCount", "structvk_1_1DeviceQueueCreateInfo.html#a17dec3ed49a784ee3ffaf79ce9b389e6", null ],
+    [ "setQueueFamilyIndex", "structvk_1_1DeviceQueueCreateInfo.html#a5e66634c91d33ae4fac7fa1de10e984f", null ],
+    [ "setQueuePriorities", "structvk_1_1DeviceQueueCreateInfo.html#a7624187cae9a3a271d398c99d7034418", null ],
+    [ "flags", "structvk_1_1DeviceQueueCreateInfo.html#a3c4d2e50d2a80d4cdf7fedf978ecd420", null ],
+    [ "pNext", "structvk_1_1DeviceQueueCreateInfo.html#a276083e240bc402285b89b030b713935", null ],
+    [ "pQueuePriorities", "structvk_1_1DeviceQueueCreateInfo.html#a4946fa41205bbfc7ef190accdcc72fea", null ],
+    [ "queueCount", "structvk_1_1DeviceQueueCreateInfo.html#af9079c7746402f216287c6c86891671c", null ],
+    [ "queueFamilyIndex", "structvk_1_1DeviceQueueCreateInfo.html#a0e4f136337e9e0a26938d859eadb5d88", null ],
+    [ "sType", "structvk_1_1DeviceQueueCreateInfo.html#a5808236ed61d9e3ee79d6d04c15847df", null ]
+];

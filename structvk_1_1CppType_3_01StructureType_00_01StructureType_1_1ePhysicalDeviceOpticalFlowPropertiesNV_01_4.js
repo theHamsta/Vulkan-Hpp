@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceOpticalFlowPropertiesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceOpticalFlowPropertiesNV_01_4.html#a1c7c34c77a19a1a4ea43e51027fa253d", null ]
+];

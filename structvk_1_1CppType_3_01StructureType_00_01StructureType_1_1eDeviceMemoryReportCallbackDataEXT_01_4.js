@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceMemoryReportCallbackDataEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceMemoryReportCallbackDataEXT_01_4.html#a95bd3cb414101a10bccac38b560e5955", null ]
+];

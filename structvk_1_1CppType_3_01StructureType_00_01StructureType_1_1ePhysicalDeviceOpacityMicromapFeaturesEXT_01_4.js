@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceOpacityMicromapFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceOpacityMicromapFeaturesEXT_01_4.html#a5ec2774a3372088bbab5a74bd71f72db", null ]
+];

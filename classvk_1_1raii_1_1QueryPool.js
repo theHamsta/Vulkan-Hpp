@@ -1,0 +1,27 @@
+var classvk_1_1raii_1_1QueryPool =
+[
+    [ "CppType", "classvk_1_1raii_1_1QueryPool.html#a50c0e95d2d31c9c1cca8b09187b85f12", null ],
+    [ "CType", "classvk_1_1raii_1_1QueryPool.html#a4d61595941f0652997c3d5a09e31604e", null ],
+    [ "QueryPool", "classvk_1_1raii_1_1QueryPool.html#a662f7916eacf94555264d6ad8477cab0", null ],
+    [ "QueryPool", "classvk_1_1raii_1_1QueryPool.html#a18fa96266f260a6c1ed7414084c1fc50", null ],
+    [ "QueryPool", "classvk_1_1raii_1_1QueryPool.html#ad8f12241889283ebe4489266c92e723e", null ],
+    [ "~QueryPool", "classvk_1_1raii_1_1QueryPool.html#a57329ae7e5715ede4a23437daa1b3bd7", null ],
+    [ "QueryPool", "classvk_1_1raii_1_1QueryPool.html#a62e0a4992c07a3ab47af4ccae6658fce", null ],
+    [ "QueryPool", "classvk_1_1raii_1_1QueryPool.html#a8f57e778610aad34b1700d1f57a53dcc", null ],
+    [ "QueryPool", "classvk_1_1raii_1_1QueryPool.html#a6f3e103225b90e82587d7e2fe1f4899b", null ],
+    [ "clear", "classvk_1_1raii_1_1QueryPool.html#a0593a1dfa54b2a9ac334ab42eac887d2", null ],
+    [ "getDevice", "classvk_1_1raii_1_1QueryPool.html#ab5c4a8bb0e421b52c2f718986586328a", null ],
+    [ "getDispatcher", "classvk_1_1raii_1_1QueryPool.html#a70eb3d3d46d7ca7b4cfab316d3fcee9c", null ],
+    [ "getResult", "classvk_1_1raii_1_1QueryPool.html#ac507322dfe2136ee54cc7183014a87bc", null ],
+    [ "getResult", "classvk_1_1raii_1_1QueryPool.html#ae9728c3b4d70ed4392318d170f74487a", null ],
+    [ "getResults", "classvk_1_1raii_1_1QueryPool.html#ae51f5f19139ffa1db53ac8d82096e719", null ],
+    [ "getResults", "classvk_1_1raii_1_1QueryPool.html#a21c626ecce16bd0f8f79955b5530a621", null ],
+    [ "operator vk::QueryPool", "classvk_1_1raii_1_1QueryPool.html#a72d654ad5584c8253f4df0c8d19286b6", null ],
+    [ "operator*", "classvk_1_1raii_1_1QueryPool.html#a4d672bff9deadeabac5850ce272cc644", null ],
+    [ "operator=", "classvk_1_1raii_1_1QueryPool.html#a74838e0ac1de2472aed659edb5e22ea0", null ],
+    [ "operator=", "classvk_1_1raii_1_1QueryPool.html#a5792036537c3dcbe42d14359440a176b", null ],
+    [ "release", "classvk_1_1raii_1_1QueryPool.html#a5ce696bd679001d6ebcde2f8e154c6c7", null ],
+    [ "reset", "classvk_1_1raii_1_1QueryPool.html#a1930d989405125f9adaa4b8ff8d626a1", null ],
+    [ "resetEXT", "classvk_1_1raii_1_1QueryPool.html#a901c2dc3a5c6f083aa5f5e38b1b4f538", null ],
+    [ "swap", "classvk_1_1raii_1_1QueryPool.html#abe8e4e9f9cc3db0fa5d5baf2a463885a", null ]
+];

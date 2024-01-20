@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePageableDeviceLocalMemoryFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePageableDeviceLocalMemoryFeaturesEXT_01_4.html#a64328d4f06881c817dad23c535b67d26", null ]
+];

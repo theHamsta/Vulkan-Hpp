@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eIndirectCommandsLayoutCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eIndirectCommandsLayoutCreateInfoNV_01_4.html#a94aa391e00521e66f65df1a8144a768f", null ]
+];

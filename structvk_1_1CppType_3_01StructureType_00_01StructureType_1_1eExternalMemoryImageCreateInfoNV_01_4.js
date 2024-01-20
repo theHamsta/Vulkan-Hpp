@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eExternalMemoryImageCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eExternalMemoryImageCreateInfoNV_01_4.html#a82d66d2013486b4aece3908f8ab9c5c3", null ]
+];

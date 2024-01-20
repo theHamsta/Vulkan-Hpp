@@ -1,0 +1,26 @@
+var structvk_1_1AcquireNextImageInfoKHR =
+[
+    [ "NativeType", "structvk_1_1AcquireNextImageInfoKHR.html#a77ef5253c937084b96a5530a9241a63a", null ],
+    [ "AcquireNextImageInfoKHR", "structvk_1_1AcquireNextImageInfoKHR.html#a2650ab290044e62bd6d9df69eb6ae40a", null ],
+    [ "AcquireNextImageInfoKHR", "structvk_1_1AcquireNextImageInfoKHR.html#a8bccec5051de3df4506161975be952e5", null ],
+    [ "AcquireNextImageInfoKHR", "structvk_1_1AcquireNextImageInfoKHR.html#abb2731afce3da34e3c3bb2c2866a6571", null ],
+    [ "operator VkAcquireNextImageInfoKHR &", "structvk_1_1AcquireNextImageInfoKHR.html#a4678e59190dc28351b86c36eb45d8843", null ],
+    [ "operator VkAcquireNextImageInfoKHR const &", "structvk_1_1AcquireNextImageInfoKHR.html#a3d94d08c568c3971f5826fca160e9d92", null ],
+    [ "operator!=", "structvk_1_1AcquireNextImageInfoKHR.html#a892b18bf83a4a2c839eb50e060f2b80b", null ],
+    [ "operator=", "structvk_1_1AcquireNextImageInfoKHR.html#a229a34328d63a6b10c4cc003e0f1d4a2", null ],
+    [ "operator=", "structvk_1_1AcquireNextImageInfoKHR.html#aab8a110c7452d887a8fba311f2fc9f17", null ],
+    [ "operator==", "structvk_1_1AcquireNextImageInfoKHR.html#a84ecda2726befb7076de7ca2c3435a3b", null ],
+    [ "setDeviceMask", "structvk_1_1AcquireNextImageInfoKHR.html#a16571db246926769e45d91697bee5a99", null ],
+    [ "setFence", "structvk_1_1AcquireNextImageInfoKHR.html#a72efc4a0c1e0144f7f2c920ccfff3735", null ],
+    [ "setPNext", "structvk_1_1AcquireNextImageInfoKHR.html#a0490ec8d08baba847b46e8c333d19ae4", null ],
+    [ "setSemaphore", "structvk_1_1AcquireNextImageInfoKHR.html#a8a2af4714aac7f78b8805a7996ecf50f", null ],
+    [ "setSwapchain", "structvk_1_1AcquireNextImageInfoKHR.html#a391ccbac2aaee752437e897344204624", null ],
+    [ "setTimeout", "structvk_1_1AcquireNextImageInfoKHR.html#a0437650b095b6ca579de7c8be8a9d58e", null ],
+    [ "deviceMask", "structvk_1_1AcquireNextImageInfoKHR.html#ab3e3cc01b6f98828a8860ffce7332df3", null ],
+    [ "fence", "structvk_1_1AcquireNextImageInfoKHR.html#af3154a5b845bbe1a868a3f519a4e3694", null ],
+    [ "pNext", "structvk_1_1AcquireNextImageInfoKHR.html#a370539951b214680d38540b35f09f167", null ],
+    [ "semaphore", "structvk_1_1AcquireNextImageInfoKHR.html#a75292707324327365e3379f4af93dcb0", null ],
+    [ "sType", "structvk_1_1AcquireNextImageInfoKHR.html#a500d20b8f1d348ab99766fa74d5ccf42", null ],
+    [ "swapchain", "structvk_1_1AcquireNextImageInfoKHR.html#a8f842bea89ea8459464f67f15d9c9ccc", null ],
+    [ "timeout", "structvk_1_1AcquireNextImageInfoKHR.html#ac0441f9a6afa6b3019c9a51d41eb9784", null ]
+];

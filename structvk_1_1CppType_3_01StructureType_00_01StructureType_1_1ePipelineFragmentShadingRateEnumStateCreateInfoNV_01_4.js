@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineFragmentShadingRateEnumStateCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineFragmentShadingRateEnumStateCreateInfoNV_01_4.html#a85e3295d4afbfdd42e1cc852cf0ee74d", null ]
+];

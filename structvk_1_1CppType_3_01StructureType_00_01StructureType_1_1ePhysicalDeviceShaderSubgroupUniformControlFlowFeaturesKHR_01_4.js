@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR_01_4.html#af5c8970c67f78b33d570956b25f8ae97", null ]
+];

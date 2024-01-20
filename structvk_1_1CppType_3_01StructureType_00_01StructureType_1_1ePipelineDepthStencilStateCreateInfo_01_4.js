@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineDepthStencilStateCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineDepthStencilStateCreateInfo_01_4.html#aab52125f98cac400bc0cf154aa63d547", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSetDescriptorBufferOffsetsInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSetDescriptorBufferOffsetsInfoEXT_01_4.html#a684243d17b2a974fa373ba2f4087c9a7", null ]
+];

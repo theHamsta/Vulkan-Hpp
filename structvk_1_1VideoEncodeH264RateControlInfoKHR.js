@@ -1,0 +1,26 @@
+var structvk_1_1VideoEncodeH264RateControlInfoKHR =
+[
+    [ "NativeType", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ac13d1bae000c42a7af91b7c410746785", null ],
+    [ "VideoEncodeH264RateControlInfoKHR", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#af8da950971a3e43d7d311de3f5305dea", null ],
+    [ "VideoEncodeH264RateControlInfoKHR", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#abeeffecbbec9f9a4fd57ce511afdafc7", null ],
+    [ "VideoEncodeH264RateControlInfoKHR", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ad575f5b31c252e019d5965ab5d40b3ed", null ],
+    [ "operator VkVideoEncodeH264RateControlInfoKHR &", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a30ac49a6bbc393b50873a836c6c6a1bf", null ],
+    [ "operator VkVideoEncodeH264RateControlInfoKHR const &", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a97770c6d9a833a903cba4578969a3bc9", null ],
+    [ "operator!=", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a2cb9e00c29ff1199923b16748da02ac9", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a69cacb3e4b9c2be93d17b3cd73bb41fc", null ],
+    [ "operator=", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a29eb8de74fd084fc984051c6065c9dc7", null ],
+    [ "operator==", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#adf11d7358f697527f2f3d70884d8f058", null ],
+    [ "setConsecutiveBFrameCount", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ab109a618ecfa70c238b743ef202c837e", null ],
+    [ "setFlags", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ae151cc2676ddd83786053e74135028d1", null ],
+    [ "setGopFrameCount", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a85ec206ef1e980cbeecd46916ef845d8", null ],
+    [ "setIdrPeriod", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a0823f794645f90bb35a9535604d35b31", null ],
+    [ "setPNext", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a53ab4dc169930bf89e872f26238563ee", null ],
+    [ "setTemporalLayerCount", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ac611bea471fdfad51fd53c1042979276", null ],
+    [ "consecutiveBFrameCount", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#af14f8b4b19990fb50ac4e3bb19a65c28", null ],
+    [ "flags", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a6d6720c50684061238e24ff8c4e7f4c2", null ],
+    [ "gopFrameCount", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a4fc16837449a14b43c65d63df500b247", null ],
+    [ "idrPeriod", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a2f4108e65e708ad862c5a813611ac709", null ],
+    [ "pNext", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ab97bd41272c30981045c1939ce9674fa", null ],
+    [ "sType", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#a69a566fd8334e9ab6f3b18e1bd743c63", null ],
+    [ "temporalLayerCount", "structvk_1_1VideoEncodeH264RateControlInfoKHR.html#ac33a31ead6d4cd1c3ccc2ca87e053c0b", null ]
+];

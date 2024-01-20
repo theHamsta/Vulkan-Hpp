@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eMultiviewPerViewAttributesInfoNVX_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eMultiviewPerViewAttributesInfoNVX_01_4.html#a01d75cc73f4376eb88a88bd5e0a213f0", null ]
+];

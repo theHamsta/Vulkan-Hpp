@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265RateControlInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265RateControlInfoKHR_01_4.html#a2839e0e2f518465859d2803c1a2d70b5", null ]
+];

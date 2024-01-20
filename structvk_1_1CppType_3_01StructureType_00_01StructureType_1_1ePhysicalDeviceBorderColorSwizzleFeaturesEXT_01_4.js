@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceBorderColorSwizzleFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceBorderColorSwizzleFeaturesEXT_01_4.html#ac33b89d2ca7a79dfa9f1242e1fc8ee8c", null ]
+];

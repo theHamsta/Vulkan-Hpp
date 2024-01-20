@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceDiagnosticsConfigCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDeviceDiagnosticsConfigCreateInfoNV_01_4.html#aa91d3fe4685cd0405cd2e3e0f72f73c9", null ]
+];

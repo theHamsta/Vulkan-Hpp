@@ -1,0 +1,26 @@
+var structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#acd53145a5c333e134144e401ef79370b", null ],
+    [ "PhysicalDeviceOpticalFlowPropertiesNV", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#ac8dc934deed687adaf3ff6508ccdf57f", null ],
+    [ "PhysicalDeviceOpticalFlowPropertiesNV", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a0d43fbb0d736e2e6e33ab740b2e8e7e6", null ],
+    [ "PhysicalDeviceOpticalFlowPropertiesNV", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a1d57b2da9cf36d3412cfa13ae18a1284", null ],
+    [ "operator VkPhysicalDeviceOpticalFlowPropertiesNV &", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a84a861b964181e97bf403f410a17b799", null ],
+    [ "operator VkPhysicalDeviceOpticalFlowPropertiesNV const &", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#aaeeaf9fd5a2e2f6ab549fcca3d133564", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a395370cb4afb1d95a31532871f8856e1", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a0a1bb6cb2560eac975e88d728f2f062a", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a67feb75b49ad33649fcf7c47b0205cf0", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a559fa11a9a5769d44d691042541ad928", null ],
+    [ "bidirectionalFlowSupported", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a2c339a96d88df2194f1e2a5b22cfc31b", null ],
+    [ "costSupported", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a51d23c223757dc8a3e1d1c80c2b53660", null ],
+    [ "globalFlowSupported", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a98b9948b90892aec6ac063351e5778fc", null ],
+    [ "hintSupported", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#afc74715b06eab5cd55c91d1f92d4f105", null ],
+    [ "maxHeight", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a162dec1e27ed6818c846f8001b6af21f", null ],
+    [ "maxNumRegionsOfInterest", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a81fd113b6d4f4ffdf0a4a41c397ca890", null ],
+    [ "maxWidth", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a70d9ca8f650032a8b09c90b183a591d4", null ],
+    [ "minHeight", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#ac91044c179a7dc91e9aee564fcecf46a", null ],
+    [ "minWidth", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#adbfe37514a779172fd3cfd263f83b971", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a1b63bd78d11daa3e50c69e52e408c089", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#ae9b8fd5dc27062c06b76818aa3802384", null ],
+    [ "supportedHintGridSizes", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a939ada5941909a5c502ac12f56e61472", null ],
+    [ "supportedOutputGridSizes", "structvk_1_1PhysicalDeviceOpticalFlowPropertiesNV.html#a8c6b91bf39f0e6f115b617c584da37f4", null ]
+];

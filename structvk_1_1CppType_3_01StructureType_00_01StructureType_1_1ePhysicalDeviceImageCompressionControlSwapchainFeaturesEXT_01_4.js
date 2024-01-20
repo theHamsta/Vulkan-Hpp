@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImageCompressionControlSwapchainFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImageCompressionControlSwapchainFeaturesEXT_01_4.html#aecf46df6fa2141ae9e935176f9f32a95", null ]
+];

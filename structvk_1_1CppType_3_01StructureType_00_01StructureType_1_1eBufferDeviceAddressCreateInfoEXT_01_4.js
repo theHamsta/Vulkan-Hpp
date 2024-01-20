@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eBufferDeviceAddressCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eBufferDeviceAddressCreateInfoEXT_01_4.html#a8aa288c118637839f8f7019656bffb17", null ]
+];

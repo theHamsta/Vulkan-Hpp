@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassInputAttachmentAspectCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderPassInputAttachmentAspectCreateInfo_01_4.html#ae9769123b1cb7ab52400a458864f317c", null ]
+];

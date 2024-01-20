@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceVulkan12Properties_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceVulkan12Properties_01_4.html#a2d82267c6f08e9ec45b3f7b3c907761d", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRayTracingPipelineCreateInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRayTracingPipelineCreateInfoKHR_01_4.html#a3d975500bbd3bceb4751e36b144adf77", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eGraphicsPipelineShaderGroupsCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eGraphicsPipelineShaderGroupsCreateInfoNV_01_4.html#a12a77cdd6df4dc13e530c72137c2087c", null ]
+];

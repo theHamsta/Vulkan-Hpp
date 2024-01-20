@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderingFragmentShadingRateAttachmentInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eRenderingFragmentShadingRateAttachmentInfoKHR_01_4.html#a777404bbae79e28e6996e676c6b17c98", null ]
+];

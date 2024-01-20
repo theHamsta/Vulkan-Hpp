@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImageDrmFormatModifierInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceImageDrmFormatModifierInfoEXT_01_4.html#a6fac58e3215361d9998839e262150009", null ]
+];

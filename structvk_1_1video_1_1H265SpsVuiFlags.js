@@ -1,0 +1,26 @@
+var structvk_1_1video_1_1H265SpsVuiFlags =
+[
+    [ "NativeType", "structvk_1_1video_1_1H265SpsVuiFlags.html#ae732d5b186ef30fb6b507c2e33ca8158", null ],
+    [ "operator StdVideoH265SpsVuiFlags &", "structvk_1_1video_1_1H265SpsVuiFlags.html#a1f82d1a8cec4aaeb3acdfcfe052e05ed", null ],
+    [ "operator StdVideoH265SpsVuiFlags const &", "structvk_1_1video_1_1H265SpsVuiFlags.html#aac63740922f222a30fac6c532dd21c7d", null ],
+    [ "operator!=", "structvk_1_1video_1_1H265SpsVuiFlags.html#a922a3a01030fd64303a9e84bfcb5931d", null ],
+    [ "operator==", "structvk_1_1video_1_1H265SpsVuiFlags.html#ac5f0d07ccfbbfc220715a597d394fdc4", null ],
+    [ "aspect_ratio_info_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#af3cf674596044c49c3c7b6ba72e4bb54", null ],
+    [ "bitstream_restriction_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a110a2b309fd7f933622c4da2e7ecbc95", null ],
+    [ "chroma_loc_info_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a7262e5cdc99598a364e7d8e23477ac57", null ],
+    [ "colour_description_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a5d159111976069eff6db7a6120f87462", null ],
+    [ "default_display_window_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#ad249018913afeabb59c3f9f43a7d9561", null ],
+    [ "field_seq_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#ab75501c2ffcf9ff04ba6db84817a7a96", null ],
+    [ "frame_field_info_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a4584d083044e025ee4f4103e97cfc174", null ],
+    [ "motion_vectors_over_pic_boundaries_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#af9126929e9831ff1699290f7e7eac8c1", null ],
+    [ "neutral_chroma_indication_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#ac7453f339e443286e7c5cd903f027d53", null ],
+    [ "overscan_appropriate_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a62c584d2841781e273272923797f7467", null ],
+    [ "overscan_info_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#aabcadb95278c90a95e9849700ad641d7", null ],
+    [ "restricted_ref_pic_lists_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a894e6f83395fa628cc759724bd331e00", null ],
+    [ "tiles_fixed_structure_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a4e0417de47ee849b062d5927f35663a9", null ],
+    [ "video_full_range_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#ab0acab3667080629e4f690e74d753d9e", null ],
+    [ "video_signal_type_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a36c4fba5d0677b19be65e8a375f60d89", null ],
+    [ "vui_hrd_parameters_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a9b24c9e8693b4d4662520bdac2e8acc5", null ],
+    [ "vui_poc_proportional_to_timing_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#aaf562952df3f463672d40191e4805c3c", null ],
+    [ "vui_timing_info_present_flag", "structvk_1_1video_1_1H265SpsVuiFlags.html#a033d61490a560159b0c259802256414e", null ]
+];

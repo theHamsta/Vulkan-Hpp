@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSubpassDescriptionDepthStencilResolve_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eSubpassDescriptionDepthStencilResolve_01_4.html#abbc982649c9f2a0e49ca04862a207aec", null ]
+];

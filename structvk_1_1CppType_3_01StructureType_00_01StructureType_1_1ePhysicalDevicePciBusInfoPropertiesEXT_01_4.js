@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePciBusInfoPropertiesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDevicePciBusInfoPropertiesEXT_01_4.html#ab7cf6fe2f94b34f56fc8f2ec18fc85c9", null ]
+];

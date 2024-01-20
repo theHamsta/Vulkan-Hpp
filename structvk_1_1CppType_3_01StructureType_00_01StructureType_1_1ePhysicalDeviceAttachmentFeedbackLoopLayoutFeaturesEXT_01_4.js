@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT_01_4.html#a49cb4cb2c8fbd22ad559d9b1fdc56fd8", null ]
+];

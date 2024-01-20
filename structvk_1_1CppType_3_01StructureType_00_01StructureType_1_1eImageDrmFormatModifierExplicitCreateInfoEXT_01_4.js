@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageDrmFormatModifierExplicitCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageDrmFormatModifierExplicitCreateInfoEXT_01_4.html#a6d92eda493ae5d58e0d944c642a6eb19", null ]
+];

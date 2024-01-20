@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eHostImageLayoutTransitionInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eHostImageLayoutTransitionInfoEXT_01_4.html#a1ffa2d1f83ef6d50dcfb67c79b0a1eb1", null ]
+];

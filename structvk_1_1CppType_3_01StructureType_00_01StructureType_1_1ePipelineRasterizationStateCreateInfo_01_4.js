@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineRasterizationStateCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineRasterizationStateCreateInfo_01_4.html#a3c7cd2ea46b783e0d45e9ede1d8b0223", null ]
+];

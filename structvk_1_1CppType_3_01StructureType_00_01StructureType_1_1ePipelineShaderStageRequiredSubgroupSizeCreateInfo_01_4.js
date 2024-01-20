@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineShaderStageRequiredSubgroupSizeCreateInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineShaderStageRequiredSubgroupSizeCreateInfo_01_4.html#a22985cfaa77734f933731d0d254454f5", null ]
+];

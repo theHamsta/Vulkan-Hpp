@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportExclusiveScissorStateCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportExclusiveScissorStateCreateInfoNV_01_4.html#a32bae83393e18eeae219d0b9bfd59b2a", null ]
+];

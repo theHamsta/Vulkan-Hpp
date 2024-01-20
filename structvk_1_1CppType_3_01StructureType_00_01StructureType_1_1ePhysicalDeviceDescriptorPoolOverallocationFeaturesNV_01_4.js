@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDescriptorPoolOverallocationFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDescriptorPoolOverallocationFeaturesNV_01_4.html#adccf9c8ef6195e09b40f731063ae4ebf", null ]
+];

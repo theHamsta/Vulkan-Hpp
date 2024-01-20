@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceRayTracingInvocationReorderFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceRayTracingInvocationReorderFeaturesNV_01_4.html#aa05d5fe737323a9aa93d17e11b988718", null ]
+];

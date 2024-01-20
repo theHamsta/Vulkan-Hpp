@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDepthClipEnableFeaturesEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDepthClipEnableFeaturesEXT_01_4.html#adc4eb35382a9a164d8d584bb8d17a04c", null ]
+];

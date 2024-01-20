@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportDepthClipControlCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportDepthClipControlCreateInfoEXT_01_4.html#ace4818e05967dfcd2ba08fea8ddab29c", null ]
+];

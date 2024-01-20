@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eWriteDescriptorSetInlineUniformBlock_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eWriteDescriptorSetInlineUniformBlock_01_4.html#aa21042ac546bc49aa7bc8f901d314b1c", null ]
+];

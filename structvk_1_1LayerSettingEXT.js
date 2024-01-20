@@ -1,0 +1,25 @@
+var structvk_1_1LayerSettingEXT =
+[
+    [ "NativeType", "structvk_1_1LayerSettingEXT.html#a846c7942f5b779f456e82d0b782cc21a", null ],
+    [ "LayerSettingEXT", "structvk_1_1LayerSettingEXT.html#a83eb2d9c929b2edfa283cf4f03f76047", null ],
+    [ "LayerSettingEXT", "structvk_1_1LayerSettingEXT.html#a33fa2519758ba8543ac6d27be2f6b6b9", null ],
+    [ "LayerSettingEXT", "structvk_1_1LayerSettingEXT.html#a8549b532dc99b7d3ad7ad431d23e666e", null ],
+    [ "LayerSettingEXT", "structvk_1_1LayerSettingEXT.html#a7b7f75e26e2bb7b622b1163180f67d73", null ],
+    [ "operator VkLayerSettingEXT &", "structvk_1_1LayerSettingEXT.html#a401e02a6e4d88ac490dcbd5040b3afe5", null ],
+    [ "operator VkLayerSettingEXT const &", "structvk_1_1LayerSettingEXT.html#acc4c6151d362f9362e2a2c5496a98570", null ],
+    [ "operator!=", "structvk_1_1LayerSettingEXT.html#a9f118b34f15178c6f83a22e0b266dc7f", null ],
+    [ "operator=", "structvk_1_1LayerSettingEXT.html#a8a0c7e2ab05f4616b30f75126722119b", null ],
+    [ "operator=", "structvk_1_1LayerSettingEXT.html#a7cb52cfbf2a491737709437f606cc582", null ],
+    [ "operator==", "structvk_1_1LayerSettingEXT.html#a7527c6b22deed8065ddc616358a4d0b6", null ],
+    [ "setPLayerName", "structvk_1_1LayerSettingEXT.html#a1d9c468a965bacbed459ee677733a87e", null ],
+    [ "setPSettingName", "structvk_1_1LayerSettingEXT.html#a0530ab8ca90468b9079b65b126f33992", null ],
+    [ "setPValues", "structvk_1_1LayerSettingEXT.html#a8801664f84f0c0eadce16c574c829faf", null ],
+    [ "setType", "structvk_1_1LayerSettingEXT.html#a578228ea7332562da585109942395b1f", null ],
+    [ "setValueCount", "structvk_1_1LayerSettingEXT.html#ad66530609e40a9d4751c25e4200f13f5", null ],
+    [ "setValues", "structvk_1_1LayerSettingEXT.html#a87e175f7c23216eee26213423c29e45e", null ],
+    [ "pLayerName", "structvk_1_1LayerSettingEXT.html#a905ea4019b093551fb718fd605870168", null ],
+    [ "pSettingName", "structvk_1_1LayerSettingEXT.html#a84a6e909779ae939f719deb2a2ddba59", null ],
+    [ "pValues", "structvk_1_1LayerSettingEXT.html#a4ef722df764eb9f156c7649d530ca44f", null ],
+    [ "type", "structvk_1_1LayerSettingEXT.html#a75483bfe89119ebfdc04ba174b6c2417", null ],
+    [ "valueCount", "structvk_1_1LayerSettingEXT.html#aba0cc7a665fc9495315a42ab70ed7c6f", null ]
+];

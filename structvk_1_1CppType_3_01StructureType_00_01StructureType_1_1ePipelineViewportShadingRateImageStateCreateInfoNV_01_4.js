@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportShadingRateImageStateCreateInfoNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineViewportShadingRateImageStateCreateInfoNV_01_4.html#aabe087cf9c8a0c3b1f20ed8e4b3cea9d", null ]
+];

@@ -1,0 +1,26 @@
+var structvk_1_1DescriptorPoolCreateInfo =
+[
+    [ "NativeType", "structvk_1_1DescriptorPoolCreateInfo.html#a79965e82faa5fe86a3a7794946e19a4c", null ],
+    [ "DescriptorPoolCreateInfo", "structvk_1_1DescriptorPoolCreateInfo.html#a36e4f1ab82955a6e29770cd40be26b33", null ],
+    [ "DescriptorPoolCreateInfo", "structvk_1_1DescriptorPoolCreateInfo.html#aeb7f9c480aec189aa6a38ae5abb640f6", null ],
+    [ "DescriptorPoolCreateInfo", "structvk_1_1DescriptorPoolCreateInfo.html#a77d51c02331d673f174373ee2e6f0562", null ],
+    [ "DescriptorPoolCreateInfo", "structvk_1_1DescriptorPoolCreateInfo.html#a83621166cb2eb9402ab143e4e83aefbe", null ],
+    [ "operator VkDescriptorPoolCreateInfo &", "structvk_1_1DescriptorPoolCreateInfo.html#ae140ae197c35f95a3cba0891871e8812", null ],
+    [ "operator VkDescriptorPoolCreateInfo const &", "structvk_1_1DescriptorPoolCreateInfo.html#ab78cd44f09cbec0e6ddda684b69daf74", null ],
+    [ "operator!=", "structvk_1_1DescriptorPoolCreateInfo.html#a220667281c3a5198ff755e80806836e0", null ],
+    [ "operator=", "structvk_1_1DescriptorPoolCreateInfo.html#a297ec8e628d305fa68005fcfbf7ce0c1", null ],
+    [ "operator=", "structvk_1_1DescriptorPoolCreateInfo.html#a3032fb0b8b5d00babcda084efdd1261b", null ],
+    [ "operator==", "structvk_1_1DescriptorPoolCreateInfo.html#a21ee0f13434f990456e93b6680252a96", null ],
+    [ "setFlags", "structvk_1_1DescriptorPoolCreateInfo.html#a78cac912668ed19769a342d14ba7b3ae", null ],
+    [ "setMaxSets", "structvk_1_1DescriptorPoolCreateInfo.html#a5d5eb678e83be6079093b890cf6cf598", null ],
+    [ "setPNext", "structvk_1_1DescriptorPoolCreateInfo.html#a9738e6159ad8da95504418296374961e", null ],
+    [ "setPoolSizeCount", "structvk_1_1DescriptorPoolCreateInfo.html#a4050eb88acb66c578021705d170d9f17", null ],
+    [ "setPoolSizes", "structvk_1_1DescriptorPoolCreateInfo.html#a17ccd9b703cfb6ca4c9260edba8b21fe", null ],
+    [ "setPPoolSizes", "structvk_1_1DescriptorPoolCreateInfo.html#a6a95b0d02429d1175011f17d35294ff8", null ],
+    [ "flags", "structvk_1_1DescriptorPoolCreateInfo.html#a115f618428aecfa18b2dfe3292b9a9ef", null ],
+    [ "maxSets", "structvk_1_1DescriptorPoolCreateInfo.html#ae2bb4df74900a7ac0c149858512389f4", null ],
+    [ "pNext", "structvk_1_1DescriptorPoolCreateInfo.html#abe8d1c51b9b4e7af689a0807b636b29b", null ],
+    [ "poolSizeCount", "structvk_1_1DescriptorPoolCreateInfo.html#acb6eb932ab153992a66e2e38f5de7872", null ],
+    [ "pPoolSizes", "structvk_1_1DescriptorPoolCreateInfo.html#a2c00c1f6b953a17a78fe740e90739d30", null ],
+    [ "sType", "structvk_1_1DescriptorPoolCreateInfo.html#a9d706c168d4b8d03159be675ca82b573", null ]
+];

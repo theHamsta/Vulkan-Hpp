@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineExecutablePropertiesKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineExecutablePropertiesKHR_01_4.html#ac71e79410aa34bc823b50a35afafd6bc", null ]
+];

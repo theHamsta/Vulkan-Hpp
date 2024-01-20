@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineSampleLocationsStateCreateInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineSampleLocationsStateCreateInfoEXT_01_4.html#ad4c873d883b32c9c23b279963efa5eb5", null ]
+];

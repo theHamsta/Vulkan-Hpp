@@ -1,0 +1,26 @@
+var structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT =
+[
+    [ "NativeType", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#ad9eb602a3b6547c14003cae5ca1126b0", null ],
+    [ "PipelineDiscardRectangleStateCreateInfoEXT", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a9c0dc7409d1a2e52a644ceba0209e599", null ],
+    [ "PipelineDiscardRectangleStateCreateInfoEXT", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#ade857f501f797a461d16fb29df3ec2e9", null ],
+    [ "PipelineDiscardRectangleStateCreateInfoEXT", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a9383ea23230f3ccf2bb4d7f4943fbe0c", null ],
+    [ "PipelineDiscardRectangleStateCreateInfoEXT", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a7656c4092e24612738900561b73442bb", null ],
+    [ "operator VkPipelineDiscardRectangleStateCreateInfoEXT &", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a02e125215b1acf3d8da8898b56264502", null ],
+    [ "operator VkPipelineDiscardRectangleStateCreateInfoEXT const &", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a2b8d7313706890acf6b14d6ec9f95181", null ],
+    [ "operator!=", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a2c1db35fbfc62503684427f231ca6280", null ],
+    [ "operator=", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a8532e7927791a3636d00700bd2dea3e3", null ],
+    [ "operator=", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a2cff05a28b42fc830646c81aa95732a2", null ],
+    [ "operator==", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a972c1a4ca8b7d552d57140f134a272f3", null ],
+    [ "setDiscardRectangleCount", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a945ded972702e5567f36892894016307", null ],
+    [ "setDiscardRectangleMode", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#ae688300bf6b0f89d3c95d818ff3460c5", null ],
+    [ "setDiscardRectangles", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#ac27aeb675eda221f31d254c3b7c25e0b", null ],
+    [ "setFlags", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#ae8402c7be64ba56e07d327e16ba04de5", null ],
+    [ "setPDiscardRectangles", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a08a237d59d4fb4a544403ef4b02d78e3", null ],
+    [ "setPNext", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a9b9147e23fa74ef49dc0f0c6220e51b6", null ],
+    [ "discardRectangleCount", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#aaa8b5c9a46096e6e7e74037c26a796ce", null ],
+    [ "discardRectangleMode", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a0bd629acddd3787f29989499ca7881d9", null ],
+    [ "flags", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a9b85119f4229fd4ff4ced88189deb6d3", null ],
+    [ "pDiscardRectangles", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a429be4146e3736f151044836aa8e5251", null ],
+    [ "pNext", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a66051509ad46b2c8e56bcc4fc636933a", null ],
+    [ "sType", "structvk_1_1PipelineDiscardRectangleStateCreateInfoEXT.html#a5e1198121e04c8d7809cc84210e0315c", null ]
+];

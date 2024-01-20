@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eBindBufferMemoryDeviceGroupInfo_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eBindBufferMemoryDeviceGroupInfo_01_4.html#a26618e0457f1666050bbbb164ac86a84", null ]
+];

@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceVulkanMemoryModelFeatures_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceVulkanMemoryModelFeatures_01_4.html#af0a0a8aecc1ca8fe11bf656df3f728b4", null ]
+];

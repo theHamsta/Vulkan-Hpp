@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVertexInputBindingDescription2EXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVertexInputBindingDescription2EXT_01_4.html#ad37ca4666b3fcb0b7d6f460bf274f108", null ]
+];

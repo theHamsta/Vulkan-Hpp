@@ -1,0 +1,28 @@
+var structvk_1_1CopyImageToMemoryInfoEXT =
+[
+    [ "NativeType", "structvk_1_1CopyImageToMemoryInfoEXT.html#acca0b70b5b1256cc4a7ce2346ee76ae7", null ],
+    [ "CopyImageToMemoryInfoEXT", "structvk_1_1CopyImageToMemoryInfoEXT.html#a6febc783d8865b4f6ae52b7bcc6eb0c6", null ],
+    [ "CopyImageToMemoryInfoEXT", "structvk_1_1CopyImageToMemoryInfoEXT.html#a17e1cda10e960b1ec0122c7dfbc268ef", null ],
+    [ "CopyImageToMemoryInfoEXT", "structvk_1_1CopyImageToMemoryInfoEXT.html#acc4d267e50cf6607a1e664004b0c614c", null ],
+    [ "CopyImageToMemoryInfoEXT", "structvk_1_1CopyImageToMemoryInfoEXT.html#a6bcb4a4794e38feb06e66c67fb6f3513", null ],
+    [ "operator VkCopyImageToMemoryInfoEXT &", "structvk_1_1CopyImageToMemoryInfoEXT.html#af075ac9035cbf505c6c9108136158a84", null ],
+    [ "operator VkCopyImageToMemoryInfoEXT const &", "structvk_1_1CopyImageToMemoryInfoEXT.html#a2d1f085547bc259542a9090d3255b5c0", null ],
+    [ "operator!=", "structvk_1_1CopyImageToMemoryInfoEXT.html#a42251e0551ff7a08581c5cc82fc31933", null ],
+    [ "operator=", "structvk_1_1CopyImageToMemoryInfoEXT.html#a0a708fc8a42af29203a808fe0e8c2d11", null ],
+    [ "operator=", "structvk_1_1CopyImageToMemoryInfoEXT.html#ae3293a4ed8c373fe4d8fd75f7b0b272a", null ],
+    [ "operator==", "structvk_1_1CopyImageToMemoryInfoEXT.html#a09c768af456d3f5c9ae40a7d290310c6", null ],
+    [ "setFlags", "structvk_1_1CopyImageToMemoryInfoEXT.html#a05e2afe1a67825e13e5310bd3b1b1cc4", null ],
+    [ "setPNext", "structvk_1_1CopyImageToMemoryInfoEXT.html#aa7414ce34ac99a4bcada5ff49f458dd9", null ],
+    [ "setPRegions", "structvk_1_1CopyImageToMemoryInfoEXT.html#a1308bcfeefa638ce4057a27c2dca9505", null ],
+    [ "setRegionCount", "structvk_1_1CopyImageToMemoryInfoEXT.html#a28f01d5e529e79768922c9bc56fe1f2f", null ],
+    [ "setRegions", "structvk_1_1CopyImageToMemoryInfoEXT.html#ae355dfb2644535e2f9b068bd4dabffc1", null ],
+    [ "setSrcImage", "structvk_1_1CopyImageToMemoryInfoEXT.html#a3985eab420903cfcd1c93dd37f56cebf", null ],
+    [ "setSrcImageLayout", "structvk_1_1CopyImageToMemoryInfoEXT.html#a4d98f309d1868380691c8362dd1589ff", null ],
+    [ "flags", "structvk_1_1CopyImageToMemoryInfoEXT.html#a082948108868520d1aef89b9a2f81532", null ],
+    [ "pNext", "structvk_1_1CopyImageToMemoryInfoEXT.html#a60031581ee757b810531451e35cd4ba4", null ],
+    [ "pRegions", "structvk_1_1CopyImageToMemoryInfoEXT.html#a04cb3f482bd84e48cd804bc681b6aba8", null ],
+    [ "regionCount", "structvk_1_1CopyImageToMemoryInfoEXT.html#acd7517654a63469d61547b7d58e7d70c", null ],
+    [ "srcImage", "structvk_1_1CopyImageToMemoryInfoEXT.html#aaa6cd7594f4ff92a7e0a94c73c3fad1e", null ],
+    [ "srcImageLayout", "structvk_1_1CopyImageToMemoryInfoEXT.html#aa5c60e6ce395f496dc43d07cf5148395", null ],
+    [ "sType", "structvk_1_1CopyImageToMemoryInfoEXT.html#ac6051cba01902d531ca35cfccceec0d4", null ]
+];

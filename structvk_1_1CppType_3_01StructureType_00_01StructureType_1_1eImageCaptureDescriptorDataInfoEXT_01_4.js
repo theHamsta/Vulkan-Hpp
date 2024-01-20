@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageCaptureDescriptorDataInfoEXT_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eImageCaptureDescriptorDataInfoEXT_01_4.html#a70d16b1916fb3f1b78d0572fca4ebf67", null ]
+];

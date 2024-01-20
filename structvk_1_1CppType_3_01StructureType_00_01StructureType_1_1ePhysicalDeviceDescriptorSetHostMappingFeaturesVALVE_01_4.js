@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDescriptorSetHostMappingFeaturesVALVE_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceDescriptorSetHostMappingFeaturesVALVE_01_4.html#a02c809d1f2238ed9a2b6ef3141e050fa", null ]
+];

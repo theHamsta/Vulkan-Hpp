@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDescriptorSetBindingReferenceVALVE_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eDescriptorSetBindingReferenceVALVE_01_4.html#adf1406dd071aff1512d1cf0c0eac90aa", null ]
+];

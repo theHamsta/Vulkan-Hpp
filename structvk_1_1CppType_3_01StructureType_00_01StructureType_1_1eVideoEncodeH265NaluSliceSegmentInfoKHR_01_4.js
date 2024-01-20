@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265NaluSliceSegmentInfoKHR_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eVideoEncodeH265NaluSliceSegmentInfoKHR_01_4.html#aab41b32070f57efca2f29e47388c71cd", null ]
+];
