@@ -104,7 +104,13 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3654a4513b0f68908d9d6736685e57d0"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvk_1_1StructureChainValidation.html#a3654a4513b0f68908d9d6736685e57d0">valid</a></td></tr>
 <tr class="separator:a3654a4513b0f68908d9d6736685e57d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;size_t Index, typename... ChainElements&gt;<br />
+struct vk::StructureChainValidation&lt; Index, ChainElements &gt;</h3>
+
+
+<p class="definition">Definition at line <a class="el" href="vulkan_8hpp_source.html#l00638">638</a> of file <a class="el" href="vulkan_8hpp_source.html">vulkan.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2179a4581dc915bcf70a9a33ae70547b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2179a4581dc915bcf70a9a33ae70547b">&#9670;&nbsp;</a></span>TestType</h2>
 
@@ -118,6 +124,8 @@ template&lt;size_t Index, typename... ChainElements&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vulkan_8hpp_source.html#l00640">640</a> of file <a class="el" href="vulkan_8hpp_source.html">vulkan.hpp</a>.</p>
 
 </div>
 </div>
@@ -146,9 +154,11 @@ template&lt;size_t Index, typename... ChainElements&gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">= StructExtends&lt;<a class="code" href="structvk_1_1StructureChainValidation.html#a2179a4581dc915bcf70a9a33ae70547b">TestType</a>, <span class="keyword">typename</span> std::tuple_element&lt;0, std::tuple&lt;ChainElements...&gt;&gt;::type&gt;::value &amp;&amp;</div>
 <div class="line">                              ( TestType::allowDuplicate || !StructureChainContains&lt;Index - 1, <a class="code" href="structvk_1_1StructureChainValidation.html#a2179a4581dc915bcf70a9a33ae70547b">TestType</a>, ChainElements...&gt;::value ) &amp;&amp;</div>
 <div class="line">                              <a class="code" href="structvk_1_1StructureChainValidation.html#a3654a4513b0f68908d9d6736685e57d0">StructureChainValidation&lt;Index - 1, ChainElements...&gt;::valid</a></div>
-<div class="ttc" id="astructvk_1_1StructureChainValidation_html_a2179a4581dc915bcf70a9a33ae70547b"><div class="ttname"><a href="structvk_1_1StructureChainValidation.html#a2179a4581dc915bcf70a9a33ae70547b">vk::StructureChainValidation::TestType</a></div><div class="ttdeci">typename std::tuple_element&lt; Index, std::tuple&lt; ChainElements... &gt; &gt;::type TestType</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:640</div></div>
-<div class="ttc" id="astructvk_1_1StructureChainValidation_html_a3654a4513b0f68908d9d6736685e57d0"><div class="ttname"><a href="structvk_1_1StructureChainValidation.html#a3654a4513b0f68908d9d6736685e57d0">vk::StructureChainValidation::valid</a></div><div class="ttdeci">static const bool valid</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:641</div></div>
+<div class="ttc" id="astructvk_1_1StructureChainValidation_html_a2179a4581dc915bcf70a9a33ae70547b"><div class="ttname"><a href="structvk_1_1StructureChainValidation.html#a2179a4581dc915bcf70a9a33ae70547b">vk::StructureChainValidation::TestType</a></div><div class="ttdeci">typename std::tuple_element&lt; Index, std::tuple&lt; ChainElements... &gt; &gt;::type TestType</div><div class="ttdef"><b>Definition:</b> <a href="vulkan_8hpp_source.html#l00640">vulkan.hpp:640</a></div></div>
+<div class="ttc" id="astructvk_1_1StructureChainValidation_html_a3654a4513b0f68908d9d6736685e57d0"><div class="ttname"><a href="structvk_1_1StructureChainValidation.html#a3654a4513b0f68908d9d6736685e57d0">vk::StructureChainValidation::valid</a></div><div class="ttdeci">static const bool valid</div><div class="ttdef"><b>Definition:</b> <a href="vulkan_8hpp_source.html#l00641">vulkan.hpp:641</a></div></div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="vulkan_8hpp_source.html#l00641">641</a> of file <a class="el" href="vulkan_8hpp_source.html">vulkan.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
