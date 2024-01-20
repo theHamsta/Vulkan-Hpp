@@ -75,6 +75,8 @@ var namespacestd =
     [ "hash< vk::PerformanceConfigurationINTEL >", "structstd_1_1hash_3_01vk_1_1PerformanceConfigurationINTEL_01_4.html", "structstd_1_1hash_3_01vk_1_1PerformanceConfigurationINTEL_01_4" ],
     [ "hash< vk::DeferredOperationKHR >", "structstd_1_1hash_3_01vk_1_1DeferredOperationKHR_01_4.html", "structstd_1_1hash_3_01vk_1_1DeferredOperationKHR_01_4" ],
     [ "hash< vk::IndirectCommandsLayoutNV >", "structstd_1_1hash_3_01vk_1_1IndirectCommandsLayoutNV_01_4.html", "structstd_1_1hash_3_01vk_1_1IndirectCommandsLayoutNV_01_4" ],
+    [ "hash< vk::CudaModuleNV >", "structstd_1_1hash_3_01vk_1_1CudaModuleNV_01_4.html", "structstd_1_1hash_3_01vk_1_1CudaModuleNV_01_4" ],
+    [ "hash< vk::CudaFunctionNV >", "structstd_1_1hash_3_01vk_1_1CudaFunctionNV_01_4.html", "structstd_1_1hash_3_01vk_1_1CudaFunctionNV_01_4" ],
     [ "hash< vk::MicromapEXT >", "structstd_1_1hash_3_01vk_1_1MicromapEXT_01_4.html", "structstd_1_1hash_3_01vk_1_1MicromapEXT_01_4" ],
     [ "hash< vk::OpticalFlowSessionNV >", "structstd_1_1hash_3_01vk_1_1OpticalFlowSessionNV_01_4.html", "structstd_1_1hash_3_01vk_1_1OpticalFlowSessionNV_01_4" ],
     [ "hash< vk::ShaderEXT >", "structstd_1_1hash_3_01vk_1_1ShaderEXT_01_4.html", "structstd_1_1hash_3_01vk_1_1ShaderEXT_01_4" ]

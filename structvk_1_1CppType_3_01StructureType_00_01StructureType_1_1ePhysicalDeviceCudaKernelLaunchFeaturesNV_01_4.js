@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCudaKernelLaunchFeaturesNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceCudaKernelLaunchFeaturesNV_01_4.html#acb359749338f71371c73746b21c93484", null ]
+];

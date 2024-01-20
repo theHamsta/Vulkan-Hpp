@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineShaderStageNodeCreateInfoAMDX_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePipelineShaderStageNodeCreateInfoAMDX_01_4.html#ae023d51f31b4964686e32f29eab9a9c6", null ]
+];

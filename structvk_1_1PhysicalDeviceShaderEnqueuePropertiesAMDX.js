@@ -1,0 +1,26 @@
+var structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX =
+[
+    [ "NativeType", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a2c183f77161d9d37fe2ffb1b111279fd", null ],
+    [ "PhysicalDeviceShaderEnqueuePropertiesAMDX", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a3d3f78b323abbd7c044a100f3c846792", null ],
+    [ "PhysicalDeviceShaderEnqueuePropertiesAMDX", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a74740b430259859f462d8f15362e4e30", null ],
+    [ "PhysicalDeviceShaderEnqueuePropertiesAMDX", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#ae726cfc6abf912afa137a575c81045c1", null ],
+    [ "operator VkPhysicalDeviceShaderEnqueuePropertiesAMDX &", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#af3beb6e9e21eef231f35e86d8e43d3b4", null ],
+    [ "operator VkPhysicalDeviceShaderEnqueuePropertiesAMDX const &", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a242662ca388a8427eb45169e8b0d43be", null ],
+    [ "operator!=", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a17aa25efac6468632bdf079f858e9575", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a52c22dbe113e845091b6552af23fa1b3", null ],
+    [ "operator=", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#aab978b0c9854bd7f1665cb34515052c4", null ],
+    [ "operator==", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#acaeb9c2f9eca6f92260f6c2de8ee62df", null ],
+    [ "setExecutionGraphDispatchAddressAlignment", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a5dd9b1310f6a89ecf11a1692f6a0cacf", null ],
+    [ "setMaxExecutionGraphDepth", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a25f8c66c0d46e0a08d82194044cfbfdd", null ],
+    [ "setMaxExecutionGraphShaderOutputNodes", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a4be3b3fa4a1545f1bf557b656c584234", null ],
+    [ "setMaxExecutionGraphShaderPayloadCount", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#ad81998f8b1286cb3cb9b073023bfe988", null ],
+    [ "setMaxExecutionGraphShaderPayloadSize", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a2467a08b7b423fd8adfc2cfd959858d1", null ],
+    [ "setPNext", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a064301030af132c628ec48c72baaa25d", null ],
+    [ "executionGraphDispatchAddressAlignment", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a9e19e9359fc1325aa3d13912db5e3fa7", null ],
+    [ "maxExecutionGraphDepth", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a92d503959ee66302f79973185e9dcc66", null ],
+    [ "maxExecutionGraphShaderOutputNodes", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a9a6ed6e57ad0a911e8bac7b3e1873ec5", null ],
+    [ "maxExecutionGraphShaderPayloadCount", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#af55e5fda4a7797beca4088ae40977a76", null ],
+    [ "maxExecutionGraphShaderPayloadSize", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a8c54783f443223f2b1bc8133be669850", null ],
+    [ "pNext", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a31f81179694bf3c26c72d6ed92ada379", null ],
+    [ "sType", "structvk_1_1PhysicalDeviceShaderEnqueuePropertiesAMDX.html#a7e3304e8f7017834ba9f8c5df03c43a3", null ]
+];

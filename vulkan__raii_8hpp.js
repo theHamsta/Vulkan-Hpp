@@ -18,6 +18,8 @@ var vulkan__raii_8hpp =
     [ "CommandBuffers", "classvk_1_1raii_1_1CommandBuffers.html", "classvk_1_1raii_1_1CommandBuffers" ],
     [ "CuFunctionNVX", "classvk_1_1raii_1_1CuFunctionNVX.html", "classvk_1_1raii_1_1CuFunctionNVX" ],
     [ "CuModuleNVX", "classvk_1_1raii_1_1CuModuleNVX.html", "classvk_1_1raii_1_1CuModuleNVX" ],
+    [ "CudaFunctionNV", "classvk_1_1raii_1_1CudaFunctionNV.html", "classvk_1_1raii_1_1CudaFunctionNV" ],
+    [ "CudaModuleNV", "classvk_1_1raii_1_1CudaModuleNV.html", "classvk_1_1raii_1_1CudaModuleNV" ],
     [ "DebugReportCallbackEXT", "classvk_1_1raii_1_1DebugReportCallbackEXT.html", "classvk_1_1raii_1_1DebugReportCallbackEXT" ],
     [ "DebugUtilsMessengerEXT", "classvk_1_1raii_1_1DebugUtilsMessengerEXT.html", "classvk_1_1raii_1_1DebugUtilsMessengerEXT" ],
     [ "DeferredOperationKHR", "classvk_1_1raii_1_1DeferredOperationKHR.html", "classvk_1_1raii_1_1DeferredOperationKHR" ],

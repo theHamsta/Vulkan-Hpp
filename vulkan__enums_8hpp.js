@@ -672,6 +672,7 @@ var vulkan__enums_8hpp =
       [ "eTransformFeedbackBufferEXT", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a6ee17fd742388fc872415857ad3eadeb", null ],
       [ "eTransformFeedbackCounterBufferEXT", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a247e90d1332d0da1fe57a684b4157f4b", null ],
       [ "eConditionalRenderingEXT", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a1e11a1d799a3f624725f4e04b1c15eba", null ],
+      [ "eExecutionGraphScratchAMDX", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a78862b161d4d1115ba9be8444eeadec2", null ],
       [ "eAccelerationStructureBuildInputReadOnlyKHR", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a1128d6ac5402736814b836cd8d716ce7", null ],
       [ "eAccelerationStructureStorageKHR", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a7cba73ac6118f91203cd7678200a6140", null ],
       [ "eShaderBindingTableKHR", "vulkan__enums_8hpp.html#a161c840775e505e3e966e912218b8631a0d7c57809c1677ee652a5cc12cd30be0", null ],
@@ -696,6 +697,7 @@ var vulkan__enums_8hpp =
       [ "eIndexBuffer", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aae6fc5dd51f463e1bfaba4103d6cce9b9", null ],
       [ "eVertexBuffer", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa14d069b9695b30ef0a41e6ddda094129", null ],
       [ "eIndirectBuffer", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aaee8a86446d745ffc17122e250acd9153", null ],
+      [ "eExecutionGraphScratchAMDX", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa78862b161d4d1115ba9be8444eeadec2", null ],
       [ "eConditionalRenderingEXT", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa1e11a1d799a3f624725f4e04b1c15eba", null ],
       [ "eShaderBindingTable", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa36d26a8c48b6e4d2664b111aa8e473af", null ],
       [ "eRayTracingNV", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aab265aaa7d8b522b27b55d3d4b9fc2561", null ],
@@ -703,6 +705,8 @@ var vulkan__enums_8hpp =
       [ "eTransformFeedbackCounterBufferEXT", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa247e90d1332d0da1fe57a684b4157f4b", null ],
       [ "eVideoDecodeSrc", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa77f51ad413030d760692b9ac89c4a5e1", null ],
       [ "eVideoDecodeDst", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa69195266741349c45ea566956ca30f12", null ],
+      [ "eVideoEncodeDst", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa01d507142ac9812092d84988bcd7201a", null ],
+      [ "eVideoEncodeSrc", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa11989cae42e73fbc145e9097b87de7d4", null ],
       [ "eShaderDeviceAddress", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aaaefc97d2b3491f2e11450943fbcbc86b", null ],
       [ "eAccelerationStructureBuildInputReadOnly", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa7cac72f705940f1a81a314af053ca213", null ],
       [ "eAccelerationStructureStorage", "vulkan__enums_8hpp.html#a10f2ae672825883e48f9d4f025b8f97aa745da8132bd2b4f5b3f4f5a3dd46e65e", null ],
@@ -723,6 +727,7 @@ var vulkan__enums_8hpp =
       [ "eAllowOpacityMicromapUpdateEXT", "vulkan__enums_8hpp.html#a1be27e5add4acb956b87f862544a0079af9ab0f08ee9dd62a2fc01f805eddf72a", null ],
       [ "eAllowDisableOpacityMicromapsEXT", "vulkan__enums_8hpp.html#a1be27e5add4acb956b87f862544a0079ab49c5d3481edfdc6307b1897fd2c8009", null ],
       [ "eAllowOpacityMicromapDataUpdateEXT", "vulkan__enums_8hpp.html#a1be27e5add4acb956b87f862544a0079a4a2cf85b95b96abd0fe92e52c3f08f90", null ],
+      [ "eAllowDisplacementMicromapUpdateNV", "vulkan__enums_8hpp.html#a1be27e5add4acb956b87f862544a0079aadf5588d81a38877eebc1107a1bd6329", null ],
       [ "eAllowDataAccess", "vulkan__enums_8hpp.html#a1be27e5add4acb956b87f862544a0079a24756a2edaa4a2d3f1a3da55db75c908", null ]
     ] ],
     [ "BuildAccelerationStructureModeKHR", "vulkan__enums_8hpp.html#a984adddeacb019b157096e17ecaf14f8", [
@@ -923,7 +928,9 @@ var vulkan__enums_8hpp =
       [ "eDescriptorUpdateTemplateKHR", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421a28ffc58a0f9010f1547da70a6812f5df", null ],
       [ "eAccelerationStructureKHR", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421af138895c3167d9e81f7ebf996879a2ab", null ],
       [ "eSamplerYcbcrConversionKHR", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421a6e625cf0abd58494ce0aa29a03516774", null ],
-      [ "eAccelerationStructureNV", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421aef9ed491cf2066be4031e7421b90d697", null ]
+      [ "eAccelerationStructureNV", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421aef9ed491cf2066be4031e7421b90d697", null ],
+      [ "eCudaModuleNV", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421ac147205cd35600c2a8f40b36fcea04b3", null ],
+      [ "eCudaFunctionNV", "vulkan__enums_8hpp.html#a70823c3bde70d235d459f35353840421a07cd39e718efdbbf39802d83980fbd04", null ]
     ] ],
     [ "DebugUtilsMessageSeverityFlagBitsEXT", "vulkan__enums_8hpp.html#a8cad2ef5ffff2c252725386eab2f337a", [
       [ "eVerbose", "vulkan__enums_8hpp.html#a8cad2ef5ffff2c252725386eab2f337aaf7e7c92b6a0d98b2d88ad56837302f64", null ],
@@ -1059,6 +1066,11 @@ var vulkan__enums_8hpp =
     [ "DiscardRectangleModeEXT", "vulkan__enums_8hpp.html#a3a1dacc8a9b4c452d5ab351733900ee0", [
       [ "eInclusive", "vulkan__enums_8hpp.html#a3a1dacc8a9b4c452d5ab351733900ee0a69eaba6111f201e0e28113ea34e7ca40", null ],
       [ "eExclusive", "vulkan__enums_8hpp.html#a3a1dacc8a9b4c452d5ab351733900ee0a1540a0645b5dd31cd0c351dbe276536f", null ]
+    ] ],
+    [ "DisplacementMicromapFormatNV", "vulkan__enums_8hpp.html#a2b4eaeaefe85194e981b5b2a0e96924f", [
+      [ "e64Triangles64Bytes", "vulkan__enums_8hpp.html#a2b4eaeaefe85194e981b5b2a0e96924fa17089d2455fce290f4c398d4f5f812ff", null ],
+      [ "e256Triangles128Bytes", "vulkan__enums_8hpp.html#a2b4eaeaefe85194e981b5b2a0e96924fa621161af9e31307a3a137313013fefe6", null ],
+      [ "e1024Triangles128Bytes", "vulkan__enums_8hpp.html#a2b4eaeaefe85194e981b5b2a0e96924fa184a94f454132a90ba9a8e3f77ddf2da", null ]
     ] ],
     [ "DisplayEventTypeEXT", "vulkan__enums_8hpp.html#a6cc8681abbedab739c7b72ea9a2b4094", [
       [ "eFirstPixelOut", "vulkan__enums_8hpp.html#a6cc8681abbedab739c7b72ea9a2b4094ac0210ee14d08a3169dd1e7ed0c4e6dac", null ]
@@ -2009,7 +2021,8 @@ var vulkan__enums_8hpp =
       [ "eDeviceAddressCaptureReplay", "vulkan__enums_8hpp.html#a66c577fd9bc6f70dc7724fe36cbc20d3a41c346b3702614d1a75f9fbd648d2b31", null ]
     ] ],
     [ "MicromapTypeEXT", "vulkan__enums_8hpp.html#a6f5f1ec176d651eb5f1bb8e464dc8b92", [
-      [ "eOpacityMicromap", "vulkan__enums_8hpp.html#a6f5f1ec176d651eb5f1bb8e464dc8b92a1cf981d048f8363bd1c3c1811a514176", null ]
+      [ "eOpacityMicromap", "vulkan__enums_8hpp.html#a6f5f1ec176d651eb5f1bb8e464dc8b92a1cf981d048f8363bd1c3c1811a514176", null ],
+      [ "eDisplacementMicromapNV", "vulkan__enums_8hpp.html#a6f5f1ec176d651eb5f1bb8e464dc8b92ad10634b510d1e60ab4a5dbef4bf5d799", null ]
     ] ],
     [ "ObjectType", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6b", [
       [ "eUnknown", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6ba64c3acc11ffdb1be30ea339290bd1508", null ],
@@ -2060,6 +2073,8 @@ var vulkan__enums_8hpp =
       [ "eDeferredOperationKHR", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6bacac2f95d66c15043b98c4731a4356c76", null ],
       [ "eIndirectCommandsLayoutNV", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6ba3509d4d9260f8685289ac7c29c7c57c2", null ],
       [ "ePrivateDataSlotEXT", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6ba4b8a9018d7aef1632a33fa309042a8dd", null ],
+      [ "eCudaModuleNV", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6bac147205cd35600c2a8f40b36fcea04b3", null ],
+      [ "eCudaFunctionNV", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6ba07cd39e718efdbbf39802d83980fbd04", null ],
       [ "eMicromapEXT", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6bafe8d5472e9239fff7cbec3ee3795a2ac", null ],
       [ "eOpticalFlowSessionNV", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6ba7f0ae75a61f04b6b57df516e03797f54", null ],
       [ "eShaderEXT", "vulkan__enums_8hpp.html#aebac2a8c03f32e0e3bc66dd483b8fe6ba6d82ae4914fd44217d39a1e0e42bb5b8", null ]
@@ -2190,6 +2205,7 @@ var vulkan__enums_8hpp =
     [ "PipelineBindPoint", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeac", [
       [ "eGraphics", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeacaae96dc49a56fd0c22927d672cb979537", null ],
       [ "eCompute", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeacad3cb2b894217832636636d7d5d7f8ffd", null ],
+      [ "eExecutionGraphAMDX", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeaca6eb80d76135a1ae1ddd6166c58e45271", null ],
       [ "eRayTracingKHR", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeaca14d1c4856c703508c7324b6725fc58e3", null ],
       [ "eRayTracingNV", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeacab265aaa7d8b522b27b55d3d4b9fc2561", null ],
       [ "eSubpassShadingHUAWEI", "vulkan__enums_8hpp.html#a34523678703507c282981ebfa94fdeaca46f4892636296a3db1038453bbcebc7a", null ]
@@ -2244,6 +2260,7 @@ var vulkan__enums_8hpp =
       [ "eColorAttachmentFeedbackLoopEXT", "vulkan__enums_8hpp.html#af19f4752b45ddb8ff5def563b6cdbe51a70c7ece82e23b49cf13ef2fa1c52d009", null ],
       [ "eDepthStencilAttachmentFeedbackLoopEXT", "vulkan__enums_8hpp.html#af19f4752b45ddb8ff5def563b6cdbe51aa4f6fbe8c6b47da0f559ce9f23c78133", null ],
       [ "eRayTracingOpacityMicromapEXT", "vulkan__enums_8hpp.html#af19f4752b45ddb8ff5def563b6cdbe51a1e3a1ea25ccfa84ac3da85ac1925d54e", null ],
+      [ "eRayTracingDisplacementMicromapNV", "vulkan__enums_8hpp.html#af19f4752b45ddb8ff5def563b6cdbe51af793c00059c47f4cf5e216b149a884ec", null ],
       [ "eNoProtectedAccessEXT", "vulkan__enums_8hpp.html#af19f4752b45ddb8ff5def563b6cdbe51a50fbc62ba6cf1e8d188f3640ee33b79e", null ],
       [ "eProtectedAccessOnlyEXT", "vulkan__enums_8hpp.html#af19f4752b45ddb8ff5def563b6cdbe51a8d420a29de519f8a6137b2cb5c668aa8", null ]
     ] ],
@@ -3214,6 +3231,11 @@ var vulkan__enums_8hpp =
       [ "eDebugUtilsMessengerCreateInfoEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a68651c218f78b60662c6f6481ff54dec", null ],
       [ "ePhysicalDeviceSamplerFilterMinmaxPropertiesEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a354e0eddef1efa82c9754741544ce74c", null ],
       [ "eSamplerReductionModeCreateInfoEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4af9a7af8a81e6ea83318a965819970eeb", null ],
+      [ "ePhysicalDeviceShaderEnqueueFeaturesAMDX", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a769830824eb2d802085cc1ab8f983462", null ],
+      [ "ePhysicalDeviceShaderEnqueuePropertiesAMDX", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a635505dd2a0aa421a61f2178e52dac0e", null ],
+      [ "eExecutionGraphPipelineScratchSizeAMDX", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a4c062ced8783b16b601e8ce4f2b35f9a", null ],
+      [ "eExecutionGraphPipelineCreateInfoAMDX", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a4abf7c571e91219a599cafd3b339a616", null ],
+      [ "ePipelineShaderStageNodeCreateInfoAMDX", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a39ada3cfda9929218398005f25ac9b8b", null ],
       [ "ePhysicalDeviceInlineUniformBlockFeaturesEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a7e6de0bcb1d78c0209459aff8ec53449", null ],
       [ "ePhysicalDeviceInlineUniformBlockPropertiesEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4ac80bc65657fd266a19543a33c2de280b", null ],
       [ "eWriteDescriptorSetInlineUniformBlockEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a0852d4d2a36349e253866337c79cea5b", null ],
@@ -3278,6 +3300,8 @@ var vulkan__enums_8hpp =
       [ "ePhysicalDeviceDescriptorIndexingPropertiesEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a61fa3153c9a3cec82f7e1bf5adb0f234", null ],
       [ "eDescriptorSetVariableDescriptorCountAllocateInfoEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a14d354fc4aafb18e1570ccff4d3e8651", null ],
       [ "eDescriptorSetVariableDescriptorCountLayoutSupportEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4abcd809b534085c7ba2de07342ac20a07", null ],
+      [ "ePhysicalDevicePortabilitySubsetFeaturesKHR", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a747c40b679a7d4dad836223bdabaf400", null ],
+      [ "ePhysicalDevicePortabilitySubsetPropertiesKHR", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4ae7006dfe012b15a096c8cbea0523c958", null ],
       [ "ePipelineViewportShadingRateImageStateCreateInfoNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a9e5ddb403cc359277ca01735d3350cf4", null ],
       [ "ePhysicalDeviceShadingRateImageFeaturesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a6d65bba8988b1dc8f6458f7aa3e8fbc1", null ],
       [ "ePhysicalDeviceShadingRateImagePropertiesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a9b731a62c86ee26aaa01f1ddac0edfa3", null ],
@@ -3491,6 +3515,11 @@ var vulkan__enums_8hpp =
       [ "eVideoEncodeSessionParametersFeedbackInfoKHR", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a037d77e4c968aa532885c4391853acad", null ],
       [ "ePhysicalDeviceDiagnosticsConfigFeaturesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a9a26dccb00f679b48b630bd6a8ba77f1", null ],
       [ "eDeviceDiagnosticsConfigCreateInfoNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a1503103266db623f88ee8de85d0aa308", null ],
+      [ "eCudaModuleCreateInfoNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4af666e6a2856e7a3e2b6cc5b7c0f05a12", null ],
+      [ "eCudaFunctionCreateInfoNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a89a6207a3f6aa75bd9189513bca83805", null ],
+      [ "eCudaLaunchInfoNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a5654950008749a2f8f0e18c36160780f", null ],
+      [ "ePhysicalDeviceCudaKernelLaunchFeaturesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a4de338020212da1da808d42202dbf4c0", null ],
+      [ "ePhysicalDeviceCudaKernelLaunchPropertiesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a7a24e352a82ca2ae98f5fcfd89cfe21f", null ],
       [ "eQueryLowLatencySupportNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a0c6cb33db0198d224eda73006412915e", null ],
       [ "eMemoryBarrier2KHR", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a07223b27859bbd885bca324b5ace1e00", null ],
       [ "eBufferMemoryBarrier2KHR", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4abf34adb79849e9a8e336b8b77fcb459e", null ],
@@ -3610,6 +3639,9 @@ var vulkan__enums_8hpp =
       [ "eMicromapCreateInfoEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a1c22d4046470469885dabb62690d29db", null ],
       [ "eMicromapBuildSizesInfoEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4ac5fffdc624faa88c5f5d15064429c199", null ],
       [ "eAccelerationStructureTrianglesOpacityMicromapEXT", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a1a5b9a42fa52e0e4c461a28550d1c072", null ],
+      [ "ePhysicalDeviceDisplacementMicromapFeaturesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a3101eecc8759f4990e5605c6ad233ecd", null ],
+      [ "ePhysicalDeviceDisplacementMicromapPropertiesNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a186806f7867bb1055d4a78fa31cc8181", null ],
+      [ "eAccelerationStructureTrianglesDisplacementMicromapNV", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a0ce4c630417e07c01beed85280564ca4", null ],
       [ "ePhysicalDeviceClusterCullingShaderFeaturesHUAWEI", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4aba4bba6e1cc36e075ba0127fa9693fba", null ],
       [ "ePhysicalDeviceClusterCullingShaderPropertiesHUAWEI", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a1fee1639362233e09d436a0f7c812060", null ],
       [ "ePhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI", "vulkan__enums_8hpp.html#abed5093608f5d9cdc6d680527d6f95b4a18eede7871f1db8c0cc51c3d34c25096", null ],

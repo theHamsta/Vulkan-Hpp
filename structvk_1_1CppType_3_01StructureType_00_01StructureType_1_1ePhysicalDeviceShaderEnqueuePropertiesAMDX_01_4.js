@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderEnqueuePropertiesAMDX_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1ePhysicalDeviceShaderEnqueuePropertiesAMDX_01_4.html#a5fa5af838e8e5acad2f5eb53059a8b6b", null ]
+];

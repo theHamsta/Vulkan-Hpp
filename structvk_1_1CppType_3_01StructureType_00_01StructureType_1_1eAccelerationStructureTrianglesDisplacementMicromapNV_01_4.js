@@ -1,0 +1,4 @@
+var structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAccelerationStructureTrianglesDisplacementMicromapNV_01_4 =
+[
+    [ "Type", "structvk_1_1CppType_3_01StructureType_00_01StructureType_1_1eAccelerationStructureTrianglesDisplacementMicromapNV_01_4.html#a9b964343a7913a8549a3e807cde25ce7", null ]
+];

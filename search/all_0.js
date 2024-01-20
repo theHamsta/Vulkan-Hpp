@@ -1,12 +1,21 @@
 var searchData=
 [
-  ['01_5finitinstance_2ecpp_0',['01_InitInstance.cpp',['../01__InitInstance_8cpp.html',1,'']]],
-  ['02_5fenumeratedevices_2ecpp_1',['02_EnumerateDevices.cpp',['../02__EnumerateDevices_8cpp.html',1,'']]],
-  ['03_5finitdevice_2ecpp_2',['03_InitDevice.cpp',['../03__InitDevice_8cpp.html',1,'']]],
-  ['04_5finitcommandbuffer_2ecpp_3',['04_InitCommandBuffer.cpp',['../04__InitCommandBuffer_8cpp.html',1,'']]],
-  ['05_5finitswapchain_2ecpp_4',['05_InitSwapchain.cpp',['../05__InitSwapchain_8cpp.html',1,'']]],
-  ['06_5finitdepthbuffer_2ecpp_5',['06_InitDepthBuffer.cpp',['../06__InitDepthBuffer_8cpp.html',1,'']]],
-  ['07_5finituniformbuffer_2ecpp_6',['07_InitUniformBuffer.cpp',['../07__InitUniformBuffer_8cpp.html',1,'']]],
-  ['08_5finitpipelinelayout_2ecpp_7',['08_InitPipelineLayout.cpp',['../08__InitPipelineLayout_8cpp.html',1,'']]],
-  ['09_5finitdescriptorset_2ecpp_8',['09_InitDescriptorSet.cpp',['../09__InitDescriptorSet_8cpp.html',1,'']]]
+  ['01_5finitinstance_0',['01_InitInstance',['../RAII_Samples_01_InitInstance.html',1,'RAII_Samples'],['../Samples_01_InitInstance.html',1,'Samples']]],
+  ['01_5finitinstance_2ecpp_1',['01_InitInstance.cpp',['../01__InitInstance_8cpp.html',1,'']]],
+  ['02_5fenumeratedevices_2',['02_EnumerateDevices',['../RAII_Samples_02_EnumerateDevices.html',1,'RAII_Samples'],['../Samples_02_EnumerateDevices.html',1,'Samples']]],
+  ['02_5fenumeratedevices_2ecpp_3',['02_EnumerateDevices.cpp',['../02__EnumerateDevices_8cpp.html',1,'']]],
+  ['03_5finitdevice_4',['03_InitDevice',['../RAII_Samples_03_InitDevice.html',1,'RAII_Samples'],['../Samples_03_InitDevice.html',1,'Samples']]],
+  ['03_5finitdevice_2ecpp_5',['03_InitDevice.cpp',['../03__InitDevice_8cpp.html',1,'']]],
+  ['04_5finitcommandbuffer_6',['04_InitCommandBuffer',['../RAII_Samples_04_InitCommandBuffer.html',1,'RAII_Samples'],['../Samples_04_InitCommandBuffer.html',1,'Samples']]],
+  ['04_5finitcommandbuffer_2ecpp_7',['04_InitCommandBuffer.cpp',['../04__InitCommandBuffer_8cpp.html',1,'']]],
+  ['05_5finitswapchain_8',['05_InitSwapchain',['../RAII_Samples_05_InitSwapchain.html',1,'RAII_Samples'],['../Samples_05_InitSwapchain.html',1,'Samples']]],
+  ['05_5finitswapchain_2ecpp_9',['05_InitSwapchain.cpp',['../05__InitSwapchain_8cpp.html',1,'']]],
+  ['06_5finitdepthbuffer_10',['06_InitDepthBuffer',['../RAII_Samples_06_InitDepthBuffer.html',1,'RAII_Samples'],['../Samples_06_InitDepthBuffer.html',1,'Samples']]],
+  ['06_5finitdepthbuffer_2ecpp_11',['06_InitDepthBuffer.cpp',['../06__InitDepthBuffer_8cpp.html',1,'']]],
+  ['07_5finituniformbuffer_12',['07_InitUniformBuffer',['../RAII_Samples_07_InitUniformBuffer.html',1,'RAII_Samples'],['../Samples_07_InitUniformBuffer.html',1,'Samples']]],
+  ['07_5finituniformbuffer_2ecpp_13',['07_InitUniformBuffer.cpp',['../07__InitUniformBuffer_8cpp.html',1,'']]],
+  ['08_5finitpipelinelayout_14',['08_InitPipelineLayout',['../RAII_Samples_08_InitPipelineLayout.html',1,'RAII_Samples'],['../Samples_08_InitPipelineLayout.html',1,'Samples']]],
+  ['08_5finitpipelinelayout_2ecpp_15',['08_InitPipelineLayout.cpp',['../08__InitPipelineLayout_8cpp.html',1,'']]],
+  ['09_5finitdescriptorset_16',['09_InitDescriptorSet',['../RAII_Samples_09_InitDescriptorSet.html',1,'RAII_Samples'],['../Samples_09_InitDescriptorSet.html',1,'Samples']]],
+  ['09_5finitdescriptorset_2ecpp_17',['09_InitDescriptorSet.cpp',['../09__InitDescriptorSet_8cpp.html',1,'']]]
 ];
