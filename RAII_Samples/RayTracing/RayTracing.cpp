@@ -28,8 +28,6 @@
 // unknow compiler... just ignore the warnings for yourselves ;)
 #endif
 
-#define VULKAN_HPP_ENABLE_DYNAMIC_LOADER_TOOL 0
-
 // clang-format off
 // we need to include vulkan.hpp before glfw3.h, so stop clang-format to reorder them
 #include <vulkan/vulkan.hpp>
@@ -38,6 +36,7 @@
 #include <numeric>
 #include <random>
 #include <sstream>
+#include <vulkan/vulkan_to_string.hpp>
 
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 #define GLM_FORCE_RADIANS
@@ -65,20 +64,22 @@ struct GeometryInstanceData
   }
 
   float    transform[12];                // Transform matrix, containing only the top 3 rows
-  uint32_t instanceId : 24;              // Instance index
-  uint32_t mask : 8;                     // Visibility mask
+  uint32_t instanceId     : 24;          // Instance index
+  uint32_t mask           : 8;           // Visibility mask
   uint32_t instanceOffset : 24;          // Index of the hit group which will be invoked when a ray hits the instance
-  uint32_t flags : 8;                    // Instance flags, such as culling
+  uint32_t flags          : 8;           // Instance flags, such as culling
   uint64_t accelerationStructureHandle;  // Opaque handle of the bottom-level acceleration structure
 };
+
 static_assert( sizeof( GeometryInstanceData ) == 64, "GeometryInstanceData structure compiles to incorrect size" );
 
 struct AccelerationStructureData
 {
-  vk::raii::AccelerationStructureNV acclerationStructure = nullptr;
-  vk::raii::su::BufferData          scratchBufferData    = nullptr;
-  vk::raii::su::BufferData          resultBufferData     = nullptr;
-  vk::raii::su::BufferData          instanceBufferData   = nullptr;
+  // Note: in order to have a clean destruction order, list the resultBufferData before the accelerationStructure that binds it
+  vk::raii::su::BufferData          resultBufferData      = nullptr;
+  vk::raii::AccelerationStructureNV accelerationStructure = nullptr;
+  vk::raii::su::BufferData          scratchBufferData     = nullptr;
+  vk::raii::su::BufferData          instanceBufferData    = nullptr;
 };
 
 AccelerationStructureData createAccelerationStructureData( vk::raii::PhysicalDevice const &                                                   physicalDevice,
@@ -95,19 +96,19 @@ AccelerationStructureData createAccelerationStructureData( vk::raii::PhysicalDev
     instances.empty() ? vk::AccelerationStructureTypeNV::eBottomLevel : vk::AccelerationStructureTypeNV::eTopLevel;
   vk::AccelerationStructureInfoNV accelerationStructureInfo( accelerationStructureType, {}, vk::su::checked_cast<uint32_t>( instances.size() ), geometries );
   vk::AccelerationStructureCreateInfoNV accelerationStructureCreateInfoNV( 0, accelerationStructureInfo );
-  accelerationStructureData.acclerationStructure = vk::raii::AccelerationStructureNV( device, accelerationStructureCreateInfoNV );
+  accelerationStructureData.accelerationStructure = vk::raii::AccelerationStructureNV( device, accelerationStructureCreateInfoNV );
 
   vk::AccelerationStructureMemoryRequirementsInfoNV objectRequirements( vk::AccelerationStructureMemoryRequirementsTypeNV::eObject,
-                                                                        *accelerationStructureData.acclerationStructure );
+                                                                        *accelerationStructureData.accelerationStructure );
   vk::DeviceSize resultSizeInBytes = device.getAccelerationStructureMemoryRequirementsNV( objectRequirements ).memoryRequirements.size;
   assert( 0 < resultSizeInBytes );
   accelerationStructureData.resultBufferData =
     vk::raii::su::BufferData( physicalDevice, device, resultSizeInBytes, vk::BufferUsageFlagBits::eRayTracingNV, vk::MemoryPropertyFlagBits::eDeviceLocal );
 
   vk::AccelerationStructureMemoryRequirementsInfoNV buildScratchRequirements( vk::AccelerationStructureMemoryRequirementsTypeNV::eBuildScratch,
-                                                                              *accelerationStructureData.acclerationStructure );
+                                                                              *accelerationStructureData.accelerationStructure );
   vk::AccelerationStructureMemoryRequirementsInfoNV updateScratchRequirements( vk::AccelerationStructureMemoryRequirementsTypeNV::eUpdateScratch,
-                                                                               *accelerationStructureData.acclerationStructure );
+                                                                               *accelerationStructureData.accelerationStructure );
   vk::DeviceSize scratchSizeInBytes = std::max( device.getAccelerationStructureMemoryRequirementsNV( buildScratchRequirements ).memoryRequirements.size,
                                                 device.getAccelerationStructureMemoryRequirementsNV( updateScratchRequirements ).memoryRequirements.size );
   assert( 0 < scratchSizeInBytes );
@@ -141,7 +142,7 @@ AccelerationStructureData createAccelerationStructureData( vk::raii::PhysicalDev
   }
 
   device.bindAccelerationStructureMemoryNV(
-    vk::BindAccelerationStructureMemoryInfoNV( *accelerationStructureData.acclerationStructure, *accelerationStructureData.resultBufferData.deviceMemory ) );
+    vk::BindAccelerationStructureMemoryInfoNV( *accelerationStructureData.accelerationStructure, *accelerationStructureData.resultBufferData.deviceMemory ) );
 
   vk::Buffer instanceData;
   if ( *accelerationStructureData.instanceBufferData.buffer )
@@ -153,7 +154,7 @@ AccelerationStructureData createAccelerationStructureData( vk::raii::PhysicalDev
                                               instanceData,
                                               0,
                                               false,
-                                              *accelerationStructureData.acclerationStructure,
+                                              *accelerationStructureData.accelerationStructure,
                                               nullptr,
                                               *accelerationStructureData.scratchBufferData.buffer,
                                               0 );
@@ -169,12 +170,13 @@ AccelerationStructureData createAccelerationStructureData( vk::raii::PhysicalDev
 struct PerFrameData
 {
   PerFrameData( vk::raii::Device const & device, uint32_t queueFamilyIndex )
-    : commandPool( device, { vk::CommandPoolCreateFlagBits::eResetCommandBuffer, queueFamilyIndex } )
+    : commandPool( device, { {}, queueFamilyIndex } )
     , commandBuffer( vk::raii::su::makeCommandBuffer( device, commandPool ) )
     , fence( device, vk::FenceCreateInfo( vk::FenceCreateFlagBits::eSignaled ) )
     , presentCompleteSemaphore( device, vk::SemaphoreCreateInfo() )
     , renderCompleteSemaphore( device, vk::SemaphoreCreateInfo() )
-  {}
+  {
+  }
 
   vk::raii::CommandPool   commandPool;
   vk::raii::CommandBuffer commandBuffer;
@@ -198,6 +200,7 @@ struct Material
   glm::vec3 diffuse   = glm::vec3( 0.7f, 0.7f, 0.7f );
   int       textureID = -1;
 };
+
 const size_t MaterialStride = ( ( sizeof( Material ) + 15 ) / 16 ) * 16;
 
 struct Vertex
@@ -209,6 +212,7 @@ struct Vertex
   glm::vec2 texCoord;
   int       matID;
 };
+
 const size_t VertexStride = ( ( sizeof( Vertex ) + 15 ) / 16 ) * 16;
 
 static const std::vector<Vertex> cubeData = {
@@ -678,7 +682,6 @@ int main( int /*argc*/, char ** /*argv*/ )
     {
       instanceExtensions.push_back( glfwExtensions[i] );
     }
-    instanceExtensions.push_back( VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME );
 
 #if VULKAN_HPP_ENABLE_DYNAMIC_LOADER_TOOL
     vk::raii::Context context;
@@ -689,7 +692,25 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+
+    vk::raii::PhysicalDevice  physicalDevice( nullptr );
+    vk::raii::PhysicalDevices physicalDevices( instance );
+    for ( auto & pd : physicalDevices )
+    {
+      std::vector<vk::ExtensionProperties> ep = pd.enumerateDeviceExtensionProperties();
+      if ( std::any_of( ep.cbegin(),
+                        ep.cend(),
+                        []( vk::ExtensionProperties const & prop ) { return strcmp( prop.extensionName, VK_NV_RAY_TRACING_EXTENSION_NAME ) == 0; } ) )
+      {
+        physicalDevice = pd;
+        break;
+      }
+    }
+    if ( !*physicalDevice )
+    {
+      std::cerr << AppName << ": can't find a PhysicalDevice supporting extension <" << VK_NV_RAY_TRACING_EXTENSION_NAME << ">" << std::endl;
+      return 1;
+    }
 
     std::vector<vk::ExtensionProperties> extensionProperties = physicalDevice.enumerateDeviceExtensionProperties();
     assert( vk::su::contains( extensionProperties, VK_KHR_SWAPCHAIN_EXTENSION_NAME ) );
@@ -711,12 +732,11 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     // Create a Device with ray tracing support (besides some other extensions needed) and needed features
     auto             supportedFeatures = physicalDevice.getFeatures2<vk::PhysicalDeviceFeatures2, vk::PhysicalDeviceDescriptorIndexingFeaturesEXT>();
-    vk::raii::Device device =
-      vk::raii::su::makeDevice( physicalDevice,
-                                graphicsAndPresentQueueFamilyIndex.first,
-                                { VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_NV_RAY_TRACING_EXTENSION_NAME, VK_KHR_GET_MEMORY_REQUIREMENTS_2_EXTENSION_NAME },
-                                &supportedFeatures.get<vk::PhysicalDeviceFeatures2>().features,
-                                &supportedFeatures.get<vk::PhysicalDeviceDescriptorIndexingFeaturesEXT>() );
+    vk::raii::Device device            = vk::raii::su::makeDevice( physicalDevice,
+                                                        graphicsAndPresentQueueFamilyIndex.first,
+                                                                   { VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_NV_RAY_TRACING_EXTENSION_NAME },
+                                                        &supportedFeatures.get<vk::PhysicalDeviceFeatures2>().features,
+                                                        &supportedFeatures.get<vk::PhysicalDeviceDescriptorIndexingFeaturesEXT>() );
 
     // setup stuff per frame
     std::vector<PerFrameData> perFrameData;
@@ -873,11 +893,11 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::su::BufferData uniformBufferData( physicalDevice, device, sizeof( UniformBufferObject ), vk::BufferUsageFlagBits::eUniformBuffer );
 
     vk::raii::DescriptorSet descriptorSet = std::move( vk::raii::DescriptorSets( device, { *descriptorPool, *descriptorSetLayout } ).front() );
-    vk::raii::su::updateDescriptorSets(
-      device,
-      descriptorSet,
-      { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, {} }, { vk::DescriptorType::eStorageBuffer, materialBufferData.buffer, {} } },
-      textures );
+    vk::raii::su::updateDescriptorSets( device,
+                                        descriptorSet,
+                                        { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                          { vk::DescriptorType::eStorageBuffer, materialBufferData.buffer, VK_WHOLE_SIZE, {} } },
+                                        textures );
 
     // RayTracing specific stuff
 
@@ -905,7 +925,7 @@ int main( int /*argc*/, char ** /*argv*/ )
         topLevelAS = createAccelerationStructureData( physicalDevice,
                                                       device,
                                                       commandBuffer,
-                                                      { std::make_pair( std::ref( bottomLevelAS.acclerationStructure ), std::ref( transform ) ) },
+                                                      { std::make_pair( std::ref( bottomLevelAS.accelerationStructure ), std::ref( transform ) ) },
                                                       std::vector<vk::GeometryNV>() );
       } );
 
@@ -919,11 +939,11 @@ int main( int /*argc*/, char ** /*argv*/ )
         vk::BufferMemoryBarrier bufferMemoryBarrier(
           {}, vk::AccessFlagBits::eShaderRead, VK_QUEUE_FAMILY_IGNORED, VK_QUEUE_FAMILY_IGNORED, *vertexBufferData.buffer, 0, VK_WHOLE_SIZE );
         commandBuffer.pipelineBarrier(
-          vk::PipelineStageFlagBits::eAllCommands, vk::PipelineStageFlagBits::eAllCommands, {}, nullptr, bufferMemoryBarrier, nullptr );
+          vk::PipelineStageFlagBits::eTopOfPipe, vk::PipelineStageFlagBits::eRayTracingShaderKHR, {}, nullptr, bufferMemoryBarrier, nullptr );
 
         bufferMemoryBarrier.buffer = *indexBufferData.buffer;
         commandBuffer.pipelineBarrier(
-          vk::PipelineStageFlagBits::eAllCommands, vk::PipelineStageFlagBits::eAllCommands, {}, nullptr, bufferMemoryBarrier, nullptr );
+          vk::PipelineStageFlagBits::eTopOfPipe, vk::PipelineStageFlagBits::eRayTracingShaderKHR, {}, nullptr, bufferMemoryBarrier, nullptr );
       } );
 
     std::vector<vk::DescriptorSetLayoutBinding> bindings;
@@ -958,12 +978,12 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::DescriptorSets      rayTracingDescriptorSets( device, descriptorSetAllocateInfo );
 
     // Bind ray tracing specific descriptor sets into pNext of a vk::WriteDescriptorSet
-    vk::WriteDescriptorSetAccelerationStructureNV writeDescriptorSetAcceleration( 1, &*topLevelAS.acclerationStructure );
+    vk::WriteDescriptorSetAccelerationStructureNV writeDescriptorSetAcceleration( 1, &*topLevelAS.accelerationStructure );
     std::vector<vk::WriteDescriptorSet>           accelerationDescriptionSets;
     for ( size_t i = 0; i < rayTracingDescriptorSets.size(); i++ )
     {
-      accelerationDescriptionSets.emplace_back( *rayTracingDescriptorSets[i], 0, 0, 1, bindings[0].descriptorType );
-      accelerationDescriptionSets.back().pNext = &writeDescriptorSetAcceleration;
+      accelerationDescriptionSets.emplace_back(
+        *rayTracingDescriptorSets[i], 0, 0, 1, bindings[0].descriptorType, nullptr, nullptr, nullptr, &writeDescriptorSetAcceleration );
     }
     device.updateDescriptorSets( accelerationDescriptionSets, nullptr );
 
@@ -973,10 +993,10 @@ int main( int /*argc*/, char ** /*argv*/ )
     {
       vk::raii::su::updateDescriptorSets( device,
                                           rayTracingDescriptorSets[i],
-                                          { { bindings[2].descriptorType, uniformBufferData.buffer, {} },
-                                            { bindings[3].descriptorType, vertexBufferData.buffer, {} },
-                                            { bindings[4].descriptorType, indexBufferData.buffer, {} },
-                                            { bindings[5].descriptorType, materialBufferData.buffer, {} } },
+                                          { { bindings[2].descriptorType, uniformBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                            { bindings[3].descriptorType, vertexBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                            { bindings[4].descriptorType, indexBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                            { bindings[5].descriptorType, materialBufferData.buffer, VK_WHOLE_SIZE, {} } },
                                           textures,
                                           2 );
     }
@@ -1069,7 +1089,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     shaderBindingTableBufferData.upload( shaderHandleStorage );
 
     std::array<vk::ClearValue, 2> clearValues;
-    clearValues[0].color        = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValues[0].color        = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     clearValues[1].depthStencil = vk::ClearDepthStencilValue( 1.0f, 0 );
 
     // Main loop
@@ -1084,8 +1104,6 @@ int main( int /*argc*/, char ** /*argv*/ )
     {
       double startTime = glfwGetTime();
       glfwPollEvents();
-
-      vk::raii::CommandBuffer const & commandBuffer = perFrameData[frameIndex].commandBuffer;
 
       int w, h;
       glfwGetWindowSize( window, &w, &h );
@@ -1102,10 +1120,11 @@ int main( int /*argc*/, char ** /*argv*/ )
                                                      &swapChainData.swapChain,
                                                      graphicsAndPresentQueueFamilyIndex.first,
                                                      graphicsAndPresentQueueFamilyIndex.second );
-        depthBufferData = vk::raii::su::DepthBufferData( physicalDevice, device, vk::su::pickDepthFormat( *physicalDevice ), windowExtent );
+        depthBufferData = vk::raii::su::DepthBufferData( physicalDevice, device, vk::raii::su::pickDepthFormat( physicalDevice ), windowExtent );
 
         vk::raii::su::oneTimeSubmit(
-          commandBuffer,
+          device,
+          perFrameData[frameIndex].commandPool,
           graphicsQueue,
           [&]( vk::raii::CommandBuffer const & commandBuffer )
           {
@@ -1135,6 +1154,11 @@ int main( int /*argc*/, char ** /*argv*/ )
       while ( vk::Result::eTimeout == device.waitForFences( { *perFrameData[frameIndex].fence }, VK_TRUE, vk::su::FenceTimeout ) )
         ;
       device.resetFences( { *perFrameData[frameIndex].fence } );
+
+      // reset the command buffer by resetting the complete command pool of this frame
+      perFrameData[frameIndex].commandPool.reset();
+
+      vk::raii::CommandBuffer const & commandBuffer = perFrameData[frameIndex].commandBuffer;
 
       commandBuffer.begin( vk::CommandBufferBeginInfo( vk::CommandBufferUsageFlagBits::eOneTimeSubmit ) );
 
@@ -1252,7 +1276,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     rayTracingDescriptorSets.clear();
     rayTracingDescriptorSetLayout                 = vk::raii::DescriptorSetLayout( nullptr );
     rayTracingDescriptorPool                      = vk::raii::DescriptorPool( nullptr );
-    topLevelAS.acclerationStructure               = vk::raii::AccelerationStructureNV( nullptr );
+    topLevelAS.accelerationStructure              = vk::raii::AccelerationStructureNV( nullptr );
     topLevelAS.instanceBufferData.buffer          = vk::raii::Buffer( nullptr );
     topLevelAS.instanceBufferData.deviceMemory    = vk::raii::DeviceMemory( nullptr );
     topLevelAS.resultBufferData.buffer            = vk::raii::Buffer( nullptr );
@@ -1260,7 +1284,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     topLevelAS.scratchBufferData.buffer           = vk::raii::Buffer( nullptr );
     topLevelAS.scratchBufferData.deviceMemory     = vk::raii::DeviceMemory( nullptr );
     descriptorSet                                 = vk::raii::DescriptorSet( nullptr );
-    bottomLevelAS.acclerationStructure            = vk::raii::AccelerationStructureNV( nullptr );
+    bottomLevelAS.accelerationStructure           = vk::raii::AccelerationStructureNV( nullptr );
     bottomLevelAS.instanceBufferData.buffer       = vk::raii::Buffer( nullptr );
     bottomLevelAS.instanceBufferData.deviceMemory = vk::raii::DeviceMemory( nullptr );
     bottomLevelAS.resultBufferData.buffer         = vk::raii::Buffer( nullptr );

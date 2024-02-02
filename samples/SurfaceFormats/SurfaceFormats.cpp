@@ -16,11 +16,11 @@
 //                     Get surface formats.
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan.hpp"
 
 #include <iomanip>
 #include <sstream>
 #include <vector>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "SurfaceFormats";
 static char const * EngineName = "Vulkan.hpp";
@@ -48,11 +48,9 @@ int main( int /*argc*/, char ** /*argv*/ )
       std::vector<vk::SurfaceFormatKHR> surfaceFormats = physicalDevices[i].getSurfaceFormatsKHR( surfaceData.surface );
       for ( size_t j = 0; j < surfaceFormats.size(); j++ )
       {
-        std::cout << "\tFormat " << j << "\n";
-        std::cout << "\t\t"
-                  << "colorSpace  = " << vk::to_string( surfaceFormats[j].colorSpace ) << "\n";
-        std::cout << "\t\t"
-                  << "format      = " << vk::to_string( surfaceFormats[j].format ) << "\n";
+        std::cout << std::string( "\t" ) << "Format " << j << "\n";
+        std::cout << std::string( "\t\t" ) << "colorSpace  = " << vk::to_string( surfaceFormats[j].colorSpace ) << "\n";
+        std::cout << std::string( "\t\t" ) << "format      = " << vk::to_string( surfaceFormats[j].format ) << "\n";
         std::cout << "\n";
       }
     }

@@ -31,7 +31,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     std::vector<vk::QueueFamilyProperties> queueFamilyProperties    = physicalDevice.getQueueFamilyProperties();
     uint32_t                               graphicsQueueFamilyIndex = vk::su::findGraphicsQueueFamilyIndex( queueFamilyProperties );
@@ -47,9 +47,9 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     // determine a queueFamilyIndex that suports present
     // first check if the graphicsQueueFamiliyIndex is good enough
-    uint32_t presentQueueFamilyIndex = physicalDevice.getSurfaceSupportKHR( graphicsQueueFamilyIndex, *surface )
-                                         ? graphicsQueueFamilyIndex
-                                         : vk::su::checked_cast<uint32_t>( queueFamilyProperties.size() );
+    uint32_t presentQueueFamilyIndex = physicalDevice.getSurfaceSupportKHR( graphicsQueueFamilyIndex, surface )
+                                       ? graphicsQueueFamilyIndex
+                                       : vk::su::checked_cast<uint32_t>( queueFamilyProperties.size() );
     if ( presentQueueFamilyIndex == queueFamilyProperties.size() )
     {
       // the graphicsQueueFamilyIndex doesn't support present -> look for an other family index that supports both
@@ -57,7 +57,7 @@ int main( int /*argc*/, char ** /*argv*/ )
       for ( size_t i = 0; i < queueFamilyProperties.size(); i++ )
       {
         if ( ( queueFamilyProperties[i].queueFlags & vk::QueueFlagBits::eGraphics ) &&
-             physicalDevice.getSurfaceSupportKHR( vk::su::checked_cast<uint32_t>( i ), *surface ) )
+             physicalDevice.getSurfaceSupportKHR( vk::su::checked_cast<uint32_t>( i ), surface ) )
         {
           graphicsQueueFamilyIndex = vk::su::checked_cast<uint32_t>( i );
           presentQueueFamilyIndex  = graphicsQueueFamilyIndex;
@@ -70,7 +70,7 @@ int main( int /*argc*/, char ** /*argv*/ )
         // family index that supports present
         for ( size_t i = 0; i < queueFamilyProperties.size(); i++ )
         {
-          if ( physicalDevice.getSurfaceSupportKHR( vk::su::checked_cast<uint32_t>( i ), *surface ) )
+          if ( physicalDevice.getSurfaceSupportKHR( vk::su::checked_cast<uint32_t>( i ), surface ) )
           {
             presentQueueFamilyIndex = vk::su::checked_cast<uint32_t>( i );
             break;
@@ -87,11 +87,11 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::Device device = vk::raii::su::makeDevice( physicalDevice, graphicsQueueFamilyIndex, vk::su::getDeviceExtensions() );
 
     // get the supported VkFormats
-    std::vector<vk::SurfaceFormatKHR> formats = physicalDevice.getSurfaceFormatsKHR( *surface );
+    std::vector<vk::SurfaceFormatKHR> formats = physicalDevice.getSurfaceFormatsKHR( surface );
     assert( !formats.empty() );
     vk::Format format = ( formats[0].format == vk::Format::eUndefined ) ? vk::Format::eB8G8R8A8Unorm : formats[0].format;
 
-    vk::SurfaceCapabilitiesKHR surfaceCapabilities = physicalDevice.getSurfaceCapabilitiesKHR( *surface );
+    vk::SurfaceCapabilitiesKHR surfaceCapabilities = physicalDevice.getSurfaceCapabilitiesKHR( surface );
     vk::Extent2D               swapchainExtent;
     if ( surfaceCapabilities.currentExtent.width == std::numeric_limits<uint32_t>::max() )
     {
@@ -109,8 +109,8 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::PresentModeKHR swapchainPresentMode = vk::PresentModeKHR::eFifo;
 
     vk::SurfaceTransformFlagBitsKHR preTransform = ( surfaceCapabilities.supportedTransforms & vk::SurfaceTransformFlagBitsKHR::eIdentity )
-                                                     ? vk::SurfaceTransformFlagBitsKHR::eIdentity
-                                                     : surfaceCapabilities.currentTransform;
+                                                   ? vk::SurfaceTransformFlagBitsKHR::eIdentity
+                                                   : surfaceCapabilities.currentTransform;
 
     vk::CompositeAlphaFlagBitsKHR compositeAlpha =
       ( surfaceCapabilities.supportedCompositeAlpha & vk::CompositeAlphaFlagBitsKHR::ePreMultiplied )    ? vk::CompositeAlphaFlagBitsKHR::ePreMultiplied
@@ -119,8 +119,8 @@ int main( int /*argc*/, char ** /*argv*/ )
                                                                                                          : vk::CompositeAlphaFlagBitsKHR::eOpaque;
 
     vk::SwapchainCreateInfoKHR swapChainCreateInfo( vk::SwapchainCreateFlagsKHR(),
-                                                    *surface,
-                                                    surfaceCapabilities.minImageCount,
+                                                    surface,
+                                                    vk::su::clamp( 3u, surfaceCapabilities.minImageCount, surfaceCapabilities.maxImageCount ),
                                                     format,
                                                     vk::ColorSpaceKHR::eSrgbNonlinear,
                                                     swapchainExtent,
@@ -146,14 +146,14 @@ int main( int /*argc*/, char ** /*argv*/ )
     }
 
     vk::raii::SwapchainKHR swapChain( device, swapChainCreateInfo );
-    std::vector<VkImage>   swapChainImages = swapChain.getImages();
+    std::vector<vk::Image> swapChainImages = swapChain.getImages();
 
     std::vector<vk::raii::ImageView> imageViews;
     imageViews.reserve( swapChainImages.size() );
     vk::ImageViewCreateInfo imageViewCreateInfo( {}, {}, vk::ImageViewType::e2D, format, {}, { vk::ImageAspectFlagBits::eColor, 0, 1, 0, 1 } );
     for ( auto image : swapChainImages )
     {
-      imageViewCreateInfo.image = static_cast<vk::Image>( image );
+      imageViewCreateInfo.image = image;
       imageViews.push_back( { device, imageViewCreateInfo } );
     }
 

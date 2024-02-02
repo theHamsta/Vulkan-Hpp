@@ -28,14 +28,15 @@
 // unknow compiler... just ignore the warnings for yourselves ;)
 #endif
 
-// clang-format off
-// we need to include vulkan.hpp before glfw3.h, so stop clang-format to reorder them
 #include <vulkan/vulkan.hpp>
+
+// clang-format off
 #include <GLFW/glfw3.h>
 // clang-format on
 #include <numeric>
 #include <random>
 #include <sstream>
+#include <vulkan/vulkan_to_string.hpp>
 
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
 #define GLM_FORCE_RADIANS
@@ -63,12 +64,13 @@ struct GeometryInstanceData
   }
 
   float    transform[12];                // Transform matrix, containing only the top 3 rows
-  uint32_t instanceId : 24;              // Instance index
-  uint32_t mask : 8;                     // Visibility mask
+  uint32_t instanceId     : 24;          // Instance index
+  uint32_t mask           : 8;           // Visibility mask
   uint32_t instanceOffset : 24;          // Index of the hit group which will be invoked when a ray hits the instance
-  uint32_t flags : 8;                    // Instance flags, such as culling
+  uint32_t flags          : 8;           // Instance flags, such as culling
   uint64_t accelerationStructureHandle;  // Opaque handle of the bottom-level acceleration structure
 };
+
 static_assert( sizeof( GeometryInstanceData ) == 64, "GeometryInstanceData structure compiles to incorrect size" );
 
 struct AccelerationStructureData
@@ -212,6 +214,7 @@ struct Material
   glm::vec3 diffuse   = glm::vec3( 0.7f, 0.7f, 0.7f );
   int       textureID = -1;
 };
+
 const size_t MaterialStride = ( ( sizeof( Material ) + 15 ) / 16 ) * 16;
 
 struct Vertex
@@ -223,6 +226,7 @@ struct Vertex
   glm::vec2 texCoord;
   int       matID;
 };
+
 const size_t VertexStride = ( ( sizeof( Vertex ) + 15 ) / 16 ) * 16;
 
 static const std::vector<Vertex> cubeData = {
@@ -699,7 +703,24 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::DebugUtilsMessengerEXT debugUtilsMessenger = instance.createDebugUtilsMessengerEXT( vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
 
-    vk::PhysicalDevice physicalDevice = instance.enumeratePhysicalDevices().front();
+    vk::PhysicalDevice              physicalDevice  = nullptr;
+    std::vector<vk::PhysicalDevice> physicalDevices = instance.enumeratePhysicalDevices();
+    for ( auto pd : physicalDevices )
+    {
+      std::vector<vk::ExtensionProperties> ep = pd.enumerateDeviceExtensionProperties();
+      if ( std::any_of( ep.cbegin(),
+                        ep.cend(),
+                        []( vk::ExtensionProperties const & prop ) { return strcmp( prop.extensionName, VK_NV_RAY_TRACING_EXTENSION_NAME ) == 0; } ) )
+      {
+        physicalDevice = pd;
+        break;
+      }
+    }
+    if ( !physicalDevice )
+    {
+      std::cerr << AppName << ": can't find a PhysicalDevice supporting extension <" << VK_NV_RAY_TRACING_EXTENSION_NAME << ">" << std::endl;
+      return 1;
+    }
 
     // Create Window Surface (using glfw)
     vk::SurfaceKHR surface;
@@ -710,19 +731,21 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     // Create a Device with ray tracing support (besides some other extensions needed) and needed features
     auto       supportedFeatures = physicalDevice.getFeatures2<vk::PhysicalDeviceFeatures2, vk::PhysicalDeviceDescriptorIndexingFeaturesEXT>();
-    vk::Device device =
-      vk::su::createDevice( physicalDevice,
-                            graphicsAndPresentQueueFamilyIndex.first,
-                            { VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_NV_RAY_TRACING_EXTENSION_NAME, VK_KHR_GET_MEMORY_REQUIREMENTS_2_EXTENSION_NAME },
-                            &supportedFeatures.get<vk::PhysicalDeviceFeatures2>().features,
-                            &supportedFeatures.get<vk::PhysicalDeviceDescriptorIndexingFeaturesEXT>() );
+    vk::Device device            = vk::su::createDevice( physicalDevice,
+                                              graphicsAndPresentQueueFamilyIndex.first,
+                                                         { VK_EXT_DESCRIPTOR_INDEXING_EXTENSION_NAME,
+                                                           VK_KHR_GET_MEMORY_REQUIREMENTS_2_EXTENSION_NAME,
+                                                           VK_KHR_MAINTENANCE_3_EXTENSION_NAME,
+                                                           VK_KHR_SWAPCHAIN_EXTENSION_NAME,
+                                                           VK_NV_RAY_TRACING_EXTENSION_NAME },
+                                              &supportedFeatures.get<vk::PhysicalDeviceFeatures2>().features,
+                                              &supportedFeatures.get<vk::PhysicalDeviceDescriptorIndexingFeaturesEXT>() );
 
     // setup stuff per frame
     std::array<PerFrameData, IMGUI_VK_QUEUED_FRAMES> perFrameData;
     for ( int i = 0; i < IMGUI_VK_QUEUED_FRAMES; i++ )
     {
-      perFrameData[i].commandPool =
-        device.createCommandPool( vk::CommandPoolCreateInfo( vk::CommandPoolCreateFlagBits::eResetCommandBuffer, graphicsAndPresentQueueFamilyIndex.first ) );
+      perFrameData[i].commandPool = device.createCommandPool( vk::CommandPoolCreateInfo( {}, graphicsAndPresentQueueFamilyIndex.first ) );
       perFrameData[i].commandBuffer =
         device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( perFrameData[i].commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
       perFrameData[i].fence                    = device.createFence( vk::FenceCreateInfo( vk::FenceCreateFlagBits::eSignaled ) );
@@ -876,11 +899,11 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     vk::DescriptorSetAllocateInfo descriptorSetAllocateInfo( descriptorPool, descriptorSetLayout );
     vk::DescriptorSet             descriptorSet = device.allocateDescriptorSets( descriptorSetAllocateInfo ).front();
-    vk::su::updateDescriptorSets(
-      device,
-      descriptorSet,
-      { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, {} }, { vk::DescriptorType::eStorageBuffer, materialBufferData.buffer, {} } },
-      textures );
+    vk::su::updateDescriptorSets( device,
+                                  descriptorSet,
+                                  { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                    { vk::DescriptorType::eStorageBuffer, materialBufferData.buffer, VK_WHOLE_SIZE, {} } },
+                                  textures );
 
     // RayTracing specific stuff
 
@@ -919,11 +942,11 @@ int main( int /*argc*/, char ** /*argv*/ )
         vk::BufferMemoryBarrier bufferMemoryBarrier(
           {}, vk::AccessFlagBits::eShaderRead, VK_QUEUE_FAMILY_IGNORED, VK_QUEUE_FAMILY_IGNORED, vertexBufferData.buffer, 0, VK_WHOLE_SIZE );
         commandBuffer.pipelineBarrier(
-          vk::PipelineStageFlagBits::eAllCommands, vk::PipelineStageFlagBits::eAllCommands, {}, nullptr, bufferMemoryBarrier, nullptr );
+          vk::PipelineStageFlagBits::eTopOfPipe, vk::PipelineStageFlagBits::eRayTracingShaderKHR, {}, nullptr, bufferMemoryBarrier, nullptr );
 
         bufferMemoryBarrier.buffer = indexBufferData.buffer;
         commandBuffer.pipelineBarrier(
-          vk::PipelineStageFlagBits::eAllCommands, vk::PipelineStageFlagBits::eAllCommands, {}, nullptr, bufferMemoryBarrier, nullptr );
+          vk::PipelineStageFlagBits::eTopOfPipe, vk::PipelineStageFlagBits::eRayTracingShaderKHR, {}, nullptr, bufferMemoryBarrier, nullptr );
       } );
 
     std::vector<vk::DescriptorSetLayoutBinding> bindings;
@@ -961,8 +984,8 @@ int main( int /*argc*/, char ** /*argv*/ )
     std::vector<vk::WriteDescriptorSet>           accelerationDescriptionSets;
     for ( size_t i = 0; i < rayTracingDescriptorSets.size(); i++ )
     {
-      accelerationDescriptionSets.emplace_back( rayTracingDescriptorSets[i], 0, 0, 1, bindings[0].descriptorType );
-      accelerationDescriptionSets.back().pNext = &writeDescriptorSetAcceleration;
+      accelerationDescriptionSets.emplace_back(
+        rayTracingDescriptorSets[i], 0, 0, 1, bindings[0].descriptorType, nullptr, nullptr, nullptr, &writeDescriptorSetAcceleration );
     }
     device.updateDescriptorSets( accelerationDescriptionSets, nullptr );
 
@@ -972,10 +995,10 @@ int main( int /*argc*/, char ** /*argv*/ )
     {
       vk::su::updateDescriptorSets( device,
                                     rayTracingDescriptorSets[i],
-                                    { { bindings[2].descriptorType, uniformBufferData.buffer, {} },
-                                      { bindings[3].descriptorType, vertexBufferData.buffer, {} },
-                                      { bindings[4].descriptorType, indexBufferData.buffer, {} },
-                                      { bindings[5].descriptorType, materialBufferData.buffer, {} } },
+                                    { { bindings[2].descriptorType, uniformBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                      { bindings[3].descriptorType, vertexBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                      { bindings[4].descriptorType, indexBufferData.buffer, VK_WHOLE_SIZE, {} },
+                                      { bindings[5].descriptorType, materialBufferData.buffer, VK_WHOLE_SIZE, {} } },
                                     textures,
                                     2 );
     }
@@ -1062,7 +1085,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     shaderBindingTableBufferData.upload( device, shaderHandleStorage );
 
     std::array<vk::ClearValue, 2> clearValues;
-    clearValues[0].color        = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValues[0].color        = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     clearValues[1].depthStencil = vk::ClearDepthStencilValue( 1.0f, 0 );
 
     // Main loop
@@ -1077,8 +1100,6 @@ int main( int /*argc*/, char ** /*argv*/ )
     {
       double startTime = glfwGetTime();
       glfwPollEvents();
-
-      vk::CommandBuffer const & commandBuffer = perFrameData[frameIndex].commandBuffer;
 
       int w, h;
       glfwGetWindowSize( window, &w, &h );
@@ -1098,7 +1119,8 @@ int main( int /*argc*/, char ** /*argv*/ )
         depthBufferData = vk::su::DepthBufferData( physicalDevice, device, vk::su::pickDepthFormat( physicalDevice ), windowExtent );
 
         vk::su::oneTimeSubmit(
-          commandBuffer,
+          device,
+          perFrameData[frameIndex].commandPool,
           graphicsQueue,
           [&]( vk::CommandBuffer const & commandBuffer )
           {
@@ -1127,6 +1149,11 @@ int main( int /*argc*/, char ** /*argv*/ )
       while ( vk::Result::eTimeout == device.waitForFences( perFrameData[frameIndex].fence, VK_TRUE, vk::su::FenceTimeout ) )
         ;
       device.resetFences( perFrameData[frameIndex].fence );
+
+      // reset the command buffer by resetting the complete command pool of this frame
+      device.resetCommandPool( perFrameData[frameIndex].commandPool );
+
+      vk::CommandBuffer const & commandBuffer = perFrameData[frameIndex].commandBuffer;
 
       commandBuffer.begin( vk::CommandBufferBeginInfo( vk::CommandBufferUsageFlagBits::eOneTimeSubmit ) );
 

@@ -12,24 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(RAII_13_InitVertexBuffer)
-
-set(HEADERS
-)
-
-set(SOURCES
-  13_InitVertexBuffer.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_executable(RAII_13_InitVertexBuffer
-  ${HEADERS}
-  ${SOURCES}
-)
-
-set_target_properties(RAII_13_InitVertexBuffer PROPERTIES FOLDER "RAII_Samples")
-target_link_libraries(RAII_13_InitVertexBuffer PRIVATE utils)
+vulkan_hpp__setup_sample_raii( NAME 13_InitVertexBuffer )

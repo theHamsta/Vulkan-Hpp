@@ -44,7 +44,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     uint32_t         graphicsQueueFamilyIndex = vk::su::findGraphicsQueueFamilyIndex( physicalDevice.getQueueFamilyProperties() );
     vk::raii::Device device                   = vk::raii::su::makeDevice( physicalDevice, graphicsQueueFamilyIndex );
@@ -76,7 +76,11 @@ int main( int /*argc*/, char ** /*argv*/ )
     memcpy( pData, &mvpc, sizeof( mvpc ) );
     uniformDataMemory.unmapMemory();
 
-    uniformDataBuffer.bindMemory( *uniformDataMemory, 0 );
+    uniformDataBuffer.bindMemory( uniformDataMemory, 0 );
+
+    // while all vk::raii objects are automatically destroyed on scope leave, the Buffer should to be destroyed before the bound DeviceMemory
+    // but the standard destruction order would destroy the DeviceMemory before the Buffer, so destroy the Buffer here
+    uniformDataBuffer.clear();
 
     /* VULKAN_HPP_KEY_END */
   }

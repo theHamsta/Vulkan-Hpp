@@ -12,28 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-if(NOT SAMPLES_BUILD_ONLY_DYNAMIC)
-
-  project(InstanceExtensionProperties)
-  
-  set(HEADERS
-  )
-  
-  set(SOURCES
-    InstanceExtensionProperties.cpp
-  )
-  
-  source_group(headers FILES ${HEADERS})
-  source_group(sources FILES ${SOURCES})
-  
-  add_executable(InstanceExtensionProperties
-    ${HEADERS}
-    ${SOURCES}
-  )
-  
-  set_target_properties(InstanceExtensionProperties PROPERTIES FOLDER "Samples")
-  target_link_libraries(InstanceExtensionProperties "${Vulkan_LIBRARIES}")
-
-endif()
+vulkan_hpp__setup_sample_static( NAME InstanceExtensionProperties )

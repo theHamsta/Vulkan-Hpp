@@ -20,7 +20,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan.hpp"
 
 #include <iostream>
 #include <thread>
@@ -86,7 +85,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     std::pair<uint32_t, uint32_t> graphicsAndPresentQueueFamilyIndex = vk::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::Device                    device = vk::su::createDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::CommandPool   commandPool = vk::su::createCommandPool( device, graphicsAndPresentQueueFamilyIndex.first );
+    vk::CommandPool   commandPool = device.createCommandPool( { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::CommandBuffer commandBuffer =
       device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
 
@@ -124,7 +123,8 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::DescriptorPool            descriptorPool = vk::su::createDescriptorPool( device, { { vk::DescriptorType::eUniformTexelBuffer, 1 } } );
     vk::DescriptorSetAllocateInfo descriptorSetAllocateInfo( descriptorPool, descriptorSetLayout );
     vk::DescriptorSet             descriptorSet = device.allocateDescriptorSets( descriptorSetAllocateInfo ).front();
-    vk::su::updateDescriptorSets( device, descriptorSet, { { vk::DescriptorType::eUniformTexelBuffer, texelBufferData.buffer, texelBufferView } }, {} );
+    vk::su::updateDescriptorSets(
+      device, descriptorSet, { { vk::DescriptorType::eUniformTexelBuffer, texelBufferData.buffer, VK_WHOLE_SIZE, texelBufferView } }, {} );
 
     vk::PipelineCache pipelineCache    = device.createPipelineCache( vk::PipelineCacheCreateInfo() );
     vk::Pipeline      graphicsPipeline = vk::su::createGraphicsPipeline( device,
@@ -149,7 +149,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     commandBuffer.begin( vk::CommandBufferBeginInfo() );
 
     vk::ClearValue clearValue;
-    clearValue.color = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValue.color = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     vk::RenderPassBeginInfo renderPassBeginInfo(
       renderPass, framebuffers[currentBuffer.value], vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ), clearValue );
 

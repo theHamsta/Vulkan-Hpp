@@ -20,7 +20,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan.hpp"
 
 #include <iostream>
 #include <thread>
@@ -44,7 +43,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     std::pair<uint32_t, uint32_t> graphicsAndPresentQueueFamilyIndex = vk::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::Device                    device = vk::su::createDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::CommandPool   commandPool = vk::su::createCommandPool( device, graphicsAndPresentQueueFamilyIndex.first );
+    vk::CommandPool   commandPool = device.createCommandPool( { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::CommandBuffer commandBuffer =
       device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
 
@@ -88,7 +87,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::DescriptorSetAllocateInfo descriptorSetAllocateInfo( descriptorPool, descriptorSetLayout );
     vk::DescriptorSet             descriptorSet = device.allocateDescriptorSets( descriptorSetAllocateInfo ).front();
 
-    vk::su::updateDescriptorSets( device, descriptorSet, { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, {} } }, {} );
+    vk::su::updateDescriptorSets( device, descriptorSet, { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, VK_WHOLE_SIZE, {} } }, {} );
 
     vk::PipelineCache pipelineCache    = device.createPipelineCache( vk::PipelineCacheCreateInfo() );
     vk::Pipeline      graphicsPipeline = vk::su::createGraphicsPipeline( device,
@@ -96,7 +95,7 @@ int main( int /*argc*/, char ** /*argv*/ )
                                                                     std::make_pair( vertexShaderModule, nullptr ),
                                                                     std::make_pair( fragmentShaderModule, nullptr ),
                                                                     sizeof( coloredCubeData[0] ),
-                                                                    { { vk::Format::eR32G32B32A32Sfloat, 0 }, { vk::Format::eR32G32B32A32Sfloat, 16 } },
+                                                                         { { vk::Format::eR32G32B32A32Sfloat, 0 }, { vk::Format::eR32G32B32A32Sfloat, 16 } },
                                                                     vk::FrontFace::eClockwise,
                                                                     true,
                                                                     pipelineLayout,
@@ -130,7 +129,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     commandBuffer.resetQueryPool( queryPool, 0, 2 );
 
     std::array<vk::ClearValue, 2> clearValues;
-    clearValues[0].color        = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValues[0].color        = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     clearValues[1].depthStencil = vk::ClearDepthStencilValue( 1.0f, 0 );
     commandBuffer.beginRenderPass(
       vk::RenderPassBeginInfo( renderPass, framebuffers[currentBuffer.value], vk::Rect2D( vk::Offset2D(), surfaceData.extent ), clearValues ),
@@ -200,8 +199,8 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     device.destroyFence( drawFence );
     device.destroyQueryPool( queryPool );
+    device.destroyBuffer( queryResultBuffer );  // destroy the queryResultBuffer before freeing the bound queryResultMemory !
     device.freeMemory( queryResultMemory );
-    device.destroyBuffer( queryResultBuffer );
     device.destroySemaphore( imageAcquiredSemaphore );
 
     /* VULKAN_KEY_END */

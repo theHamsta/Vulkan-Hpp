@@ -29,7 +29,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan.hpp"
 
 #include <fstream>
 #include <iomanip>
@@ -43,7 +42,8 @@
 #endif
 
 typedef unsigned long long timestamp_t;
-timestamp_t                getMilliseconds()
+
+timestamp_t getMilliseconds()
 {
 #ifdef WIN32
   LARGE_INTEGER frequency;
@@ -77,7 +77,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice     physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice     physicalDevice = vk::raii::PhysicalDevices( instance ).front();
     vk::PhysicalDeviceProperties properties     = physicalDevice.getProperties();
 
     vk::raii::su::SurfaceData surfaceData( instance, AppName, vk::Extent2D( 500, 500 ) );
@@ -86,8 +86,7 @@ int main( int /*argc*/, char ** /*argv*/ )
       vk::raii::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::raii::Device device = vk::raii::su::makeDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::raii::CommandPool commandPool =
-      vk::raii::CommandPool( device, { vk::CommandPoolCreateFlagBits::eResetCommandBuffer, graphicsAndPresentQueueFamilyIndex.first } );
+    vk::raii::CommandPool   commandPool   = vk::raii::CommandPool( device, { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::raii::CommandBuffer commandBuffer = vk::raii::su::makeCommandBuffer( device, commandPool );
 
     vk::raii::Queue graphicsQueue( device, graphicsAndPresentQueueFamilyIndex.first, 0 );
@@ -119,7 +118,7 @@ int main( int /*argc*/, char ** /*argv*/ )
                                                { vk::DescriptorType::eCombinedImageSampler, 1, vk::ShaderStageFlagBits::eFragment } } );
     vk::raii::PipelineLayout pipelineLayout( device, { {}, *descriptorSetLayout } );
 
-    vk::Format           colorFormat = vk::su::pickSurfaceFormat( physicalDevice.getSurfaceFormatsKHR( *surfaceData.surface ) ).format;
+    vk::Format           colorFormat = vk::su::pickSurfaceFormat( physicalDevice.getSurfaceFormatsKHR( surfaceData.surface ) ).format;
     vk::raii::RenderPass renderPass  = vk::raii::su::makeRenderPass( device, colorFormat, depthBufferData.format );
 
     glslang::InitializeProcess();
@@ -135,9 +134,10 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     vk::raii::DescriptorPool descriptorPool =
       vk::raii::su::makeDescriptorPool( device, { { vk::DescriptorType::eUniformBuffer, 1 }, { vk::DescriptorType::eCombinedImageSampler, 1 } } );
-    vk::raii::DescriptorSet descriptorSet = std::move( vk::raii::DescriptorSets( device, { *descriptorPool, *descriptorSetLayout } ).front() );
+    vk::raii::DescriptorSet descriptorSet = std::move( vk::raii::DescriptorSets( device, { descriptorPool, *descriptorSetLayout } ).front() );
 
-    vk::raii::su::updateDescriptorSets( device, descriptorSet, { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, nullptr } }, { textureData } );
+    vk::raii::su::updateDescriptorSets(
+      device, descriptorSet, { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, VK_WHOLE_SIZE, nullptr } }, { textureData } );
 
     /* VULKAN_KEY_START */
 
@@ -301,21 +301,21 @@ int main( int /*argc*/, char ** /*argv*/ )
     // Get the index of the next available swapchain image:
     vk::Result result;
     uint32_t   imageIndex;
-    std::tie( result, imageIndex ) = swapChainData.swapChain.acquireNextImage( vk::su::FenceTimeout, *imageAcquiredSemaphore );
+    std::tie( result, imageIndex ) = swapChainData.swapChain.acquireNextImage( vk::su::FenceTimeout, imageAcquiredSemaphore );
     assert( result == vk::Result::eSuccess );
     assert( imageIndex < swapChainData.images.size() );
 
     std::array<vk::ClearValue, 2> clearValues;
-    clearValues[0].color        = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValues[0].color        = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     clearValues[1].depthStencil = vk::ClearDepthStencilValue( 1.0f, 0 );
 
     commandBuffer.beginRenderPass(
-      vk::RenderPassBeginInfo( *renderPass, *framebuffers[imageIndex], vk::Rect2D( vk::Offset2D(), surfaceData.extent ), clearValues ),
+      vk::RenderPassBeginInfo( renderPass, framebuffers[imageIndex], vk::Rect2D( vk::Offset2D(), surfaceData.extent ), clearValues ),
       vk::SubpassContents::eInline );
-    commandBuffer.bindPipeline( vk::PipelineBindPoint::eGraphics, *graphicsPipeline );
-    commandBuffer.bindDescriptorSets( vk::PipelineBindPoint::eGraphics, *pipelineLayout, 0, { *descriptorSet }, {} );
+    commandBuffer.bindPipeline( vk::PipelineBindPoint::eGraphics, graphicsPipeline );
+    commandBuffer.bindDescriptorSets( vk::PipelineBindPoint::eGraphics, pipelineLayout, 0, { descriptorSet }, {} );
 
-    commandBuffer.bindVertexBuffers( 0, { *vertexBufferData.buffer }, { 0 } );
+    commandBuffer.bindVertexBuffers( 0, { vertexBufferData.buffer }, { 0 } );
     commandBuffer.setViewport(
       0, vk::Viewport( 0.0f, 0.0f, static_cast<float>( surfaceData.extent.width ), static_cast<float>( surfaceData.extent.height ), 0.0f, 1.0f ) );
     commandBuffer.setScissor( 0, vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ) );
@@ -330,7 +330,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::SubmitInfo         submitInfo( *imageAcquiredSemaphore, waitDestinationStageMask, *commandBuffer );
     graphicsQueue.submit( submitInfo, *drawFence );
 
-    while ( vk::Result::eTimeout == device.waitForFences( { *drawFence }, VK_TRUE, vk::su::FenceTimeout ) )
+    while ( vk::Result::eTimeout == device.waitForFences( { drawFence }, VK_TRUE, vk::su::FenceTimeout ) )
       ;
 
     vk::PresentInfoKHR presentInfoKHR( nullptr, *swapChainData.swapChain, imageIndex );

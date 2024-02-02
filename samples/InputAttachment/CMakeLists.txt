@@ -12,24 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(InputAttachment)
-
-set(HEADERS
-)
-
-set(SOURCES
-  InputAttachment.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_executable(InputAttachment
-  ${HEADERS}
-  ${SOURCES}
-)
-
-set_target_properties(InputAttachment PROPERTIES FOLDER "Samples")
-target_link_libraries(InputAttachment PRIVATE utils)
+vulkan_hpp__setup_sample_dynamic( NAME InputAttachment )

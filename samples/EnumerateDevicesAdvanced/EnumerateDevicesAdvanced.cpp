@@ -16,10 +16,10 @@
 //                     Enumerate physical devices
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan.hpp"
 
 #include <iomanip>
 #include <iostream>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "EnumerateDevicesAdvanced";
 static char const * EngineName = "Vulkan.hpp";

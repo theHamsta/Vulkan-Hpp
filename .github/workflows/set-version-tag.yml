@@ -2,18 +2,19 @@ name: Set Version Tag
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   set-version-tag:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
     
     - name: Update Submodules
       run: |
-        git submodule update --init --recursive
         cd Vulkan-Headers
         VK_HEADER_GIT_TAG=$(git tag --points-at HEAD | head -n1)
         git checkout $VK_HEADER_GIT_TAG

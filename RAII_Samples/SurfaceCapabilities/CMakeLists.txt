@@ -12,28 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(RAII_SurfaceCapabilities)
-
-set(HEADERS
-)
-
-set(SOURCES
-  SurfaceCapabilities.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
 # Win32 exclusive vk::SurfaceCapabilitiesFullScreenExclusiveEXT is used
 if(WIN32)
-
-  add_executable(RAII_SurfaceCapabilities
-    ${HEADERS}
-    ${SOURCES}
-  )
-  set_target_properties(RAII_SurfaceCapabilities PROPERTIES FOLDER "RAII_Samples")
-  target_link_libraries(RAII_SurfaceCapabilities PRIVATE utils)
-
+  vulkan_hpp__setup_sample_raii( NAME SurfaceCapabilities )
 endif()

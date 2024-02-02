@@ -15,10 +15,12 @@
 // VulkanHpp Samples : DispatchLoaderStatic
 //                     Compile test on DispatchLoaderStatic functions
 
-#include "vulkan/vulkan.hpp"
+#undef VULKAN_HPP_DISPATCH_LOADER_DYNAMIC
+#define VULKAN_HPP_DISPATCH_LOADER_DYNAMIC 0
 
 #include <iostream>
 #include <map>
+#include <vulkan/vulkan.hpp>
 
 int main( int /*argc*/, char ** /*argv*/ )
 {

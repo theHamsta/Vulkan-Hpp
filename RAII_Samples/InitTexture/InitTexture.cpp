@@ -30,7 +30,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan_raii.hpp"
 
 #include <iostream>
 
@@ -46,7 +45,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     vk::raii::su::SurfaceData surfaceData( instance, AppName, vk::Extent2D( 50, 50 ) );
 
@@ -54,8 +53,7 @@ int main( int /*argc*/, char ** /*argv*/ )
       vk::raii::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::raii::Device device = vk::raii::su::makeDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::raii::CommandPool commandPool =
-      vk::raii::CommandPool( device, { vk::CommandPoolCreateFlagBits::eResetCommandBuffer, graphicsAndPresentQueueFamilyIndex.first } );
+    vk::raii::CommandPool   commandPool   = vk::raii::CommandPool( device, { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::raii::CommandBuffer commandBuffer = vk::raii::su::makeCommandBuffer( device, commandPool );
 
     vk::raii::Queue graphicsQueue( device, graphicsAndPresentQueueFamilyIndex.first, 0 );
@@ -68,6 +66,9 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     // See if we can use a linear tiled image for a texture, if not, we will need a staging buffer for the texture data
     bool needsStaging = !( formatProperties.linearTilingFeatures & vk::FormatFeatureFlagBits::eSampledImage );
+
+    // in order to get a clean desctruction sequence, instantiate the DeviceMemory for the image first
+    vk::raii::DeviceMemory imageMemory( nullptr );
 
     vk::ImageCreateInfo imageCreateInfo( {},
                                          vk::ImageType::e2D,
@@ -91,10 +92,10 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     // allocate memory
     vk::MemoryAllocateInfo memoryAllocateInfo( memoryRequirements.size, memoryTypeIndex );
-    vk::raii::DeviceMemory imageMemory( device, memoryAllocateInfo );
+    imageMemory = vk::raii::DeviceMemory( device, memoryAllocateInfo );
 
     // bind memory
-    image.bindMemory( *imageMemory, 0 );
+    image.bindMemory( imageMemory, 0 );
 
     vk::raii::Buffer       textureBuffer       = nullptr;
     vk::raii::DeviceMemory textureBufferMemory = nullptr;
@@ -114,7 +115,7 @@ int main( int /*argc*/, char ** /*argv*/ )
       textureBufferMemory = vk::raii::DeviceMemory( device, memoryAllocateInfo );
 
       // bind memory
-      textureBuffer.bindMemory( *textureBufferMemory, 0 );
+      textureBuffer.bindMemory( textureBufferMemory, 0 );
     }
     else
     {
@@ -145,21 +146,21 @@ int main( int /*argc*/, char ** /*argv*/ )
     if ( needsStaging )
     {
       // Since we're going to blit to the texture image, set its layout to eTransferDstOptimal
-      vk::raii::su::setImageLayout( commandBuffer, *image, format, vk::ImageLayout::eUndefined, vk::ImageLayout::eTransferDstOptimal );
+      vk::raii::su::setImageLayout( commandBuffer, image, format, vk::ImageLayout::eUndefined, vk::ImageLayout::eTransferDstOptimal );
       vk::BufferImageCopy copyRegion( 0,
                                       surfaceData.extent.width,
                                       surfaceData.extent.height,
                                       vk::ImageSubresourceLayers( vk::ImageAspectFlagBits::eColor, 0, 0, 1 ),
                                       vk::Offset3D( 0, 0, 0 ),
                                       vk::Extent3D( surfaceData.extent, 1 ) );
-      commandBuffer.copyBufferToImage( *textureBuffer, *image, vk::ImageLayout::eTransferDstOptimal, copyRegion );
+      commandBuffer.copyBufferToImage( textureBuffer, image, vk::ImageLayout::eTransferDstOptimal, copyRegion );
       // Set the layout for the texture image from eTransferDstOptimal to SHADER_READ_ONLY
-      vk::raii::su::setImageLayout( commandBuffer, *image, format, vk::ImageLayout::eTransferDstOptimal, vk::ImageLayout::eShaderReadOnlyOptimal );
+      vk::raii::su::setImageLayout( commandBuffer, image, format, vk::ImageLayout::eTransferDstOptimal, vk::ImageLayout::eShaderReadOnlyOptimal );
     }
     else
     {
       // If we can use the linear tiled image as a texture, just do it
-      vk::raii::su::setImageLayout( commandBuffer, *image, format, vk::ImageLayout::ePreinitialized, vk::ImageLayout::eShaderReadOnlyOptimal );
+      vk::raii::su::setImageLayout( commandBuffer, image, format, vk::ImageLayout::ePreinitialized, vk::ImageLayout::eShaderReadOnlyOptimal );
     }
 
     commandBuffer.end();
@@ -182,7 +183,7 @@ int main( int /*argc*/, char ** /*argv*/ )
                                              vk::BorderColor::eFloatOpaqueWhite );
     vk::raii::Sampler     sampler( device, samplerCreateInfo );
 
-    vk::ImageViewCreateInfo imageViewCreateInfo( {}, *image, vk::ImageViewType::e2D, format, {}, { vk::ImageAspectFlagBits::eColor, 0, 1, 0, 1 } );
+    vk::ImageViewCreateInfo imageViewCreateInfo( {}, image, vk::ImageViewType::e2D, format, {}, { vk::ImageAspectFlagBits::eColor, 0, 1, 0, 1 } );
     vk::raii::ImageView     imageView( device, imageViewCreateInfo );
 
     /* VULKAN_KEY_END */

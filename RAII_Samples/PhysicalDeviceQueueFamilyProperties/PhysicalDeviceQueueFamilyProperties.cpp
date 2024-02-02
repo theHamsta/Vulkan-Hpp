@@ -16,11 +16,11 @@
 //                     Get queue family properties per physical device.
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan.hpp"
 
 #include <iomanip>
 #include <sstream>
 #include <vector>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "PhysicalDeviceQueueFamilyProperties";
 static char const * EngineName = "Vulkan.hpp";
@@ -53,21 +53,22 @@ int main( int /*argc*/, char ** /*argv*/ )
       auto queueFamilyProperties2 = physicalDevices[i].getQueueFamilyProperties2<Chain>();
       for ( size_t j = 0; j < queueFamilyProperties2.size(); j++ )
       {
-        std::cout << "\tQueueFamily " << j << " :" << std::endl;
+        std::cout << std::string( "\t" ) << "QueueFamily " << j << " :" << std::endl;
         vk::QueueFamilyProperties const & properties = queueFamilyProperties2[j].get<vk::QueueFamilyProperties2>().queueFamilyProperties;
-        std::cout << "\t\tQueueFamilyProperties:" << std::endl;
-        std::cout << "\t\t\tqueueFlags                  = " << vk::to_string( properties.queueFlags ) << std::endl;
-        std::cout << "\t\t\tqueueCount                  = " << properties.queueCount << std::endl;
-        std::cout << "\t\t\ttimestampValidBits          = " << properties.timestampValidBits << std::endl;
-        std::cout << "\t\t\tminImageTransferGranularity = " << properties.minImageTransferGranularity.width << " x "
+        std::cout << std::string( "\t\t" ) << "QueueFamilyProperties:" << std::endl;
+        std::cout << std::string( "\t\t\t" ) << "queueFlags                  = " << vk::to_string( properties.queueFlags ) << std::endl;
+        std::cout << std::string( "\t\t\t" ) << "queueCount                  = " << properties.queueCount << std::endl;
+        std::cout << std::string( "\t\t\t" ) << "timestampValidBits          = " << properties.timestampValidBits << std::endl;
+        std::cout << std::string( "\t\t\t" ) << "minImageTransferGranularity = " << properties.minImageTransferGranularity.width << " x "
                   << properties.minImageTransferGranularity.height << " x " << properties.minImageTransferGranularity.depth << std::endl;
         std::cout << std::endl;
 
         if ( vk::su::contains( extensionProperties, "VK_NV_device_diagnostic_checkpoints" ) )
         {
           vk::QueueFamilyCheckpointPropertiesNV const & checkpointProperties = queueFamilyProperties2[j].get<vk::QueueFamilyCheckpointPropertiesNV>();
-          std::cout << "\t\tCheckPointPropertiesNV:" << std::endl;
-          std::cout << "\t\t\tcheckpointExecutionStageMask  = " << vk::to_string( checkpointProperties.checkpointExecutionStageMask ) << std::endl;
+          std::cout << std::string( "\t\t" ) << "CheckPointPropertiesNV:" << std::endl;
+          std::cout << std::string( "\t\t\t" ) << "checkpointExecutionStageMask  = " << vk::to_string( checkpointProperties.checkpointExecutionStageMask )
+                    << std::endl;
           std::cout << std::endl;
         }
       }

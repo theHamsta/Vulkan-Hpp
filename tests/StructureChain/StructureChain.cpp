@@ -26,9 +26,8 @@
 
 #define VULKAN_HPP_DISPATCH_LOADER_DYNAMIC 1
 
-#include "vulkan/vulkan.hpp"
-
 #include <iostream>
+#include <vulkan/vulkan.hpp>
 
 static char const * AppName    = "StructureChain";
 static char const * EngineName = "Vulkan.hpp";
@@ -37,15 +36,14 @@ VULKAN_HPP_DEFAULT_DISPATCH_LOADER_DYNAMIC_STORAGE
 
 template <typename T>
 void unused( T const & )
-{}
+{
+}
 
 int main( int /*argc*/, char ** /*argv*/ )
 {
   try
   {
-    vk::DynamicLoader         dl;
-    PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = dl.getProcAddress<PFN_vkGetInstanceProcAddr>( "vkGetInstanceProcAddr" );
-    VULKAN_HPP_DEFAULT_DISPATCHER.init( vkGetInstanceProcAddr );
+    VULKAN_HPP_DEFAULT_DISPATCHER.init();
 
     vk::ApplicationInfo appInfo( AppName, 1, EngineName, 1, VK_API_VERSION_1_1 );
     vk::UniqueInstance  instance = vk::createInstanceUnique( vk::InstanceCreateInfo( {}, &appInfo ) );
@@ -66,6 +64,25 @@ int main( int /*argc*/, char ** /*argv*/ )
                        vk::PhysicalDeviceMaintenance3Properties,
                        vk::PhysicalDevicePushDescriptorPropertiesKHR>
       sc7;
+
+#if ( 17 <= VULKAN_HPP_CPP_VERSION )
+    // test for structured binding from a StructureChain
+    auto const & [p0, p1] = sc1;
+    auto & [p2, p3]       = sc2;
+#endif
+
+#if !defined( NDEBUG )
+    void * pNext = sc7.get<vk::PhysicalDeviceIDProperties>().pNext;
+#endif
+    sc7.assign<vk::PhysicalDeviceIDProperties>( {} );
+    assert( pNext == sc7.get<vk::PhysicalDeviceIDProperties>().pNext );
+
+#if !defined( NDEBUG )
+    void * pNext1 = sc7.get<vk::PhysicalDeviceMaintenance3Properties>().pNext;
+#endif
+    sc7.assign<vk::PhysicalDeviceMaintenance3Properties>( {} ).assign<vk::PhysicalDeviceIDProperties>( {} );
+    assert( pNext == sc7.get<vk::PhysicalDeviceIDProperties>().pNext );
+    assert( pNext1 == sc7.get<vk::PhysicalDeviceMaintenance3Properties>().pNext );
 
     // some checks on unmodified chains
     assert( sc7.isLinked<vk::PhysicalDeviceProperties2>() );

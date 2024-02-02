@@ -12,28 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-if (NOT TESTS_BUILD_ONLY_DYNAMIC)
-	project(DesignatedInitializers)
-
-    set(CMAKE_CXX_STANDARD 20)
-
-	set(HEADERS
-	)
-
-	set(SOURCES
-	  DesignatedInitializers.cpp
-	)
-
-	source_group(headers FILES ${HEADERS})
-	source_group(sources FILES ${SOURCES})
-
-	add_executable(DesignatedInitializers
-	  ${HEADERS}
-	  ${SOURCES}
-	)
-
-	set_target_properties(DesignatedInitializers PROPERTIES FOLDER "Tests")
-	target_link_libraries(DesignatedInitializers "${Vulkan_LIBRARIES}")
+if( NOT VULKAN_HPP_TESTS_BUILD_ONLY_DYNAMIC )
+	vulkan_hpp__setup_test( NAME DesignatedInitializers CXX_STANDARD 20 )
 endif()

@@ -26,11 +26,11 @@
 #endif
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan.hpp"
 
 #include <algorithm>
 #include <iostream>
 #include <sstream>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "EnableValidationWithCallback";
 static char const * EngineName = "Vulkan.hpp";
@@ -109,10 +109,9 @@ bool checkLayers( std::vector<char const *> const & layers, std::vector<vk::Laye
                       layers.end(),
                       [&properties]( char const * name )
                       {
-                        return std::find_if( properties.begin(),
-                                             properties.end(),
-                                             [&name]( vk::LayerProperties const & property )
-                                             { return strcmp( property.layerName, name ) == 0; } ) != properties.end();
+                        return std::any_of( properties.begin(),
+                                            properties.end(),
+                                            [&name]( vk::LayerProperties const & property ) { return strcmp( property.layerName, name ) == 0; } );
                       } );
 }
 
@@ -122,9 +121,7 @@ int main( int /*argc*/, char ** /*argv*/ )
   {
 #if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
     // initialize the DipatchLoaderDynamic to use
-    static vk::DynamicLoader  dl;
-    PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = dl.getProcAddress<PFN_vkGetInstanceProcAddr>( "vkGetInstanceProcAddr" );
-    VULKAN_HPP_DEFAULT_DISPATCHER.init( vkGetInstanceProcAddr );
+    VULKAN_HPP_DEFAULT_DISPATCHER.init();
 #endif
 
     std::vector<vk::LayerProperties> instanceLayerProperties = vk::enumerateInstanceLayerProperties();

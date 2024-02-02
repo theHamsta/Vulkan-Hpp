@@ -12,24 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(FormatTraits)
-
-set(HEADERS
-)
-
-set(SOURCES
-	FormatTraits.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_executable(FormatTraits
-	${HEADERS}
-	${SOURCES}
-)
-
-set_target_properties(FormatTraits PROPERTIES FOLDER "Tests")
-target_link_libraries(FormatTraits "${Vulkan_LIBRARIES}")
+vulkan_hpp__setup_test( NAME FormatTraits )

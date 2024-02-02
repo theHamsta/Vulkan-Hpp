@@ -12,46 +12,32 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(Vulkan-Hpp_Tests)
-
-
-option (TESTS_BUILD_WITH_LOCAL_VULKAN_HPP "Build with local Vulkan headers" ON)
-option (TESTS_BUILD_ONLY_DYNAMIC "Build only dynamic" OFF)
-
-if (NOT (TESTS_BUILD_ONLY_DYNAMIC AND TESTS_BUILD_WITH_LOCAL_VULKAN_HPP))
-  find_package(Vulkan REQUIRED)
+add_subdirectory( ArrayProxy )
+add_subdirectory( ArrayProxyNoTemporaries )
+add_subdirectory( ArrayWrapper )
+if( VULKAN_HPP_ENABLE_CPP20_MODULES )
+	add_subdirectory( Cpp20Modules )
 endif()
-
-if(MSVC)
-  add_compile_options(/W4 /WX /permissive-)
-else(MSVC)
-  add_compile_options(-Wall -Wextra -pedantic -Werror)
-endif(MSVC)
-
-if (WIN32)
-  add_definitions(-DNOMINMAX -DVK_USE_PLATFORM_WIN32_KHR)
-elseif(UNIX)
-  add_definitions(-DVK_USE_PLATFORM_XLIB_KHR)
+add_subdirectory( DesignatedInitializers )
+add_subdirectory( DeviceFunctions )
+add_subdirectory( DispatchLoaderDynamic )
+add_subdirectory( DispatchLoaderDynamicSharedLibrary )
+add_subdirectory( DispatchLoaderDynamicSharedLibraryClient )
+add_subdirectory( DispatchLoaderStatic )
+add_subdirectory( EnableBetaExtensions )
+add_subdirectory( ExtensionInspection )
+add_subdirectory( Flags )
+add_subdirectory( FormatTraits )
+add_subdirectory( Handles )
+add_subdirectory( Hash )
+add_subdirectory( NoExceptions )
+if( ( "cxx_std_23" IN_LIST CMAKE_CXX_COMPILE_FEATURES ) AND NOT ( ( CMAKE_CXX_COMPILER_ID STREQUAL "Clang" ) AND ( CMAKE_CXX_COMPILER_VERSION VERSION_LESS 15.0 ) ) )
+# This test is for C++23 only... but clang++13 and clang++14 seem to have a problem with it
+	add_subdirectory( NoExceptionsRAII )
 endif()
-
-FILE (GLOB linkunits ${CMAKE_CURRENT_SOURCE_DIR}/*)
-
-if (TESTS_BUILD_WITH_LOCAL_VULKAN_HPP)
-  include_directories("${CMAKE_CURRENT_SOURCE_DIR}/..")
-  include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../Vulkan-Headers/include")
-else()
-  include_directories("${Vulkan_INCLUDE_DIRS}")
+add_subdirectory( StridedArrayProxy )
+add_subdirectory( StructureChain )
+add_subdirectory( UniqueHandle )
+if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+	add_subdirectory( UniqueHandleDefaultArguments )
 endif()
-
-include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../glm")
-
-FOREACH( linkunit ${linkunits} )
-  if( IS_DIRECTORY ${linkunit} )
-    if( EXISTS ${linkunit}/CMakeLists.txt )
-      string( REGEX REPLACE "^.*/([^/]*)$" "\\1" LINK_NAME ${linkunit} )
-      add_subdirectory( ${LINK_NAME} )
-    endif()
-  endif()
-ENDFOREACH( linkunit ${linkunits} )

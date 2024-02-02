@@ -42,7 +42,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     vk::raii::su::SurfaceData surfaceData( instance, AppName, vk::Extent2D( 64, 64 ) );
 
@@ -50,8 +50,7 @@ int main( int /*argc*/, char ** /*argv*/ )
       vk::raii::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::raii::Device device = vk::raii::su::makeDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::raii::CommandPool commandPool =
-      vk::raii::CommandPool( device, { vk::CommandPoolCreateFlagBits::eResetCommandBuffer, graphicsAndPresentQueueFamilyIndex.first } );
+    vk::raii::CommandPool   commandPool   = vk::raii::CommandPool( device, { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::raii::CommandBuffer commandBuffer = vk::raii::su::makeCommandBuffer( device, commandPool );
 
     vk::raii::Queue graphicsQueue( device, graphicsAndPresentQueueFamilyIndex.first, 0 );
@@ -74,6 +73,9 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     /* VULKAN_KEY_START */
 
+    // in order to get a clean desctruction sequence, instantiate the DeviceMemory for the vertex buffer first
+    vk::raii::DeviceMemory deviceMemory( nullptr );
+
     // create a vertex buffer for some vertex and color data
     vk::BufferCreateInfo bufferCreateInfo( {}, sizeof( coloredCubeData ), vk::BufferUsageFlagBits::eVertexBuffer );
     vk::raii::Buffer     vertexBuffer( device, bufferCreateInfo );
@@ -84,7 +86,7 @@ int main( int /*argc*/, char ** /*argv*/ )
                                                        memoryRequirements.memoryTypeBits,
                                                        vk::MemoryPropertyFlagBits::eHostVisible | vk::MemoryPropertyFlagBits::eHostCoherent );
     vk::MemoryAllocateInfo memoryAllocateInfo( memoryRequirements.size, memoryTypeIndex );
-    vk::raii::DeviceMemory deviceMemory( device, memoryAllocateInfo );
+    deviceMemory = vk::raii::DeviceMemory( device, memoryAllocateInfo );
 
     // copy the vertex and color data into that device memory
     uint8_t * pData = static_cast<uint8_t *>( deviceMemory.mapMemory( 0, memoryRequirements.size ) );
@@ -92,26 +94,26 @@ int main( int /*argc*/, char ** /*argv*/ )
     deviceMemory.unmapMemory();
 
     // and bind the device memory to the vertex buffer
-    vertexBuffer.bindMemory( *deviceMemory, 0 );
+    vertexBuffer.bindMemory( deviceMemory, 0 );
 
     vk::raii::Semaphore imageAcquiredSemaphore( device, vk::SemaphoreCreateInfo() );
 
     vk::Result result;
     uint32_t   imageIndex;
-    std::tie( result, imageIndex ) = swapChainData.swapChain.acquireNextImage( vk::su::FenceTimeout, *imageAcquiredSemaphore );
+    std::tie( result, imageIndex ) = swapChainData.swapChain.acquireNextImage( vk::su::FenceTimeout, imageAcquiredSemaphore );
     assert( result == vk::Result::eSuccess );
     assert( imageIndex < swapChainData.images.size() );
 
     std::array<vk::ClearValue, 2> clearValues;
-    clearValues[0].color        = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValues[0].color        = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     clearValues[1].depthStencil = vk::ClearDepthStencilValue( 1.0f, 0 );
 
     commandBuffer.begin( {} );
 
-    vk::RenderPassBeginInfo renderPassBeginInfo( *renderPass, *framebuffers[imageIndex], vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ), clearValues );
+    vk::RenderPassBeginInfo renderPassBeginInfo( renderPass, framebuffers[imageIndex], vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ), clearValues );
     commandBuffer.beginRenderPass( renderPassBeginInfo, vk::SubpassContents::eInline );
 
-    commandBuffer.bindVertexBuffers( 0, { *vertexBuffer }, { 0 } );
+    commandBuffer.bindVertexBuffers( 0, { vertexBuffer }, { 0 } );
 
     commandBuffer.endRenderPass();
     commandBuffer.end();

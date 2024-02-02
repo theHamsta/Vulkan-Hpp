@@ -19,9 +19,8 @@
 #define VULKAN_HPP_NO_EXCEPTIONS
 #define VULKAN_HPP_DISPATCH_LOADER_DYNAMIC 1
 
-#include "vulkan/vulkan.hpp"
-
 #include <iostream>
+#include <vulkan/vulkan.hpp>
 
 static char const * AppName    = "NoExceptions";
 static char const * EngineName = "Vulkan.hpp";
@@ -30,9 +29,7 @@ VULKAN_HPP_DEFAULT_DISPATCH_LOADER_DYNAMIC_STORAGE
 
 int main( int /*argc*/, char ** /*argv*/ )
 {
-  vk::DynamicLoader         dl;
-  PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = dl.getProcAddress<PFN_vkGetInstanceProcAddr>( "vkGetInstanceProcAddr" );
-  VULKAN_HPP_DEFAULT_DISPATCHER.init( vkGetInstanceProcAddr );
+  VULKAN_HPP_DEFAULT_DISPATCHER.init();
 
   vk::ApplicationInfo appInfo( AppName, 1, EngineName, 1, VK_API_VERSION_1_1 );
   vk::UniqueInstance  instance = vk::createInstanceUnique( vk::InstanceCreateInfo( {}, &appInfo ) ).value;

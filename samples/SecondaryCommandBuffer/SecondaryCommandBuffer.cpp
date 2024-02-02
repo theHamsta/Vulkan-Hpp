@@ -30,7 +30,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan.hpp"
 
 #include <iostream>
 #include <thread>
@@ -54,7 +53,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     std::pair<uint32_t, uint32_t> graphicsAndPresentQueueFamilyIndex = vk::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::Device                    device = vk::su::createDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::CommandPool   commandPool = vk::su::createCommandPool( device, graphicsAndPresentQueueFamilyIndex.first );
+    vk::CommandPool   commandPool = device.createCommandPool( { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::CommandBuffer commandBuffer =
       device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
 
@@ -129,8 +128,10 @@ int main( int /*argc*/, char ** /*argv*/ )
     std::vector<vk::DescriptorSet>         descriptorSets = device.allocateDescriptorSets( descriptorSetAllocateInfo );
     assert( descriptorSets.size() == 2 );
 
-    vk::su::updateDescriptorSets( device, descriptorSets[0], { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, {} } }, greenTextureData );
-    vk::su::updateDescriptorSets( device, descriptorSets[1], { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, {} } }, checkeredTextureData );
+    vk::su::updateDescriptorSets(
+      device, descriptorSets[0], { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, VK_WHOLE_SIZE, {} } }, greenTextureData );
+    vk::su::updateDescriptorSets(
+      device, descriptorSets[1], { { vk::DescriptorType::eUniformBuffer, uniformBufferData.buffer, VK_WHOLE_SIZE, {} } }, checkeredTextureData );
 
     /* VULKAN_KEY_START */
 
@@ -175,7 +176,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     }
 
     std::array<vk::ClearValue, 2> clearValues;
-    clearValues[0].color        = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValues[0].color        = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     clearValues[1].depthStencil = vk::ClearDepthStencilValue( 1.0f, 0 );
 
     vk::RenderPassBeginInfo renderPassBeginInfo(
@@ -187,7 +188,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     commandBuffer.endRenderPass();
 
     vk::ImageMemoryBarrier prePresentBarrier( vk::AccessFlagBits::eColorAttachmentWrite,
-                                              vk::AccessFlagBits::eMemoryRead,
+                                              {},
                                               vk::ImageLayout::eColorAttachmentOptimal,
                                               vk::ImageLayout::ePresentSrcKHR,
                                               VK_QUEUE_FAMILY_IGNORED,

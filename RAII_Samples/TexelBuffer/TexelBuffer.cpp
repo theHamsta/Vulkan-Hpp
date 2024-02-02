@@ -20,7 +20,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan.hpp"
 
 #include <iostream>
 #include <thread>
@@ -64,7 +63,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     vk::PhysicalDeviceProperties physicalDeviceProperties = physicalDevice.getProperties();
     if ( physicalDeviceProperties.limits.maxTexelBufferElements < 4 )
@@ -87,8 +86,7 @@ int main( int /*argc*/, char ** /*argv*/ )
       vk::raii::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::raii::Device device = vk::raii::su::makeDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::raii::CommandPool commandPool =
-      vk::raii::CommandPool( device, { vk::CommandPoolCreateFlagBits::eResetCommandBuffer, graphicsAndPresentQueueFamilyIndex.first } );
+    vk::raii::CommandPool   commandPool   = vk::raii::CommandPool( device, { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::raii::CommandBuffer commandBuffer = vk::raii::su::makeCommandBuffer( device, commandPool );
 
     vk::raii::Queue graphicsQueue( device, graphicsAndPresentQueueFamilyIndex.first, 0 );
@@ -106,14 +104,14 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::su::BufferData texelBufferData( physicalDevice, device, sizeof( texels ), vk::BufferUsageFlagBits::eUniformTexelBuffer );
     texelBufferData.upload( texels );
 
-    vk::BufferViewCreateInfo bufferViewCreateInfo( {}, *texelBufferData.buffer, texelFormat, 0, sizeof( texels ) );
+    vk::BufferViewCreateInfo bufferViewCreateInfo( {}, texelBufferData.buffer, texelFormat, 0, sizeof( texels ) );
     vk::raii::BufferView     texelBufferView( device, bufferViewCreateInfo );
 
     vk::raii::DescriptorSetLayout descriptorSetLayout =
       vk::raii::su::makeDescriptorSetLayout( device, { { vk::DescriptorType::eUniformTexelBuffer, 1, vk::ShaderStageFlagBits::eVertex } } );
     vk::raii::PipelineLayout pipelineLayout( device, { {}, *descriptorSetLayout } );
 
-    vk::Format           colorFormat = vk::su::pickSurfaceFormat( physicalDevice.getSurfaceFormatsKHR( *surfaceData.surface ) ).format;
+    vk::Format           colorFormat = vk::su::pickSurfaceFormat( physicalDevice.getSurfaceFormatsKHR( surfaceData.surface ) ).format;
     vk::raii::RenderPass renderPass  = vk::raii::su::makeRenderPass( device, colorFormat, vk::Format::eUndefined );
 
     glslang::InitializeProcess();
@@ -125,9 +123,10 @@ int main( int /*argc*/, char ** /*argv*/ )
       vk::raii::su::makeFramebuffers( device, renderPass, swapChainData.imageViews, nullptr, surfaceData.extent );
 
     vk::raii::DescriptorPool descriptorPool = vk::raii::su::makeDescriptorPool( device, { { vk::DescriptorType::eUniformTexelBuffer, 1 } } );
-    vk::raii::DescriptorSet  descriptorSet  = std::move( vk::raii::DescriptorSets( device, { *descriptorPool, *descriptorSetLayout } ).front() );
+    vk::raii::DescriptorSet  descriptorSet  = std::move( vk::raii::DescriptorSets( device, { descriptorPool, *descriptorSetLayout } ).front() );
 
-    vk::raii::su::updateDescriptorSets( device, descriptorSet, { { vk::DescriptorType::eUniformTexelBuffer, texelBufferData.buffer, &texelBufferView } }, {} );
+    vk::raii::su::updateDescriptorSets(
+      device, descriptorSet, { { vk::DescriptorType::eUniformTexelBuffer, texelBufferData.buffer, VK_WHOLE_SIZE, &texelBufferView } }, {} );
 
     vk::raii::PipelineCache pipelineCache( device, vk::PipelineCacheCreateInfo() );
     vk::raii::Pipeline      graphicsPipeline = vk::raii::su::makeGraphicsPipeline(
@@ -139,19 +138,19 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::Semaphore imageAcquiredSemaphore( device, vk::SemaphoreCreateInfo() );
     vk::Result          result;
     uint32_t            imageIndex;
-    std::tie( result, imageIndex ) = swapChainData.swapChain.acquireNextImage( vk::su::FenceTimeout, *imageAcquiredSemaphore );
+    std::tie( result, imageIndex ) = swapChainData.swapChain.acquireNextImage( vk::su::FenceTimeout, imageAcquiredSemaphore );
     assert( result == vk::Result::eSuccess );
     assert( imageIndex < swapChainData.images.size() );
 
     commandBuffer.begin( vk::CommandBufferBeginInfo() );
 
     vk::ClearValue clearValue;
-    clearValue.color = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
-    vk::RenderPassBeginInfo renderPassBeginInfo( *renderPass, *framebuffers[imageIndex], vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ), clearValue );
+    clearValue.color = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
+    vk::RenderPassBeginInfo renderPassBeginInfo( renderPass, framebuffers[imageIndex], vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ), clearValue );
 
     commandBuffer.beginRenderPass( renderPassBeginInfo, vk::SubpassContents::eInline );
-    commandBuffer.bindPipeline( vk::PipelineBindPoint::eGraphics, *graphicsPipeline );
-    commandBuffer.bindDescriptorSets( vk::PipelineBindPoint::eGraphics, *pipelineLayout, 0, { *descriptorSet }, nullptr );
+    commandBuffer.bindPipeline( vk::PipelineBindPoint::eGraphics, graphicsPipeline );
+    commandBuffer.bindDescriptorSets( vk::PipelineBindPoint::eGraphics, pipelineLayout, 0, { descriptorSet }, nullptr );
 
     commandBuffer.setViewport(
       0, vk::Viewport( 0.0f, 0.0f, static_cast<float>( surfaceData.extent.width ), static_cast<float>( surfaceData.extent.height ), 0.0f, 1.0f ) );
@@ -167,7 +166,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::SubmitInfo         submitInfo( *imageAcquiredSemaphore, waitDestinationStageMask, *commandBuffer );
     graphicsQueue.submit( submitInfo, *drawFence );
 
-    while ( vk::Result::eTimeout == device.waitForFences( { *drawFence }, VK_TRUE, vk::su::FenceTimeout ) )
+    while ( vk::Result::eTimeout == device.waitForFences( { drawFence }, VK_TRUE, vk::su::FenceTimeout ) )
       ;
 
     vk::PresentInfoKHR presentInfoKHR( nullptr, *swapChainData.swapChain, imageIndex );

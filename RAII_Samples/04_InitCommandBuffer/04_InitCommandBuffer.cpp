@@ -31,7 +31,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     uint32_t         graphicsQueueFamilyIndex = vk::su::findGraphicsQueueFamilyIndex( physicalDevice.getQueueFamilyProperties() );
     vk::raii::Device device                   = vk::raii::su::makeDevice( physicalDevice, graphicsQueueFamilyIndex );
@@ -43,7 +43,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::CommandPool     commandPool( device, commandPoolCreateInfo );
 
     // allocate a CommandBuffer from the CommandPool
-    vk::CommandBufferAllocateInfo commandBufferAllocateInfo( *commandPool, vk::CommandBufferLevel::ePrimary, 1 );
+    vk::CommandBufferAllocateInfo commandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 );
     vk::raii::CommandBuffer       commandBuffer = std::move( vk::raii::CommandBuffers( device, commandBufferAllocateInfo ).front() );
 
     /* VULKAN_HPP_KEY_END */

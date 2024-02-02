@@ -12,24 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(RAII_PhysicalDeviceQueueFamilyProperties)
-
-set(HEADERS
-)
-
-set(SOURCES
-  PhysicalDeviceQueueFamilyProperties.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_executable(RAII_PhysicalDeviceQueueFamilyProperties
-  ${HEADERS}
-  ${SOURCES}
-)
-
-set_target_properties(RAII_PhysicalDeviceQueueFamilyProperties PROPERTIES FOLDER "RAII_Samples")
-target_link_libraries(RAII_PhysicalDeviceQueueFamilyProperties PRIVATE utils)
+vulkan_hpp__setup_sample_raii( NAME PhysicalDeviceQueueFamilyProperties )

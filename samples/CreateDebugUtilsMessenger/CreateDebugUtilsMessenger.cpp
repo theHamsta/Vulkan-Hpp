@@ -15,10 +15,10 @@
 // VulkanHpp Samples : CreateDebugReportMessenger
 //                     Draw a cube
 
-#include "vulkan/vulkan.hpp"
-
 #include <iostream>
 #include <sstream>
+#include <vulkan/vulkan.hpp>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "CreateDebugReportMessenger";
 static char const * EngineName = "Vulkan.hpp";
@@ -48,48 +48,36 @@ VKAPI_ATTR VkBool32 VKAPI_CALL debugMessageFunc( VkDebugUtilsMessageSeverityFlag
 
   message << vk::to_string( static_cast<vk::DebugUtilsMessageSeverityFlagBitsEXT>( messageSeverity ) ) << ": "
           << vk::to_string( static_cast<vk::DebugUtilsMessageTypeFlagsEXT>( messageTypes ) ) << ":\n";
-  message << "\t"
-          << "messageIDName   = <" << pCallbackData->pMessageIdName << ">\n";
-  message << "\t"
-          << "messageIdNumber = " << pCallbackData->messageIdNumber << "\n";
-  message << "\t"
-          << "message         = <" << pCallbackData->pMessage << ">\n";
+  message << std::string( "\t" ) << "messageIDName   = <" << pCallbackData->pMessageIdName << ">\n";
+  message << std::string( "\t" ) << "messageIdNumber = " << pCallbackData->messageIdNumber << "\n";
+  message << std::string( "\t" ) << "message         = <" << pCallbackData->pMessage << ">\n";
   if ( 0 < pCallbackData->queueLabelCount )
   {
-    message << "\t"
-            << "Queue Labels:\n";
+    message << std::string( "\t" ) << "Queue Labels:\n";
     for ( uint32_t i = 0; i < pCallbackData->queueLabelCount; i++ )
     {
-      message << "\t\t"
-              << "labelName = <" << pCallbackData->pQueueLabels[i].pLabelName << ">\n";
+      message << std::string( "\t\t" ) << "labelName = <" << pCallbackData->pQueueLabels[i].pLabelName << ">\n";
     }
   }
   if ( 0 < pCallbackData->cmdBufLabelCount )
   {
-    message << "\t"
-            << "CommandBuffer Labels:\n";
+    message << std::string( "\t" ) << "CommandBuffer Labels:\n";
     for ( uint32_t i = 0; i < pCallbackData->cmdBufLabelCount; i++ )
     {
-      message << "\t\t"
-              << "labelName = <" << pCallbackData->pCmdBufLabels[i].pLabelName << ">\n";
+      message << std::string( "\t\t" ) << "labelName = <" << pCallbackData->pCmdBufLabels[i].pLabelName << ">\n";
     }
   }
   if ( 0 < pCallbackData->objectCount )
   {
-    message << "\t"
-            << "Objects:\n";
+    message << std::string( "\t" ) << "Objects:\n";
     for ( uint32_t i = 0; i < pCallbackData->objectCount; i++ )
     {
-      message << "\t\t"
-              << "Object " << i << "\n";
-      message << "\t\t\t"
-              << "objectType   = " << vk::to_string( static_cast<vk::ObjectType>( pCallbackData->pObjects[i].objectType ) ) << "\n";
-      message << "\t\t\t"
-              << "objectHandle = " << pCallbackData->pObjects[i].objectHandle << "\n";
+      message << std::string( "\t\t" ) << "Object " << i << "\n";
+      message << std::string( "\t\t\t" ) << "objectType   = " << vk::to_string( static_cast<vk::ObjectType>( pCallbackData->pObjects[i].objectType ) ) << "\n";
+      message << std::string( "\t\t\t" ) << "objectHandle = " << pCallbackData->pObjects[i].objectHandle << "\n";
       if ( pCallbackData->pObjects[i].pObjectName )
       {
-        message << "\t\t\t"
-                << "objectName   = <" << pCallbackData->pObjects[i].pObjectName << ">\n";
+        message << std::string( "\t\t\t" ) << "objectName   = <" << pCallbackData->pObjects[i].pObjectName << ">\n";
       }
     }
   }

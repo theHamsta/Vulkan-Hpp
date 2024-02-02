@@ -12,24 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(ImmutableSampler)
-
-set(HEADERS
-)
-
-set(SOURCES
-  ImmutableSampler.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_executable(ImmutableSampler
-  ${HEADERS}
-  ${SOURCES}
-)
-
-set_target_properties(ImmutableSampler PROPERTIES FOLDER "Samples")
-target_link_libraries(ImmutableSampler PRIVATE utils)
+vulkan_hpp__setup_sample_dynamic( NAME ImmutableSampler )

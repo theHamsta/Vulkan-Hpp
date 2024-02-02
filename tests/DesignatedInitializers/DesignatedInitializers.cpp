@@ -17,9 +17,8 @@
 
 #define VULKAN_HPP_NO_STRUCT_CONSTRUCTORS
 
-#include "vulkan/vulkan.hpp"
-
 #include <iostream>
+#include <vulkan/vulkan.hpp>
 
 #if defined( __clang__ ) || defined( __GNUC__ )
 #  pragma GCC diagnostic ignored "-Wunused-variable"
@@ -51,7 +50,7 @@ MyVulkanTest::MyVulkanTest()
 int main( int /*argc*/, char ** /*argv*/ )
 {
   // to prevent a warning on unreferenced function vk::getDispatchLoaderStatic, use just one arbitrary vk-function
-  vk::enumerateInstanceVersion();
+  (void)vk::enumerateInstanceVersion();
 
   char const * appName       = "DesignatedInitializers";
   uint32_t     appVersion    = 1;

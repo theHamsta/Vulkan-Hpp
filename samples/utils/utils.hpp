@@ -15,13 +15,14 @@
 // limitations under the License.
 //
 
-#include "vulkan/vulkan.hpp"
+#include <vulkan/vulkan.hpp>
 
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <limits>
 #include <map>
+#include <memory>  // std::unique_ptr
 
 namespace vk
 {
@@ -30,21 +31,15 @@ namespace vk
     const uint64_t FenceTimeout = 100000000;
 
     template <typename Func>
-    void oneTimeSubmit( vk::CommandBuffer const & commandBuffer, vk::Queue const & queue, Func const & func )
+    void oneTimeSubmit( vk::Device const & device, vk::CommandPool const & commandPool, vk::Queue const & queue, Func const & func )
     {
+      vk::CommandBuffer commandBuffer =
+        device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
       commandBuffer.begin( vk::CommandBufferBeginInfo( vk::CommandBufferUsageFlagBits::eOneTimeSubmit ) );
       func( commandBuffer );
       commandBuffer.end();
       queue.submit( vk::SubmitInfo( 0, nullptr, nullptr, 1, &commandBuffer ), nullptr );
       queue.waitIdle();
-    }
-
-    template <typename Func>
-    void oneTimeSubmit( vk::Device const & device, vk::CommandPool const & commandPool, vk::Queue const & queue, Func const & func )
-    {
-      vk::CommandBuffer commandBuffer =
-        device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
-      oneTimeSubmit( commandBuffer, queue, func );
     }
 
     template <class T>
@@ -106,8 +101,8 @@ namespace vk
 
       void clear( vk::Device const & device )
       {
+        device.destroyBuffer( buffer );  // to prevent some validation layer warning, the Buffer needs to be destroyed before the bound DeviceMemory
         device.freeMemory( deviceMemory );
-        device.destroyBuffer( buffer );
       }
 
       template <typename DataType>
@@ -186,8 +181,8 @@ namespace vk
       void clear( vk::Device const & device )
       {
         device.destroyImageView( imageView );
+        device.destroyImage( image );  // the Image should to be destroyed before the bound DeviceMemory is freed
         device.freeMemory( deviceMemory );
-        device.destroyImage( image );
       }
 
       vk::Format       format;
@@ -298,8 +293,8 @@ namespace vk
       void setImage( vk::Device const & device, vk::CommandBuffer const & commandBuffer, ImageGenerator const & imageGenerator )
       {
         void * data = needsStaging
-                        ? device.mapMemory( stagingBufferData->deviceMemory, 0, device.getBufferMemoryRequirements( stagingBufferData->buffer ).size )
-                        : device.mapMemory( imageData->deviceMemory, 0, device.getImageMemoryRequirements( imageData->image ).size );
+                      ? device.mapMemory( stagingBufferData->deviceMemory, 0, device.getBufferMemoryRequirements( stagingBufferData->buffer ).size )
+                      : device.mapMemory( imageData->deviceMemory, 0, device.getImageMemoryRequirements( imageData->image ).size );
         imageGenerator( data, extent );
         device.unmapMemory( needsStaging ? stagingBufferData->deviceMemory : imageData->deviceMemory );
 
@@ -359,8 +354,6 @@ namespace vk
                                                          vk::MemoryRequirements const &             memoryRequirements,
                                                          vk::MemoryPropertyFlags                    memoryPropertyFlags );
     bool                           contains( std::vector<vk::ExtensionProperties> const & extensionProperties, std::string const & extensionName );
-    vk::CommandPool                createCommandPool( vk::Device const & device, uint32_t queueFamilyIndex );
-    vk::DebugUtilsMessengerEXT     createDebugUtilsMessengerEXT( vk::Instance const & instance );
     vk::DescriptorPool             createDescriptorPool( vk::Device const & device, std::vector<vk::DescriptorPoolSize> const & poolSizes );
     vk::DescriptorSetLayout        createDescriptorSetLayout( vk::Device const &                                                                  device,
                                                               std::vector<std::tuple<vk::DescriptorType, uint32_t, vk::ShaderStageFlags>> const & bindingData,
@@ -429,16 +422,16 @@ namespace vk
     vk::PresentModeKHR   pickPresentMode( std::vector<vk::PresentModeKHR> const & presentModes );
     vk::SurfaceFormatKHR pickSurfaceFormat( std::vector<vk::SurfaceFormatKHR> const & formats );
     void                 submitAndWait( vk::Device const & device, vk::Queue const & queue, vk::CommandBuffer const & commandBuffer );
-    void                 updateDescriptorSets( vk::Device const &                                                                              device,
-                                               vk::DescriptorSet const &                                                                       descriptorSet,
-                                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::BufferView const &>> const & bufferData,
-                                               vk::su::TextureData const &                                                                     textureData,
-                                               uint32_t                                                                                        bindingOffset = 0 );
-    void                 updateDescriptorSets( vk::Device const &                                                                              device,
-                                               vk::DescriptorSet const &                                                                       descriptorSet,
-                                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::BufferView const &>> const & bufferData,
-                                               std::vector<vk::su::TextureData> const &                                                        textureData,
-                                               uint32_t                                                                                        bindingOffset = 0 );
+    void                 updateDescriptorSets( vk::Device const &                                                                                              device,
+                                               vk::DescriptorSet const &                                                                                       descriptorSet,
+                                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::DeviceSize, vk::BufferView const &>> const & bufferData,
+                                               vk::su::TextureData const &                                                                                     textureData,
+                                               uint32_t bindingOffset = 0 );
+    void                 updateDescriptorSets( vk::Device const &                                                                                              device,
+                                               vk::DescriptorSet const &                                                                                       descriptorSet,
+                                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::DeviceSize, vk::BufferView const &>> const & bufferData,
+                                               std::vector<vk::su::TextureData> const &                                                                        textureData,
+                                               uint32_t bindingOffset = 0 );
 
   }  // namespace su
 }  // namespace vk

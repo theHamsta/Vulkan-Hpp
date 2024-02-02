@@ -16,10 +16,10 @@
 //                     Get memory properties per physical device.
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan.hpp"
 
 #include <sstream>
 #include <vector>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "PhysicalDeviceMemoryProperties";
 static char const * EngineName = "Vulkan.hpp";

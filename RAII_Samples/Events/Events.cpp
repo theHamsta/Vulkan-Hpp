@@ -16,7 +16,6 @@
 //                     Use basic events
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan_raii.hpp"
 
 #include <iostream>
 
@@ -32,12 +31,12 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     uint32_t         graphicsQueueFamilyIndex = vk::su::findGraphicsQueueFamilyIndex( physicalDevice.getQueueFamilyProperties() );
     vk::raii::Device device                   = vk::raii::su::makeDevice( physicalDevice, graphicsQueueFamilyIndex, vk::su::getDeviceExtensions() );
 
-    vk::raii::CommandPool   commandPool   = vk::raii::CommandPool( device, { vk::CommandPoolCreateFlagBits::eResetCommandBuffer, graphicsQueueFamilyIndex } );
+    vk::raii::CommandPool   commandPool   = vk::raii::CommandPool( device, { {}, graphicsQueueFamilyIndex } );
     vk::raii::CommandBuffer commandBuffer = vk::raii::su::makeCommandBuffer( device, commandPool );
 
     vk::raii::Queue graphicsQueue( device, graphicsQueueFamilyIndex, 0 );
@@ -52,14 +51,14 @@ int main( int /*argc*/, char ** /*argv*/ )
     vk::raii::Fence fence( device, vk::FenceCreateInfo() );
 
     vk::SubmitInfo submitInfo( {}, {}, *commandBuffer );
-    graphicsQueue.submit( submitInfo, *fence );
+    graphicsQueue.submit( submitInfo, fence );
 
     // Make sure timeout is long enough for a simple command buffer without waiting for an event
     vk::Result result;
     int        timeouts = -1;
     do
     {
-      result = device.waitForFences( { *fence }, true, vk::su::FenceTimeout );
+      result = device.waitForFences( { fence }, true, vk::su::FenceTimeout );
       timeouts++;
     } while ( result == vk::Result::eTimeout );
     assert( result == vk::Result::eSuccess );
@@ -72,18 +71,20 @@ int main( int /*argc*/, char ** /*argv*/ )
     // Now create an event and wait for it on the GPU
     vk::raii::Event event( device, vk::EventCreateInfo() );
 
-    commandBuffer.reset( vk::CommandBufferResetFlags() );
+    // reset the command buffer by resetting the complete command pool of this frame
+    commandPool.reset();
+
     commandBuffer.begin( vk::CommandBufferBeginInfo() );
-    commandBuffer.waitEvents( { *event }, vk::PipelineStageFlagBits::eHost, vk::PipelineStageFlagBits::eBottomOfPipe, nullptr, nullptr, nullptr );
+    commandBuffer.waitEvents( { event }, vk::PipelineStageFlagBits::eHost, vk::PipelineStageFlagBits::eBottomOfPipe, nullptr, nullptr, nullptr );
     commandBuffer.end();
-    device.resetFences( { *fence } );
+    device.resetFences( { fence } );
 
     // Note that stepping through this code in the debugger is a bad idea because the GPU can TDR waiting for the event.
     // Execute the code from vk::Queue::submit() through vk::Device::setEvent() without breakpoints
-    graphicsQueue.submit( submitInfo, *fence );
+    graphicsQueue.submit( submitInfo, fence );
 
     // We should timeout waiting for the fence because the GPU should be waiting on the event
-    result = device.waitForFences( { *fence }, true, vk::su::FenceTimeout );
+    result = device.waitForFences( { fence }, true, vk::su::FenceTimeout );
     if ( result != vk::Result::eTimeout )
     {
       std::cout << "Didn't get expected timeout in vk::Device::waitForFences, exiting\n";
@@ -95,17 +96,19 @@ int main( int /*argc*/, char ** /*argv*/ )
     event.set();
     do
     {
-      result = device.waitForFences( { *fence }, true, vk::su::FenceTimeout );
+      result = device.waitForFences( { fence }, true, vk::su::FenceTimeout );
     } while ( result == vk::Result::eTimeout );
     assert( result == vk::Result::eSuccess );
 
-    commandBuffer.reset( {} );
-    device.resetFences( { *fence } );
+    device.resetFences( { fence } );
     event.reset();
+
+    // reset the command buffer by resetting the complete command pool
+    commandPool.reset();
 
     // Now set the event from the GPU and wait on the CPU
     commandBuffer.begin( vk::CommandBufferBeginInfo() );
-    commandBuffer.setEvent( *event, vk::PipelineStageFlagBits::eBottomOfPipe );
+    commandBuffer.setEvent( event, vk::PipelineStageFlagBits::eBottomOfPipe );
     commandBuffer.end();
 
     // Look for the event on the CPU. It should be vk::Result::eEventReset since we haven't sent the command buffer yet.
@@ -113,7 +116,7 @@ int main( int /*argc*/, char ** /*argv*/ )
     assert( result == vk::Result::eEventReset );
 
     // Send the command buffer and loop waiting for the event
-    graphicsQueue.submit( submitInfo, *fence );
+    graphicsQueue.submit( submitInfo, fence );
 
     int polls = 0;
     do
@@ -125,7 +128,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 
     do
     {
-      result = device.waitForFences( { *fence }, true, vk::su::FenceTimeout );
+      result = device.waitForFences( { fence }, true, vk::su::FenceTimeout );
     } while ( result == vk::Result::eTimeout );
     assert( result == vk::Result::eSuccess );
 

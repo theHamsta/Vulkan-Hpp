@@ -12,29 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
+vulkan_hpp__setup_library(
+	SHARED
+	NAME DispatchLoaderDynamicSharedLibrary
+	SOURCES DispatchLoaderDynamicSharedLibrary.cpp
+	FOLDER "Tests" )
 
-project(DispatchLoaderDynamicSharedLibrary)
+target_compile_definitions( DispatchLoaderDynamicSharedLibrary
+	PRIVATE VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1
+			VULKAN_HPP_STORAGE_SHARED VULKAN_HPP_STORAGE_SHARED_EXPORT )
 
-set(HEADERS
-)
-
-set(SOURCES
-  DispatchLoaderDynamicSharedLibrary.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_library(DispatchLoaderDynamicSharedLibrary SHARED
-  ${HEADERS}
-  ${SOURCES}
-)
-
-target_compile_definitions(DispatchLoaderDynamicSharedLibrary PRIVATE VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1 VULKAN_HPP_STORAGE_SHARED VULKAN_HPP_STORAGE_SHARED_EXPORT )
-
-if (UNIX)
-  target_link_libraries(DispatchLoaderDynamicSharedLibrary "-ldl")
+if( UNIX )
+	target_link_libraries( DispatchLoaderDynamicSharedLibrary PRIVATE ${CMAKE_DL_LIBS} )
 endif()
-
-set_target_properties(DispatchLoaderDynamicSharedLibrary PROPERTIES FOLDER "Tests")

@@ -16,38 +16,31 @@
 //                     Get surface capabilities.
 
 #include "../utils/utils.hpp"
-#include "vulkan/vulkan.hpp"
 
 #include <iomanip>
 #include <sstream>
 #include <vector>
+#include <vulkan/vulkan_to_string.hpp>
 
 static char const * AppName    = "SurfaceCapabilities";
 static char const * EngineName = "Vulkan.hpp";
 
 void cout( vk::SurfaceCapabilitiesKHR const & surfaceCapabilities )
 {
-  std::cout << "\tCapabilities:\n";
-  std::cout << "\t\t"
-            << "currentExtent           = " << surfaceCapabilities.currentExtent.width << " x " << surfaceCapabilities.currentExtent.height << "\n";
-  std::cout << "\t\t"
-            << "currentTransform        = " << vk::to_string( surfaceCapabilities.currentTransform ) << "\n";
-  std::cout << "\t\t"
-            << "maxImageArrayLayers     = " << surfaceCapabilities.maxImageArrayLayers << "\n";
-  std::cout << "\t\t"
-            << "maxImageCount           = " << surfaceCapabilities.maxImageCount << "\n";
-  std::cout << "\t\t"
-            << "maxImageExtent          = " << surfaceCapabilities.maxImageExtent.width << " x " << surfaceCapabilities.maxImageExtent.height << "\n";
-  std::cout << "\t\t"
-            << "minImageCount           = " << surfaceCapabilities.minImageCount << "\n";
-  std::cout << "\t\t"
-            << "minImageExtent          = " << surfaceCapabilities.minImageExtent.width << " x " << surfaceCapabilities.minImageExtent.height << "\n";
-  std::cout << "\t\t"
-            << "supportedCompositeAlpha = " << vk::to_string( surfaceCapabilities.supportedCompositeAlpha ) << "\n";
-  std::cout << "\t\t"
-            << "supportedTransforms     = " << vk::to_string( surfaceCapabilities.supportedTransforms ) << "\n";
-  std::cout << "\t\t"
-            << "supportedUsageFlags     = " << vk::to_string( surfaceCapabilities.supportedUsageFlags ) << "\n";
+  std::cout << std::string( "\t" ) << "Capabilities:\n";
+  std::cout << std::string( "\t\t" ) << "currentExtent           = " << surfaceCapabilities.currentExtent.width << " x "
+            << surfaceCapabilities.currentExtent.height << "\n";
+  std::cout << std::string( "\t\t" ) << "currentTransform        = " << vk::to_string( surfaceCapabilities.currentTransform ) << "\n";
+  std::cout << std::string( "\t\t" ) << "maxImageArrayLayers     = " << surfaceCapabilities.maxImageArrayLayers << "\n";
+  std::cout << std::string( "\t\t" ) << "maxImageCount           = " << surfaceCapabilities.maxImageCount << "\n";
+  std::cout << std::string( "\t\t" ) << "maxImageExtent          = " << surfaceCapabilities.maxImageExtent.width << " x "
+            << surfaceCapabilities.maxImageExtent.height << "\n";
+  std::cout << std::string( "\t\t" ) << "minImageCount           = " << surfaceCapabilities.minImageCount << "\n";
+  std::cout << std::string( "\t\t" ) << "minImageExtent          = " << surfaceCapabilities.minImageExtent.width << " x "
+            << surfaceCapabilities.minImageExtent.height << "\n";
+  std::cout << std::string( "\t\t" ) << "supportedCompositeAlpha = " << vk::to_string( surfaceCapabilities.supportedCompositeAlpha ) << "\n";
+  std::cout << std::string( "\t\t" ) << "supportedTransforms     = " << vk::to_string( surfaceCapabilities.supportedTransforms ) << "\n";
+  std::cout << std::string( "\t\t" ) << "supportedUsageFlags     = " << vk::to_string( surfaceCapabilities.supportedUsageFlags ) << "\n";
   std::cout << "\n";
 }
 
@@ -57,9 +50,7 @@ int main( int /*argc*/, char ** /*argv*/ )
   {
     // need to initialize the dynamic dispatcher before the very first vulkan call
 #if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-    static vk::DynamicLoader  dl;
-    PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = dl.getProcAddress<PFN_vkGetInstanceProcAddr>( "vkGetInstanceProcAddr" );
-    VULKAN_HPP_DEFAULT_DISPATCHER.init( vkGetInstanceProcAddr );
+    VULKAN_HPP_DEFAULT_DISPATCHER.init();
 #endif
 
     std::vector<vk::ExtensionProperties> instanceExtensionProperties = vk::enumerateInstanceExtensionProperties();
@@ -100,7 +91,6 @@ int main( int /*argc*/, char ** /*argv*/ )
                                       .getSurfaceCapabilities2KHR<vk::SurfaceCapabilities2KHR,
                                                                   vk::DisplayNativeHdrSurfaceCapabilitiesAMD,
                                                                   vk::SharedPresentSurfaceCapabilitiesKHR,
-                                                                  vk::SurfaceCapabilitiesFullScreenExclusiveEXT,
                                                                   vk::SurfaceProtectedCapabilitiesKHR>( surfaceData.surface );
 
         vk::SurfaceCapabilitiesKHR const & surfaceCapabilities = surfaceCapabilities2.get<vk::SurfaceCapabilities2KHR>().surfaceCapabilities;
@@ -110,37 +100,25 @@ int main( int /*argc*/, char ** /*argv*/ )
         {
           vk::DisplayNativeHdrSurfaceCapabilitiesAMD displayNativeHdrSurfaceCapabilities =
             surfaceCapabilities2.get<vk::DisplayNativeHdrSurfaceCapabilitiesAMD>();
-          std::cout << "\tDisplayNativeHdrSurfaceCapabilitiesAMD:\n";
-          std::cout << "\t\t"
-                    << "localDimmingSupport = " << !!displayNativeHdrSurfaceCapabilities.localDimmingSupport << "\n";
+          std::cout << std::string( "\t" ) << "DisplayNativeHdrSurfaceCapabilitiesAMD:\n";
+          std::cout << std::string( "\t\t" ) << "localDimmingSupport = " << !!displayNativeHdrSurfaceCapabilities.localDimmingSupport << "\n";
           std::cout << "\n";
         }
 
         if ( vk::su::contains( extensionProperties, "VK_KHR_shared_presentable_image" ) )
         {
           vk::SharedPresentSurfaceCapabilitiesKHR sharedPresentSurfaceCapabilities = surfaceCapabilities2.get<vk::SharedPresentSurfaceCapabilitiesKHR>();
-          std::cout << "\tSharedPresentSurfaceCapabilitiesKHR:\n";
-          std::cout << "\t\t"
+          std::cout << std::string( "\t" ) << "SharedPresentSurfaceCapabilitiesKHR:\n";
+          std::cout << std::string( "\t\t" )
                     << "sharedPresentSupportedUsageFlags  = " << vk::to_string( sharedPresentSurfaceCapabilities.sharedPresentSupportedUsageFlags ) << "\n";
-          std::cout << "\n";
-        }
-
-        if ( vk::su::contains( extensionProperties, "VK_EXT_full_screen_exclusive" ) )
-        {
-          vk::SurfaceCapabilitiesFullScreenExclusiveEXT surfaceCapabilitiesFullScreenExclusive =
-            surfaceCapabilities2.get<vk::SurfaceCapabilitiesFullScreenExclusiveEXT>();
-          std::cout << "\tSurfaceCapabilitiesFullScreenExclusiveEXT:\n";
-          std::cout << "\t\t"
-                    << "fullScreenExclusiveSupported  = " << !!surfaceCapabilitiesFullScreenExclusive.fullScreenExclusiveSupported << "\n";
           std::cout << "\n";
         }
 
         if ( vk::su::contains( extensionProperties, "VK_KHR_surface_protected_capabilities" ) )
         {
           vk::SurfaceProtectedCapabilitiesKHR surfaceProtectedCapabilities = surfaceCapabilities2.get<vk::SurfaceProtectedCapabilitiesKHR>();
-          std::cout << "\tSurfaceProtectedCapabilitiesKHR:\n";
-          std::cout << "\t\t"
-                    << "supportsProtected  = " << !!surfaceProtectedCapabilities.supportsProtected << "\n";
+          std::cout << std::string( "\t" ) << "SurfaceProtectedCapabilitiesKHR:\n";
+          std::cout << std::string( "\t\t" ) << "supportsProtected  = " << !!surfaceProtectedCapabilities.supportsProtected << "\n";
           std::cout << "\n";
         }
       }

@@ -25,10 +25,13 @@
 
 #include "utils.hpp"
 
-#include "vulkan/vulkan.hpp"
-
 #include <iomanip>
 #include <numeric>
+#include <vulkan/vulkan.hpp>
+#if defined( VULKAN_HPP_NO_TO_STRING )
+#  include <vulkan/vulkan_to_string.hpp>
+#endif
+#include <vulkan/vulkan_static_assertions.hpp>
 
 #if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
 VULKAN_HPP_DEFAULT_DISPATCH_LOADER_DYNAMIC_STORAGE
@@ -54,17 +57,6 @@ namespace vk
                                             extensionProperties.end(),
                                             [&extensionName]( vk::ExtensionProperties const & ep ) { return extensionName == ep.extensionName; } );
       return ( propertyIterator != extensionProperties.end() );
-    }
-
-    vk::CommandPool createCommandPool( vk::Device const & device, uint32_t queueFamilyIndex )
-    {
-      vk::CommandPoolCreateInfo commandPoolCreateInfo( vk::CommandPoolCreateFlagBits::eResetCommandBuffer, queueFamilyIndex );
-      return device.createCommandPool( commandPoolCreateInfo );
-    }
-
-    vk::DebugUtilsMessengerEXT createDebugUtilsMessengerEXT( vk::Instance const & instance )
-    {
-      return instance.createDebugUtilsMessengerEXT( vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
     }
 
     vk::DescriptorPool createDescriptorPool( vk::Device const & device, std::vector<vk::DescriptorPoolSize> const & poolSizes )
@@ -106,8 +98,7 @@ namespace vk
 
       float                     queuePriority = 0.0f;
       vk::DeviceQueueCreateInfo deviceQueueCreateInfo( {}, queueFamilyIndex, 1, &queuePriority );
-      vk::DeviceCreateInfo      deviceCreateInfo( {}, deviceQueueCreateInfo, {}, enabledExtensions, physicalDeviceFeatures );
-      deviceCreateInfo.pNext = pNext;
+      vk::DeviceCreateInfo      deviceCreateInfo( {}, deviceQueueCreateInfo, {}, enabledExtensions, physicalDeviceFeatures, pNext );
 
       vk::Device device = physicalDevice.createDevice( deviceCreateInfo );
 #if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
@@ -241,17 +232,16 @@ namespace vk
       enabledExtensions.reserve( extensions.size() );
       for ( auto const & ext : extensions )
       {
-        assert( std::find_if( extensionProperties.begin(),
-                              extensionProperties.end(),
-                              [ext]( vk::ExtensionProperties const & ep ) { return ext == ep.extensionName; } ) != extensionProperties.end() );
+        assert( std::any_of(
+          extensionProperties.begin(), extensionProperties.end(), [ext]( vk::ExtensionProperties const & ep ) { return ext == ep.extensionName; } ) );
         enabledExtensions.push_back( ext.data() );
       }
 #if !defined( NDEBUG )
-      if ( std::find( extensions.begin(), extensions.end(), VK_EXT_DEBUG_UTILS_EXTENSION_NAME ) == extensions.end() &&
-           std::find_if( extensionProperties.begin(),
-                         extensionProperties.end(),
-                         []( vk::ExtensionProperties const & ep )
-                         { return ( strcmp( VK_EXT_DEBUG_UTILS_EXTENSION_NAME, ep.extensionName ) == 0 ); } ) != extensionProperties.end() )
+      if ( std::none_of(
+             extensions.begin(), extensions.end(), []( std::string const & extension ) { return extension == VK_EXT_DEBUG_UTILS_EXTENSION_NAME; } ) &&
+           std::any_of( extensionProperties.begin(),
+                        extensionProperties.end(),
+                        []( vk::ExtensionProperties const & ep ) { return ( strcmp( VK_EXT_DEBUG_UTILS_EXTENSION_NAME, ep.extensionName ) == 0 ); } ) )
       {
         enabledExtensions.push_back( VK_EXT_DEBUG_UTILS_EXTENSION_NAME );
       }
@@ -270,17 +260,15 @@ namespace vk
       enabledLayers.reserve( layers.size() );
       for ( auto const & layer : layers )
       {
-        assert( std::find_if( layerProperties.begin(), layerProperties.end(), [layer]( vk::LayerProperties const & lp ) { return layer == lp.layerName; } ) !=
-                layerProperties.end() );
+        assert( std::any_of( layerProperties.begin(), layerProperties.end(), [layer]( vk::LayerProperties const & lp ) { return layer == lp.layerName; } ) );
         enabledLayers.push_back( layer.data() );
       }
 #if !defined( NDEBUG )
       // Enable standard validation layer to find as much errors as possible!
-      if ( std::find( layers.begin(), layers.end(), "VK_LAYER_KHRONOS_validation" ) == layers.end() &&
-           std::find_if( layerProperties.begin(),
-                         layerProperties.end(),
-                         []( vk::LayerProperties const & lp )
-                         { return ( strcmp( "VK_LAYER_KHRONOS_validation", lp.layerName ) == 0 ); } ) != layerProperties.end() )
+      if ( std::none_of( layers.begin(), layers.end(), []( std::string const & layer ) { return layer == "VK_LAYER_KHRONOS_validation"; } ) &&
+           std::any_of( layerProperties.begin(),
+                        layerProperties.end(),
+                        []( vk::LayerProperties const & lp ) { return ( strcmp( "VK_LAYER_KHRONOS_validation", lp.layerName ) == 0 ); } ) )
       {
         enabledLayers.push_back( "VK_LAYER_KHRONOS_validation" );
       }
@@ -295,9 +283,7 @@ namespace vk
                                  uint32_t                         apiVersion )
     {
 #if ( VULKAN_HPP_DISPATCH_LOADER_DYNAMIC == 1 )
-      static vk::DynamicLoader  dl;
-      PFN_vkGetInstanceProcAddr vkGetInstanceProcAddr = dl.getProcAddress<PFN_vkGetInstanceProcAddr>( "vkGetInstanceProcAddr" );
-      VULKAN_HPP_DEFAULT_DISPATCHER.init( vkGetInstanceProcAddr );
+      VULKAN_HPP_DEFAULT_DISPATCHER.init();
 #endif
 
       vk::ApplicationInfo       applicationInfo( appName.c_str(), 1, engineName.c_str(), 1, apiVersion );
@@ -355,9 +341,9 @@ namespace vk
       vk::AttachmentReference depthAttachment( 1, vk::ImageLayout::eDepthStencilAttachmentOptimal );
       vk::SubpassDescription  subpassDescription( vk::SubpassDescriptionFlags(),
                                                  vk::PipelineBindPoint::eGraphics,
-                                                 {},
+                                                  {},
                                                  colorAttachment,
-                                                 {},
+                                                  {},
                                                  ( depthFormat != vk::Format::eUndefined ) ? &depthAttachment : nullptr );
       return device.createRenderPass( vk::RenderPassCreateInfo( vk::RenderPassCreateFlags(), attachmentDescriptions, subpassDescription ) );
     }
@@ -368,66 +354,56 @@ namespace vk
                                                                 void * /*pUserData*/ )
     {
 #if !defined( NDEBUG )
-      if ( pCallbackData->messageIdNumber == 648835635 )
+      if ( static_cast<uint32_t>( pCallbackData->messageIdNumber ) == 0x822806fa )
       {
-        // UNASSIGNED-khronos-Validation-debug-build-warning-message
-        return VK_FALSE;
+        // Validation Warning: vkCreateInstance(): to enable extension VK_EXT_debug_utils, but this extension is intended to support use by applications when
+        // debugging and it is strongly recommended that it be otherwise avoided.
+        return vk::False;
       }
-      if ( pCallbackData->messageIdNumber == 767975156 )
+      else if ( static_cast<uint32_t>( pCallbackData->messageIdNumber ) == 0xe8d1a9fe )
       {
-        // UNASSIGNED-BestPractices-vkCreateInstance-specialuse-extension
-        return VK_FALSE;
+        // Validation Performance Warning: Using debug builds of the validation layers *will* adversely affect performance.
+        return vk::False;
       }
 #endif
 
       std::cerr << vk::to_string( static_cast<vk::DebugUtilsMessageSeverityFlagBitsEXT>( messageSeverity ) ) << ": "
                 << vk::to_string( static_cast<vk::DebugUtilsMessageTypeFlagsEXT>( messageTypes ) ) << ":\n";
-      std::cerr << "\t"
-                << "messageIDName   = <" << pCallbackData->pMessageIdName << ">\n";
-      std::cerr << "\t"
-                << "messageIdNumber = " << pCallbackData->messageIdNumber << "\n";
-      std::cerr << "\t"
-                << "message         = <" << pCallbackData->pMessage << ">\n";
+      std::cerr << std::string( "\t" ) << "messageIDName   = <" << pCallbackData->pMessageIdName << ">\n";
+      std::cerr << std::string( "\t" ) << "messageIdNumber = " << pCallbackData->messageIdNumber << "\n";
+      std::cerr << std::string( "\t" ) << "message         = <" << pCallbackData->pMessage << ">\n";
       if ( 0 < pCallbackData->queueLabelCount )
       {
-        std::cerr << "\t"
-                  << "Queue Labels:\n";
+        std::cerr << std::string( "\t" ) << "Queue Labels:\n";
         for ( uint32_t i = 0; i < pCallbackData->queueLabelCount; i++ )
         {
-          std::cerr << "\t\t"
-                    << "labelName = <" << pCallbackData->pQueueLabels[i].pLabelName << ">\n";
+          std::cerr << std::string( "\t\t" ) << "labelName = <" << pCallbackData->pQueueLabels[i].pLabelName << ">\n";
         }
       }
       if ( 0 < pCallbackData->cmdBufLabelCount )
       {
-        std::cerr << "\t"
-                  << "CommandBuffer Labels:\n";
+        std::cerr << std::string( "\t" ) << "CommandBuffer Labels:\n";
         for ( uint32_t i = 0; i < pCallbackData->cmdBufLabelCount; i++ )
         {
-          std::cerr << "\t\t"
-                    << "labelName = <" << pCallbackData->pCmdBufLabels[i].pLabelName << ">\n";
+          std::cerr << std::string( "\t\t" ) << "labelName = <" << pCallbackData->pCmdBufLabels[i].pLabelName << ">\n";
         }
       }
       if ( 0 < pCallbackData->objectCount )
       {
-        std::cerr << "\t"
-                  << "Objects:\n";
+        std::cerr << std::string( "\t" ) << "Objects:\n";
         for ( uint32_t i = 0; i < pCallbackData->objectCount; i++ )
         {
-          std::cerr << "\t\t"
-                    << "Object " << i << "\n";
-          std::cerr << "\t\t\t"
-                    << "objectType   = " << vk::to_string( static_cast<vk::ObjectType>( pCallbackData->pObjects[i].objectType ) ) << "\n";
-          std::cerr << "\t\t\t"
-                    << "objectHandle = " << pCallbackData->pObjects[i].objectHandle << "\n";
+          std::cerr << std::string( "\t\t" ) << "Object " << i << "\n";
+          std::cerr << std::string( "\t\t\t" ) << "objectType   = " << vk::to_string( static_cast<vk::ObjectType>( pCallbackData->pObjects[i].objectType ) )
+                    << "\n";
+          std::cerr << std::string( "\t\t\t" ) << "objectHandle = " << pCallbackData->pObjects[i].objectHandle << "\n";
           if ( pCallbackData->pObjects[i].pObjectName )
           {
-            std::cerr << "\t\t\t"
-                      << "objectName   = <" << pCallbackData->pObjects[i].pObjectName << ">\n";
+            std::cerr << std::string( "\t\t\t" ) << "objectName   = <" << pCallbackData->pObjects[i].pObjectName << ">\n";
           }
         }
       }
-      return VK_TRUE;
+      return vk::False;
     }
 
     uint32_t findGraphicsQueueFamilyIndex( std::vector<vk::QueueFamilyProperties> const & queueFamilyProperties )
@@ -681,11 +657,11 @@ namespace vk
       device.destroyFence( fence );
     }
 
-    void updateDescriptorSets( vk::Device const &                                                                              device,
-                               vk::DescriptorSet const &                                                                       descriptorSet,
-                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::BufferView const &>> const & bufferData,
-                               vk::su::TextureData const &                                                                     textureData,
-                               uint32_t                                                                                        bindingOffset )
+    void updateDescriptorSets( vk::Device const &                                                                                              device,
+                               vk::DescriptorSet const &                                                                                       descriptorSet,
+                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::DeviceSize, vk::BufferView const &>> const & bufferData,
+                               vk::su::TextureData const &                                                                                     textureData,
+                               uint32_t                                                                                                        bindingOffset )
     {
       std::vector<vk::DescriptorBufferInfo> bufferInfos;
       bufferInfos.reserve( bufferData.size() );
@@ -695,8 +671,8 @@ namespace vk
       uint32_t dstBinding = bindingOffset;
       for ( auto const & bd : bufferData )
       {
-        bufferInfos.emplace_back( std::get<1>( bd ), 0, VK_WHOLE_SIZE );
-        writeDescriptorSets.emplace_back( descriptorSet, dstBinding++, 0, 1, std::get<0>( bd ), nullptr, &bufferInfos.back(), &std::get<2>( bd ) );
+        bufferInfos.emplace_back( std::get<1>( bd ), 0, std::get<2>( bd ) );
+        writeDescriptorSets.emplace_back( descriptorSet, dstBinding++, 0, 1, std::get<0>( bd ), nullptr, &bufferInfos.back(), &std::get<3>( bd ) );
       }
 
       vk::DescriptorImageInfo imageInfo( textureData.sampler, textureData.imageData->imageView, vk::ImageLayout::eShaderReadOnlyOptimal );
@@ -705,11 +681,11 @@ namespace vk
       device.updateDescriptorSets( writeDescriptorSets, nullptr );
     }
 
-    void updateDescriptorSets( vk::Device const &                                                                              device,
-                               vk::DescriptorSet const &                                                                       descriptorSet,
-                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::BufferView const &>> const & bufferData,
-                               std::vector<vk::su::TextureData> const &                                                        textureData,
-                               uint32_t                                                                                        bindingOffset )
+    void updateDescriptorSets( vk::Device const &                                                                                              device,
+                               vk::DescriptorSet const &                                                                                       descriptorSet,
+                               std::vector<std::tuple<vk::DescriptorType, vk::Buffer const &, vk::DeviceSize, vk::BufferView const &>> const & bufferData,
+                               std::vector<vk::su::TextureData> const &                                                                        textureData,
+                               uint32_t                                                                                                        bindingOffset )
     {
       std::vector<vk::DescriptorBufferInfo> bufferInfos;
       bufferInfos.reserve( bufferData.size() );
@@ -719,8 +695,8 @@ namespace vk
       uint32_t dstBinding = bindingOffset;
       for ( auto const & bd : bufferData )
       {
-        bufferInfos.emplace_back( std::get<1>( bd ), 0, VK_WHOLE_SIZE );
-        writeDescriptorSets.emplace_back( descriptorSet, dstBinding++, 0, 1, std::get<0>( bd ), nullptr, &bufferInfos.back(), &std::get<2>( bd ) );
+        bufferInfos.emplace_back( std::get<1>( bd ), 0, std::get<2>( bd ) );
+        writeDescriptorSets.emplace_back( descriptorSet, dstBinding++, 0, 1, std::get<0>( bd ), nullptr, &bufferInfos.back(), &std::get<3>( bd ) );
       }
 
       std::vector<vk::DescriptorImageInfo> imageInfos;
@@ -768,7 +744,8 @@ namespace vk
                    vk::ImageLayout::eUndefined,
                    vk::MemoryPropertyFlagBits::eDeviceLocal,
                    vk::ImageAspectFlagBits::eDepth )
-    {}
+    {
+    }
 
     ImageData::ImageData( vk::PhysicalDevice const & physicalDevice,
                           vk::Device const &         device,
@@ -839,8 +816,8 @@ namespace vk
         swapchainExtent = surfaceCapabilities.currentExtent;
       }
       vk::SurfaceTransformFlagBitsKHR preTransform = ( surfaceCapabilities.supportedTransforms & vk::SurfaceTransformFlagBitsKHR::eIdentity )
-                                                       ? vk::SurfaceTransformFlagBitsKHR::eIdentity
-                                                       : surfaceCapabilities.currentTransform;
+                                                     ? vk::SurfaceTransformFlagBitsKHR::eIdentity
+                                                     : surfaceCapabilities.currentTransform;
       vk::CompositeAlphaFlagBitsKHR   compositeAlpha =
         ( surfaceCapabilities.supportedCompositeAlpha & vk::CompositeAlphaFlagBitsKHR::ePreMultiplied )    ? vk::CompositeAlphaFlagBitsKHR::ePreMultiplied
           : ( surfaceCapabilities.supportedCompositeAlpha & vk::CompositeAlphaFlagBitsKHR::ePostMultiplied ) ? vk::CompositeAlphaFlagBitsKHR::ePostMultiplied
@@ -849,7 +826,7 @@ namespace vk
       vk::PresentModeKHR         presentMode = vk::su::pickPresentMode( physicalDevice.getSurfacePresentModesKHR( surface ) );
       vk::SwapchainCreateInfoKHR swapChainCreateInfo( {},
                                                       surface,
-                                                      surfaceCapabilities.minImageCount,
+                                                      vk::su::clamp( 3u, surfaceCapabilities.minImageCount, surfaceCapabilities.maxImageCount ),
                                                       colorFormat,
                                                       surfaceFormat.colorSpace,
                                                       swapchainExtent,
@@ -887,7 +864,8 @@ namespace vk
 
     CheckerboardImageGenerator::CheckerboardImageGenerator( std::array<uint8_t, 3> const & rgb0, std::array<uint8_t, 3> const & rgb1 )
       : m_rgb0( rgb0 ), m_rgb1( rgb1 )
-    {}
+    {
+    }
 
     void CheckerboardImageGenerator::operator()( void * data, vk::Extent2D & extent ) const
     {

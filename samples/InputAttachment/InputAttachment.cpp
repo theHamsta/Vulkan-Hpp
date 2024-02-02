@@ -30,7 +30,6 @@
 #include "../utils/shaders.hpp"
 #include "../utils/utils.hpp"
 #include "SPIRV/GlslangToSpv.h"
-#include "vulkan/vulkan.hpp"
 
 #include <iostream>
 #include <thread>
@@ -66,7 +65,8 @@ void main()
   outColor = subpassLoad(inputAttachment);
 }
 )";
-int                 main( int /*argc*/, char ** /*argv*/ )
+
+int main( int /*argc*/, char ** /*argv*/ )
 {
   try
   {
@@ -89,7 +89,7 @@ int                 main( int /*argc*/, char ** /*argv*/ )
     std::pair<uint32_t, uint32_t> graphicsAndPresentQueueFamilyIndex = vk::su::findGraphicsAndPresentQueueFamilyIndex( physicalDevice, surfaceData.surface );
     vk::Device                    device = vk::su::createDevice( physicalDevice, graphicsAndPresentQueueFamilyIndex.first, vk::su::getDeviceExtensions() );
 
-    vk::CommandPool   commandPool = vk::su::createCommandPool( device, graphicsAndPresentQueueFamilyIndex.first );
+    vk::CommandPool   commandPool = device.createCommandPool( { {}, graphicsAndPresentQueueFamilyIndex.first } );
     vk::CommandBuffer commandBuffer =
       device.allocateCommandBuffers( vk::CommandBufferAllocateInfo( commandPool, vk::CommandBufferLevel::ePrimary, 1 ) ).front();
 
@@ -135,12 +135,11 @@ int                 main( int /*argc*/, char ** /*argv*/ )
 
     commandBuffer.clearColorImage( inputImage,
                                    vk::ImageLayout::eTransferDstOptimal,
-                                   vk::ClearColorValue( std::array<float, 4>( { { 1.0f, 1.0f, 0.0f, 0.0f } } ) ),
+                                   vk::ClearColorValue( 1.0f, 1.0f, 0.0f, 0.0f ),
                                    vk::ImageSubresourceRange( vk::ImageAspectFlagBits::eColor, 0, VK_REMAINING_MIP_LEVELS, 0, VK_REMAINING_ARRAY_LAYERS ) );
 
-    // Set the image layout to SHADER_READONLY_OPTIMAL for use by the shaders
-    vk::su::setImageLayout(
-      commandBuffer, inputImage, swapChainData.colorFormat, vk::ImageLayout::eTransferDstOptimal, vk::ImageLayout::eShaderReadOnlyOptimal );
+    // Transitioning the layout of the inputImage from TransferDstOptimal to ShaderReadOnlyOptimal is implicitly done by a subpassDependency in the
+    // RenderPassCreateInfo below
 
     vk::ImageViewCreateInfo imageViewCreateInfo(
       {}, inputImage, vk::ImageViewType::e2D, swapChainData.colorFormat, {}, { vk::ImageAspectFlagBits::eColor, 0, 1, 0, 1 } );
@@ -174,13 +173,23 @@ int                 main( int /*argc*/, char ** /*argv*/ )
                                  vk::AttachmentStoreOp::eDontCare,
                                  vk::AttachmentLoadOp::eDontCare,
                                  vk::AttachmentStoreOp::eDontCare,
-                                 vk::ImageLayout::eShaderReadOnlyOptimal,
+                                 vk::ImageLayout::eTransferDstOptimal,  // transition layout from TransferDstOptimal to ShaderReadOnlyOptimal
                                  vk::ImageLayout::eShaderReadOnlyOptimal )
     };
-    vk::AttachmentReference colorReference( 0, vk::ImageLayout::eColorAttachmentOptimal );
-    vk::AttachmentReference inputReference( 1, vk::ImageLayout::eShaderReadOnlyOptimal );
-    vk::SubpassDescription  subPass( vk::SubpassDescriptionFlags(), vk::PipelineBindPoint::eGraphics, inputReference, colorReference );
-    vk::RenderPass          renderPass = device.createRenderPass( vk::RenderPassCreateInfo( vk::RenderPassCreateFlags(), attachments, subPass ) );
+    vk::AttachmentReference  colorReference( 0, vk::ImageLayout::eColorAttachmentOptimal );
+    vk::AttachmentReference  inputReference( 1, vk::ImageLayout::eShaderReadOnlyOptimal );
+    vk::SubpassDescription   subpassDescription( {}, vk::PipelineBindPoint::eGraphics, inputReference, colorReference );
+    vk::SubpassDependency    subpassDependency( VK_SUBPASS_EXTERNAL,
+                                             0,
+                                             vk::PipelineStageFlagBits::eTransfer,
+                                             vk::PipelineStageFlagBits::eColorAttachmentOutput | vk::PipelineStageFlagBits::eFragmentShader,
+                                             vk::AccessFlagBits::eTransferWrite,
+                                             vk::AccessFlagBits::eColorAttachmentWrite  // needed for first attachment
+                                               | vk::AccessFlagBits::eInputAttachmentRead | vk::AccessFlagBits::eShaderRead |
+                                               vk::AccessFlagBits::eColorAttachmentRead  // needed for second attachment
+    );
+    vk::RenderPassCreateInfo renderPassCreateInfo( {}, attachments, subpassDescription, subpassDependency );
+    vk::RenderPass           renderPass = device.createRenderPass( renderPassCreateInfo );
 
     glslang::InitializeProcess();
     vk::ShaderModule vertexShaderModule   = vk::su::createShaderModule( device, vk::ShaderStageFlagBits::eVertex, vertexShaderText );
@@ -207,7 +216,7 @@ int                 main( int /*argc*/, char ** /*argv*/ )
                                                                     std::make_pair( vertexShaderModule, nullptr ),
                                                                     std::make_pair( fragmentShaderModule, nullptr ),
                                                                     0,
-                                                                    {},
+                                                                         {},
                                                                     vk::FrontFace::eClockwise,
                                                                     false,
                                                                     pipelineLayout,
@@ -221,7 +230,7 @@ int                 main( int /*argc*/, char ** /*argv*/ )
     uint32_t currentBuffer = nexImage.value;
 
     vk::ClearValue clearValue;
-    clearValue.color = vk::ClearColorValue( std::array<float, 4>( { { 0.2f, 0.2f, 0.2f, 0.2f } } ) );
+    clearValue.color = vk::ClearColorValue( 0.2f, 0.2f, 0.2f, 0.2f );
     commandBuffer.beginRenderPass(
       vk::RenderPassBeginInfo( renderPass, framebuffers[currentBuffer], vk::Rect2D( vk::Offset2D( 0, 0 ), surfaceData.extent ), clearValue ),
       vk::SubpassContents::eInline );
@@ -264,8 +273,8 @@ int                 main( int /*argc*/, char ** /*argv*/ )
     device.destroyPipelineLayout( pipelineLayout );
     device.destroyDescriptorSetLayout( descriptorSetLayout );
     device.destroyImageView( inputAttachmentView );
+    device.destroyImage( inputImage );  // destroy the inputImage before freeing the bound inputMemory !
     device.freeMemory( inputMemory );
-    device.destroyImage( inputImage );
     swapChainData.clear( device );
     device.freeCommandBuffers( commandPool, commandBuffer );
     device.destroyCommandPool( commandPool );

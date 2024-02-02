@@ -31,7 +31,7 @@ int main( int /*argc*/, char ** /*argv*/ )
 #if !defined( NDEBUG )
     vk::raii::DebugUtilsMessengerEXT debugUtilsMessenger( instance, vk::su::makeDebugUtilsMessengerCreateInfoEXT() );
 #endif
-    vk::raii::PhysicalDevice physicalDevice = std::move( vk::raii::PhysicalDevices( instance ).front() );
+    vk::raii::PhysicalDevice physicalDevice = vk::raii::PhysicalDevices( instance ).front();
 
     vk::raii::su::SurfaceData surfaceData( instance, AppName, vk::Extent2D( 64, 64 ) );
 
@@ -55,14 +55,14 @@ int main( int /*argc*/, char ** /*argv*/ )
     /* VULKAN_KEY_START */
 
     std::array<vk::ImageView, 2> attachments;
-    attachments[1] = *depthBufferData.imageView;
+    attachments[1] = depthBufferData.imageView;
 
     std::vector<vk::raii::Framebuffer> framebuffers;
     framebuffers.reserve( swapChainData.imageViews.size() );
     for ( auto const & view : swapChainData.imageViews )
     {
-      attachments[0] = *view;
-      vk::FramebufferCreateInfo framebufferCreateInfo( {}, *renderPass, attachments, surfaceData.extent.width, surfaceData.extent.height, 1 );
+      attachments[0] = view;
+      vk::FramebufferCreateInfo framebufferCreateInfo( {}, renderPass, attachments, surfaceData.extent.width, surfaceData.extent.height, 1 );
       framebuffers.push_back( vk::raii::Framebuffer( device, framebufferCreateInfo ) );
     }
 

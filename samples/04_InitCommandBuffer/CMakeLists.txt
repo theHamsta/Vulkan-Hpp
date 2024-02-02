@@ -12,24 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.2)
-
-project(04_InitCommandBuffer)
-
-set(HEADERS
-)
-
-set(SOURCES
-  04_InitCommandBuffer.cpp
-)
-
-source_group(headers FILES ${HEADERS})
-source_group(sources FILES ${SOURCES})
-
-add_executable(04_InitCommandBuffer
-  ${HEADERS}
-  ${SOURCES}
-)
-
-set_target_properties(04_InitCommandBuffer PROPERTIES FOLDER "Samples")
-target_link_libraries(04_InitCommandBuffer PRIVATE utils)
+vulkan_hpp__setup_sample_dynamic( NAME 04_InitCommandBuffer )
